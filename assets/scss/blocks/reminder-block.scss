@@ -1,0 +1,292 @@
+.reminder-block {
+	position: relative;
+	padding-top: 30px;
+	&__heading-block {
+		display: block;
+		border-radius: 25px;
+		background-color: #fff;
+		padding-top: 47px;
+		padding-left: 30px;
+		padding-right: 28px;
+		padding-bottom: 48px;
+		margin-bottom: 30px;
+	}
+	&__heading-title {
+		display: block;
+		font-size: 25px;
+		line-height: 1;
+		font-weight: 400;
+		color: $title;
+		margin-bottom: 32px;
+	}
+	&__form {
+		position: relative;
+		display: block;
+	}
+	&__label {
+		display: block;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1;
+		color: $text;
+		margin-left: 8px;
+		margin-bottom: 8px;
+	}
+	&__input-wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	&__input {
+		position: relative;
+		display: block;
+		width: calc(100% - 40px);
+		border-right: 0;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		&::placeholder {
+			font-size: 14px;
+			line-height: 1.142;
+			color: $text;
+		}
+	}
+	&__input-container.not-empty:not(.error) &__label {
+		color: $correctly;
+	}
+	&__input-container.not-empty:not(.error) .btn--search {
+		border-color: $correctly;
+	}
+	&__input-container.not-empty:not(.error) &__input {
+		border-color: $correctly;
+		&::placeholder {
+			color: $correctly;
+		}
+	}
+	&__input-container.error &__label {
+		color: $error;
+	}
+	&__input-container.error .btn--search {
+		border-color: $error;
+	}
+	&__input-container.error &__input {
+		border-color: $error;
+		&::placeholder {
+			color: $error;
+		}
+	}
+	&__controls-block {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-left: 35px;
+	}
+	&__controls-block .btn--control {
+		&:not(:last-child) {
+			margin-right: 6px;
+		}
+	}
+	&__controls-block .btn--control.active {
+		background-color: $primary-blue;
+		box-shadow: none;
+		&::after {
+			opacity: 1;
+			pointer-events: all;
+		}
+		svg {
+			stroke: #fff;
+		}
+	}
+	&__controls-block .btn--control.active &__controls-title,
+	&__controls-block .btn--control.active &__controls-text {
+		color: #fff;
+	}
+	&__controls-btn-wrapper {
+		display: block;
+		text-align: left;
+		margin-left: 18px;
+	}
+	&__controls-title {
+		display: block;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 1.15;
+		color: $fenny;
+		margin-bottom: 3px;
+	}
+	&__controls-text {
+		display: block;
+		font-size: 14px;
+		line-height: 1.142;
+		font-weight: 400;
+		color: $fenny;
+	}
+	&__tab-content {
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+	&__table-block, &__table-inner {
+		position: relative;
+		display: block;
+	}
+	&__table-block {
+		padding-top: 46px;
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+		background-color: #fff;
+	}
+	&__table-heading, &__table-card {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__table-heading {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 30px;
+		padding-right: 30px;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 1.142;
+		color: #fff;
+		background: linear-gradient(to top right, $primary-green, $primary-blue);
+	}
+	&__table-card {
+		position: relative;
+		padding-top: 16px;
+		padding-bottom: 17px;
+		padding-left: 30px;
+		padding-right: 30px;
+		font-size: 13px;
+		font-weight: 400;
+		color: $text;
+		line-height: 1.142;
+		border: 2px solid #fff;
+		transition: all 0.3s ease-in-out;
+		cursor: pointer;
+		&::after {
+			content: '';
+			position: absolute;
+			top: auto;
+			bottom: 0;
+			left: 30px;
+			width: calc(100% - 60px);
+			height: 1px;
+			background-color: $text;
+		}
+		&:hover, &:active, &:focus {
+			background-color: rgba(83, 199, 205, 0.2);
+			border: 2px solid $primary-blue;
+			border-radius: 10px;
+		}
+		&:hover::after,
+		&:active::after,
+		&:focus::after {
+			display: none;
+		}
+	}
+	&__table-card:last-child::after {
+		display: none;
+	}
+	&__table-heading-type, &__table-inner-type {
+		display: block;
+		width: 100%;
+		max-width: 110px;
+	}
+	&__table-heading-date, &__table-inner-date {
+		display: block;
+		width: 100%;
+		max-width: 110px;
+	}
+	&__table-inner-type, &__table-inner-date {
+		font-weight: 500;
+		text-decoration: underline;
+		color: $fenny;
+	}
+	&__table-heading-id, &__table-inner-id {
+		display: block;
+		width: 100%;
+		max-width: 60px;
+	}
+	&__table-heading-name, &__table-inner-name {
+		display: block;
+		width: 100%;
+		max-width: 110px;
+	}
+	&__table-heading-days, &__table-inner-days {
+		display: block;
+		width: 100%;
+		max-width: 200px;
+	}
+	&__table-heading-cost, &__table-inner-cost {
+		display: block;
+		width: 100%;
+		max-width: 140px;
+	}
+	&__table-heading-status, &__table-inner-status {
+		display: block;
+		width: 100%;
+		max-width: 120px;
+	}
+	&__table-heading-action, &__table-inner-action {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 64px;
+	}
+	&__check-link, &__alarm-link {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 23px;
+		height: 23px;
+		border-radius: 50%;
+		border: 2px solid $primary-green;
+		background-color: $primary-green;
+		transition: all 0.3s ease-in-out;
+		&:hover, &:active, &:focus {
+			background-color: #fff;
+		}
+		svg {
+			stroke: #fff;
+		}
+		&:hover svg,
+		&:active svg,
+		&:focus svg {
+			stroke: $primary-green;
+		}
+	}
+	&__alarm-link {
+		border: 2px solid $text;
+		background-color: $text;
+		&:hover svg,
+		&:active svg,
+		&:focus svg {
+			stroke: $text;
+		}
+	}
+}
+
+@include for-size(tablet) {
+	.reminder-block {
+		&__table-heading, &__table-card {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		&__table-heading {
+			font-size: 12px;
+		}
+		&__table-card {
+			font-size: 10px;
+			&::after {
+				width: calc(100% - 30px);
+				left: 15px;
+			}
+		}
+	}
+}

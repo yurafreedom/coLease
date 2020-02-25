@@ -1,0 +1,62 @@
+.btn--search {
+	background: none;
+	border-radius: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	border: 1px solid $border;
+	border-radius: 0 10px 10px 0;
+	svg {
+		display: block;
+		stroke: $text;
+		transition: all 0.3s ease-in-out;
+	}
+	svg:hover,
+	svg:active,
+	svg:focus {
+		stroke: $primary-blue;
+	}
+}
+
+.btn--control {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	padding-top: 17px;
+	padding-bottom: 18px;
+	padding-left: 18px;
+	padding-right: 18px;
+	background-color: #fff;
+	box-shadow: inset 0px -2px 4px rgba(0, 0, 0, 0.07);
+	transition: all 0.3s ease-in-out;
+	&::after {
+		content: '';
+		position: absolute;
+		left: 50%;
+		margin-left: -23px;
+		right: 0;
+		bottom: -18px;
+		width: 46px;
+		height: 19px;
+		opacity: 0;
+		pointer-events: none;
+		border-left: 23px solid transparent;
+		border-right: 23px solid transparent;
+		border-top: 19px solid $primary-blue;
+		z-index: 10;
+		transition: all 0.3s ease-in-out;
+	}
+	svg {
+		display: block;
+		flex-shrink: 0;
+		stroke: $fenny;
+		transition: all 0.3s ease-in-out;
+	}
+}

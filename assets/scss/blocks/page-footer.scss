@@ -1,0 +1,28 @@
+.page-footer {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-top: auto;
+}
+
+@include for-size(mobile) {
+	.page-footer {
+
+	}
+}
+
+@include for-size(tablet) {
+	.page-footer {
+
+	}
+}
+
+@include for-size(desktop) {
+	.page-footer {
+
+	}
+}
+
+
+
+

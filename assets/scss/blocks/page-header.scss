@@ -1,0 +1,38 @@
+.main-page-wrap {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: rgba(249, 248, 252, 0.91);
+}
+
+.main-page-blocks {
+	width: 100%;
+	flex-shrink: 0;
+}
+
+.page-header {
+	// width: 100%;
+	// position: absolute;
+	// top: 0;
+	// left: 0;
+	// z-index: 100;
+}
+
+@include for-size(mobile) {
+	.page-header {
+
+	}
+}
+
+@include for-size(tablet) {
+	.page-header {
+
+	}
+}
+
+
+
+
+
+

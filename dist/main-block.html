@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<!-- ADAPTIVITY -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000000">
+	
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000000">
+	
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-touch-fullscreen" content="yes">
+	
+	<!-- CONFIG -->
+	<meta name="format-detection" content="telephone=no">
+	<title>Главная страница - Test</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/main.min.css"> </head>
+
+<body  class=index-page >
+<header class="page-header">
+
+</header>
+
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+		<section class="reminder-block">
+			<div class="container">
+				<div class="reminder-block__heading-block">
+					<div class="reminder-block__heading-title">Reminders</div>
+					<form class="reminder-block__form">
+						<div class="reminder-block__input-container">
+							<label for="reminder_date" class="reminder-block__label">Select Month</label>
+							<div class="reminder-block__input-wrapper">
+								<input type="email" class="text-input reminder-block__input" id="reminder_date" name="reminder_date" placeholder="Select a date..." required>
+								<button type="submit" class="btn btn--search">
+									<svg width="17" height="17">
+										<use xlink:href="#search"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="reminder-block__controls-block">
+					<a href="javascript:;" class="btn btn--control active" data-toggle="tab" data-target="#reminder-tab-1">
+						<svg width="46" height="46">
+							<use xlink:href="#alarm_check"></use>
+						</svg>
+						<div class="reminder-block__controls-btn-wrapper">
+							<div class="reminder-block__controls-title">Active</div>
+							<div class="reminder-block__controls-text">Entries</div>
+						</div>
+					</a>
+					<a href="javascript:;" class="btn btn--control" data-toggle="tab" data-target="#reminder-tab-2">
+						<svg width="51" height="45">
+							<use xlink:href="#synchronize_clock"></use>
+						</svg>
+						<div class="reminder-block__controls-btn-wrapper">
+							<div class="reminder-block__controls-title">Historical</div>
+							<div class="reminder-block__controls-text">Entries</div>
+						</div>
+					</a>
+					<a href="javascript:;" class="btn btn--control" data-toggle="tab" data-target="#reminder-tab-3">
+						<svg width="47" height="45">
+							<use xlink:href="#alarm_sleep"></use>
+						</svg>
+						<div class="reminder-block__controls-btn-wrapper">
+							<div class="reminder-block__controls-title">Snoozed</div>
+							<div class="reminder-block__controls-text">Entries</div>
+						</div>
+					</a>					
+				</div>
+				<div class="reminder-block__tab-content" id="reminder-tab-1">
+					<div class="reminder-block__table-block">
+						<div class="reminder-block__table-heading">
+							<div class="reminder-block__table-heading-type">Reminder Type</div>
+							<div class="reminder-block__table-heading-date">Reminder Date</div>
+							<div class="reminder-block__table-heading-id">Site ID</div>
+							<div class="reminder-block__table-heading-name">Site Name</div>
+							<div class="reminder-block__table-heading-days">Date of Lease Expiry(Days)</div>
+							<div class="reminder-block__table-heading-cost">Current Lease Cost</div>
+							<div class="reminder-block__table-heading-status">Site Status</div>
+							<div class="reminder-block__table-heading-action">Actions</div>
+						</div>
+						<div class="reminder-block__table-inner">
+							<div class="reminder-block__table-card">
+								<div class="reminder-block__table-inner-type">Issue</div>
+								<div class="reminder-block__table-inner-date">05 Nov 2019</div>
+								<div class="reminder-block__table-inner-id">PMB012</div>
+								<div class="reminder-block__table-inner-name">Hassim centre</div>
+								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+								<div class="reminder-block__table-inner-cost">R 15 160</div>
+								<div class="reminder-block__table-inner-status">Can be renewed</div>
+								<div class="reminder-block__table-inner-action">
+									<a href="javascript:;" class="reminder-block__check-link">
+										<svg width="11" height="11">
+											<use xlink:href="#check"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="reminder-block__alarm-link">
+										<svg width="8" height="11">
+											<use xlink:href="#alarm"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="reminder-block__table-card">
+								<div class="reminder-block__table-inner-type">Issue</div>
+								<div class="reminder-block__table-inner-date">05 Nov 2019</div>
+								<div class="reminder-block__table-inner-id">PMB012</div>
+								<div class="reminder-block__table-inner-name">Hassim centre</div>
+								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+								<div class="reminder-block__table-inner-cost">R 15 160</div>
+								<div class="reminder-block__table-inner-status">Can be renewed</div>
+								<div class="reminder-block__table-inner-action">
+									<a href="javascript:;" class="reminder-block__check-link">
+										<svg width="11" height="11">
+											<use xlink:href="#check"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="reminder-block__alarm-link">
+										<svg width="8" height="11">
+											<use xlink:href="#alarm"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="reminder-block__table-card">
+								<div class="reminder-block__table-inner-type">Issue</div>
+								<div class="reminder-block__table-inner-date">05 Nov 2019</div>
+								<div class="reminder-block__table-inner-id">PMB012</div>
+								<div class="reminder-block__table-inner-name">Hassim centre</div>
+								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+								<div class="reminder-block__table-inner-cost">R 15 160</div>
+								<div class="reminder-block__table-inner-status">Can be renewed</div>
+								<div class="reminder-block__table-inner-action">
+									<a href="javascript:;" class="reminder-block__check-link">
+										<svg width="11" height="11">
+											<use xlink:href="#check"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="reminder-block__alarm-link">
+										<svg width="8" height="11">
+											<use xlink:href="#alarm"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="reminder-block__table-card">
+								<div class="reminder-block__table-inner-type">Issue</div>
+								<div class="reminder-block__table-inner-date">05 Nov 2019</div>
+								<div class="reminder-block__table-inner-id">PMB012</div>
+								<div class="reminder-block__table-inner-name">Hassim centre</div>
+								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+								<div class="reminder-block__table-inner-cost">R 15 160</div>
+								<div class="reminder-block__table-inner-status">Can be renewed</div>
+								<div class="reminder-block__table-inner-action">
+									<a href="javascript:;" class="reminder-block__check-link">
+										<svg width="11" height="11">
+											<use xlink:href="#check"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="reminder-block__alarm-link">
+										<svg width="8" height="11">
+											<use xlink:href="#alarm"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="reminder-block__table-card">
+								<div class="reminder-block__table-inner-type">Issue</div>
+								<div class="reminder-block__table-inner-date">05 Nov 2019</div>
+								<div class="reminder-block__table-inner-id">PMB012</div>
+								<div class="reminder-block__table-inner-name">Hassim centre</div>
+								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+								<div class="reminder-block__table-inner-cost">R 15 160</div>
+								<div class="reminder-block__table-inner-status">Can be renewed</div>
+								<div class="reminder-block__table-inner-action">
+									<a href="javascript:;" class="reminder-block__check-link">
+										<svg width="11" height="11">
+											<use xlink:href="#check"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="reminder-block__alarm-link">
+										<svg width="8" height="11">
+											<use xlink:href="#alarm"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reminder-block__tab-content active" id="reminder-tab-2">
+					<div class="reminder-block__table-block">
+						<div class="reminder-block__table-heading">
+							<div class="reminder-block__table-heading-type">Reminder Type</div>
+							<div class="reminder-block__table-heading-date">Reminder Date</div>
+							<div class="reminder-block__table-heading-id">Site ID</div>
+							<div class="reminder-block__table-heading-name">Site Name</div>
+							<div class="reminder-block__table-heading-days">Date of Lease Expiry(Days)</div>
+							<div class="reminder-block__table-heading-cost">Current Lease Cost</div>
+							<div class="reminder-block__table-heading-status">Site Status</div>
+							<div class="reminder-block__table-heading-action">Actions</div>
+						</div>
+						<div class="reminder-block__table-inner">
+							<div class="reminder-block__table-card">
+								<div class="reminder-block__table-inner-type">Issue</div>
+								<div class="reminder-block__table-inner-date">10 Nov 2019</div>
+								<div class="reminder-block__table-inner-id">PMB012</div>
+								<div class="reminder-block__table-inner-name">Hassim centre</div>
+								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+								<div class="reminder-block__table-inner-cost">R 15 160</div>
+								<div class="reminder-block__table-inner-status">Can be renewed</div>
+								<div class="reminder-block__table-inner-action">
+									<a href="javascript:;" class="reminder-block__check-link">
+										<svg width="11" height="11">
+											<use xlink:href="#check"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="reminder-block__alarm-link">
+										<svg width="8" height="11">
+											<use xlink:href="#alarm"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="reminder-block__table-card">
+								<div class="reminder-block__table-inner-type">Issue</div>
+								<div class="reminder-block__table-inner-date">10 Nov 2019</div>
+								<div class="reminder-block__table-inner-id">PMB012</div>
+								<div class="reminder-block__table-inner-name">Hassim centre</div>
+								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+								<div class="reminder-block__table-inner-cost">R 15 160</div>
+								<div class="reminder-block__table-inner-status">Can be renewed</div>
+								<div class="reminder-block__table-inner-action">
+									<a href="javascript:;" class="reminder-block__check-link">
+										<svg width="11" height="11">
+											<use xlink:href="#check"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="reminder-block__alarm-link">
+										<svg width="8" height="11">
+											<use xlink:href="#alarm"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="reminder-block__table-card">
+								<div class="reminder-block__table-inner-type">Issue</div>
+								<div class="reminder-block__table-inner-date">10 Nov 2019</div>
+								<div class="reminder-block__table-inner-id">PMB012</div>
+								<div class="reminder-block__table-inner-name">Hassim centre</div>
+								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+								<div class="reminder-block__table-inner-cost">R 15 160</div>
+								<div class="reminder-block__table-inner-status">Can be renewed</div>
+								<div class="reminder-block__table-inner-action">
+									<a href="javascript:;" class="reminder-block__check-link">
+										<svg width="11" height="11">
+											<use xlink:href="#check"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="reminder-block__alarm-link">
+										<svg width="8" height="11">
+											<use xlink:href="#alarm"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="reminder-block__table-card">
+								<div class="reminder-block__table-inner-type">Issue</div>
+								<div class="reminder-block__table-inner-date">10 Nov 2019</div>
+								<div class="reminder-block__table-inner-id">PMB012</div>
+								<div class="reminder-block__table-inner-name">Hassim centre</div>
+								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+								<div class="reminder-block__table-inner-cost">R 15 160</div>
+								<div class="reminder-block__table-inner-status">Can be renewed</div>
+								<div class="reminder-block__table-inner-action">
+									<a href="javascript:;" class="reminder-block__check-link">
+										<svg width="11" height="11">
+											<use xlink:href="#check"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="reminder-block__alarm-link">
+										<svg width="8" height="11">
+											<use xlink:href="#alarm"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="reminder-block__table-card">
+								<div class="reminder-block__table-inner-type">Issue</div>
+								<div class="reminder-block__table-inner-date">10 Nov 2019</div>
+								<div class="reminder-block__table-inner-id">PMB012</div>
+								<div class="reminder-block__table-inner-name">Hassim centre</div>
+								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+								<div class="reminder-block__table-inner-cost">R 15 160</div>
+								<div class="reminder-block__table-inner-status">Can be renewed</div>
+								<div class="reminder-block__table-inner-action">
+									<a href="javascript:;" class="reminder-block__check-link">
+										<svg width="11" height="11">
+											<use xlink:href="#check"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="reminder-block__alarm-link">
+										<svg width="8" height="11">
+											<use xlink:href="#alarm"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reminder-block__tab-content" id="reminder-tab-3">
+					<div class="reminder-block__table-block">
+						<div class="reminder-block__table-heading">
+							<div class="reminder-block__table-heading-type">Reminder Type</div>
+							<div class="reminder-block__table-heading-date">Reminder Date</div>
+							<div class="reminder-block__table-heading-id">Site ID</div>
+							<div class="reminder-block__table-heading-name">Site Name</div>
+							<div class="reminder-block__table-heading-days">Date of Lease Expiry(Days)</div>
+							<div class="reminder-block__table-heading-cost">Current Lease Cost</div>
+							<div class="reminder-block__table-heading-status">Site Status</div>
+							<div class="reminder-block__table-heading-action">Actions</div>
+						</div>
+						<div class="reminder-block__table-inner">
+							<div class="reminder-block__table-card">
+								<div class="reminder-block__table-inner-type">Issue</div>
+								<div class="reminder-block__table-inner-date">15 Nov 2019</div>
+								<div class="reminder-block__table-inner-id">PMB012</div>
+								<div class="reminder-block__table-inner-name">Hassim centre</div>
+								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+								<div class="reminder-block__table-inner-cost">R 15 160</div>
+								<div class="reminder-block__table-inner-status">Can be renewed</div>
+								<div class="reminder-block__table-inner-action">
+									<a href="javascript:;" class="reminder-block__check-link">
+										<svg width="11" height="11">
+											<use xlink:href="#check"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="reminder-block__alarm-link">
+										<svg width="8" height="11">
+											<use xlink:href="#alarm"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="reminder-block__table-card">
+								<div class="reminder-block__table-inner-type">Issue</div>
+								<div class="reminder-block__table-inner-date">15 Nov 2019</div>
+								<div class="reminder-block__table-inner-id">PMB012</div>
+								<div class="reminder-block__table-inner-name">Hassim centre</div>
+								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+								<div class="reminder-block__table-inner-cost">R 15 160</div>
+								<div class="reminder-block__table-inner-status">Can be renewed</div>
+								<div class="reminder-block__table-inner-action">
+									<a href="javascript:;" class="reminder-block__check-link">
+										<svg width="11" height="11">
+											<use xlink:href="#check"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="reminder-block__alarm-link">
+										<svg width="8" height="11">
+											<use xlink:href="#alarm"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="reminder-block__table-card">
+								<div class="reminder-block__table-inner-type">Issue</div>
+								<div class="reminder-block__table-inner-date">15 Nov 2019</div>
+								<div class="reminder-block__table-inner-id">PMB012</div>
+								<div class="reminder-block__table-inner-name">Hassim centre</div>
+								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+								<div class="reminder-block__table-inner-cost">R 15 160</div>
+								<div class="reminder-block__table-inner-status">Can be renewed</div>
+								<div class="reminder-block__table-inner-action">
+									<a href="javascript:;" class="reminder-block__check-link">
+										<svg width="11" height="11">
+											<use xlink:href="#check"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="reminder-block__alarm-link">
+										<svg width="8" height="11">
+											<use xlink:href="#alarm"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="reminder-block__table-card">
+								<div class="reminder-block__table-inner-type">Issue</div>
+								<div class="reminder-block__table-inner-date">15 Nov 2019</div>
+								<div class="reminder-block__table-inner-id">PMB012</div>
+								<div class="reminder-block__table-inner-name">Hassim centre</div>
+								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+								<div class="reminder-block__table-inner-cost">R 15 160</div>
+								<div class="reminder-block__table-inner-status">Can be renewed</div>
+								<div class="reminder-block__table-inner-action">
+									<a href="javascript:;" class="reminder-block__check-link">
+										<svg width="11" height="11">
+											<use xlink:href="#check"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="reminder-block__alarm-link">
+										<svg width="8" height="11">
+											<use xlink:href="#alarm"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="reminder-block__table-card">
+								<div class="reminder-block__table-inner-type">Issue</div>
+								<div class="reminder-block__table-inner-date">15 Nov 2019</div>
+								<div class="reminder-block__table-inner-id">PMB012</div>
+								<div class="reminder-block__table-inner-name">Hassim centre</div>
+								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+								<div class="reminder-block__table-inner-cost">R 15 160</div>
+								<div class="reminder-block__table-inner-status">Can be renewed</div>
+								<div class="reminder-block__table-inner-action">
+									<a href="javascript:;" class="reminder-block__check-link">
+										<svg width="11" height="11">
+											<use xlink:href="#check"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="reminder-block__alarm-link">
+										<svg width="8" height="11">
+											<use xlink:href="#alarm"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+<footer class="page-footer">
+	<div class="page-footer__row">
+
+	</div>
+</footer>
+<div class="popup-block" id="popup_registration">
+	<div class="popup-block__overlay">
+		<div class="popup-block__popup">
+			<div class="inner-content">
+				<a href="javascript:;" data-toggle="dismiss" class="popup-block__close"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.min.js"></script>
+<svg style="display:none;">
+	<symbol id="search" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M11.063 16.02a7.083 7.083 0 110-14.166 7.083 7.083 0 010 14.167z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.855 18.146l4.2-4.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="synchronize_clock" viewBox="0 0 51 45" width="51" height="45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.65 11.2v12.5h11.116M.861 15.731l6.67 10.227 7.78-9.09" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.651 44.157c11.665 0 21.12-9.666 21.12-21.59 0-11.923-9.455-21.59-21.12-21.59-11.664 0-21.12 9.667-21.12 21.59v3.395" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="alarm_sleep" viewBox="0 0 47 45" width="47" height="45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.459.771h5.75L30.459 6.4h5.75M36.209 12.027h9.583l-9.583 9.38h9.583" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M27.584 25.156c0-6.216-5.149-11.255-11.5-11.255s-11.5 5.039-11.5 11.255v10.318c0 1.554-1.287 2.813-2.875 2.813h28.75c-1.588 0-2.875-1.26-2.875-2.813V25.156z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.795 42.04c-.405 1.124-1.492 1.877-2.71 1.877-1.22 0-2.306-.753-2.712-1.878M16.084 10.15v3.753" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="alarm_check" viewBox="0 0 46 46" width="46" height="46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.4 14.979A11.67 11.67 0 008.365 16.85c-2.861 2.128-4.538 5.446-4.53 8.963V36.13c0 .746-.303 1.462-.842 1.99-.54.528-1.27.824-2.033.824h28.75c-1.588 0-2.875-1.26-2.875-2.814v-9.968M18.045 42.697c-.405 1.125-1.492 1.877-2.71 1.877-1.22 0-2.306-.752-2.712-1.877M15.334 10.809v3.751" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.4 14.979A11.67 11.67 0 008.365 16.85c-2.861 2.128-4.538 5.446-4.53 8.963V36.13c0 .746-.303 1.462-.842 1.99-.54.528-1.27.824-2.033.824h28.75c-1.588 0-2.875-1.26-2.875-2.814v-9.968M18.045 42.697c-.405 1.125-1.492 1.877-2.71 1.877-1.22 0-2.306-.752-2.712-1.877M15.334 10.809v3.751" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M33.543 23.942c6.351 0 11.5-5.04 11.5-11.256s-5.149-11.255-11.5-11.255-11.5 5.04-11.5 11.255c0 6.216 5.149 11.256 11.5 11.256z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M38.667 9.415L33.1 16.68a1.45 1.45 0 01-1.048.559 1.46 1.46 0 01-1.12-.407l-2.874-2.814" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="check" viewBox="0 0 11 11" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.987 1.948L4.753 9.052 1.013 6.06" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="alarm" viewBox="0 0 11 11" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.249V5.5l4.638 4.252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+</body>
+</html>
