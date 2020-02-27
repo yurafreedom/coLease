@@ -20,14 +20,25 @@
 	line-height: 1.142;
 	font-family: 'Roboto', sans-serif;
 	border-radius: 10px;
-	border: 1px solid #D8D8D8;
+	border: 1px solid $border;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 11px;
 	padding-bottom: 12px;
 	width: 100%;
 	background-color: #fff;
-
+	&:disabled {
+		background-color: #F9F8FC;
+		border-color: $border;
+		color: $border;
+	}
+	&:disabled::placeholder {
+		color: $border;
+	}
+	&:focus, &:hover {
+		border-color: $primary-blue;
+		color: $primary-blue;
+	}
 	&:-moz-placeholder {
 		color: #879ea7;
 	}

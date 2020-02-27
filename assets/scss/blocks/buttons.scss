@@ -60,3 +60,46 @@
 		transition: all 0.3s ease-in-out;
 	}
 }
+
+.btn--green {
+
+}
+
+.btn--fenny {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 123px;
+	padding-top: 8px;
+	padding-bottom: 9px;
+	font-size: 14px;
+	line-height: 1.142;
+	font-weight: 700;
+	border: 2px solid $fenny;
+	background-color: $fenny;
+	border-radius: 22px;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		background-color: #fff;
+		color: $fenny;
+	}
+	&:active {
+		background-color: #128788;
+		border-color: #128788;
+		color: #fff;
+	}
+	svg {
+		display: block;
+		stroke: #fff;
+		margin-right: 8px;
+		transition: all 0.3s ease-in-out;
+	}
+	&:hover svg {
+		stroke: $fenny;
+	}
+	&:active svg {
+		stroke: #fff;
+	}
+}

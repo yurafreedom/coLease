@@ -1,0 +1,42 @@
+.nav-block {
+	position: relative;
+	display: block;
+	margin-top: 2px;
+	&__wrapper {
+		position: relative;
+		display: block;
+		background-color: #E9E9E9;
+		padding-top: 10px;
+		padding-bottom: 11px;
+	}
+	&__list {
+		position: relative;
+		display: block;
+		width: 100%;
+		max-width: 970px;
+	}
+	&__list ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		max-width: 695px;		
+		margin-left: auto;
+	}
+	&__list ul li a {
+		display: block;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.92857143;
+		color: $title;
+		transition: all 0.3s ease-in-out;
+		&:hover, &:active, &:focus {
+			font-weight: 700;
+			text-decoration: none;
+		}
+	}
+}

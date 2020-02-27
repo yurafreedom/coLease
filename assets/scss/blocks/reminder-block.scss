@@ -17,13 +17,22 @@
 		line-height: 1;
 		font-weight: 400;
 		color: $title;
-		margin-bottom: 32px;
+		margin-bottom: 52px;
 	}
 	&__form {
 		position: relative;
 		display: block;
 	}
+	&__input-wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 	&__label {
+		position: absolute;
+		top: -20px;
+		left: 0;
 		display: block;
 		font-size: 12px;
 		font-weight: 400;
@@ -31,12 +40,18 @@
 		color: $text;
 		margin-left: 8px;
 		margin-bottom: 8px;
+		z-index: 10;
 	}
-	&__input-wrapper {
-		position: relative;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
+	&__input-wrapper .btn--search {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	&__input-wrapper.active .btn--search {
+		border-color: $primary-blue;
+	}
+	&__input-wrapper:hover .btn--search {
+		border-color: $primary-blue;
 	}
 	&__input {
 		position: relative;
@@ -45,31 +60,38 @@
 		border-right: 0;
 		border-top-right-radius: 0;
 		border-bottom-right-radius: 0;
+		transition: all 0.3s ease-in-out;
 		&::placeholder {
 			font-size: 14px;
 			line-height: 1.142;
 			color: $text;
 		}
+		&:focus, &:hover {
+			border-color: $primary-blue;
+		}
 	}
-	&__input-container.not-empty:not(.error) &__label {
+	&__input-wrapper.success &__label {
 		color: $correctly;
 	}
-	&__input-container.not-empty:not(.error) .btn--search {
+	&__input-wrapper.success .btn--search {
 		border-color: $correctly;
 	}
-	&__input-container.not-empty:not(.error) &__input {
+	&__input-wrapper.success &__input {
 		border-color: $correctly;
+		&:focus {
+			border-color: $correctly;
+		}
 		&::placeholder {
 			color: $correctly;
 		}
 	}
-	&__input-container.error &__label {
+	&__input-wrapper.error &__label {
 		color: $error;
 	}
-	&__input-container.error .btn--search {
+	&__input-wrapper.error .btn--search {
 		border-color: $error;
 	}
-	&__input-container.error &__input {
+	&__input-wrapper.error &__input {
 		border-color: $error;
 		&::placeholder {
 			color: $error;
@@ -94,17 +116,21 @@
 			pointer-events: all;
 		}
 		svg {
+			display: block;
 			stroke: #fff;
+			transition: all 0.3s ease-in-out;
 		}
 	}
 	&__controls-block .btn--control.active &__controls-title,
 	&__controls-block .btn--control.active &__controls-text {
 		color: #fff;
+		transition: all 0.3s ease-in-out;
 	}
 	&__controls-btn-wrapper {
 		display: block;
 		text-align: left;
 		margin-left: 18px;
+		transition: all 0.3s ease-in-out;
 	}
 	&__controls-title {
 		display: block;
@@ -113,6 +139,7 @@
 		line-height: 1.15;
 		color: $fenny;
 		margin-bottom: 3px;
+		transition: all 0.3s ease-in-out;
 	}
 	&__controls-text {
 		display: block;
@@ -120,6 +147,7 @@
 		line-height: 1.142;
 		font-weight: 400;
 		color: $fenny;
+		transition: all 0.6s ease-in-out;
 	}
 	&__tab-content {
 		display: none;
@@ -152,14 +180,14 @@
 		font-weight: 700;
 		line-height: 1.142;
 		color: #fff;
-		background: linear-gradient(to top right, $primary-green, $primary-blue);
+		background: linear-gradient(to left, $primary-blue, $primary-green);
 	}
 	&__table-card {
 		position: relative;
 		padding-top: 16px;
 		padding-bottom: 17px;
 		padding-left: 30px;
-		padding-right: 30px;
+		padding-right: 45px;
 		font-size: 13px;
 		font-weight: 400;
 		color: $text;
@@ -171,16 +199,18 @@
 			content: '';
 			position: absolute;
 			top: auto;
-			bottom: 0;
+			bottom: -3px;
 			left: 30px;
 			width: calc(100% - 60px);
 			height: 1px;
-			background-color: $text;
+			background-color: #F0F0F0;
+			z-index: 1;
 		}
 		&:hover, &:active, &:focus {
 			background-color: rgba(83, 199, 205, 0.2);
 			border: 2px solid $primary-blue;
 			border-radius: 10px;
+			color: $fenny;
 		}
 		&:hover::after,
 		&:active::after,
@@ -264,6 +294,7 @@
 	&__alarm-link {
 		border: 2px solid $text;
 		background-color: $text;
+		padding-left: 4px;
 		&:hover svg,
 		&:active svg,
 		&:focus svg {

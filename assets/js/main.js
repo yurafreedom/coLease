@@ -86,10 +86,10 @@ $("form").each(function() {
               e.appendTo(i.parent("div"))
         },
         highlight: function(e) {
-            $('.reminder-block__input-container').removeClass('success').addClass('error');
+            $('.reminder-block__input-wrapper').removeClass('success').addClass('error');
         },
         unhighlight: function(e) {
-            $('.reminder-block__input-container').addClass('success').removeClass('error');
+            $('.reminder-block__input-wrapper').addClass('success').removeClass('error');
         },
         ignore: [],
         rules: {
@@ -125,4 +125,16 @@ $('[data-toggle="tab"]').click(function(e) {
  }
  
  $(thisTarget).addClass('active').siblings().removeClass('active');
+});
+
+$('.reminder-block__input').on("focus", function() {
+  $(this).parent().toggleClass('active');
+});
+
+$('.reminder-block__input').mouseout("focus", function() {
+  $(this).parent().removeClass('active');
+});
+
+$('[data-toggle="expand"]').on('click', function() {
+  $(this).next().slideToggle(200);
 });

@@ -1,0 +1,303 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": "index-page"
+})
+@@include('template/page-header.html', {
+	"logged": "true"
+})
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+		<section class="nav-block">
+			<div class="container">
+				<div class="nav-block__wrapper">
+					<div class="nav-block__list">
+						<ul>
+							<li><a href="javascript:;">Leases</a></li>
+							<li><a href="javascript:;">Sites</a></li>
+							<li><a href="javascript:;">Landlords</a></li>
+							<li><a href="javascript:;">Financial</a></li>
+							<li><a href="javascript:;">Issues</a></li>
+							<li><a href="javascript:;">File Explorer</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="manager-block">
+			<div class="container">
+				<div class="manager-block__heading-block">
+					<div class="manager-block__heading-title">File Explorer</div>
+					<form class="reminder-block__form">
+						<div class="reminder-block__input-wrapper">
+							<input type="email" class="text-input reminder-block__input" id="reminder_date" name="reminder_date" placeholder="Searching..." required>
+							<button type="submit" class="btn btn--search">
+								<svg width="17" height="17">
+									<use xlink:href="#search"></use>
+								</svg>
+							</button>
+						</div>
+					</form>
+				</div>
+				<div class="manager-block__wrapper">
+					<div class="manager-block__nav-block">
+
+						<!-- Sites -->
+						<ul class="manager-block__nav-section">
+							<li>
+								<a class="manager-block__nav-section-title" data-toggle="expand">
+									<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
+									<span>Sites</span>
+								</a>
+								<ul class="manager-block__nav-subsection">
+									<li>
+										<a class="manager-block__nav-subsection-title" data-toggle="expand">
+											<svg width="11" height="11">
+												<use xlink:href="#file_explorer"></use>
+											</svg>
+											<span>Site Name / ID</span>
+										</a>
+										<ul class="manager-block__sub-heading">
+											<li>
+												<a class="manager-block__sub-heading-title" data-toggle="expand">
+													<svg width="13" height="12">
+														<use xlink:href="#folder_hold"></use>
+													</svg>
+													<span>Site Inventory</span>
+												</a>
+												<ul class="manager-block__sub-inner">
+													<li><a href="javascript:;" class="manager-block__sub-inner-link">Leases</a></li>
+													<li>
+														<a href="javascript:;" class="manager-block__sub-inner-file">
+															<svg width="13" height="12">
+																<use xlink:href="#file_text"></use>
+															</svg>
+															<span>New Lease Agreements</span>
+														</a>
+													</li>
+													<li>
+														<a href="javascript:;" class="manager-block__sub-inner-file">
+															<svg width="13" height="12">
+																<use xlink:href="#file_text"></use>
+															</svg>
+															<span>Lease Renewal Agreements</span>
+														</a>
+													</li>
+													<li>
+														<a href="javascript:;" class="manager-block__sub-inner-file">
+															<svg width="13" height="12">
+																<use xlink:href="#file_text"></use>
+															</svg>
+															<span>Lease Addendum</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a class="manager-block__sub-heading-title" data-toggle="expand">
+													<svg width="13" height="12">
+														<use xlink:href="#folder_hold"></use>
+													</svg>
+													<span>Site Inventory</span>
+												</a>
+												<ul class="manager-block__sub-inner">
+													<li><a href="javascript:;" class="manager-block__sub-inner-link">Leases</a></li>
+													<li>
+														<a href="javascript:;" class="manager-block__sub-inner-file">
+															<svg width="13" height="12">
+																<use xlink:href="#file_text"></use>
+															</svg>
+															<span>New Lease Agreements</span>
+														</a>
+													</li>
+													<li>
+														<a href="javascript:;" class="manager-block__sub-inner-file">
+															<svg width="13" height="12">
+																<use xlink:href="#file_text"></use>
+															</svg>
+															<span>Lease Renewal Agreements</span>
+														</a>
+													</li>
+													<li>
+														<a href="javascript:;" class="manager-block__sub-inner-file">
+															<svg width="13" height="12">
+																<use xlink:href="#file_text"></use>
+															</svg>
+															<span>Lease Addendum</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+<!-- 										<ul class="manager-block__sub-heading">
+											<li>
+												<a href="javascript:;" class="manager-block__sub-heading-title" data-toggle="expand">
+													<svg width="13" height="12">
+														<use xlink:href="#folder_hold"></use>
+													</svg>
+													<span>Site Inventory</span>
+												</a>
+												<ul class="manager-block__sub-inner">
+													<li>
+														<a href="javascript:;" class="manager-block__sub-inner-file">
+															<svg width="13" height="12">
+																<use xlink:href="#file_text"></use>
+															</svg>
+															<span>New Lease Agreements</span>
+														</a>
+													</li>
+													<li>
+														<a href="javascript:;" class="manager-block__sub-inner-file">
+															<svg width="13" height="12">
+																<use xlink:href="#file_text"></use>
+															</svg>
+															<span>Lease Renewal Agreements</span>
+														</a>
+													</li>
+													<li>
+														<a class="manager-block__sub-inner-file">
+															<svg width="13" height="12">
+																<use xlink:href="#file_text"></use>
+															</svg>
+															<span>Lease Addendum</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+										</ul> -->
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+						<!-- Landlord -->
+<!-- 						<ul class="manager-block__nav-section" data-toggle="expand">
+							<li class="manager-block__nav-section-title">
+								<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
+								<span>Landlord</span>
+							</li>
+							<ul class="manager-block__nav-subsection" data-toggle="expand">
+								<li class="manager-block__nav-subsection-title">
+									<svg width="11" height="11">
+										<use xlink:href="#file_explorer"></use>
+									</svg>
+									<span>Landlord Name / ID</span>
+								</li>
+								<ul class="manager-block__sub-heading" data-toggle="expand">
+									<li class="manager-block__sub-heading-title">
+										<svg width="13" height="12">
+											<use xlink:href="#folder_hold"></use>
+										</svg>
+										<span>Landlord</span>
+									</li>
+									<ul class="manager-block__sub-inner" data-toggle="expand">
+										<li class="manager-block__sub-inner-file">
+											<svg width="13" height="12">
+												<use xlink:href="#file_text"></use>
+											</svg>
+											<span>Proof of Bank Account documents</span>
+										</li>
+										<li class="manager-block__sub-inner-file">
+											<svg width="13" height="12">
+												<use xlink:href="#file_text"></use>
+											</svg>
+											<span>Company Registration documents</span>
+										</li>
+										<li class="manager-block__sub-inner-file">
+											<svg width="13" height="12">
+												<use xlink:href="#file_text"></use>
+											</svg>
+											<span>ID Documents</span>
+										</li>
+									</ul>
+								</ul>
+								<ul class="manager-block__sub-heading" data-toggle="expand">
+									<li class="manager-block__sub-heading-title">
+										<svg width="13" height="12">
+											<use xlink:href="#folder_hold"></use>
+										</svg>
+										<span>LandlordName</span>
+									</li>
+									<ul class="manager-block__sub-inner" data-toggle="expand">
+										<li class="manager-block__sub-inner-file">
+											<svg width="13" height="12">
+												<use xlink:href="#file_text"></use>
+											</svg>
+											<span>New Lease Agreements</span>
+										</li>
+										<li class="manager-block__sub-inner-file">
+											<svg width="13" height="12">
+												<use xlink:href="#file_text"></use>
+											</svg>
+											<span>Lease Renewal Agreements</span>
+										</li>
+										<li class="manager-block__sub-inner-file">
+											<svg width="13" height="12">
+												<use xlink:href="#file_text"></use>
+											</svg>
+											<span>Lease Addendum</span>
+										</li>
+									</ul>
+								</ul>
+							</ul>
+						</ul> -->
+
+						<!-- Financial -->
+<!-- 						<ul class="manager-block__nav-section" data-toggle="expand">
+							<li class="manager-block__nav-section-title">
+								<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
+								<span>Financial</span>
+							</li>
+							<ul class="manager-block__nav-subsection" data-toggle="expand">
+								<li class="manager-block__nav-subsection-title">
+									<svg width="11" height="11">
+										<use xlink:href="#file_explorer"></use>
+									</svg>
+									<span>Invoices</span>
+								</li>
+								<ul class="manager-block__sub-heading" data-toggle="expand">
+									<li class="manager-block__sub-heading-title">
+										<svg width="13" height="12">
+											<use xlink:href="#folder_hold"></use>
+										</svg>
+										<span>SiteID</span>
+									</li>
+									<ul class="manager-block__sub-inner">
+										<li class="manager-block__sub-inner-date">
+											<svg width="12" height="12">
+												<use xlink:href="#date"></use>
+											</svg>
+											<span>Month (MMM/YYYY)</span>
+										</li>
+										<ul class="manager-block__sub-date-inner" data-toggle="expand">
+											<li class="manager-block__sub-inner-invoices">
+												<svg width="12" height="13">
+													<use xlink:href="#invoices"></use>
+												</svg>
+												<span>Relevant invoices</span>
+											</li>
+											<li class="manager-block__sub-inner-invoices">
+												<svg width="12" height="13">
+													<use xlink:href="#invoices"></use>
+												</svg>
+												<span>Relevant invoices</span>
+											</li>
+										</ul>
+									</ul>
+								</ul>
+							</ul>
+						</ul> -->
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+@@include('template/page-footer.html')
+@@include('template/popups.html')
+@@include('template/scripts.html')
+@@include('template/sprite.html')
+
+</body>
+</html>				

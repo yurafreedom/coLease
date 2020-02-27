@@ -1,10 +1,111 @@
-@@include('template/head.html', {
-	"pagetitle": "Главная страница",
-	"bodyclass": "index-page"
-})
-@@include('template/page-header.html', {
-	"logged": "true"
-})
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<!-- ADAPTIVITY -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000000">
+	
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000000">
+	
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-touch-fullscreen" content="yes">
+	
+	<!-- CONFIG -->
+	<meta name="format-detection" content="telephone=no">
+	<title>Главная страница - coLease</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/main.min.css"> </head>
+
+<body  class=index-page >
+<header class="page-header">
+	<div class="container">
+		<div class="page-header__row">
+			<a href="#index.html" class="page-header__logo"><img src="img/logo.svg" alt=""></a>
+			<div class="page-header__nav">
+				<ul>
+					<li>
+						<a href="javascript:;">
+							<svg width="30" height="26">
+								<use xlink:href="#browser_gauge"></use>
+							</svg>
+							<span>Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<div class="page-header__nav-link-wrapper">
+								<img src="img/keys-gray.svg" alt="">
+								<img class="active" src="img/keys-blue.svg" alt="">
+							</div>
+							<span>Sites & Leases</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<div class="page-header__nav-link-wrapper">
+								<img src="img/reminder-gray.svg" alt="">
+								<img class="active" src="img/reminder-blue.svg" alt="">
+							</div>
+							<span>Reminders</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<svg width="30" height="28">
+								<use xlink:href="#report"></use>
+							</svg>
+							<span>Report</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<svg width="30" height="29">
+								<use xlink:href="#agent"></use>
+							</svg>
+							<span>Agent</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<svg width="30" height="26">
+								<use xlink:href="#settings"></use>
+							</svg>
+							<span>Settings</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<a href="javascript:;" class="btn btn--fenny">
+				<svg width="15" height="14"><use xlink:href="#plus"></use></svg>
+				<span>Add Lease</span>
+			</a>
+			<div class="page-header__login-block">
+				<a href="javascript:;" class="page-header__login-link">
+					<div class="page-header__login-link-wrapper">
+						<svg width="31" height="30">
+							<use xlink:href="#user_green"></use>
+						</svg>
+						<svg class="active" width="31" height="30">
+							<use xlink:href="#user_fenny"></use>
+						</svg>
+					</div>
+					<span>Logout</span>
+				</a>
+				<div class="page-header__login-description"><p>Welcome back</p></div>
+			</div>
+		</div>
+	</div>
+</header>
+
 
 <div class="main-page-wrap">
 	<div class="main-page-blocks">
@@ -13,16 +114,14 @@
 				<div class="reminder-block__heading-block">
 					<div class="reminder-block__heading-title">Reminders</div>
 					<form class="reminder-block__form">
-						<div class="reminder-block__input-container">
+						<div class="reminder-block__input-wrapper">
 							<label for="reminder_date" class="reminder-block__label">Select Month</label>
-							<div class="reminder-block__input-wrapper">
-								<input type="email" class="text-input reminder-block__input" id="reminder_date" name="reminder_date" placeholder="Select a date..." required>
-								<button type="submit" class="btn btn--search">
-									<svg width="17" height="17">
-										<use xlink:href="#search"></use>
-									</svg>
-								</button>
-							</div>
+							<input type="email" class="text-input reminder-block__input" id="reminder_date" name="reminder_date" placeholder="Select a date..." required>
+							<button type="submit" class="btn btn--search">
+								<svg width="17" height="17">
+									<use xlink:href="#search"></use>
+								</svg>
+							</button>
 						</div>
 					</form>
 				</div>
@@ -423,10 +522,44 @@
 	</div>
 </div>
 
-@@include('template/page-footer.html')
-@@include('template/popups.html')
-@@include('template/scripts.html')
-@@include('template/sprite.html')
+<footer class="page-footer">
+	<div class="page-footer__row">
+
+	</div>
+</footer>
+<div class="popup-block" id="popup_registration">
+	<div class="popup-block__overlay">
+		<div class="popup-block__popup">
+			<div class="inner-content">
+				<a href="javascript:;" data-toggle="dismiss" class="popup-block__close"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.min.js"></script>
+<svg style="display:none;">
+	<symbol id="search" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M11.063 16.02a7.083 7.083 0 110-14.166 7.083 7.083 0 010 14.167z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.855 18.146l4.2-4.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="synchronize_clock" viewBox="0 0 51 45" width="51" height="45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.65 11.2v12.5h11.116M.861 15.731l6.67 10.227 7.78-9.09" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.651 44.157c11.665 0 21.12-9.666 21.12-21.59 0-11.923-9.455-21.59-21.12-21.59-11.664 0-21.12 9.667-21.12 21.59v3.395" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="alarm_sleep" viewBox="0 0 47 45" width="47" height="45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.459.771h5.75L30.459 6.4h5.75M36.209 12.027h9.583l-9.583 9.38h9.583" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M27.584 25.156c0-6.216-5.149-11.255-11.5-11.255s-11.5 5.039-11.5 11.255v10.318c0 1.554-1.287 2.813-2.875 2.813h28.75c-1.588 0-2.875-1.26-2.875-2.813V25.156z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.795 42.04c-.405 1.124-1.492 1.877-2.71 1.877-1.22 0-2.306-.753-2.712-1.878M16.084 10.15v3.753" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="alarm_check" viewBox="0 0 46 46" width="46" height="46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.4 14.979A11.67 11.67 0 008.365 16.85c-2.861 2.128-4.538 5.446-4.53 8.963V36.13c0 .746-.303 1.462-.842 1.99-.54.528-1.27.824-2.033.824h28.75c-1.588 0-2.875-1.26-2.875-2.814v-9.968M18.045 42.697c-.405 1.125-1.492 1.877-2.71 1.877-1.22 0-2.306-.752-2.712-1.877M15.334 10.809v3.751" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.4 14.979A11.67 11.67 0 008.365 16.85c-2.861 2.128-4.538 5.446-4.53 8.963V36.13c0 .746-.303 1.462-.842 1.99-.54.528-1.27.824-2.033.824h28.75c-1.588 0-2.875-1.26-2.875-2.814v-9.968M18.045 42.697c-.405 1.125-1.492 1.877-2.71 1.877-1.22 0-2.306-.752-2.712-1.877M15.334 10.809v3.751" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M33.543 23.942c6.351 0 11.5-5.04 11.5-11.256s-5.149-11.255-11.5-11.255-11.5 5.04-11.5 11.255c0 6.216 5.149 11.256 11.5 11.256z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M38.667 9.415L33.1 16.68a1.45 1.45 0 01-1.048.559 1.46 1.46 0 01-1.12-.407l-2.874-2.814" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="check" viewBox="0 0 11 11" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.987 1.948L4.753 9.052 1.013 6.06" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="alarm" viewBox="0 0 11 11" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.249V5.5l4.638 4.252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="browser_gauge" fill="none" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M28.73 22.98a2.417 2.417 0 01-2.418 2.416H3.355a2.417 2.417 0 01-2.417-2.417V3.646a2.417 2.417 0 012.417-2.417h22.959a2.417 2.417 0 012.416 2.417v19.333z" stroke-linecap="round" stroke-linejoin="round"/><path d="M.938 7.27h27.791M5.167 20.604h2.417M14.833 10.936v2.415M7.997 13.766l1.707 1.707M24.502 20.601h-2.415M5.768 1.23v6.04M10.6 1.23v6.04" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M20.634 15.043c.351-.483.22-.626-.293-.323l-5.386 3.184c-.573.38-1 .944-1.209 1.599l-.12.52a.854.854 0 00.81 1.109l.595.032a2.24 2.24 0 001.722-.813l3.88-5.308z" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="report" width="30" height="28" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M9.215 13.5a4.23 4.23 0 100-8.458 4.23 4.23 0 000 8.458z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.216 5.042V9.27h4.229M11.632 26.188a8.432 8.432 0 001.812-4.834M18.882 26.188a8.433 8.433 0 01-1.813-4.834M9.818 26.188h10.875M1.361 17.73h27.792" stroke-linecap="round" stroke-linejoin="round"/><rect x="1.361" y=".813" width="27.792" height="20.542" rx="1" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.07 7.458l1.812-2.416 3.625 3.02 3.02-3.624M24.32 14.104v-1.812M21.903 14.104v-2.416M19.486 14.104V10.48M17.07 14.104v-1.812" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="agent" viewBox="0 0 30 29" width="30" height="29" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M22.583 15.104a7.25 7.25 0 01-14.5 0v-2.416a7.25 7.25 0 1114.5 0v2.416z" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.313 14.802a.302.302 0 110 .604.302.302 0 010-.604M18.354 14.802a.302.302 0 110 .604.302.302 0 010-.604M17.042 18.021a2.417 2.417 0 01-3.417 0M22.583 13.292s-4.833 0-7.25-3.625c-2.417 3.625-7.25 3.625-7.25 3.625M1.438 7.854V4.23A3.625 3.625 0 015.063.604h3.625M29.23 7.854V4.23A3.625 3.625 0 0025.605.604H21.98M1.438 21.146v3.625a3.625 3.625 0 003.625 3.625h3.625M29.23 21.146v3.625a3.625 3.625 0 01-3.625 3.625H21.98" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="settings" viewBox="0 0 30 25" width="30" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.361" y="1.439" width="27.792" height="22.958" rx="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.361 7.48h27.792M5.015 4.157a.302.302 0 110 .605.302.302 0 010-.605M8.64 4.157a.302.302 0 110 .605.302.302 0 010-.605" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M15.257 16.543a1.208 1.208 0 100-2.417 1.208 1.208 0 000 2.417z" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M16.283 10.66l.357 1.17a.801.801 0 00.946.549l1.185-.275a1.079 1.079 0 011.027 1.787l-.83.895a.808.808 0 000 1.097l.83.896a1.079 1.079 0 01-1.027 1.787l-1.185-.276a.802.802 0 00-.946.549l-.357 1.17a1.07 1.07 0 01-2.054 0l-.356-1.17a.802.802 0 00-.946-.549l-1.186.276a1.08 1.08 0 01-1.027-1.787l.83-.896a.808.808 0 000-1.097l-.83-.895a1.079 1.079 0 011.027-1.787l1.186.275a.801.801 0 00.946-.549l.356-1.17a1.07 1.07 0 012.054 0z" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="plus" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.16 1l.014 12M1.167 7.005l12-.01" stroke-width="2" stroke-linecap="round"/></symbol>
+	<symbol id="user_green" viewBox="0 0 31 30" width="31" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 30c8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15C7.216 0 .5 6.716.5 15c0 8.284 6.716 15 15 15z" fill="#ABD856"/><path fill-rule="evenodd" clip-rule="evenodd" d="M24.464 25.013A14.934 14.934 0 0115.48 28a14.93 14.93 0 01-7.98-2.296l.026-.307.074-.882c.126-1.661.523-3.22 1.23-4.655.792-1.608 1.856-2.884 3.207-3.806.106-.073.176-.078.276.023 1.01 1.031 2.177 1.59 3.498 1.647 1.463.062 2.762-.484 3.89-1.612.124-.124.21-.134.345-.038 2.21 1.573 3.6 3.883 4.189 6.888.096.491.139.997.18 1.504.016.182.032.365.05.547z" fill="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="M16.104 7.001c-2.579-.056-4.617 2.028-4.604 4.485A4.48 4.48 0 0015.95 16c2.496.026 4.555-1.943 4.551-4.51-.004-2.553-2.053-4.438-4.396-4.489" fill="#FEFEFE"/></symbol>
+	<symbol id="user_fenny" viewBox="0 0 31 30" width="31" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 30c8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15C7.216 0 .5 6.716.5 15c0 8.284 6.716 15 15 15z" fill="#53C7CD"/><path fill-rule="evenodd" clip-rule="evenodd" d="M24.464 25.013A14.934 14.934 0 0115.48 28a14.93 14.93 0 01-7.98-2.296l.026-.307.074-.882c.126-1.661.523-3.22 1.23-4.655.792-1.608 1.856-2.884 3.207-3.806.106-.073.176-.078.276.023 1.01 1.031 2.177 1.59 3.498 1.647 1.463.062 2.762-.484 3.89-1.612.124-.124.21-.134.345-.038 2.21 1.573 3.6 3.883 4.189 6.888.096.491.139.997.18 1.504.016.182.032.365.05.547z" fill="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="M16.104 7.001c-2.579-.056-4.617 2.028-4.604 4.485A4.48 4.48 0 0015.95 16c2.496.026 4.555-1.943 4.551-4.51-.004-2.553-2.053-4.438-4.396-4.489" fill="#FEFEFE"/></symbol>
+	<symbol id="manager_arrow" viewBox="0 0 6 13" width="6" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.422 6.793l-.903-.43.903.43zm-.108.168l-.78-.625a.968.968 0 01.012-.016l.768.641zM2.724 8.95l-.78-.625.78.625zm-1.6 2l-.78-.625.78.625zm-1.125.125l-.624.78.624-.78zm-.124-1.125l.78.625-.78-.625zm1.6-2l.78.625-.78-.625zm1.2-1.5l.78-.625a1 1 0 010 1.25l-.78-.625zm-1.2-1.5l.78-.625-.78.625zm-1.6-2l.78-.625-.78.625zm.124-1.125l-.624-.78.624.78zm1.125.125l-.78.625.78-.625zm1.6 2l.78-.624-.78.624zm1.59 1.988l-.768.64a1.021 1.021 0 01-.013-.015l.781-.625zm.108.169l-.903.43v-.002l.903-.428zm.077.343h-1 1zm.826.773a1.794 1.794 0 01-.243.38L3.546 6.32a.206.206 0 00-.027.044l1.806.858zm-.23.364l-1.59 1.987-1.562-1.249 1.59-1.988 1.562 1.25zm-1.59 1.987l-1.6 2-1.562-1.249 1.6-2 1.562 1.25zm-1.6 2a1.8 1.8 0 01-2.53.282l1.25-1.562a.2.2 0 00-.282.031l1.562 1.25zm-2.53.282a1.8 1.8 0 01-.281-2.53l1.561 1.249a.2.2 0 00-.03-.281l-1.25 1.562zm-.281-2.53l1.6-2 1.561 1.249-1.6 2-1.561-1.25zm1.6-2l1.2-1.5 1.562 1.249-1.2 1.5-1.562-1.25zm1.2-.251l-1.2-1.5 1.561-1.25 1.2 1.5-1.561 1.25zm-1.2-1.5l-1.6-2 1.561-1.25 1.6 2-1.561 1.25zm-1.6-2a1.8 1.8 0 01.28-2.53l1.25 1.561a.2.2 0 00.031-.28L-.906 3.572zm.28-2.53a1.8 1.8 0 012.53.28l-1.56 1.25a.2.2 0 00.28.031l-1.25-1.562zm2.53.28l1.6 2-1.56 1.25-1.6-2 1.56-1.25zm1.6 2l1.59 1.988-1.56 1.25-1.59-1.988 1.56-1.25zm1.578 1.972c.098.118.18.247.244.382l-1.808.856c.008.015.017.03.028.044l1.536-1.282zm.243.38c.117.247.174.512.174.774l-2-.002c0 .029.006.059.02.087l1.806-.858zm.174.772c0 .263-.057.529-.175.776L3.52 6.362a.203.203 0 00-.02.088l2-.002z" fill="#9B9B9B"/></symbol>
+	<symbol id="file_explorer" viewBox="0 0 11 11" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M9.788 5.008a.425.425 0 00-.417-.51H4.333a.425.425 0 01-.417-.34l-.118-.595a.425.425 0 00-.417-.34H.637a.425.425 0 00-.416.51l1.104 5.523c.04.198.215.34.417.34h6.78a.425.425 0 00.416-.34l.85-4.248z" stroke="#16A8AA" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.063 2.05c0-.234.19-.424.424-.424H8.71c.235 0 .425.19.425.424v1.275" stroke="#16A8AA" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="folder_hold" width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.987 8.648v2.081" stroke="#0F7C7D" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M11.99 4.154a.404.404 0 00-.089-.347.44.44 0 00-.336-.153H6.423a.43.43 0 01-.425-.333l-.12-.582a.43.43 0 00-.426-.333h-2.8a.44.44 0 00-.336.152.404.404 0 00-.09.347l1.128 5.41a.43.43 0 00.425.333h6.919a.43.43 0 00.425-.333l.867-4.161z" stroke="#0F7C7D" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.519 1.573c0-.23.194-.416.433-.416h6.503c.24 0 .433.186.433.416v1.249M4.82 10.73h4.335" stroke="#0F7C7D" stroke-linecap="round" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M10.453 11.23a.5.5 0 100-1 .5.5 0 000 1zM11.752 11.23a.5.5 0 100-1 .5.5 0 000 1zM2.223 11.23a.5.5 0 100-1 .5.5 0 000 1zM3.52 11.23a.5.5 0 100-1 .5.5 0 000 1z" fill="#0F7C7D"/></symbol>
+	<symbol id="file_text" viewBox="0 0 13 12" width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.031 4.574h4.052M3.031 5.854h3.412M3.031 3.295h2.986M3.031 7.133h2.133M3.031 8.413h1.28M4.737 10.972H1.752a.426.426 0 01-.427-.426V1.588c0-.236.191-.427.427-.427h5.67c.112 0 .22.045.3.125l1.582 1.581c.08.08.125.189.125.302v2.257" stroke="#9B9B9B" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.443 7.905v2.64c0 .236.191.427.427.427h2.985c.236 0 .427-.19.427-.426V7.905" stroke="#9B9B9B" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.59 8.626l2.498-2.112a.426.426 0 01.55 0l2.497 2.112" stroke="#9B9B9B" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M9.003 10.972h-1.28v-1.28a.64.64 0 011.28 0v1.28z" stroke="#9B9B9B" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="date" viewBox="0 0 12 12" width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.436 7.894v3.063h3.832V7.894" stroke="#9B9B9B" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.584 8.615l2.768-2.342 2.768 2.342" stroke="#9B9B9B" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M8.99 10.957H7.713V9.679a.639.639 0 111.277 0v1.278z" stroke="#9B9B9B" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.15 8.828H1.752a.426.426 0 01-.426-.426V2.44c0-.236.19-.426.426-.426h7.666c.235 0 .425.19.425.426v3.016M3.454 1.162v2.13M7.713 1.162v2.13M1.325 4.143h8.517" stroke="#9B9B9B" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="invoices" viewBox="0 0 12 13" width="12" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.833 4.491a.25.25 0 01-.163.057.253.253 0 01-.214-.116l-.344-.503a.272.272 0 00-.078-.078.181.181 0 00-.096-.025h-.172V4.3a.24.24 0 01-.064.175.233.233 0 01-.174.065.238.238 0 01-.176-.065.238.238 0 01-.065-.175V2.885c0-.072.02-.128.058-.167.04-.038.095-.058.167-.058h.664c.225 0 .395.05.509.147.113.098.17.24.17.424 0 .141-.039.26-.116.359a.57.57 0 01-.328.197.356.356 0 01.152.058c.043.03.086.075.128.135l.164.235a.246.246 0 01.048.135.175.175 0 01-.07.141zM8.76 3.461H9.1c.107 0 .185-.016.231-.05.047-.033.07-.088.07-.164 0-.077-.023-.133-.07-.168-.046-.034-.124-.051-.231-.051H8.76v.433z" fill="#4A4A4A"/><path d="M11.25 3.604a2.155 2.155 0 11-4.31 0 2.155 2.155 0 014.31 0z" stroke="#4A4A4A"/><path d="M8.85 6.072v4.479s-.08 1.243-1.37 1.243-1.277-1.453-1.277-1.453v-.633H.427v.987s.047.584.44.823c.394.24.543.276 1.278.276H7.48" stroke="#4A4A4A" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.993 4.88h1.173M4.993 6.523h2.308M4.993 8.167h2.308" stroke="#4A4A4A" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M3.694 5.287a.407.407 0 100-.815.407.407 0 000 .815zM3.694 6.93a.407.407 0 100-.814.407.407 0 000 .815zM3.694 8.575a.407.407 0 100-.815.407.407 0 000 .815z" stroke="#4A4A4A" stroke-width=".5"/><path d="M1.908 9.717V2.92h4.803" stroke="#4A4A4A" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
 
 </body>
 </html>
