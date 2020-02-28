@@ -6,14 +6,14 @@
 		position: relative;
 		display: block;
 		background-color: #E9E9E9;
-		padding-top: 10px;
-		padding-bottom: 11px;
+		padding-top: 11px;
+		padding-bottom: 10px;
 	}
 	&__list {
 		position: relative;
 		display: block;
 		width: 100%;
-		max-width: 970px;
+		max-width: 968px;
 	}
 	&__list ul {
 		display: flex;
@@ -24,7 +24,7 @@
 		margin: 0;
 		padding: 0;
 		width: 100%;
-		max-width: 695px;		
+		max-width: 694px;		
 		margin-left: auto;
 	}
 	&__list ul li a {
@@ -37,6 +37,45 @@
 		&:hover, &:active, &:focus {
 			font-weight: 700;
 			text-decoration: none;
+		}
+	}
+}
+
+@include for-size(mobile) {
+	.nav-block {
+		&__list {
+			max-width: 100%;
+		}
+		&__list ul {
+			max-width: 100%;
+			display: block;
+		}
+		&__list ul li a {
+			text-align: center;
+		}
+	}
+}
+
+@include for-size(tablet) {
+	.nav-block {
+		&__list {
+			max-width: 100%;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		&__list ul {
+			max-width: 100%;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+	.nav-block {
+		&__list {
+			max-width: 785px;
+		}
+		&__list ul {
+			max-width: 600px;
 		}
 	}
 }

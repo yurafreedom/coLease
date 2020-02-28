@@ -130,10 +130,21 @@
 	}
 }
 
-@media screen and (min-width: 1390px) {
+@media screen and (min-width: 1390px) and (max-width: 1439px) {
 	.container {
 		width: 100%;
 		max-width: 1380px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.container {
+		width: 100%;
+		max-width: 1410px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
 

@@ -71,6 +71,16 @@ $(document.body).on('click','[data-toggle="dismiss"]',function(e) {
 	closeModals();
 });
 
+$("#menu-toggle").click(function(e) {
+  e.preventDefault();
+  $(this).addClass('active');
+  $("#header-menu").addClass("active");
+});
+
+$("#menu-toggle-active").click(function(e) {
+  e.preventDefault();
+  $("#header-menu").removeClass("active");
+});
 
 $('select').niceSelect();
 
