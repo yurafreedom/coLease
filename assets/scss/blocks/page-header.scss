@@ -144,6 +144,21 @@
 			transition: all 0.3s ease-in-out;
 		}
 	}
+	&__nav ul li.active a {
+		color: $primary-blue;
+		text-decoration: none;
+		img.active {
+			opacity: 1;
+			pointer-events: all;
+		}
+		svg {
+			stroke: $primary-blue;
+		}
+		&::after {
+			opacity: 1;
+			pointer-events: all;
+		}		
+	}
 	&__nav-link-wrapper {
 		position: relative;
 		display: block;

@@ -39,6 +39,9 @@
 			text-decoration: none;
 		}
 	}
+	&__list ul li.active a {
+		font-weight: 700;
+	}
 }
 
 @include for-size(mobile) {
