@@ -1,0 +1,36 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": ""	
+})
+@@include('template/page-header.html', {
+	"leases": "true"
+})
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+		<section class="nav-block">
+			<div class="container">
+				<div class="nav-block__wrapper">
+					<div class="nav-block__list">
+						<ul>
+							<li><a href="javascript:;">Leases</a></li>
+							<li><a href="javascript:;">Sites</a></li>
+							<li><a href="javascript:;">Landlords</a></li>
+							<li><a href="javascript:;">Financial</a></li>
+							<li><a href="javascript:;">Issues</a></li>
+							<li><a href="javascript:;">File Explorer</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+@@include('template/page-footer.html')
+@@include('template/popups.html')
+@@include('template/scripts.html')
+@@include('template/sprite.html')
+
+</body>
+</html>

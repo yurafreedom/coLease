@@ -62,7 +62,42 @@
 }
 
 .btn--green {
-
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 119px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	font-size: 14px;
+	line-height: 1.142;
+	font-weight: 700;
+	border: 2px solid $primary-green;
+	background-color: $primary-green;
+	border-radius: 22px;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		background-color: #fff;
+		color: $primary-green;
+	}
+	&:active {
+		background-color: #8BC61D;
+		border-color: #8BC61D;
+		color: #fff;
+	}
+	svg {
+		display: block;
+		stroke: #fff;
+		margin-right: 8px;
+		transition: all 0.3s ease-in-out;
+	}
+	&:hover svg {
+		stroke: $primary-green;
+	}
+	&:active svg {
+		stroke: #fff;
+	}
 }
 
 .btn--fenny {

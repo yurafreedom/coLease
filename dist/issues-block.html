@@ -25,8 +25,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.min.css"> </head>
 
-<body  class=index-page >
-
+<body >
 <header class="page-header">
 	<div class="container">
 		<div class="page-header__menu" id="header-menu">
@@ -178,393 +177,454 @@
 							<li><a href="javascript:;">Landlords</a></li>
 							<li><a href="javascript:;">Financial</a></li>
 							<li><a href="javascript:;">Issues</a></li>
-							<li class="active"><a href="javascript:;">File Explorer</a></li>
+							<li><a href="javascript:;">File Explorer</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="manager-block">
+		<section class="issues-block">
 			<div class="container">
-				<div class="manager-block__heading-block">
-					<div class="manager-block__heading-title">File Explorer</div>
-					<form class="reminder-block__form">
-						<div class="reminder-block__input-wrapper">
-							<input type="text" class="text-input reminder-block__input" id="manager_date" name="manager_date" placeholder="Searching..." required>
+				<div class="issues-block__heading-block">
+					<div class="issues-block__heading-title">Issues</div>
+					<form class="page-block__form">
+						<div class="page-block__input-wrapper">
+							<label for="issues_date" class="page-block__label">Search</label>
+							<input type="text" class="text-input page-block__input" id="issues_date" name="issues_date" placeholder="Search..." required>
 							<button type="submit" class="btn btn--search">
 								<svg width="17" height="17">
 									<use xlink:href="#search"></use>
 								</svg>
 							</button>
 						</div>
+						<button type="button" class="btn btn--green">Add Issue</button>
 					</form>
 				</div>
-				<div class="manager-block__wrapper">
-					<div class="manager-block__nav-block">
-
-						<!-- Sites -->
-						<ul class="manager-block__nav-section">
-							<li>
-								<a class="manager-block__nav-section-title" data-toggle="expand">
-									<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
-									<span>Sites</span>
-								</a>
-								<ul class="manager-block__nav-subsection">
-									<li>
-										<a class="manager-block__nav-subsection-title" data-toggle="expand">
-											<svg width="11" height="11">
-												<use xlink:href="#file_explorer"></use>
-											</svg>
-											<span>Site Name / ID</span>
-										</a>
-										<ul class="manager-block__sub-heading">
-											<li>
-												<a class="manager-block__sub-heading-title" data-toggle="expand">
-													<svg width="13" height="12">
-														<use xlink:href="#folder_hold"></use>
-													</svg>
-													<span>Site Inventory</span>
-												</a>
-												<ul class="manager-block__sub-inner">
-													<li><a href="javascript:;" class="manager-block__sub-inner-link">Leases</a></li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>New Lease Agreements</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Lease Renewal Agreements</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Lease Addendum</span>
-														</a>
-													</li>
-												</ul>
-											</li>
-											<li>
-												<a class="manager-block__sub-heading-title" data-toggle="expand">
-													<svg width="13" height="12">
-														<use xlink:href="#folder_hold"></use>
-													</svg>
-													<span>Site Inventory</span>
-												</a>
-												<ul class="manager-block__sub-inner">
-													<li><a href="javascript:;" class="manager-block__sub-inner-link">Leases</a></li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>New Lease Agreements</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Lease Renewal Agreements</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Lease Addendum</span>
-														</a>
-													</li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-
-						<!-- Landlord -->
-						<ul class="manager-block__nav-section">
-							<li>
-								<a class="manager-block__nav-section-title" data-toggle="expand">
-									<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
-									<span>Landlord</span>
-								</a>
-								<ul class="manager-block__nav-subsection">
-									<li>
-										<a class="manager-block__nav-subsection-title" data-toggle="expand">
-											<svg width="11" height="11">
-												<use xlink:href="#file_explorer"></use>
-											</svg>
-											<span>Landlord Name / ID</span>
-										</a>
-										<ul class="manager-block__sub-heading">
-											<li>
-												<a class="manager-block__sub-heading-title" data-toggle="expand">
-													<svg width="13" height="12">
-														<use xlink:href="#folder_hold"></use>
-													</svg>
-													<span>Landlord</span>
-												</a>
-												<ul class="manager-block__sub-inner">
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Proof of Bank Account documents</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Company Registration documents</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>ID Documents</span>
-														</a>
-													</li>
-												</ul>
-											</li>
-											<li>
-												<a class="manager-block__sub-heading-title" data-toggle="expand">
-													<svg width="13" height="12">
-														<use xlink:href="#folder_hold"></use>
-													</svg>
-													<span>LandlordName</span>
-												</a>
-												<ul class="manager-block__sub-inner">
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Proof of Bank Account documents</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Company Registration documents</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>ID Documents</span>
-														</a>
-													</li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						
-						<!-- Financial -->
-						<ul class="manager-block__nav-section">
-							<li>
-								<a class="manager-block__nav-section-title" data-toggle="expand">
-									<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
-									<span>Financial</span>
-								</a>
-								<ul class="manager-block__nav-subsection">
-									<li>
-										<a class="manager-block__nav-subsection-title" data-toggle="expand">
-											<svg width="11" height="11">
-												<use xlink:href="#file_explorer"></use>
-											</svg>
-											<span>Invoices</span>
-										</a>
-										<ul class="manager-block__sub-heading">
-											<li>
-												<a class="manager-block__sub-heading-title" data-toggle="expand">
-													<svg width="13" height="12">
-														<use xlink:href="#folder_hold"></use>
-													</svg>
-													<span>SiteID</span>
-												</a>
-												<ul class="manager-block__sub-inner">
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-date" data-toggle="expand">
-															<svg width="12" height="12">
-																<use xlink:href="#date"></use>
-															</svg>
-															<span>Month (MMM/YYYY)</span>
-														</a>
-														<ul class="manager-block__sub-date-inner">
-															<li>
-																<a href="javascript:;" class="manager-block__sub-inner-invoices">
-																	<svg width="13" height="12">
-																		<use xlink:href="#invoices"></use>
-																	</svg>
-																	<span>Relevant invoices</span>
-																</a>
-															</li>
-															<li>
-																<a href="javascript:;" class="manager-block__sub-inner-invoices">
-																	<svg width="13" height="12">
-																		<use xlink:href="#invoices"></use>
-																	</svg>
-																	<span>Relevant invoices</span>
-																</a>
-															</li>
-														</ul>
-													</li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-					<div class="manager-block__content-block">
-						<div class="manager-block__controls-block">
-							<a href="javascript:;" class="manager-block__controls-link" data-toggle="tab" data-target="#manager-tab-1">
-								<svg width="24" height="24">
-									<use xlink:href="#tab_row"></use>
-								</svg>
-							</a>
-							<a href="javascript:;" class="manager-block__controls-link"  data-toggle="tab" data-target="#manager-tab-2">
-								<svg width="24" height="24">
-									<use xlink:href="#tab_list"></use>
-								</svg>
-							</a>
+				<div class="page-block__controls-block">
+					<a href="javascript:;" class="btn btn--control active" data-toggle="tab" data-target="#issues-tab-1">
+						<svg width="35" height="47">
+							<use xlink:href="#open_lock"></use>
+						</svg>
+						<div class="page-block__controls-btn-wrapper">
+							<div class="page-block__controls-title">Open</div>
+							<div class="page-block__controls-text">Entries</div>
 						</div>
-						<div class="manager-block__content-inner">
-							<div class="manager-block__tab-content active" id="manager-tab-1">
-								<div class="manager-block__content-row">
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
+					</a>
+					<a href="javascript:;" class="btn btn--control" data-toggle="tab" data-target="#issues-tab-2">
+						<svg width="35" height="47">
+							<use xlink:href="#close_lock"></use>
+						</svg>
+						<div class="page-block__controls-btn-wrapper">
+							<div class="page-block__controls-title">Closed</div>
+							<div class="page-block__controls-text">Entries</div>
+						</div>
+					</a>
+					<a href="javascript:;" class="btn btn--control" data-toggle="tab" data-target="#issues-tab-3">
+						<svg width="51" height="45">
+							<use xlink:href="#synchronize_clock"></use>
+						</svg>
+						<div class="page-block__controls-btn-wrapper">
+							<div class="page-block__controls-title">Historical</div>
+							<div class="page-block__controls-text">Entries</div>
+						</div>
+					</a>					
+				</div>
+				<div class="page-block__tab-content active" id="issues-tab-1">
+					<div class="issues-block__table-block">
+						<div class="issues-block__table-heading">
+							<div class="issues-block__table-heading-id">Site ID</div>
+							<div class="issues-block__table-heading-name">Site Name</div>
+							<div class="issues-block__table-heading-type">Type</div>
+							<div class="issues-block__table-heading-detail">Details</div>
+							<div class="issues-block__table-heading-date">Date logged</div>
+							<div class="issues-block__table-heading-action">Actions</div>
+						</div>
+						<div class="issues-block__table-inner">
+							<div class="issues-block__table-card">
+								<div class="issues-block__table-inner-id">JHB153</div>
+								<div class="issues-block__table-inner-name">Shane's House</div>
+								<div class="issues-block__table-inner-type">Billing</div>
+								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
+								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
+								<div class="issues-block__table-inner-action">
+									<a href="javascript:;" class="issues-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
 									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
+									<a href="javascript:;" class="issues-block__remove-link">
+										<svg width="24" height="24">
+											<use xlink:href="#remove"></use>
+										</svg>
 									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
+									<a href="javascript:;" class="issues-block__trash-link">
+										<svg width="15" height="12">
+											<use xlink:href="#trash"></use>
+										</svg>
 									</a>
 								</div>
 							</div>
-							<div class="manager-block__tab-content" id="manager-tab-2">
-								<div class="manager-block__content-list">
-									<a href="javascript:;" class="manager-block__list-card">
-										<div class="manager-block__list-card-icon">
-											<svg width="25" height="25">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__list-card-title">New Lease Agreements</div>
+							<div class="issues-block__table-card">
+								<div class="issues-block__table-inner-id">JHB153</div>
+								<div class="issues-block__table-inner-name">Shane's House</div>
+								<div class="issues-block__table-inner-type">Billing</div>
+								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
+								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
+								<div class="issues-block__table-inner-action">
+									<a href="javascript:;" class="issues-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
 									</a>
-									<a href="javascript:;" class="manager-block__list-card">
-										<div class="manager-block__list-card-icon">
-											<svg width="25" height="25">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__list-card-title">New Lease Agreements</div>
+									<a href="javascript:;" class="issues-block__remove-link">
+										<svg width="24" height="24">
+											<use xlink:href="#remove"></use>
+										</svg>
 									</a>
-									<a href="javascript:;" class="manager-block__list-card">
-										<div class="manager-block__list-card-icon">
-											<svg width="25" height="25">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__list-card-title">New Lease Agreements</div>
+									<a href="javascript:;" class="issues-block__trash-link">
+										<svg width="15" height="12">
+											<use xlink:href="#trash"></use>
+										</svg>
 									</a>
-									<a href="javascript:;" class="manager-block__list-card">
-										<div class="manager-block__list-card-icon">
-											<svg width="25" height="25">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__list-card-title">New Lease Agreements</div>
+								</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="issues-block__table-inner-id">JHB153</div>
+								<div class="issues-block__table-inner-name">Shane's House</div>
+								<div class="issues-block__table-inner-type">Billing</div>
+								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
+								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
+								<div class="issues-block__table-inner-action">
+									<a href="javascript:;" class="issues-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
 									</a>
-									<a href="javascript:;" class="manager-block__list-card">
-										<div class="manager-block__list-card-icon">
-											<svg width="25" height="25">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__list-card-title">New Lease Agreements</div>
+									<a href="javascript:;" class="issues-block__remove-link">
+										<svg width="24" height="24">
+											<use xlink:href="#remove"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__trash-link">
+										<svg width="15" height="12">
+											<use xlink:href="#trash"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="issues-block__table-inner-id">JHB153</div>
+								<div class="issues-block__table-inner-name">Shane's House</div>
+								<div class="issues-block__table-inner-type">Billing</div>
+								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
+								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
+								<div class="issues-block__table-inner-action">
+									<a href="javascript:;" class="issues-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__remove-link">
+										<svg width="24" height="24">
+											<use xlink:href="#remove"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__trash-link">
+										<svg width="15" height="12">
+											<use xlink:href="#trash"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="issues-block__table-inner-id">JHB153</div>
+								<div class="issues-block__table-inner-name">Shane's House</div>
+								<div class="issues-block__table-inner-type">Billing</div>
+								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
+								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
+								<div class="issues-block__table-inner-action">
+									<a href="javascript:;" class="issues-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__remove-link">
+										<svg width="24" height="24">
+											<use xlink:href="#remove"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__trash-link">
+										<svg width="15" height="12">
+											<use xlink:href="#trash"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-block__tab-content" id="issues-tab-2">
+					<div class="issues-block__table-block">
+						<div class="issues-block__table-heading">
+							<div class="issues-block__table-heading-id">Site ID</div>
+							<div class="issues-block__table-heading-name">Site Name</div>
+							<div class="issues-block__table-heading-type">Type</div>
+							<div class="issues-block__table-heading-detail">Details</div>
+							<div class="issues-block__table-heading-date">Date logged</div>
+							<div class="issues-block__table-heading-action">Actions</div>
+						</div>
+						<div class="issues-block__table-inner">
+							<div class="issues-block__table-card">
+								<div class="issues-block__table-inner-id">JHB153</div>
+								<div class="issues-block__table-inner-name">Shane's House Shane's House</div>
+								<div class="issues-block__table-inner-type">Billing</div>
+								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
+								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
+								<div class="issues-block__table-inner-action">
+									<a href="javascript:;" class="issues-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__remove-link">
+										<svg width="24" height="24">
+											<use xlink:href="#remove"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__trash-link">
+										<svg width="15" height="12">
+											<use xlink:href="#trash"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="issues-block__table-inner-id">JHB153</div>
+								<div class="issues-block__table-inner-name">Shane's House Shane's House</div>
+								<div class="issues-block__table-inner-type">Billing</div>
+								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
+								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
+								<div class="issues-block__table-inner-action">
+									<a href="javascript:;" class="issues-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__remove-link">
+										<svg width="24" height="24">
+											<use xlink:href="#remove"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__trash-link">
+										<svg width="15" height="12">
+											<use xlink:href="#trash"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="issues-block__table-inner-id">JHB153</div>
+								<div class="issues-block__table-inner-name">Shane's House Shane's House</div>
+								<div class="issues-block__table-inner-type">Billing</div>
+								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
+								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
+								<div class="issues-block__table-inner-action">
+									<a href="javascript:;" class="issues-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__remove-link">
+										<svg width="24" height="24">
+											<use xlink:href="#remove"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__trash-link">
+										<svg width="15" height="12">
+											<use xlink:href="#trash"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="issues-block__table-inner-id">JHB153</div>
+								<div class="issues-block__table-inner-name">Shane's House Shane's House</div>
+								<div class="issues-block__table-inner-type">Billing</div>
+								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
+								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
+								<div class="issues-block__table-inner-action">
+									<a href="javascript:;" class="issues-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__remove-link">
+										<svg width="24" height="24">
+											<use xlink:href="#remove"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__trash-link">
+										<svg width="15" height="12">
+											<use xlink:href="#trash"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="issues-block__table-inner-id">JHB153</div>
+								<div class="issues-block__table-inner-name">Shane's House Shane's House</div>
+								<div class="issues-block__table-inner-type">Billing</div>
+								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
+								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
+								<div class="issues-block__table-inner-action">
+									<a href="javascript:;" class="issues-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__remove-link">
+										<svg width="24" height="24">
+											<use xlink:href="#remove"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__trash-link">
+										<svg width="15" height="12">
+											<use xlink:href="#trash"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-block__tab-content" id="issues-tab-3">
+					<div class="issues-block__table-block">
+						<div class="issues-block__table-heading">
+							<div class="issues-block__table-heading-id">Site ID</div>
+							<div class="issues-block__table-heading-name">Site Name</div>
+							<div class="issues-block__table-heading-type">Type</div>
+							<div class="issues-block__table-heading-detail">Details</div>
+							<div class="issues-block__table-heading-date">Date logged</div>
+							<div class="issues-block__table-heading-action">Actions</div>
+						</div>
+						<div class="issues-block__table-inner">
+							<div class="issues-block__table-card">
+								<div class="issues-block__table-inner-id">JHB153</div>
+								<div class="issues-block__table-inner-name">Shane's House Shane's House Shane's House</div>
+								<div class="issues-block__table-inner-type">Billing</div>
+								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
+								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
+								<div class="issues-block__table-inner-action">
+									<a href="javascript:;" class="issues-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__remove-link">
+										<svg width="24" height="24">
+											<use xlink:href="#remove"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__trash-link">
+										<svg width="15" height="12">
+											<use xlink:href="#trash"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="issues-block__table-inner-id">JHB153</div>
+								<div class="issues-block__table-inner-name">Shane's House Shane's House Shane's House</div>
+								<div class="issues-block__table-inner-type">Billing</div>
+								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
+								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
+								<div class="issues-block__table-inner-action">
+									<a href="javascript:;" class="issues-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__remove-link">
+										<svg width="24" height="24">
+											<use xlink:href="#remove"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__trash-link">
+										<svg width="15" height="12">
+											<use xlink:href="#trash"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="issues-block__table-inner-id">JHB153</div>
+								<div class="issues-block__table-inner-name">Shane's House Shane's House Shane's House</div>
+								<div class="issues-block__table-inner-type">Billing</div>
+								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
+								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
+								<div class="issues-block__table-inner-action">
+									<a href="javascript:;" class="issues-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__remove-link">
+										<svg width="24" height="24">
+											<use xlink:href="#remove"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__trash-link">
+										<svg width="15" height="12">
+											<use xlink:href="#trash"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="issues-block__table-inner-id">JHB153</div>
+								<div class="issues-block__table-inner-name">Shane's House Shane's House Shane's House</div>
+								<div class="issues-block__table-inner-type">Billing</div>
+								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
+								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
+								<div class="issues-block__table-inner-action">
+									<a href="javascript:;" class="issues-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__remove-link">
+										<svg width="24" height="24">
+											<use xlink:href="#remove"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__trash-link">
+										<svg width="15" height="12">
+											<use xlink:href="#trash"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="issues-block__table-inner-id">JHB153</div>
+								<div class="issues-block__table-inner-name">Shane's House Shane's House Shane's House</div>
+								<div class="issues-block__table-inner-type">Billing</div>
+								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
+								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
+								<div class="issues-block__table-inner-action">
+									<a href="javascript:;" class="issues-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__remove-link">
+										<svg width="24" height="24">
+											<use xlink:href="#remove"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__trash-link">
+										<svg width="15" height="12">
+											<use xlink:href="#trash"></use>
+										</svg>
 									</a>
 								</div>
 							</div>

@@ -1,5 +1,4 @@
-.reminder-block {
-	position: relative;
+.issues-block {
 	padding-top: 30px;
 	&__heading-block {
 		display: block;
@@ -48,12 +47,12 @@
 		font-weight: 700;
 		line-height: 1.142;
 		color: #fff;
-		background: linear-gradient(to left, $primary-blue, $primary-green);
+		background: linear-gradient(to left bottom, $primary-blue, $primary-green);
 	}
 	&__table-card {
 		position: relative;
-		padding-top: 16px;
-		padding-bottom: 17px;
+		padding-top: 12px;
+		padding-bottom: 13px;
 		padding-left: 30px;
 		padding-right: 45px;
 		font-size: 13px;
@@ -89,21 +88,6 @@
 	&__table-card:last-child::after {
 		display: none;
 	}
-	&__table-heading-type, &__table-inner-type {
-		display: block;
-		width: 100%;
-		max-width: 110px;
-	}
-	&__table-heading-date, &__table-inner-date {
-		display: block;
-		width: 100%;
-		max-width: 110px;
-	}
-	&__table-inner-type, &__table-inner-date {
-		font-weight: 500;
-		text-decoration: underline;
-		color: $fenny;
-	}
 	&__table-heading-id, &__table-inner-id {
 		display: block;
 		width: 100%;
@@ -112,37 +96,46 @@
 	&__table-heading-name, &__table-inner-name {
 		display: block;
 		width: 100%;
-		max-width: 110px;
+		max-width: 300px;
 	}
-	&__table-heading-days, &__table-inner-days {
+	&__table-heading-type, &__table-inner-type {
 		display: block;
 		width: 100%;
-		max-width: 200px;
+		max-width: 60px;
 	}
-	&__table-heading-cost, &__table-inner-cost {
+	&__table-heading-detail, &__table-inner-detail {
 		display: block;
 		width: 100%;
-		max-width: 140px;
+		max-width: 240px;
 	}
-	&__table-heading-status, &__table-inner-status {
+	&__table-heading-date, &__table-inner-date {
 		display: block;
 		width: 100%;
-		max-width: 120px;
+		max-width: 115px;
+	}
+	&__table-inner-id, &__table-inner-name {
+		font-weight: 500;
+		text-decoration: underline;
+		color: $fenny;
 	}
 	&__table-heading-action, &__table-inner-action {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		width: 100%;
-		max-width: 64px;
+		max-width: 104px;
 	}
-	&__check-link, &__alarm-link {
+	&__table-heading-action {
+		display: block;
+		text-align: center;
+	}
+	&__edit-link, &__remove-link, &__trash-link {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: 23px;
-		height: 23px;
+		width: 24px;
+		height: 24px;
 		border-radius: 50%;
 		border: 2px solid $primary-green;
 		background-color: $primary-green;
@@ -159,22 +152,52 @@
 			stroke: $primary-green;
 		}
 	}
-	&__alarm-link {
-		border: 2px solid $text;
-		background-color: $text;
-		padding-left: 4px;
+	&__remove-link {
+		border: 2px solid $fenny;
+		background-color: $fenny;
+		padding-left: 1px;
 		&:hover svg,
 		&:active svg,
 		&:focus svg {
-			stroke: $text;
+			stroke: $fenny;
 		}
+	}
+	&__trash-link {
+		border: 2px solid $text;
+		background-color: $text;
+		padding-left: 2px;
+		&:hover, &:active, &:focus {
+			border-color: $error;
+			background-color: $error;
+		}
+		&:hover svg,
+		&:active svg,
+		&:focus svg {
+			stroke: #fff;
+		}
+	}
+	.page-block__form {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+	.page-block__input-wrapper {
+		width: 100%;
+		margin-right: 30px;
+	}
+	.btn--green {
+		flex-shrink: 0;
 	}
 }
 
 @include for-size(mobile) {
-	.reminder-block {
+	.issues-block {
+		padding-bottom: 20px;
 		&__table-block {
 			overflow-y: auto;
+			padding-bottom: 20px;
 			&::-webkit-scrollbar-track {
 				background-color: #eef3fb;
 				border-radius: 10px;
@@ -203,6 +226,12 @@
 			padding-right: 30px;
 			font-size: 12px;
 		}
+		&__remove-link {
+			padding-left: 0;
+		}
+		&__trash-link {
+			padding-left: 0;
+		}
 		.page-block__controls-block .btn--control {
 			justify-content: center;
 			padding-left: 10px;
@@ -214,24 +243,60 @@
 				height: 40px;
 			}
 		}
-	}
-}
-
-@include for-size(tablet) {
-	.reminder-block {
-		&__table-heading, &__table-card {
-			padding-left: 15px;
-			padding-right: 15px;
+		.page-block__form {
+			display: block;
 		}
-		&__table-heading {
-			font-size: 12px;
+		.page-block__input-wrapper {
+			margin-bottom: 20px;
+		}
+		&__heading-block {
+			padding: 20px;
+		}
+		&__heading-title {
+			font-size: 20px;
 		}
 		&__table-card {
-			font-size: 10px;
 			&::after {
 				width: calc(100% - 30px);
 				left: 15px;
 			}
 		}
+	}
+}
+
+@include for-size(tablet) {
+	.issues-block {
+		&__table-heading, &__table-card {
+			font-size: 12px;
+			padding-left: 15px;
+			padding-right: 30px;
+		}
+		&__table-card {
+			&::after {
+				width: calc(100% - 30px);
+				left: 15px;
+			}
+		}
+		&__table-heading-name, &__table-inner-name {
+			max-width: 150px;
+		}
+		&__table-heading-detail, &__table-inner-detail {
+			max-width: 150px;
+		}
+		&__table-heading-action, &__table-inner-action {
+			max-width: 90px;
+		}
+		&__remove-link {
+			padding-left: 0;
+		}
+		&__trash-link {
+			padding-left: 1px;
+		}
+	}
+}
+
+@include for-size(desktop) {
+	.issues-block {
+
 	}
 }

@@ -25,7 +25,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.min.css"> </head>
 
-<body  class=index-page >
+<body >
 <header class="page-header">
 	<div class="container">
 		<div class="page-header__menu" id="header-menu">
@@ -97,7 +97,7 @@
 							<span>Dashboard</span>
 						</a>
 					</li>
-					<li class="active">
+					<li>
 						<a href="javascript:;">
 							<div class="page-header__nav-link-wrapper">
 								<img src="img/keys-gray.svg" alt="">
@@ -171,10 +171,10 @@
 			<div class="container">
 				<div class="reminder-block__heading-block">
 					<div class="reminder-block__heading-title">Reminders</div>
-					<form class="reminder-block__form">
-						<div class="reminder-block__input-wrapper">
-							<label for="reminder_date" class="reminder-block__label">Select Month</label>
-							<input type="email" class="text-input reminder-block__input" id="reminder_date" name="reminder_date" placeholder="Select a date..." required>
+					<form class="page-block__form">
+						<div class="page-block__input-wrapper">
+							<label for="reminder_date" class="page-block__label">Select Month</label>
+							<input type="text" class="text-input page-block__input" id="reminder_date" name="reminder_date" placeholder="Select a date..." required>
 							<button type="submit" class="btn btn--search">
 								<svg width="17" height="17">
 									<use xlink:href="#search"></use>
@@ -183,36 +183,159 @@
 						</div>
 					</form>
 				</div>
-				<div class="reminder-block__controls-block">
+				<div class="page-block__controls-block">
 					<a href="javascript:;" class="btn btn--control active" data-toggle="tab" data-target="#reminder-tab-1">
 						<svg width="46" height="46">
 							<use xlink:href="#alarm_check"></use>
 						</svg>
-						<div class="reminder-block__controls-btn-wrapper">
-							<div class="reminder-block__controls-title">Active</div>
-							<div class="reminder-block__controls-text">Entries</div>
+						<div class="page-block__controls-btn-wrapper">
+							<div class="page-block__controls-title">Active</div>
+							<div class="page-block__controls-text">Entries</div>
 						</div>
 					</a>
 					<a href="javascript:;" class="btn btn--control" data-toggle="tab" data-target="#reminder-tab-2">
 						<svg width="51" height="45">
 							<use xlink:href="#synchronize_clock"></use>
 						</svg>
-						<div class="reminder-block__controls-btn-wrapper">
-							<div class="reminder-block__controls-title">Historical</div>
-							<div class="reminder-block__controls-text">Entries</div>
+						<div class="page-block__controls-btn-wrapper">
+							<div class="page-block__controls-title">Historical</div>
+							<div class="page-block__controls-text">Entries</div>
 						</div>
 					</a>
 					<a href="javascript:;" class="btn btn--control" data-toggle="tab" data-target="#reminder-tab-3">
 						<svg width="47" height="45">
 							<use xlink:href="#alarm_sleep"></use>
 						</svg>
-						<div class="reminder-block__controls-btn-wrapper">
-							<div class="reminder-block__controls-title">Snoozed</div>
-							<div class="reminder-block__controls-text">Entries</div>
+						<div class="page-block__controls-btn-wrapper">
+							<div class="page-block__controls-title">Snoozed</div>
+							<div class="page-block__controls-text">Entries</div>
 						</div>
 					</a>					
 				</div>
-				<div class="reminder-block__tab-content" id="reminder-tab-1">
+				<div class="page-block__tab-content active" id="reminder-tab-1">
+					<div class="reminder-block__table-wrapper">
+						<div class="reminder-block__table-block">
+							<div class="reminder-block__table-heading">
+								<div class="reminder-block__table-heading-type">Reminder Type</div>
+								<div class="reminder-block__table-heading-date">Reminder Date</div>
+								<div class="reminder-block__table-heading-id">Site ID</div>
+								<div class="reminder-block__table-heading-name">Site Name</div>
+								<div class="reminder-block__table-heading-days">Date of Lease Expiry(Days)</div>
+								<div class="reminder-block__table-heading-cost">Current Lease Cost</div>
+								<div class="reminder-block__table-heading-status">Site Status</div>
+								<div class="reminder-block__table-heading-action">Actions</div>
+							</div>
+							<div class="reminder-block__table-inner">
+								<div class="reminder-block__table-card">
+									<div class="reminder-block__table-inner-type">Issue</div>
+									<div class="reminder-block__table-inner-date">05 Nov 2019</div>
+									<div class="reminder-block__table-inner-id">PMB012</div>
+									<div class="reminder-block__table-inner-name">Hassim centre</div>
+									<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+									<div class="reminder-block__table-inner-cost">R 15 160</div>
+									<div class="reminder-block__table-inner-status">Can be renewed</div>
+									<div class="reminder-block__table-inner-action">
+										<a href="javascript:;" class="reminder-block__check-link">
+											<svg width="11" height="11">
+												<use xlink:href="#check"></use>
+											</svg>
+										</a>
+										<a href="javascript:;" class="reminder-block__alarm-link">
+											<svg width="8" height="11">
+												<use xlink:href="#alarm"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="reminder-block__table-card">
+									<div class="reminder-block__table-inner-type">Issue</div>
+									<div class="reminder-block__table-inner-date">05 Nov 2019</div>
+									<div class="reminder-block__table-inner-id">PMB012</div>
+									<div class="reminder-block__table-inner-name">Hassim centre</div>
+									<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+									<div class="reminder-block__table-inner-cost">R 15 160</div>
+									<div class="reminder-block__table-inner-status">Can be renewed</div>
+									<div class="reminder-block__table-inner-action">
+										<a href="javascript:;" class="reminder-block__check-link">
+											<svg width="11" height="11">
+												<use xlink:href="#check"></use>
+											</svg>
+										</a>
+										<a href="javascript:;" class="reminder-block__alarm-link">
+											<svg width="8" height="11">
+												<use xlink:href="#alarm"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="reminder-block__table-card">
+									<div class="reminder-block__table-inner-type">Issue</div>
+									<div class="reminder-block__table-inner-date">05 Nov 2019</div>
+									<div class="reminder-block__table-inner-id">PMB012</div>
+									<div class="reminder-block__table-inner-name">Hassim centre</div>
+									<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+									<div class="reminder-block__table-inner-cost">R 15 160</div>
+									<div class="reminder-block__table-inner-status">Can be renewed</div>
+									<div class="reminder-block__table-inner-action">
+										<a href="javascript:;" class="reminder-block__check-link">
+											<svg width="11" height="11">
+												<use xlink:href="#check"></use>
+											</svg>
+										</a>
+										<a href="javascript:;" class="reminder-block__alarm-link">
+											<svg width="8" height="11">
+												<use xlink:href="#alarm"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="reminder-block__table-card">
+									<div class="reminder-block__table-inner-type">Issue</div>
+									<div class="reminder-block__table-inner-date">05 Nov 2019</div>
+									<div class="reminder-block__table-inner-id">PMB012</div>
+									<div class="reminder-block__table-inner-name">Hassim centre</div>
+									<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+									<div class="reminder-block__table-inner-cost">R 15 160</div>
+									<div class="reminder-block__table-inner-status">Can be renewed</div>
+									<div class="reminder-block__table-inner-action">
+										<a href="javascript:;" class="reminder-block__check-link">
+											<svg width="11" height="11">
+												<use xlink:href="#check"></use>
+											</svg>
+										</a>
+										<a href="javascript:;" class="reminder-block__alarm-link">
+											<svg width="8" height="11">
+												<use xlink:href="#alarm"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="reminder-block__table-card">
+									<div class="reminder-block__table-inner-type">Issue</div>
+									<div class="reminder-block__table-inner-date">05 Nov 2019</div>
+									<div class="reminder-block__table-inner-id">PMB012</div>
+									<div class="reminder-block__table-inner-name">Hassim centre</div>
+									<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
+									<div class="reminder-block__table-inner-cost">R 15 160</div>
+									<div class="reminder-block__table-inner-status">Can be renewed</div>
+									<div class="reminder-block__table-inner-action">
+										<a href="javascript:;" class="reminder-block__check-link">
+											<svg width="11" height="11">
+												<use xlink:href="#check"></use>
+											</svg>
+										</a>
+										<a href="javascript:;" class="reminder-block__alarm-link">
+											<svg width="8" height="11">
+												<use xlink:href="#alarm"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-block__tab-content" id="reminder-tab-2">
 					<div class="reminder-block__table-block">
 						<div class="reminder-block__table-heading">
 							<div class="reminder-block__table-heading-type">Reminder Type</div>
@@ -227,7 +350,7 @@
 						<div class="reminder-block__table-inner">
 							<div class="reminder-block__table-card">
 								<div class="reminder-block__table-inner-type">Issue</div>
-								<div class="reminder-block__table-inner-date">05 Nov 2019</div>
+								<div class="reminder-block__table-inner-date">10 Nov 2019</div>
 								<div class="reminder-block__table-inner-id">PMB012</div>
 								<div class="reminder-block__table-inner-name">Hassim centre</div>
 								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
@@ -248,7 +371,7 @@
 							</div>
 							<div class="reminder-block__table-card">
 								<div class="reminder-block__table-inner-type">Issue</div>
-								<div class="reminder-block__table-inner-date">05 Nov 2019</div>
+								<div class="reminder-block__table-inner-date">10 Nov 2019</div>
 								<div class="reminder-block__table-inner-id">PMB012</div>
 								<div class="reminder-block__table-inner-name">Hassim centre</div>
 								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
@@ -269,7 +392,7 @@
 							</div>
 							<div class="reminder-block__table-card">
 								<div class="reminder-block__table-inner-type">Issue</div>
-								<div class="reminder-block__table-inner-date">05 Nov 2019</div>
+								<div class="reminder-block__table-inner-date">10 Nov 2019</div>
 								<div class="reminder-block__table-inner-id">PMB012</div>
 								<div class="reminder-block__table-inner-name">Hassim centre</div>
 								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
@@ -290,7 +413,7 @@
 							</div>
 							<div class="reminder-block__table-card">
 								<div class="reminder-block__table-inner-type">Issue</div>
-								<div class="reminder-block__table-inner-date">05 Nov 2019</div>
+								<div class="reminder-block__table-inner-date">10 Nov 2019</div>
 								<div class="reminder-block__table-inner-id">PMB012</div>
 								<div class="reminder-block__table-inner-name">Hassim centre</div>
 								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
@@ -311,7 +434,7 @@
 							</div>
 							<div class="reminder-block__table-card">
 								<div class="reminder-block__table-inner-type">Issue</div>
-								<div class="reminder-block__table-inner-date">05 Nov 2019</div>
+								<div class="reminder-block__table-inner-date">10 Nov 2019</div>
 								<div class="reminder-block__table-inner-id">PMB012</div>
 								<div class="reminder-block__table-inner-name">Hassim centre</div>
 								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
@@ -333,128 +456,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="reminder-block__tab-content active" id="reminder-tab-2">
-					<div class="reminder-block__table-block">
-						<div class="reminder-block__table-heading">
-							<div class="reminder-block__table-heading-type">Reminder Type</div>
-							<div class="reminder-block__table-heading-date">Reminder Date</div>
-							<div class="reminder-block__table-heading-id">Site ID</div>
-							<div class="reminder-block__table-heading-name">Site Name</div>
-							<div class="reminder-block__table-heading-days">Date of Lease Expiry(Days)</div>
-							<div class="reminder-block__table-heading-cost">Current Lease Cost</div>
-							<div class="reminder-block__table-heading-status">Site Status</div>
-							<div class="reminder-block__table-heading-action">Actions</div>
-						</div>
-						<div class="reminder-block__table-inner">
-							<div class="reminder-block__table-card">
-								<div class="reminder-block__table-inner-type">Issue</div>
-								<div class="reminder-block__table-inner-date">10 Nov 2019</div>
-								<div class="reminder-block__table-inner-id">PMB012</div>
-								<div class="reminder-block__table-inner-name">Hassim centre</div>
-								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
-								<div class="reminder-block__table-inner-cost">R 15 160</div>
-								<div class="reminder-block__table-inner-status">Can be renewed</div>
-								<div class="reminder-block__table-inner-action">
-									<a href="javascript:;" class="reminder-block__check-link">
-										<svg width="11" height="11">
-											<use xlink:href="#check"></use>
-										</svg>
-									</a>
-									<a href="javascript:;" class="reminder-block__alarm-link">
-										<svg width="8" height="11">
-											<use xlink:href="#alarm"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="reminder-block__table-card">
-								<div class="reminder-block__table-inner-type">Issue</div>
-								<div class="reminder-block__table-inner-date">10 Nov 2019</div>
-								<div class="reminder-block__table-inner-id">PMB012</div>
-								<div class="reminder-block__table-inner-name">Hassim centre</div>
-								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
-								<div class="reminder-block__table-inner-cost">R 15 160</div>
-								<div class="reminder-block__table-inner-status">Can be renewed</div>
-								<div class="reminder-block__table-inner-action">
-									<a href="javascript:;" class="reminder-block__check-link">
-										<svg width="11" height="11">
-											<use xlink:href="#check"></use>
-										</svg>
-									</a>
-									<a href="javascript:;" class="reminder-block__alarm-link">
-										<svg width="8" height="11">
-											<use xlink:href="#alarm"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="reminder-block__table-card">
-								<div class="reminder-block__table-inner-type">Issue</div>
-								<div class="reminder-block__table-inner-date">10 Nov 2019</div>
-								<div class="reminder-block__table-inner-id">PMB012</div>
-								<div class="reminder-block__table-inner-name">Hassim centre</div>
-								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
-								<div class="reminder-block__table-inner-cost">R 15 160</div>
-								<div class="reminder-block__table-inner-status">Can be renewed</div>
-								<div class="reminder-block__table-inner-action">
-									<a href="javascript:;" class="reminder-block__check-link">
-										<svg width="11" height="11">
-											<use xlink:href="#check"></use>
-										</svg>
-									</a>
-									<a href="javascript:;" class="reminder-block__alarm-link">
-										<svg width="8" height="11">
-											<use xlink:href="#alarm"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="reminder-block__table-card">
-								<div class="reminder-block__table-inner-type">Issue</div>
-								<div class="reminder-block__table-inner-date">10 Nov 2019</div>
-								<div class="reminder-block__table-inner-id">PMB012</div>
-								<div class="reminder-block__table-inner-name">Hassim centre</div>
-								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
-								<div class="reminder-block__table-inner-cost">R 15 160</div>
-								<div class="reminder-block__table-inner-status">Can be renewed</div>
-								<div class="reminder-block__table-inner-action">
-									<a href="javascript:;" class="reminder-block__check-link">
-										<svg width="11" height="11">
-											<use xlink:href="#check"></use>
-										</svg>
-									</a>
-									<a href="javascript:;" class="reminder-block__alarm-link">
-										<svg width="8" height="11">
-											<use xlink:href="#alarm"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="reminder-block__table-card">
-								<div class="reminder-block__table-inner-type">Issue</div>
-								<div class="reminder-block__table-inner-date">10 Nov 2019</div>
-								<div class="reminder-block__table-inner-id">PMB012</div>
-								<div class="reminder-block__table-inner-name">Hassim centre</div>
-								<div class="reminder-block__table-inner-days">31 Jul 2024 (1643)</div>
-								<div class="reminder-block__table-inner-cost">R 15 160</div>
-								<div class="reminder-block__table-inner-status">Can be renewed</div>
-								<div class="reminder-block__table-inner-action">
-									<a href="javascript:;" class="reminder-block__check-link">
-										<svg width="11" height="11">
-											<use xlink:href="#check"></use>
-										</svg>
-									</a>
-									<a href="javascript:;" class="reminder-block__alarm-link">
-										<svg width="8" height="11">
-											<use xlink:href="#alarm"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="reminder-block__tab-content" id="reminder-tab-3">
+				<div class="page-block__tab-content" id="reminder-tab-3">
 					<div class="reminder-block__table-block">
 						<div class="reminder-block__table-heading">
 							<div class="reminder-block__table-heading-type">Reminder Type</div>
@@ -599,9 +601,9 @@
 <script src="js/main.min.js"></script>
 <svg style="display:none;">
 	<symbol id="search" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M11.063 16.02a7.083 7.083 0 110-14.166 7.083 7.083 0 010 14.167z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.855 18.146l4.2-4.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-	<symbol id="synchronize_clock" viewBox="0 0 51 45" width="51" height="45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.65 11.2v12.5h11.116M.861 15.731l6.67 10.227 7.78-9.09" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.651 44.157c11.665 0 21.12-9.666 21.12-21.59 0-11.923-9.455-21.59-21.12-21.59-11.664 0-21.12 9.667-21.12 21.59v3.395" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-	<symbol id="alarm_sleep" viewBox="0 0 47 45" width="47" height="45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.459.771h5.75L30.459 6.4h5.75M36.209 12.027h9.583l-9.583 9.38h9.583" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M27.584 25.156c0-6.216-5.149-11.255-11.5-11.255s-11.5 5.039-11.5 11.255v10.318c0 1.554-1.287 2.813-2.875 2.813h28.75c-1.588 0-2.875-1.26-2.875-2.813V25.156z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.795 42.04c-.405 1.124-1.492 1.877-2.71 1.877-1.22 0-2.306-.753-2.712-1.878M16.084 10.15v3.753" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-	<symbol id="alarm_check" viewBox="0 0 46 46" width="46" height="46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.4 14.979A11.67 11.67 0 008.365 16.85c-2.861 2.128-4.538 5.446-4.53 8.963V36.13c0 .746-.303 1.462-.842 1.99-.54.528-1.27.824-2.033.824h28.75c-1.588 0-2.875-1.26-2.875-2.814v-9.968M18.045 42.697c-.405 1.125-1.492 1.877-2.71 1.877-1.22 0-2.306-.752-2.712-1.877M15.334 10.809v3.751" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.4 14.979A11.67 11.67 0 008.365 16.85c-2.861 2.128-4.538 5.446-4.53 8.963V36.13c0 .746-.303 1.462-.842 1.99-.54.528-1.27.824-2.033.824h28.75c-1.588 0-2.875-1.26-2.875-2.814v-9.968M18.045 42.697c-.405 1.125-1.492 1.877-2.71 1.877-1.22 0-2.306-.752-2.712-1.877M15.334 10.809v3.751" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M33.543 23.942c6.351 0 11.5-5.04 11.5-11.256s-5.149-11.255-11.5-11.255-11.5 5.04-11.5 11.255c0 6.216 5.149 11.256 11.5 11.256z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M38.667 9.415L33.1 16.68a1.45 1.45 0 01-1.048.559 1.46 1.46 0 01-1.12-.407l-2.874-2.814" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="synchronize_clock" viewBox="0 0 51 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.65 11.2v12.5h11.116M.861 15.731l6.67 10.227 7.78-9.09" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.651 44.157c11.665 0 21.12-9.666 21.12-21.59 0-11.923-9.455-21.59-21.12-21.59-11.664 0-21.12 9.667-21.12 21.59v3.395" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="alarm_sleep" viewBox="0 0 47 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.459.771h5.75L30.459 6.4h5.75M36.209 12.027h9.583l-9.583 9.38h9.583" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M27.584 25.156c0-6.216-5.149-11.255-11.5-11.255s-11.5 5.039-11.5 11.255v10.318c0 1.554-1.287 2.813-2.875 2.813h28.75c-1.588 0-2.875-1.26-2.875-2.813V25.156z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.795 42.04c-.405 1.124-1.492 1.877-2.71 1.877-1.22 0-2.306-.753-2.712-1.878M16.084 10.15v3.753" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="alarm_check" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.4 14.979A11.67 11.67 0 008.365 16.85c-2.861 2.128-4.538 5.446-4.53 8.963V36.13c0 .746-.303 1.462-.842 1.99-.54.528-1.27.824-2.033.824h28.75c-1.588 0-2.875-1.26-2.875-2.814v-9.968M18.045 42.697c-.405 1.125-1.492 1.877-2.71 1.877-1.22 0-2.306-.752-2.712-1.877M15.334 10.809v3.751" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.4 14.979A11.67 11.67 0 008.365 16.85c-2.861 2.128-4.538 5.446-4.53 8.963V36.13c0 .746-.303 1.462-.842 1.99-.54.528-1.27.824-2.033.824h28.75c-1.588 0-2.875-1.26-2.875-2.814v-9.968M18.045 42.697c-.405 1.125-1.492 1.877-2.71 1.877-1.22 0-2.306-.752-2.712-1.877M15.334 10.809v3.751" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M33.543 23.942c6.351 0 11.5-5.04 11.5-11.256s-5.149-11.255-11.5-11.255-11.5 5.04-11.5 11.255c0 6.216 5.149 11.256 11.5 11.256z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M38.667 9.415L33.1 16.68a1.45 1.45 0 01-1.048.559 1.46 1.46 0 01-1.12-.407l-2.874-2.814" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 	<symbol id="check" viewBox="0 0 11 11" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.987 1.948L4.753 9.052 1.013 6.06" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 	<symbol id="alarm" viewBox="0 0 11 11" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.249V5.5l4.638 4.252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 	<symbol id="browser_gauge" fill="none" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M28.73 22.98a2.417 2.417 0 01-2.418 2.416H3.355a2.417 2.417 0 01-2.417-2.417V3.646a2.417 2.417 0 012.417-2.417h22.959a2.417 2.417 0 012.416 2.417v19.333z" stroke-linecap="round" stroke-linejoin="round"/><path d="M.938 7.27h27.791M5.167 20.604h2.417M14.833 10.936v2.415M7.997 13.766l1.707 1.707M24.502 20.601h-2.415M5.768 1.23v6.04M10.6 1.23v6.04" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M20.634 15.043c.351-.483.22-.626-.293-.323l-5.386 3.184c-.573.38-1 .944-1.209 1.599l-.12.52a.854.854 0 00.81 1.109l.595.032a2.24 2.24 0 001.722-.813l3.88-5.308z" stroke-linecap="round" stroke-linejoin="round"/></symbol>
@@ -620,6 +622,11 @@
 	<symbol id="common_file" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.621 21.308h24.557M11.621 29.063h20.68M11.621 13.554h18.095M11.621 36.818h12.925M11.621 44.573h7.755M21.96 60.082H3.866a2.585 2.585 0 01-2.585-2.585V3.214A2.585 2.585 0 013.866.63h34.361c.686 0 1.343.273 1.828.758l9.582 9.582c.485.485.757 1.142.758 1.827v13.682" stroke="#16A8AA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M32.3 41.492v16.005a2.585 2.585 0 002.585 2.585h18.094a2.585 2.585 0 002.585-2.585V41.492" stroke="#16A8AA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M27.13 45.865l15.132-12.803a2.585 2.585 0 013.34 0l15.132 12.803" stroke="#16A8AA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M47.81 60.082h-7.755v-7.755a3.877 3.877 0 117.754 0v7.755z" stroke="#16A8AA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 	<symbol id="tab_row" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.104 6.177c0 .575-.467 1.042-1.042 1.042H9.895a1.042 1.042 0 01-1.041-1.042V2.01c0-.575.466-1.041 1.041-1.041h4.167c.575 0 1.042.466 1.042 1.041v4.167zM6.77 6.177c0 .575-.466 1.042-1.041 1.042H1.562A1.042 1.042 0 01.521 6.177V2.01C.52 1.435.987.97 1.562.97H5.73c.575 0 1.042.466 1.042 1.041v4.167zM23.438 6.177c0 .575-.467 1.042-1.042 1.042h-4.167a1.042 1.042 0 01-1.041-1.042V2.01c0-.575.466-1.041 1.041-1.041h4.167c.575 0 1.041.466 1.041 1.041v4.167zM15.104 14.51c0 .576-.467 1.042-1.042 1.042H9.895a1.042 1.042 0 01-1.041-1.041v-4.167c0-.576.466-1.042 1.041-1.042h4.167c.575 0 1.042.466 1.042 1.042v4.167zM6.77 14.51c0 .576-.466 1.042-1.041 1.042H1.562a1.042 1.042 0 01-1.041-1.041v-4.167c0-.576.466-1.042 1.041-1.042H5.73c.575 0 1.042.466 1.042 1.042v4.167zM23.438 14.51c0 .576-.467 1.042-1.042 1.042h-4.167a1.042 1.042 0 01-1.041-1.041v-4.167c0-.576.466-1.042 1.041-1.042h4.167c.575 0 1.041.466 1.041 1.042v4.167zM15.104 22.844c0 .575-.467 1.041-1.042 1.041H9.895a1.042 1.042 0 01-1.041-1.041v-4.167c0-.575.466-1.042 1.041-1.042h4.167c.575 0 1.042.467 1.042 1.042v4.167zM6.77 22.844c0 .575-.466 1.041-1.041 1.041H1.562a1.042 1.042 0 01-1.041-1.041v-4.167c0-.575.466-1.042 1.041-1.042H5.73c.575 0 1.042.467 1.042 1.042v4.167zM23.438 22.844c0 .575-.467 1.041-1.042 1.041h-4.167a1.042 1.042 0 01-1.041-1.041v-4.167c0-.575.466-1.042 1.041-1.042h4.167c.575 0 1.041.467 1.041 1.042v4.167z"/></symbol>
 	<symbol id="tab_list" viewBox="0 0 25 22" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.479 4.177c0 .575-.467 1.042-1.042 1.042H9.895a1.042 1.042 0 01-1.041-1.042V1.052C8.854.477 9.32.01 9.895.01h13.542c.575 0 1.041.467 1.041 1.042v3.125zM24.479 12.51c0 .576-.467 1.042-1.042 1.042H9.895a1.042 1.042 0 01-1.041-1.042V9.385c0-.575.466-1.041 1.041-1.041h13.542c.575 0 1.041.466 1.041 1.041v3.125zM24.479 20.844c0 .575-.467 1.041-1.042 1.041H9.895a1.042 1.042 0 01-1.041-1.041v-3.125c0-.576.466-1.042 1.041-1.042h13.542c.575 0 1.041.466 1.041 1.042v3.125zM5.729 4.177c0 .575-.467 1.042-1.042 1.042H1.562A1.042 1.042 0 01.521 4.177V1.052C.52.477.987.01 1.562.01h3.125c.575 0 1.042.467 1.042 1.042v3.125zM5.729 12.51c0 .576-.467 1.042-1.042 1.042H1.562A1.042 1.042 0 01.521 12.51V9.385c0-.575.466-1.041 1.041-1.041h3.125c.575 0 1.042.466 1.042 1.041v3.125zM5.729 20.844c0 .575-.467 1.041-1.042 1.041H1.562a1.042 1.042 0 01-1.041-1.041v-3.125c0-.576.466-1.042 1.041-1.042h3.125c.575 0 1.042.466 1.042 1.042v3.125z"/></symbol>
+	<symbol id="open_lock" viewBox="0 0 35 47" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x=".875" y="18.933" width="32.583" height="26.833" rx="1.917" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.625 12.225c0-5.822 4.72-10.542 10.542-10.542s10.541 4.72 10.541 10.542v6.708" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M17.167 31.391a1.917 1.917 0 100-3.833 1.917 1.917 0 000 3.833z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.167 31.391v5.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="close_lock" viewBox="0 0 35 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M17.503 30.733a1.917 1.917 0 100-3.833 1.917 1.917 0 000 3.833z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.503 30.733v5.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1.211" y="18.275" width="32.583" height="26.833" rx="1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M6.96 11.567c0-5.822 4.72-10.542 10.543-10.542 5.822 0 10.541 4.72 10.541 10.542v6.708H6.961v-6.708z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="edit" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.1045 2.85745L10.1239 3.83305L8.12787 1.84727L7.37065 2.60066L9.36667 4.58658L4.47094 9.45712L2.47506 7.47154L1.71784 8.22493L3.71372 10.2107L3.22588 10.6961L3.21659 10.6868C3.16249 10.7755 3.07453 10.8401 2.97005 10.8632L1.1088 11.2761C1.08092 11.2823 1.05256 11.2853 1.02455 11.2853C0.922966 11.2853 0.824269 11.2456 0.751107 11.1726C0.657229 11.0795 0.618136 10.9451 0.647043 10.8163L1.06186 8.96497C1.08526 8.86109 1.15037 8.77337 1.23929 8.71969L1.22986 8.7103L9.10836 0.871322C9.22385 0.756622 9.41147 0.756622 9.52696 0.871664L11.1046 2.44097C11.2201 2.55587 11.2201 2.74254 11.1045 2.85745Z"/></symbol>
+	<symbol id="remove" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.0244 8.99454L8.4082 15.5772" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.0244 15.5772L8.4082 8.99454" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="trash" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.76082 4.28534H1.74045C1.18535 4.28534 0.735352 3.83762 0.735352 3.28534V2.28534C0.735352 1.73305 1.18535 1.28534 1.74045 1.28534H12.7965C13.3516 1.28534 13.8016 1.73305 13.8016 2.28534V3.28534C13.8016 3.83762 13.3516 4.28534 12.7965 4.28534H8.77611" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.77628 4.28534H12.2941L11.8579 10.3563C11.8204 10.8807 11.3812 11.2867 10.8528 11.2853H3.68145C3.15307 11.2867 2.71387 10.8807 2.67636 10.3563L2.24316 4.28534L8.77628 4.28534L5.76099 4.28534" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.76095 4.78534V11.2853" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.77658 11.2853V4.78534" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </svg>
 
 </body>

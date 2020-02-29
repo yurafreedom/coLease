@@ -2,8 +2,9 @@
 	"pagetitle": "Главная страница",
 	"bodyclass": "index-page"
 })
+
 @@include('template/page-header.html', {
-	"logged": "true"
+	"leases": "true"
 })
 
 <div class="main-page-wrap">
@@ -30,7 +31,7 @@
 					<div class="manager-block__heading-title">File Explorer</div>
 					<form class="reminder-block__form">
 						<div class="reminder-block__input-wrapper">
-							<input type="email" class="text-input reminder-block__input" id="reminder_date" name="reminder_date" placeholder="Searching..." required>
+							<input type="text" class="text-input reminder-block__input" id="manager_date" name="manager_date" placeholder="Searching..." required>
 							<button type="submit" class="btn btn--search">
 								<svg width="17" height="17">
 									<use xlink:href="#search"></use>
@@ -422,4 +423,4 @@
 @@include('template/sprite.html')
 
 </body>
-</html>				
+</html>
