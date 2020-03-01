@@ -25,6 +25,7 @@
 			flex-shrink: 0;
 			padding-top: 11px;
 			padding-bottom: 11px;
+			letter-spacing: 0;
 		}
 	}
 	&__title {
@@ -69,10 +70,10 @@
 		display: block;
 		border-radius: 25px;
 		background-color: #fff;
-		padding-top: 47px;
+		padding-top: 9px;
 		padding-left: 30px;
 		padding-right: 28px;
-		padding-bottom: 48px;
+		padding-bottom: 31px;
 		margin-bottom: 30px;
 	}
 	&__form-title {
@@ -84,7 +85,7 @@
 		margin-bottom: 52px;
 	}
 	&__table-block {
-		padding-top: 46px;
+		padding-top: 30px;
 		padding-bottom: 45px;
 		border-top-left-radius: 25px;
 		border-top-right-radius: 25px;
@@ -104,20 +105,20 @@
 		align-items: center;
 	}
 	&__table-heading {
-		padding-top: 15px;
-		padding-bottom: 15px;
+		padding-top: 16px;
+		padding-bottom: 16px;
 		padding-left: 30px;
 		padding-right: 45px;
 		font-size: 14px;
 		font-weight: 700;
-		line-height: 1.142;
+		line-height: 1;
 		color: #fff;
 		background: linear-gradient(to left bottom, $primary-blue, $primary-green);
 	}
 	&__table-card {
 		position: relative;
-		padding-top: 16px;
-		padding-bottom: 17px;
+		padding-top: 12px;
+		padding-bottom: 19px;
 		padding-left: 30px;
 		padding-right: 45px;
 		font-size: 13px;
@@ -156,12 +157,12 @@
 	&__table-heading-type, &__table-inner-type {
 		display: block;
 		width: 100%;
-		max-width: 110px;
+		max-width: 95px;
 	}
 	&__table-heading-date, &__table-inner-date {
 		display: block;
 		width: 100%;
-		max-width: 110px;
+		max-width: 97px;
 	}
 	&__table-inner-type, &__table-inner-date {
 		font-weight: 500;
@@ -171,12 +172,12 @@
 	&__table-heading-id, &__table-inner-id {
 		display: block;
 		width: 100%;
-		max-width: 60px;
+		max-width: 100px;
 	}
 	&__table-heading-name, &__table-inner-name {
 		display: block;
 		width: 100%;
-		max-width: 110px;
+		max-width: 100px;
 	}
 	&__table-heading-days, &__table-inner-days {
 		display: block;
@@ -186,12 +187,12 @@
 	&__table-heading-cost, &__table-inner-cost {
 		display: block;
 		width: 100%;
-		max-width: 140px;
+		max-width: 136px;
 	}
 	&__table-heading-status, &__table-inner-status {
 		display: block;
 		width: 100%;
-		max-width: 120px;
+		max-width: 107px;
 	}
 	&__table-heading-action, &__table-inner-action {
 		display: flex;

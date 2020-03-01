@@ -3700,7 +3700,8 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
       -ms-flex-negative: 0;
           flex-shrink: 0;
       padding-top: 11px;
-      padding-bottom: 11px; }
+      padding-bottom: 11px;
+      letter-spacing: 0; }
   .reminder-block__title {
     display: block;
     font-size: 25px;
@@ -3735,10 +3736,10 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     display: block;
     border-radius: 25px;
     background-color: #fff;
-    padding-top: 47px;
+    padding-top: 9px;
     padding-left: 30px;
     padding-right: 28px;
-    padding-bottom: 48px;
+    padding-bottom: 31px;
     margin-bottom: 30px; }
   .reminder-block__form-title {
     display: block;
@@ -3748,7 +3749,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     color: #4A4A4A;
     margin-bottom: 52px; }
   .reminder-block__table-block {
-    padding-top: 46px;
+    padding-top: 30px;
     padding-bottom: 45px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -3768,19 +3769,19 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     -ms-flex-align: center;
         align-items: center; }
   .reminder-block__table-heading {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     padding-left: 30px;
     padding-right: 45px;
     font-size: 14px;
     font-weight: 700;
-    line-height: 1.142;
+    line-height: 1;
     color: #fff;
     background: linear-gradient(to left bottom, #53C7CD, #ABD856); }
   .reminder-block__table-card {
     position: relative;
-    padding-top: 16px;
-    padding-bottom: 17px;
+    padding-top: 12px;
+    padding-bottom: 19px;
     padding-left: 30px;
     padding-right: 45px;
     font-size: 13px;
@@ -3812,11 +3813,11 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   .reminder-block__table-heading-type, .reminder-block__table-inner-type {
     display: block;
     width: 100%;
-    max-width: 110px; }
+    max-width: 95px; }
   .reminder-block__table-heading-date, .reminder-block__table-inner-date {
     display: block;
     width: 100%;
-    max-width: 110px; }
+    max-width: 97px; }
   .reminder-block__table-inner-type, .reminder-block__table-inner-date {
     font-weight: 500;
     text-decoration: underline;
@@ -3824,11 +3825,11 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   .reminder-block__table-heading-id, .reminder-block__table-inner-id {
     display: block;
     width: 100%;
-    max-width: 60px; }
+    max-width: 100px; }
   .reminder-block__table-heading-name, .reminder-block__table-inner-name {
     display: block;
     width: 100%;
-    max-width: 110px; }
+    max-width: 100px; }
   .reminder-block__table-heading-days, .reminder-block__table-inner-days {
     display: block;
     width: 100%;
@@ -3836,11 +3837,11 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   .reminder-block__table-heading-cost, .reminder-block__table-inner-cost {
     display: block;
     width: 100%;
-    max-width: 140px; }
+    max-width: 136px; }
   .reminder-block__table-heading-status, .reminder-block__table-inner-status {
     display: block;
     width: 100%;
-    max-width: 120px; }
+    max-width: 107px; }
   .reminder-block__table-heading-action, .reminder-block__table-inner-action {
     display: -ms-flexbox;
     display: flex;
