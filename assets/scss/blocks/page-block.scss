@@ -11,6 +11,16 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
+	&__select-wrapper {
+		position: relative;
+		display: block;
+		width: 100%;
+		max-width: 650px;
+		margin-bottom: 28px;
+		&:not(:nth-child(2n)) {
+			margin-right: 18px;
+		}
+	}
 	&__label {
 		position: absolute;
 		top: -20px;
@@ -151,6 +161,9 @@
 		}
 		&__controls-btn-wrapper {
 			display: none;
+		}
+		&__select-wrapper {
+			margin-bottom: 20px;
 		}
 	}
 }

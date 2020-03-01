@@ -1,5 +1,6 @@
 .issues-block {
 	padding-top: 30px;
+	padding-bottom: 40px;
 	&__heading-block {
 		display: block;
 		border-radius: 25px;
@@ -188,12 +189,14 @@
 		margin-right: 30px;
 	}
 	.btn--green {
+		width: 119px;
 		flex-shrink: 0;
 	}
 }
 
 @include for-size(mobile) {
 	.issues-block {
+		padding-top: 15px;
 		padding-bottom: 20px;
 		&__table-block {
 			overflow-y: auto;
@@ -261,6 +264,9 @@
 				left: 15px;
 			}
 		}
+		.btn--green {
+			width: 100%;
+		}
 	}
 }
 
@@ -292,11 +298,5 @@
 		&__trash-link {
 			padding-left: 1px;
 		}
-	}
-}
-
-@include for-size(desktop) {
-	.issues-block {
-
 	}
 }

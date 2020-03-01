@@ -9,3 +9,230 @@
   margin-right: 10px;
   color: $error;
 }
+
+.nice-select,
+.nice-select .list {
+  background-color: #fff;
+}
+
+.nice-select {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid $border;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.142;
+  color: $text;
+  box-shadow: none;
+  text-align: left!important;
+  transition: all .2s ease-in-out;
+  user-select: none;
+  white-space: nowrap;
+  width: 100%;
+  outline: 0;
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  &:hover, &:active, &:focus {
+    border-color: $primary-blue;
+    box-shadow: 1px 0 6px rgba(87, 138, 215, 0.49);
+  }
+}
+
+.nice-select .current {
+	display: block;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  color: $text;
+  font-weight: 400;
+}
+
+.nice-select:hover .current,
+.nice-select:active .current,
+.nice-select:focus .current {
+	color: $primary-blue;
+}
+
+.nice-select::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 14px;
+  right: 15px;
+  width: 13px;
+  height: 8px;
+  background-repeat: no-repeat;
+  background-size: 13px 8px;
+  background-image: url('../img/chevron.svg');
+  background-position: center center;
+  transition: all .2s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.nice-select.open::after {
+  opacity: 1;
+  transform: rotate(180deg);
+  background-image: url('../img/chevron-blue.svg');
+}
+
+.nice-select.open .list {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 10px;
+  border-color: $primary-blue;
+  &::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid $primary-blue;
+  }
+  &::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $primary-blue;
+    border-radius: 10px;
+  }
+}
+
+.nice-select .list,
+.page-header__nav ul li a.active,
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.nice-select.disabled {
+  border-color: $border;
+  color: $border;
+  background-color: #F9F8FC;
+  pointer-events: none;
+}
+
+.nice-select.disabled::after {
+  border-color: $border;
+}
+
+.nice-select.wide {
+  width: 100%;
+}
+
+.nice-select.wide .list {
+  left: 0;
+  right: 0;
+}
+
+.nice-select.right {
+  float: right;
+}
+
+.nice-select.right .list {
+  left: auto;
+  right: 0;
+}
+
+.nice-select.small {
+  font-size: 12px;
+  height: 36px;
+  line-height: 34px;
+}
+
+.nice-select.small::after {
+  height: 4px;
+  width: 4px
+}
+
+.nice-select.small .option {
+  line-height: 34px;
+  min-height: 34px;
+}
+
+.nice-select .list {
+  width: auto;
+  min-width: 100%;
+  border: none;
+  box-sizing: border-box;
+  opacity: 0;
+  padding: 0;
+  overflow: visible;
+  overflow-y: auto;
+  max-height: 200px;
+  position: absolute;
+  top: 100%;
+  margin-top: 5px;
+  left: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: $text;
+  border-radius: 0;
+  border: 1px solid $border;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 20px 40px rgba(187, 196, 215, .2);
+  transition: opacity .15s ease-out;
+  z-index: 9;
+}
+
+.nice-select .list:hover .option:not(:hover) {
+  background-color: transparent;
+}
+
+// .nice-select.open .list li:not(:last-child) {
+//   margin-bottom: 15px;
+// }
+
+.nice-select .option {
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  font-family: 'Roboto', sans-serif;
+  color: $form-text;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  min-height: 30px;
+  list-style: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  outline: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+  text-align: left;
+  transition: all .3s ease-in-out;
+  &:hover {
+    color: $primary-blue;
+  }
+}
+
+.nice-select .option.focus,
+.nice-select .option.selected,
+.nice-select .option.selected.focus,
+.nice-select .option:hover {
+  color: $primary-blue;
+}
+
+.nice-select .option.disabled {
+  display: none;
+  background-color: transparent;
+  color: $text;
+  cursor: default;
+}
+
+[hidden] {
+  display: none!important;
+}
