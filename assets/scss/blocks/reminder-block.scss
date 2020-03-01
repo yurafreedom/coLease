@@ -2,7 +2,70 @@
 	position: relative;
 	padding-top: 30px;
 	padding-bottom: 40px;
-	&__heading-block {
+	&__wrapper {
+		position: relative;
+		display: block;
+	}
+	&__heading {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding-top: 30px;
+		padding-left: 30px;
+		padding-right: 28px;
+		padding-bottom: 30px;
+		border-radius: 25px;
+		background-color: #fff;
+		margin-bottom: 30px;
+		.btn--green {
+			width: 173px;
+			flex-shrink: 0;
+			padding-top: 11px;
+			padding-bottom: 11px;
+		}
+	}
+	&__title {
+		display: block;
+		font-size: 25px;
+		line-height: 1;
+		font-weight: 400;
+		color: $title;
+	}
+	&__wrapper &__table-wrapper {
+		margin-bottom: 30px;
+	}
+	&__wrapper &__table-block {
+		border-radius: 25px;
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
+	&__wrapper &__table-block &__table-card {
+		padding-top: 20px;
+		padding-bottom: 21px;
+	}
+	&__wrapper &__table-block &__table-heading,
+	&__wrapper &__table-block &__table-card {
+		padding-right: 30px;
+	}
+	&__wrapper &__table-block &__table-heading-type,
+	&__wrapper &__table-block &__table-inner-type {
+		width: 100%;
+		max-width: 465px;
+	}
+	&__wrapper &__table-block &__table-heading-detail,
+	&__wrapper &__table-block &__table-inner-detail {
+		width: 100%;
+		max-width: 465px;
+	}
+	&__wrapper &__table-block &__table-heading-delivery,
+	&__wrapper &__table-block &__table-inner-delivery {
+		width: 100%;
+		max-width: 260px;
+	}
+	&__form-block {
 		display: block;
 		border-radius: 25px;
 		background-color: #fff;
@@ -12,7 +75,7 @@
 		padding-bottom: 48px;
 		margin-bottom: 30px;
 	}
-	&__heading-title {
+	&__form-title {
 		display: block;
 		font-size: 25px;
 		line-height: 1;
@@ -49,7 +112,7 @@
 		font-weight: 700;
 		line-height: 1.142;
 		color: #fff;
-		background: linear-gradient(to left, $primary-blue, $primary-green);
+		background: linear-gradient(to left bottom, $primary-blue, $primary-green);
 	}
 	&__table-card {
 		position: relative;
@@ -137,13 +200,13 @@
 		width: 100%;
 		max-width: 64px;
 	}
-	&__check-link, &__alarm-link {
+	&__check-link, &__alarm-link, &__trash-link {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: 23px;
-		height: 23px;
+		width: 24px;
+		height: 24px;
 		border-radius: 50%;
 		border: 2px solid $primary-green;
 		background-color: $primary-green;
@@ -168,6 +231,20 @@
 		&:active svg,
 		&:focus svg {
 			stroke: $text;
+		}
+	}
+	&__trash-link {
+		border: 2px solid $text;
+		background-color: $text;
+		padding-left: 2px;
+		&:hover, &:active, &:focus {
+			border-color: $error;
+			background-color: $error;
+		}
+		&:hover svg,
+		&:active svg,
+		&:focus svg {
+			stroke: #fff;
 		}
 	}
 }
@@ -206,6 +283,33 @@
 			padding-right: 30px;
 			font-size: 12px;
 		}
+		&__form-block {
+			padding-top: 20px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 20px;
+		}
+		&__form-title {
+			font-size: 20px;
+		}
+		&__heading {
+			display: block;
+			padding-top: 20px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 20px;
+			margin-bottom: 15px;
+			.btn--green {
+				width: 100%;
+			}
+		}
+		&__wrapper &__table-wrapper {
+			margin-bottom: 15px;
+		}
+		&__title {
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
 		.page-block__controls-block .btn--control {
 			justify-content: center;
 			padding-left: 10px;
@@ -216,6 +320,9 @@
 				width: 35px;
 				height: 40px;
 			}
+		}
+		&__trash-link {
+			padding-left: 0;
 		}
 	}
 }
@@ -230,11 +337,27 @@
 			font-size: 12px;
 		}
 		&__table-card {
-			font-size: 10px;
+			align-items: flex-start;
+			font-size: 12px;
 			&::after {
 				width: calc(100% - 30px);
 				left: 15px;
 			}
+		}
+		&__wrapper &__table-block &__table-heading-type,
+		&__wrapper &__table-block &__table-inner-type {
+			width: 100%;
+			max-width: 220px;
+		}
+		&__wrapper &__table-block &__table-heading-detail,
+		&__wrapper &__table-block &__table-inner-detail {
+			width: 100%;
+			max-width: 200px;
+		}
+		&__wrapper &__table-block &__table-heading-delivery,
+		&__wrapper &__table-block &__table-inner-delivery {
+			width: 100%;
+			max-width: 150px;
 		}
 	}
 }
