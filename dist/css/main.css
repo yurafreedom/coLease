@@ -335,9 +335,6 @@ template {
     color: #D8D8D8; }
   .text-input:disabled::placeholder {
     color: #D8D8D8; }
-  .text-input:focus, .text-input:hover {
-    border-color: #53C7CD;
-    color: #53C7CD; }
   .text-input:-moz-placeholder {
     color: #879ea7; }
   .text-input::-moz-placeholder {
@@ -3086,6 +3083,9 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     fill: #fff; }
 
 .error-message {
+  position: absolute;
+  right: 0;
+  bottom: -26px;
   display: block;
   width: 100%;
   text-align: right;
@@ -4867,8 +4867,6 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
       line-height: 1.4;
       color: #9B9B9B;
       z-index: 10; }
-    .page-block__input:focus, .page-block__input:hover {
-      border-color: #53C7CD; }
   .page-block__input-wrapper.success .page-block__label {
     color: #8BC61D; }
   .page-block__input-wrapper.success .btn--search {
@@ -4959,6 +4957,151 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     display: none; }
   .page-block__select-wrapper {
     margin-bottom: 20px; } }
+
+.login-block {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(190.37deg, #53C7CD 6.32%, #16A8AA 90.31%); }
+  .login-block__wrapper {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 580px;
+    padding-top: 60px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 60px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: -5px 5px 14px #0AA3A5; }
+  .login-block__logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 88px;
+    width: 284px;
+    height: 68px; }
+    .login-block__logo img {
+      display: block;
+      width: 100%;
+      height: auto; }
+  .login-block__form {
+    position: relative;
+    display: block; }
+  .login-block__form-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-top: 37px;
+    margin-bottom: 38px; }
+  .login-block__form-link {
+    display: block;
+    font-size: 14px;
+    line-height: 1.142;
+    font-weight: 400;
+    color: #575757;
+    transition: all 0.3s ease-in-out; }
+    .login-block__form-link:hover, .login-block__form-link:active, .login-block__form-link:focus {
+      color: #53C7CD;
+      text-decoration: none; }
+  .login-block__label {
+    margin-bottom: 0; }
+  .login-block__validate-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center; }
+  .login-block__text {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.142;
+    padding-top: 5px;
+    color: #575757; }
+  .login-block__check {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 7px 9px;
+    margin-right: 15px;
+    border: 3px solid #D8D8D8;
+    border-radius: 1px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out; }
+  .login-block__check-v {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    width: 13px;
+    height: 10px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    background-image: url("../img/checked-green.svg");
+    background-size: 13px 10px;
+    background-repeat: no-repeat; }
+  .login-block__form .page-block__input-wrapper:first-child {
+    margin-bottom: 47px; }
+  .login-block .page-block__input {
+    width: 100%;
+    border: 1px solid #d8d8d8;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; }
+  .login-block__form .btn--green {
+    width: 270px;
+    margin: 0 auto; }
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+  display: none; }
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  cursor: pointer; }
+
+input[type="checkbox"]:checked + label .login-block__check {
+  border-color: #ABD856; }
+
+input[type="checkbox"]:checked + label .login-block__check-v {
+  opacity: 1; }
+
+@media (max-width: 767px) {
+  .login-block__logo {
+    width: 150px;
+    height: 50px;
+    margin-bottom: 60px; }
+  .login-block__wrapper {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px; }
+  .login-block__check {
+    margin-right: 10px; }
+  .login-block__text {
+    font-size: 12px; }
+  .login-block__form-link {
+    font-size: 12px; }
+  .login-block__form .btn--green {
+    width: 100%; } }
 
 .page-footer {
   position: relative;

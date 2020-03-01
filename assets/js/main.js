@@ -87,6 +87,7 @@ $('select').niceSelect();
 $.extend($.validator.messages, {
     required: "Incorrect data",
     email: "Incorrect data",
+    password: "Incorrect data",
 });
 
 $("form").each(function() {
@@ -110,7 +111,10 @@ $("form").each(function() {
             email: {
                 required: !0,
                 email: true
-            }
+            },
+            password: {
+                required: !0,
+            },
         },
     });
 });

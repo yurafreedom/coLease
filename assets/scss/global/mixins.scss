@@ -35,10 +35,6 @@
 	&:disabled::placeholder {
 		color: $border;
 	}
-	&:focus, &:hover {
-		border-color: $primary-blue;
-		color: $primary-blue;
-	}
 	&:-moz-placeholder {
 		color: #879ea7;
 	}

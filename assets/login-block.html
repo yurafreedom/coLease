@@ -11,8 +11,26 @@
 					<a href="index.html" class="login-block__logo"><img src="img/logo.svg" alt=""></a>
 					<form class="login-block__form">
 						<div class="page-block__input-wrapper">
-							
+							<label for="login_email" class="page-block__label">Email</label>
+							<input type="text" id="login_email" class="text-input page-block__input" placeholder="Email address..." required>
 						</div>
+						<div class="page-block__input-wrapper">
+							<label for="login_password" class="page-block__label">Password</label>
+							<input type="text" id="login_email" class="text-input page-block__input" placeholder="Password..." required>
+						</div>
+						<div class="login-block__form-wrapper">
+							<div class="login-block__validate-wrapper">
+								<input type="checkbox" id="login_checkbox" name="login_checkbox" class="login-block__checkbox">
+								<label class="login-block__label" for="login_checkbox">
+									<div class="login-block__check">
+										<div class="login-block__check-v"></div>
+									</div>
+									<div class="login-block__text">Remember me</div>
+								</label>
+							</div>							
+							<a href="javascript:;" class="login-block__form-link">Forget Password?</a>
+						</div>
+						<button type="submit" class="btn btn--green">Login</button>
 					</form>
 				</div>
 			</div>

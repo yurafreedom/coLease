@@ -59,9 +59,6 @@
 			color: $text;
 			z-index: 10;
 		}
-		&:focus, &:hover {
-			border-color: $primary-blue;
-		}
 	}
 	&__input-wrapper.success &__label {
 		color: $correctly;
