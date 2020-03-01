@@ -145,6 +145,14 @@ $('.page-block__input').mouseout("focus", function() {
   $(this).parent().removeClass('active');
 });
 
+$('.issue-block__textarea').on("focus", function() {
+  $(this).parent().toggleClass('active');
+});
+
+$('.issue-block__textarea').mouseout("focus", function() {
+  $(this).parent().removeClass('active');
+});
+
 $('[data-toggle="expand"]').on('click', function() {
   $(this).next().slideToggle(200);
 });

@@ -76,12 +76,19 @@
 		color: $text;
 		margin: 0;
 		margin-bottom: 1px;
+		transition: all 0.3s ease-in-out;
 	}
 	&__textarea-wrapper {
 		position: relative;
 		display: block;
 		width: 100%;
 		margin-bottom: 60px;
+	}
+	&__textarea-wrapper.active &__label {
+		color: $primary-blue;
+	}
+	&__textarea-wrapper.active &__textarea::placeholder {
+		color: $primary-blue;	
 	}
 	&__textarea {
 		outline: 0;
@@ -97,11 +104,16 @@
 		border: 1px solid $border;
 		border-radius: 10px;
 		height: 126px;
+		transition: all 0.3s ease-in-out;
+		&:focus {
+			border-color: $primary-blue;
+		}
 		&::placeholder {
 			font-size: 14px;
 			line-height: 1.142;
 			color: $text;
 			font-weight: 400;
+			transition: all 0.3s ease-in-out;
 		}
 	}
 }
