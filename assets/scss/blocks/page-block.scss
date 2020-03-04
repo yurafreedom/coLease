@@ -60,6 +60,10 @@
 			z-index: 10;
 		}
 	}
+	&__input-wrapper:hover &__input,
+	&__input-wrapper:hover .btn--search {
+		border-color: $primary-blue;
+	}
 	&__input-wrapper.success &__label {
 		color: $correctly;
 	}
@@ -101,6 +105,7 @@
 	&__controls-block .btn--control.active {
 		background-color: $primary-blue;
 		box-shadow: none;
+		transition: background-color 0.2s ease-in-out;
 		&::after {
 			opacity: 1;
 			pointer-events: all;

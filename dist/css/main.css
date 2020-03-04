@@ -3142,7 +3142,8 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   overflow: hidden;
   font-size: 14px;
   color: #9B9B9B;
-  font-weight: 400; }
+  font-weight: 400;
+  transition: all 0.2s ease-in-out; }
 
 .nice-select:hover .current,
 .nice-select:active .current,
@@ -4303,9 +4304,54 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     position: relative;
     display: block; }
   .manager-block__tab-content {
-    display: none; }
+    position: relative;
+    display: none;
+    z-index: 1;
+    transition: all 0.3s ease-in-out; }
     .manager-block__tab-content.active {
       display: block; }
+  .manager-block__preloader {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10; }
+  .manager-block__preloader-row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    -webkit-animation: preloader-rotate 2s infinite linear;
+            animation: preloader-rotate 2s infinite linear; }
+  .manager-block__preloader-option {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #53C7CD;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    -webkit-animation: preloader-bounce 2s infinite ease-in-out;
+            animation: preloader-bounce 2s infinite ease-in-out; }
+    .manager-block__preloader-option:last-child {
+      top: auto;
+      bottom: 0;
+      -webkit-animation-delay: -1s;
+              animation-delay: -1s; }
+  .manager-block__tab-content.active.loading .manager-block__preloader {
+    transition: 0.3s opacity;
+    opacity: 1;
+    pointer-events: all; }
+  .manager-block__tab-content.active.loaded .manager-block__preloader {
+    opacity: 0; }
   .manager-block__content-row {
     display: -ms-flexbox;
     display: flex;
@@ -4313,7 +4359,8 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
         flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: 34px;
+    margin-top: 19px;
+    padding-top: 15px;
     padding-left: 30px; }
   .manager-block__row-card {
     position: relative;
@@ -4372,6 +4419,34 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     font-weight: 400;
     line-height: 1.142;
     color: #9B9B9B; }
+
+@-webkit-keyframes preloader-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes preloader-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes preloader-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes preloader-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
 
 @media (max-width: 767px) {
   .manager-block {
@@ -4538,7 +4613,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     font-weight: 700;
     line-height: 1.142;
     color: #fff;
-    background: linear-gradient(to left bottom, #53C7CD, #ABD856); }
+    background: linear-gradient(to left, #53C7CD, #ABD856); }
   .issues-block__table-card {
     position: relative;
     padding-top: 12px;
@@ -4984,6 +5059,9 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
       line-height: 1.4;
       color: #9B9B9B;
       z-index: 10; }
+  .page-block__input-wrapper:hover .page-block__input,
+  .page-block__input-wrapper:hover .btn--search {
+    border-color: #53C7CD; }
   .page-block__input-wrapper.success .page-block__label {
     color: #8BC61D; }
   .page-block__input-wrapper.success .btn--search {
@@ -5026,7 +5104,8 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     margin-right: 6px; }
   .page-block__controls-block .btn--control.active {
     background-color: #53C7CD;
-    box-shadow: none; }
+    box-shadow: none;
+    transition: background-color 0.2s ease-in-out; }
     .page-block__controls-block .btn--control.active::after {
       opacity: 1;
       pointer-events: all; }
