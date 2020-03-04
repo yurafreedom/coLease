@@ -141,12 +141,24 @@ $('[data-toggle="tab"]').click(function(e) {
  $(thisTarget).addClass('active').siblings().removeClass('active');
 });
 
-$('.page-block__input').on("focus", function() {
+$('.page-block__input').on('focus', function() {
   $(this).parent().toggleClass('active');
 });
 
-$('.page-block__input').mouseout("focus", function() {
-  $(this).parent().removeClass('active');
+$('.page-block__input').on('click', function() {
+  $(this).parent().toggleClass('active');
+});
+
+$('.page-block__input').hover(function() {
+  $(this).parent().toggleClass('active');
+});
+
+// $('.page-block__input').mouseout(function() {
+//   $(this).parent().removeClass('active');
+// });
+
+$('.icon--search').hover(function() {
+  $(this).parent().toggleClass('active');
 });
 
 $('.issue-block__textarea').on("focus", function() {
@@ -157,6 +169,11 @@ $('.issue-block__textarea').mouseout("focus", function() {
   $(this).parent().removeClass('active');
 });
 
+$('.issues-block__table-card').hover(function() {
+  $(this).prev().addClass('hidden');
+});
+
 $('[data-toggle="expand"]').on('click', function() {
+  $(this).toggleClass('active');
   $(this).next().slideToggle(200);
 });

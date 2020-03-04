@@ -10,6 +10,9 @@
 	padding: 0;
 	border: 1px solid $border;
 	border-radius: 0 10px 10px 0;
+	&.active {
+		border-color: $primary-blue;
+	}
 	svg {
 		display: block;
 		stroke: $text;

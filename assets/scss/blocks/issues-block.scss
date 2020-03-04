@@ -61,7 +61,7 @@
 		color: $text;
 		line-height: 1.142;
 		border: 2px solid #fff;
-		transition: all 0.3s ease-in-out;
+		transition: all 0.2s ease-in-out;
 		cursor: pointer;
 		&::after {
 			content: '';
@@ -88,6 +88,11 @@
 	}
 	&__table-card:last-child::after {
 		display: none;
+	}
+	&__table-card.hidden {
+		&::after {
+			display: none;
+		}
 	}
 	&__table-heading-id, &__table-inner-id {
 		display: block;
@@ -140,12 +145,14 @@
 		border-radius: 50%;
 		border: 2px solid $primary-green;
 		background-color: $primary-green;
-		transition: all 0.3s ease-in-out;
+		transition: all 0.2s ease-in-out;
 		&:hover, &:active, &:focus {
 			background-color: #fff;
 		}
 		svg {
+			display: block;
 			stroke: #fff;
+			transition: all 0.2s ease-in-out;
 		}
 		&:hover svg,
 		&:active svg,

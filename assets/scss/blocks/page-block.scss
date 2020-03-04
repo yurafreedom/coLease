@@ -42,9 +42,6 @@
 	&__input-wrapper.active .btn--search {
 		border-color: $primary-blue;
 	}
-	&__input-wrapper:hover .btn--search {
-		border-color: $primary-blue;
-	}
 	&__input {
 		position: relative;
 		display: block;
@@ -52,7 +49,10 @@
 		border-right: 0;
 		border-top-right-radius: 0;
 		border-bottom-right-radius: 0;
-		transition: all 0.3s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		&:hover, &:focus {
+			border-color: $primary-blue;
+		}
 		&::placeholder {
 			font-size: 14px;
 			line-height: 1.4;
@@ -108,19 +108,19 @@
 		svg {
 			display: block;
 			stroke: #fff;
-			transition: all 0.3s ease-in-out;
+			transition: all 0.2s ease-in-out;
 		}
 	}
 	&__controls-block .btn--control.active &__controls-title,
 	&__controls-block .btn--control.active &__controls-text {
 		color: #fff;
-		transition: all 0.3s ease-in-out;
+		transition: all 0.2s ease-in-out;
 	}
 	&__controls-btn-wrapper {
 		display: block;
 		text-align: left;
 		margin-left: 18px;
-		transition: all 0.3s ease-in-out;
+		transition: all 0.2s ease-in-out;
 	}
 	&__controls-title {
 		display: block;
@@ -129,7 +129,7 @@
 		line-height: 1.15;
 		color: $fenny;
 		margin-bottom: 3px;
-		transition: all 0.3s ease-in-out;
+		transition: all 0.2s ease-in-out;
 	}
 	&__controls-text {
 		display: block;
@@ -137,7 +137,7 @@
 		line-height: 1.142;
 		font-weight: 400;
 		color: $fenny;
-		transition: all 0.6s ease-in-out;
+		transition: all 0.2s ease-in-out;
 	}
 	&__tab-content {
 		display: none;
