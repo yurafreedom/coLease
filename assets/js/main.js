@@ -171,7 +171,7 @@ $('[data-toggle="expand"]').on('click', function() {
 });
 
 $('.manager-block__controls-link').on('click', function () {
-  $('.manager-block__tab-content.active').on('load').toggleClass('loading');
+  $('.manager-block__tab-content.active').on('load').removeClass('loaded').toggleClass('loading');
   window.setTimeout(function () {
     $('.manager-block__tab-content.active').removeClass('loading');
     $('.manager-block__tab-content.active').toggleClass('loaded');
