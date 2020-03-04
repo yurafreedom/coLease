@@ -154,6 +154,11 @@
 	&__table-card:last-child::after {
 		display: none;
 	}
+	&__table-card.hidden {
+		&::after {
+			display: none;
+		}
+	}
 	&__table-heading-type, &__table-inner-type {
 		display: block;
 		width: 100%;

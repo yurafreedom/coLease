@@ -165,6 +165,10 @@ $('.issues-block__table-card').hover(function() {
   $(this).prev().addClass('hidden');
 });
 
+$('.reminder-block__table-card').hover(function() {
+  $(this).prev().addClass('hidden');
+});
+
 $('[data-toggle="expand"]').on('click', function() {
   $(this).toggleClass('active');
   $(this).next().slideToggle(200);
