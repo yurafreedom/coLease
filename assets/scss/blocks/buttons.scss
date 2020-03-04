@@ -18,10 +18,18 @@
 		stroke: $text;
 		transition: all 0.3s ease-in-out;
 	}
+	svg.icon--calendar {
+		fill: $text;
+	}
 	svg:hover,
 	svg:active,
 	svg:focus {
 		stroke: $primary-blue;
+	}
+	svg.icon--calendar:hover,
+	svg.icon--calendar:active,
+	svg.icon--calendar:focus {
+		fill: $primary-blue;
 	}
 }
 

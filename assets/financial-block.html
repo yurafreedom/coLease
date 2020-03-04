@@ -1,0 +1,58 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": ""
+})
+@@include('template/page-header.html', {
+	"leases": "true"
+})
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+		<section class="nav-block">
+			<div class="container">
+				<div class="nav-block__wrapper">
+					<div class="nav-block__list">
+						<ul>
+							<li><a href="javascript:;">Leases</a></li>
+							<li><a href="javascript:;">Sites</a></li>
+							<li><a href="javascript:;">Landlords</a></li>
+							<li><a href="javascript:;">Financial</a></li>
+							<li><a href="javascript:;">Issues</a></li>
+							<li><a href="javascript:;">File Explorer</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="financial-block">
+			<div class="container">
+				<div class="financial-block__heading-block">
+					<div class="financial-block__heading-title">Issues</div>
+					<form class="page-block__form">
+						<div class="page-block__input-wrapper">
+							<label for="issues_date" class="page-block__label">Select Month</label>
+							<input type="text" class="text-input page-block__input datepicker-here" id="issues_date" name="issues_date" placeholder="Select Month..." data-min-view="months" data-view="months" data-date-format="MM yyyy" required>
+							<button type="button" class="btn btn--search">
+								<svg width="19" height="17" class="icon--calendar">
+									<use xlink:href="#calendar"></use>
+								</svg>
+							</button>
+						</div>
+						<button type="button" class="btn btn--fenny">
+							
+							<span>Export Report</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+@@include('template/page-footer.html')
+@@include('template/popups.html')
+@@include('template/scripts.html')
+@@include('template/sprite.html')
+
+</body>
+</html>
