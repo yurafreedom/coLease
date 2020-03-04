@@ -240,3 +240,95 @@
 [hidden] {
   display: none!important;
 }
+
+.datepicker {
+  width: 344px;
+  border-color: $primary-blue;
+}
+
+.datepicker--pointer {
+  display: none;
+}
+
+.datepicker--nav-title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $primary-blue;
+}
+
+.datepicker--nav {
+  position: relative;
+  min-height: 63px;
+  padding: 0;
+  padding-left: 27px;
+  padding-right: 27px;
+  border-bottom: 0;
+}
+
+.datepicker--nav-action {
+  outline: 0;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  transition: all 0.2s ease-in-out;
+  svg {
+    display: block;
+    transition: all 0.2s ease-in-out;
+  }
+  path {
+    stroke: $border;
+    stroke-width: 4px;
+  }
+  &:hover, &:active, &:focus {
+    background: none;
+  }
+  &:last-child {
+    right: 27px;
+  }
+  &:first-child {
+    right: 50px;
+  }
+  &:hover path,
+  &:active path,
+  &:focus path {
+    stroke: $primary-blue;
+  }
+}
+
+.datepicker--content {
+  padding: 0;
+  padding-left: 28px;
+  padding-right: 27px;
+  padding-bottom: 24px;
+}
+
+.datepicker--cells-months {
+  height: 184px;
+}
+
+.datepicker--cell {
+  width: 62px;
+  height: 54px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  color: $primary-blue;
+  border: 1px solid rgba(83, 199, 205, 0.2);
+  border-radius: 5px;
+  margin-bottom: 13px;
+  &:not(:nth-child(4n)) {
+    margin-right: 13px;
+  }
+}
+
+.datepicker--cell.-selected- {
+  color: #fff;
+  border-color: $primary-blue;
+  background-color: $primary-blue;
+}
+
+.datepicker--cell.-current- {
+  color: $primary-blue;
+}

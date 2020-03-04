@@ -16,7 +16,7 @@
 	svg {
 		display: block;
 		stroke: $text;
-		transition: all 0.3s ease-in-out;
+		transition: all 0.2s ease-in-out;
 	}
 	svg.icon--calendar {
 		fill: $text;
@@ -46,7 +46,7 @@
 	padding-right: 18px;
 	background-color: #fff;
 	box-shadow: inset 0px -2px 4px rgba(0, 0, 0, 0.07);
-	transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in-out;
 	&::after {
 		content: '';
 		position: absolute;
@@ -62,7 +62,7 @@
 		border-right: 23px solid transparent;
 		border-top: 19px solid $primary-blue;
 		z-index: 10;
-		transition: all 0.3s ease-in-out;
+		transition: all 0.2s ease-in-out;
 	}
 	svg {
 		display: block;
@@ -87,7 +87,7 @@
 	background-color: $primary-green;
 	border-radius: 22px;
 	color: #fff;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in-out;
 	&:hover {
 		background-color: #fff;
 		color: $primary-green;
@@ -102,7 +102,7 @@
 		display: block;
 		stroke: #fff;
 		margin-right: 8px;
-		transition: all 0.3s ease-in-out;
+		transition: all 0.2s ease-in-out;
 	}
 	&:hover svg {
 		stroke: $primary-green;
@@ -127,7 +127,7 @@
 	background-color: $fenny;
 	border-radius: 22px;
 	color: #fff;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in-out;
 	&:hover {
 		background-color: #fff;
 		color: $fenny;
@@ -141,7 +141,7 @@
 		display: block;
 		stroke: #fff;
 		margin-right: 8px;
-		transition: all 0.3s ease-in-out;
+		transition: all 0.2s ease-in-out;
 	}
 	&:hover svg {
 		stroke: $fenny;
@@ -166,7 +166,7 @@
 	background-color: $primary-blue;
 	border-radius: 22px;
 	color: #fff;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in-out;
 	&:hover {
 		background-color: #fff;
 		color: $primary-blue;
@@ -182,7 +182,7 @@
 		fill: #fff;
 		margin-right: 10px;
 		transform: rotate(180deg);
-		transition: all 0.3s ease-in-out;
+		transition: all 0.2s ease-in-out;
 	}
 	&:hover svg {
 		fill: $primary-blue;

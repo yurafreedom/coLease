@@ -22,6 +22,7 @@
 		margin-bottom: 32px;	
 	}
 	&__wrapper {
+		position: relative;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -315,12 +316,12 @@
 			animation-delay: -1s;
 		}
 	}
-	&__tab-content.active.loading &__preloader {
+	&__wrapper.loading &__preloader {
 		transition: 0.3s opacity;
 		opacity: 1;
 		pointer-events: all;
 	}
-	&__tab-content.active.loaded &__preloader {
+	&__wrapper.loaded &__preloader {
 		opacity: 0;
 	}
 	&__content-row {

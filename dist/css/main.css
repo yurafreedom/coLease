@@ -3485,7 +3485,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   .btn--search svg {
     display: block;
     stroke: #9B9B9B;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.2s ease-in-out; }
   .btn--search svg.icon--calendar {
     fill: #9B9B9B; }
   .btn--search svg:hover,
@@ -3512,7 +3512,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   padding-right: 18px;
   background-color: #fff;
   box-shadow: inset 0px -2px 4px rgba(0, 0, 0, 0.07);
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
   .btn--control::after {
     content: '';
     position: absolute;
@@ -3528,7 +3528,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     border-right: 23px solid transparent;
     border-top: 19px solid #53C7CD;
     z-index: 10;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.2s ease-in-out; }
   .btn--control svg {
     display: block;
     -ms-flex-negative: 0;
@@ -3555,7 +3555,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   background-color: #ABD856;
   border-radius: 22px;
   color: #fff;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
   .btn--green:hover {
     background-color: #fff;
     color: #ABD856; }
@@ -3568,7 +3568,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     display: block;
     stroke: #fff;
     margin-right: 8px;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.2s ease-in-out; }
   .btn--green:hover svg {
     stroke: #ABD856; }
   .btn--green:active svg {
@@ -3593,7 +3593,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   background-color: #16A8AA;
   border-radius: 22px;
   color: #fff;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
   .btn--fenny:hover {
     background-color: #fff;
     color: #16A8AA; }
@@ -3605,7 +3605,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     display: block;
     stroke: #fff;
     margin-right: 8px;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.2s ease-in-out; }
   .btn--fenny:hover svg {
     stroke: #16A8AA; }
   .btn--fenny:active svg {
@@ -3630,7 +3630,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   background-color: #53C7CD;
   border-radius: 22px;
   color: #fff;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
   .btn--blue:hover {
     background-color: #fff;
     color: #53C7CD; }
@@ -3645,7 +3645,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     margin-right: 10px;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.2s ease-in-out; }
   .btn--blue:hover svg {
     fill: #53C7CD; }
   .btn--blue:active svg {
@@ -3866,6 +3866,81 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
 [hidden] {
   display: none !important; }
 
+.datepicker {
+  width: 344px;
+  border-color: #53C7CD; }
+
+.datepicker--pointer {
+  display: none; }
+
+.datepicker--nav-title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #53C7CD; }
+
+.datepicker--nav {
+  position: relative;
+  min-height: 63px;
+  padding: 0;
+  padding-left: 27px;
+  padding-right: 27px;
+  border-bottom: 0; }
+
+.datepicker--nav-action {
+  outline: 0;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  transition: all 0.2s ease-in-out; }
+  .datepicker--nav-action svg {
+    display: block;
+    transition: all 0.2s ease-in-out; }
+  .datepicker--nav-action path {
+    stroke: #D8D8D8;
+    stroke-width: 4px; }
+  .datepicker--nav-action:hover, .datepicker--nav-action:active, .datepicker--nav-action:focus {
+    background: none; }
+  .datepicker--nav-action:last-child {
+    right: 27px; }
+  .datepicker--nav-action:first-child {
+    right: 50px; }
+  .datepicker--nav-action:hover path,
+  .datepicker--nav-action:active path,
+  .datepicker--nav-action:focus path {
+    stroke: #53C7CD; }
+
+.datepicker--content {
+  padding: 0;
+  padding-left: 28px;
+  padding-right: 27px;
+  padding-bottom: 24px; }
+
+.datepicker--cells-months {
+  height: 184px; }
+
+.datepicker--cell {
+  width: 62px;
+  height: 54px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  color: #53C7CD;
+  border: 1px solid rgba(83, 199, 205, 0.2);
+  border-radius: 5px;
+  margin-bottom: 13px; }
+  .datepicker--cell:not(:nth-child(4n)) {
+    margin-right: 13px; }
+
+.datepicker--cell.-selected- {
+  color: #fff;
+  border-color: #53C7CD;
+  background-color: #53C7CD; }
+
+.datepicker--cell.-current- {
+  color: #53C7CD; }
+
 .main-page-wrap {
   position: relative;
   display: -ms-flexbox;
@@ -3994,9 +4069,6 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
       border-bottom: 19px solid #E9E9E9;
       transition: all 0.2s ease-in-out;
       z-index: 10; }
-    .page-header__nav ul li a:hover::after {
-      opacity: 1;
-      pointer-events: all; }
     .page-header__nav ul li a span {
       display: block; }
     .page-header__nav ul li a svg {
@@ -4645,6 +4717,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     color: #4A4A4A;
     margin-bottom: 32px; }
   .manager-block__wrapper {
+    position: relative;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -4913,11 +4986,11 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
       bottom: 0;
       -webkit-animation-delay: -1s;
               animation-delay: -1s; }
-  .manager-block__tab-content.active.loading .manager-block__preloader {
+  .manager-block__wrapper.loading .manager-block__preloader {
     transition: 0.3s opacity;
     opacity: 1;
     pointer-events: all; }
-  .manager-block__tab-content.active.loaded .manager-block__preloader {
+  .manager-block__wrapper.loaded .manager-block__preloader {
     opacity: 0; }
   .manager-block__content-row {
     display: -ms-flexbox;
@@ -5291,7 +5364,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   .issues-block__trash-link {
     border: 2px solid #9B9B9B;
     background-color: #9B9B9B;
-    padding-left: 2px; }
+    padding-left: 1px; }
     .issues-block__trash-link:hover, .issues-block__trash-link:active, .issues-block__trash-link:focus {
       border-color: #E85C5C;
       background-color: #E85C5C; }
@@ -5596,6 +5669,8 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     right: 0; }
   .page-block__input-wrapper.active .btn--search {
     border-color: #53C7CD; }
+    .page-block__input-wrapper.active .btn--search svg {
+      stroke: #53C7CD; }
   .page-block__input {
     position: relative;
     display: block;
@@ -5629,6 +5704,8 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   .page-block__input-wrapper:hover .page-block__input,
   .page-block__input-wrapper:hover .btn--search {
     border-color: #53C7CD; }
+  .page-block__input-wrapper:hover .btn--search svg {
+    stroke: #53C7CD; }
   .page-block__input-wrapper.success .page-block__label {
     color: #8BC61D; }
   .page-block__input-wrapper.success .btn--search {
@@ -5867,6 +5944,39 @@ input[type="checkbox"]:checked + label .login-block__check-v {
     font-size: 12px; }
   .login-block__form .btn--green {
     width: 100%; } }
+
+.financial-block {
+  padding-top: 30px;
+  padding-bottom: 40px; }
+  .financial-block__heading-block {
+    display: block;
+    border-radius: 25px;
+    background-color: #fff;
+    padding-top: 30px;
+    padding-left: 28px;
+    padding-right: 26px;
+    padding-bottom: 30px;
+    margin-bottom: 30px; }
+  .financial-block__heading-title {
+    display: block;
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 400;
+    color: #4A4A4A;
+    margin-bottom: 52px; }
+  .financial-block .page-block__form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .financial-block .page-block__input-wrapper:first-child {
+    width: 100%;
+    max-width: 1140px;
+    margin-right: 28px; }
+  .financial-block .btn--fenny {
+    width: 155px; }
 
 .page-footer {
   position: relative;

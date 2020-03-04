@@ -162,11 +162,11 @@ $('.issue-block__textarea').mouseout("focus", function() {
 });
 
 $('.issues-block__table-card').hover(function() {
-  $(this).prev().addClass('hidden');
+  $(this).prev().toggleClass('hidden');
 });
 
 $('.reminder-block__table-card').hover(function() {
-  $(this).prev().addClass('hidden');
+  $(this).prev().toggleClass('hidden');
 });
 
 $('[data-toggle="expand"]').on('click', function() {
@@ -175,9 +175,9 @@ $('[data-toggle="expand"]').on('click', function() {
 });
 
 $('.manager-block__controls-link').on('click', function () {
-  $('.manager-block__tab-content.active').on('load').removeClass('loaded').toggleClass('loading');
+  $('.manager-block__wrapper').on('load').removeClass('loaded').toggleClass('loading');
   window.setTimeout(function () {
-    $('.manager-block__tab-content.active').removeClass('loading');
-    $('.manager-block__tab-content.active').toggleClass('loaded');
+    $('.manager-block__wrapper').removeClass('loading');
+    $('.manager-block__wrapper').toggleClass('loaded');
   }, 500);
 });

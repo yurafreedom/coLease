@@ -1,0 +1,35 @@
+.financial-block {
+	padding-top: 30px;
+	padding-bottom: 40px;
+	&__heading-block {
+		display: block;
+		border-radius: 25px;
+		background-color: #fff;
+		padding-top: 30px;
+		padding-left: 28px;
+		padding-right: 26px;
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+	}
+	&__heading-title {
+		display: block;
+		font-size: 25px;
+		line-height: 1;
+		font-weight: 400;
+		color: $title;
+		margin-bottom: 52px;
+	}
+	.page-block__form {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.page-block__input-wrapper:first-child {
+		width: 100%;
+		max-width: 1140px;
+		margin-right: 28px;
+	}
+	.btn--fenny {
+		width: 155px;
+	}
+}

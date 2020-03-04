@@ -41,6 +41,9 @@
 	}
 	&__input-wrapper.active .btn--search {
 		border-color: $primary-blue;
+		svg {
+			stroke: $primary-blue;
+		}
 	}
 	&__input {
 		position: relative;
@@ -63,6 +66,11 @@
 	&__input-wrapper:hover &__input,
 	&__input-wrapper:hover .btn--search {
 		border-color: $primary-blue;
+	}
+	&__input-wrapper:hover .btn--search {
+		svg {
+			stroke: $primary-blue;
+		}
 	}
 	&__input-wrapper.success &__label {
 		color: $correctly;
