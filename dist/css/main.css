@@ -3696,8 +3696,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   padding-left: 20px;
   padding-right: 20px; }
   .nice-select:hover, .nice-select:active, .nice-select:focus {
-    border-color: #53C7CD;
-    box-shadow: 1px 0 6px rgba(87, 138, 215, 0.49); }
+    border-color: #53C7CD; }
 
 .nice-select .current {
   display: block;
@@ -3821,7 +3820,6 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   border: 1px solid #D8D8D8;
   padding-top: 20px;
   padding-bottom: 20px;
-  box-shadow: 0 20px 40px rgba(187, 196, 215, 0.2);
   transition: opacity .15s ease-out;
   z-index: 9; }
 
@@ -4378,7 +4376,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     display: block;
     border-radius: 25px;
     background-color: #fff;
-    padding-top: 9px;
+    padding-top: 30px;
     padding-left: 30px;
     padding-right: 28px;
     padding-bottom: 31px;
@@ -4523,17 +4521,16 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     .reminder-block__trash-link:focus svg {
       stroke: #ABD856; }
   .reminder-block__alarm-link {
-    border: 2px solid #9B9B9B;
-    background-color: #9B9B9B;
+    border: 2px solid #53C7CD;
+    background-color: #53C7CD;
     padding-left: 4px; }
     .reminder-block__alarm-link:hover svg,
     .reminder-block__alarm-link:active svg,
     .reminder-block__alarm-link:focus svg {
-      stroke: #9B9B9B; }
+      stroke: #53C7CD; }
   .reminder-block__trash-link {
     border: 2px solid #9B9B9B;
-    background-color: #9B9B9B;
-    padding-left: 2px; }
+    background-color: #9B9B9B; }
     .reminder-block__trash-link:hover, .reminder-block__trash-link:active, .reminder-block__trash-link:focus {
       border-color: #E85C5C;
       background-color: #E85C5C; }

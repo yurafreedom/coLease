@@ -70,7 +70,7 @@
 		display: block;
 		border-radius: 25px;
 		background-color: #fff;
-		padding-top: 9px;
+		padding-top: 30px;
 		padding-left: 30px;
 		padding-right: 28px;
 		padding-bottom: 31px;
@@ -230,19 +230,18 @@
 		}
 	}
 	&__alarm-link {
-		border: 2px solid $text;
-		background-color: $text;
+		border: 2px solid $primary-blue;
+		background-color: $primary-blue;
 		padding-left: 4px;
 		&:hover svg,
 		&:active svg,
 		&:focus svg {
-			stroke: $text;
+			stroke: $primary-blue;
 		}
 	}
 	&__trash-link {
 		border: 2px solid $text;
 		background-color: $text;
-		padding-left: 2px;
 		&:hover, &:active, &:focus {
 			border-color: $error;
 			background-color: $error;
