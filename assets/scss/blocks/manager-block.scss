@@ -71,6 +71,7 @@
 		color: $text;
 		margin-bottom: 20px;
 		transition: all 0.2s ease-in-out;
+		cursor: pointer;
 		&:hover, &:active, &:focus {
 			color: $primary-blue;
 		}
@@ -120,6 +121,7 @@
 		color: $fenny;
 		margin-bottom: 12px;
 		transition: all 0.2s ease-in-out;
+		cursor: pointer;
 		span {
 			display: block;
 			margin-left: 10px;
@@ -143,6 +145,7 @@
 		line-height: 1.142;
 		color: #0F7C7D;
 		margin-bottom: 13px;
+		cursor: pointer;
 		span {
 			display: block;
 			margin-left: 10px;
@@ -172,6 +175,7 @@
 		color: #0F7C7D;
 		margin-bottom: 17px;
 		transition: all 0.2s ease-in-out;
+		cursor: pointer;
 		&:hover, &:active, &:focus {
 			color: #0F7C7D;
 			text-decoration: none;

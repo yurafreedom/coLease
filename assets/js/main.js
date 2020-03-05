@@ -181,3 +181,20 @@ $('.manager-block__controls-link').on('click', function () {
     $('.manager-block__wrapper').toggleClass('loaded');
   }, 500);
 });
+
+$.fn.datepicker.language['eng'] =  {
+  days: ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+  daysShort: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
+  daysMin: ['Su','Mo','Tu','We','Th','Fr','Sa'],
+  months: ['January','February','March','April','May','June','July','August','September','October','November','December'],
+  monthsShort: ['Jan','Feb','Mar','Apr','May','June','July','Aug','Sept','Oct','Nov','Dec'],
+  today: 'Today',
+  clear: 'clear',
+  dateFormat: 'dd.mm.yyyy',
+  timeFormat: 'hh:ii',
+  firstDay: 1
+};
+
+$('.datepicker').datepicker({
+  language: 'eng'
+})

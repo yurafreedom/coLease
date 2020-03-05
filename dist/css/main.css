@@ -4763,7 +4763,8 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     font-weight: 700;
     color: #9B9B9B;
     margin-bottom: 20px;
-    transition: all 0.2s ease-in-out; }
+    transition: all 0.2s ease-in-out;
+    cursor: pointer; }
     .manager-block__nav-section-title:hover, .manager-block__nav-section-title:active, .manager-block__nav-section-title:focus {
       color: #53C7CD; }
     .manager-block__nav-section-title svg {
@@ -4806,7 +4807,8 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     line-height: 1.142;
     color: #16A8AA;
     margin-bottom: 12px;
-    transition: all 0.2s ease-in-out; }
+    transition: all 0.2s ease-in-out;
+    cursor: pointer; }
     .manager-block__nav-subsection-title span {
       display: block;
       margin-left: 10px; }
@@ -4827,7 +4829,8 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     font-size: 12px;
     line-height: 1.142;
     color: #0F7C7D;
-    margin-bottom: 13px; }
+    margin-bottom: 13px;
+    cursor: pointer; }
     .manager-block__sub-heading-title span {
       display: block;
       margin-left: 10px; }
@@ -4850,7 +4853,8 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     font-weight: 400;
     color: #0F7C7D;
     margin-bottom: 17px;
-    transition: all 0.2s ease-in-out; }
+    transition: all 0.2s ease-in-out;
+    cursor: pointer; }
     .manager-block__sub-inner-link:hover, .manager-block__sub-inner-link:active, .manager-block__sub-inner-link:focus {
       color: #0F7C7D;
       text-decoration: none; }
