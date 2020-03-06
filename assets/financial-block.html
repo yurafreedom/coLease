@@ -37,7 +37,7 @@
 						<div class="financial-block__form-heading">
 							<div class="page-block__input-wrapper">
 								<label for="issues_date" class="page-block__label">Select Month</label>
-								<input type="text" class="text-input page-block__input datepicker-here" id="issues_date" name="issues_date" placeholder="Select Month..." data-min-view="months" data-view="months" data-date-format="MM yyyy">
+								<input type="text" id="financial_datepicker" class="text-input page-block__input" id="issues_date" name="issues_date" placeholder="Select Month..." data-min-view="months" data-view="months" data-date-format="MM yyyy">
 								<button type="button" class="btn btn--search">
 									<svg width="19" height="17" class="icon--calendar">
 										<use xlink:href="#calendar"></use>
@@ -137,8 +137,8 @@
 								<div class="financial-block__table-inner-name">Wynberg (MST Office block)</div>
 								<div class="financial-block__table-inner-total">
 									<div class="page-block__input-wrapper">
-										<input type="text" id="r_1" class="text-input page-block__input" placeholder="R ...">
-										<label for="r_1" class="page-block__label">Base Cost: R 7250</label>
+										<input type="text" id="r_2" class="text-input page-block__input" placeholder="R ...">
+										<label for="r_2" class="page-block__label">Base Cost: R 7250</label>
 									</div>
 								</div>
 								<div class="financial-block__table-inner-charge">
@@ -167,6 +167,7 @@
 </div>
 
 @@include('template/scripts.html')
+<script src="js/financial-block.js"></script>
 @@include('template/sprite.html')
 
 </body>

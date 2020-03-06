@@ -87,7 +87,7 @@
 }
 
 .nice-select.open .list {
-  display: block;
+  opacity: 1;
   pointer-events: auto;
   border-radius: 10px;
   border-color: $primary-blue;
@@ -166,7 +166,7 @@
   min-width: 100%;
   border: none;
   box-sizing: border-box;
-  display: none;
+  opacity: 0;
   padding: 0;
   overflow: visible;
   overflow-y: auto;
@@ -253,6 +253,9 @@
   font-weight: 700;
   line-height: 1.2;
   color: $primary-blue;
+  &:hover, &:active, &:focus {
+    background: none;
+  }
 }
 
 .datepicker--nav {
@@ -298,11 +301,12 @@
   padding: 0;
   padding-left: 28px;
   padding-right: 27px;
-  padding-bottom: 24px;
+  padding-bottom: 14px;
 }
 
-.datepicker--cells-months {
-  height: 184px;
+.datepicker--cells-months,
+.datepicker--cells-years, .datepicker--years {
+  height: auto;
 }
 
 .datepicker--cell {

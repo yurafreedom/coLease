@@ -1,6 +1,5 @@
 .issues-block {
 	padding-top: 30px;
-	padding-bottom: 40px;
 	&__heading-block {
 		display: block;
 		border-radius: 25px;
@@ -196,15 +195,16 @@
 		margin-right: 30px;
 	}
 	.btn--green {
-		width: 119px;
+		width: 130px;
 		flex-shrink: 0;
+		padding-top: 11px;
+		padding-bottom: 11px;
 	}
 }
 
 @include for-size(mobile) {
 	.issues-block {
 		padding-top: 15px;
-		padding-bottom: 20px;
 		&__table-block {
 			overflow-y: auto;
 			padding-bottom: 20px;

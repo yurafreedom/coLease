@@ -96,7 +96,6 @@
 	&__table-wrapper {
 		position: relative;
 		display: block;
-		overflow: hidden;
 	}
 	&__table-block {
 		position: relative;
@@ -180,6 +179,10 @@
 	&__table-inner-status .page-block__select-wrapper {
 		margin-bottom: 0;
 	}
+	&__table-inner-status .page-block__select-wrapper .nice-select .list {
+		top: auto;
+		bottom: 30px;
+	}
 	&__table-inner .page-block__input {
 		&::placeholder {
 			font-size: 14px;
@@ -247,6 +250,9 @@
 		&__table-inner-name {
 			max-width: 135px;
 		}
+		&__table-wrapper {
+			overflow: hidden;
+		}
 		&__table-block {
 			overflow-y: auto;
 			&::-webkit-scrollbar-track {
@@ -308,6 +314,9 @@
 		&__table-heading-name,
 		&__table-inner-name {
 			max-width: 135px;
+		}
+		&__table-wrapper {
+			overflow: hidden;
 		}
 		&__table-block {
 			overflow-y: auto;

@@ -1,7 +1,6 @@
 .reminder-block {
 	position: relative;
 	padding-top: 30px;
-	padding-bottom: 40px;
 	&__wrapper {
 		position: relative;
 		display: block;
@@ -86,7 +85,6 @@
 	}
 	&__table-block {
 		padding-top: 30px;
-		padding-bottom: 45px;
 		border-top-left-radius: 25px;
 		border-top-right-radius: 25px;
 		background-color: #fff;
@@ -259,7 +257,6 @@
 @include for-size(mobile) {
 	.reminder-block {
 		padding-top: 15px;
-		padding-bottom: 20px;
 		&__table-block {
 			overflow-y: auto;
 			&::-webkit-scrollbar-track {

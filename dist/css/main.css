@@ -3776,7 +3776,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   background-image: url("../img/chevron-blue.svg"); }
 
 .nice-select.open .list {
-  display: block;
+  opacity: 1;
   pointer-events: auto;
   border-radius: 10px;
   border-color: #53C7CD; }
@@ -3841,7 +3841,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   min-width: 100%;
   border: none;
   box-sizing: border-box;
-  display: none;
+  opacity: 0;
   padding: 0;
   overflow: visible;
   overflow-y: auto;
@@ -3915,6 +3915,8 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   font-weight: 700;
   line-height: 1.2;
   color: #53C7CD; }
+  .datepicker--nav-title:hover, .datepicker--nav-title:active, .datepicker--nav-title:focus {
+    background: none; }
 
 .datepicker--nav {
   position: relative;
@@ -3951,10 +3953,11 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   padding: 0;
   padding-left: 28px;
   padding-right: 27px;
-  padding-bottom: 24px; }
+  padding-bottom: 14px; }
 
-.datepicker--cells-months {
-  height: 184px; }
+.datepicker--cells-months,
+.datepicker--cells-years, .datepicker--years {
+  height: auto; }
 
 .datepicker--cell {
   outline: 0;
@@ -4357,8 +4360,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
 
 .reminder-block {
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 40px; }
+  padding-top: 30px; }
   .reminder-block__wrapper {
     position: relative;
     display: block; }
@@ -4435,7 +4437,6 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     margin-bottom: 52px; }
   .reminder-block__table-block {
     padding-top: 30px;
-    padding-bottom: 45px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     background-color: #fff; }
@@ -4588,8 +4589,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
 
 @media (max-width: 767px) {
   .reminder-block {
-    padding-top: 15px;
-    padding-bottom: 20px; }
+    padding-top: 15px; }
     .reminder-block__table-block {
       overflow-y: auto; }
       .reminder-block__table-block::-webkit-scrollbar-track {
@@ -5254,8 +5254,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
       margin-right: 30px; } }
 
 .issues-block {
-  padding-top: 30px;
-  padding-bottom: 40px; }
+  padding-top: 30px; }
   .issues-block__heading-block {
     display: block;
     border-radius: 25px;
@@ -5434,14 +5433,15 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     width: 100%;
     margin-right: 30px; }
   .issues-block .btn--green {
-    width: 119px;
+    width: 130px;
     -ms-flex-negative: 0;
-        flex-shrink: 0; }
+        flex-shrink: 0;
+    padding-top: 11px;
+    padding-bottom: 11px; }
 
 @media (max-width: 767px) {
   .issues-block {
-    padding-top: 15px;
-    padding-bottom: 20px; }
+    padding-top: 15px; }
     .issues-block__table-block {
       overflow-y: auto;
       padding-bottom: 20px; }
@@ -6084,8 +6084,7 @@ input[type="checkbox"]:checked + label .login-block__check-v {
           flex-shrink: 0; }
   .financial-block__table-wrapper {
     position: relative;
-    display: block;
-    overflow: hidden; }
+    display: block; }
   .financial-block__table-block {
     position: relative;
     display: block;
@@ -6158,6 +6157,9 @@ input[type="checkbox"]:checked + label .login-block__check-v {
     margin-bottom: 0; }
   .financial-block__table-inner-status .page-block__select-wrapper {
     margin-bottom: 0; }
+  .financial-block__table-inner-status .page-block__select-wrapper .nice-select .list {
+    top: auto;
+    bottom: 30px; }
   .financial-block__table-inner .page-block__input::-webkit-input-placeholder {
     font-size: 14px;
     line-height: 1.142;
@@ -6217,6 +6219,8 @@ input[type="checkbox"]:checked + label .login-block__check-v {
       max-width: 90px; }
     .financial-block__table-heading-name, .financial-block__table-inner-name {
       max-width: 135px; }
+    .financial-block__table-wrapper {
+      overflow: hidden; }
     .financial-block__table-block {
       overflow-y: auto; }
       .financial-block__table-block::-webkit-scrollbar-track {
@@ -6255,6 +6259,8 @@ input[type="checkbox"]:checked + label .login-block__check-v {
     max-width: 90px; }
   .financial-block__table-heading-name, .financial-block__table-inner-name {
     max-width: 135px; }
+  .financial-block__table-wrapper {
+    overflow: hidden; }
   .financial-block__table-block {
     overflow-y: auto; }
     .financial-block__table-block::-webkit-scrollbar-track {
