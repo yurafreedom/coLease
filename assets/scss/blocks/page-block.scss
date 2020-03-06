@@ -41,17 +41,17 @@
 	}
 	&__input-wrapper.active .btn--search {
 		border-color: $primary-blue;
-		svg {
+		svg.icon--search {
 			stroke: $primary-blue;
+		}
+		svg.icon--calendar {
+			fill: $primary-blue;
 		}
 	}
 	&__input {
 		position: relative;
 		display: block;
-		width: calc(100% - 40px);
-		border-right: 0;
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
+		width: 100%;
 		transition: all 0.2s ease-in-out;
 		&:hover, &:focus {
 			border-color: $primary-blue;
@@ -68,8 +68,11 @@
 		border-color: $primary-blue;
 	}
 	&__input-wrapper:hover .btn--search {
-		svg {
+		svg.icon--search {
 			stroke: $primary-blue;
+		}
+		svg.icon--calendar {
+			fill: $primary-blue;
 		}
 	}
 	&__input-wrapper.success &__label {

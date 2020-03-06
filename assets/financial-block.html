@@ -32,30 +32,140 @@
 		<section class="financial-block">
 			<div class="container">
 				<div class="financial-block__heading-block">
-					<div class="financial-block__heading-title">Issues</div>
+					<div class="financial-block__heading-title">Financial</div>
 					<form class="page-block__form">
-						<div class="page-block__input-wrapper">
-							<label for="issues_date" class="page-block__label">Select Month</label>
-							<input type="text" class="text-input page-block__input datepicker-here" id="issues_date" name="issues_date" placeholder="Select Month..." data-min-view="months" data-view="months" data-date-format="MM yyyy">
-							<button type="button" class="btn btn--search">
-								<svg width="19" height="17" class="icon--calendar">
-									<use xlink:href="#calendar"></use>
+						<div class="financial-block__form-heading">
+							<div class="page-block__input-wrapper">
+								<label for="issues_date" class="page-block__label">Select Month</label>
+								<input type="text" class="text-input page-block__input datepicker-here" id="issues_date" name="issues_date" placeholder="Select Month..." data-min-view="months" data-view="months" data-date-format="MM yyyy">
+								<button type="button" class="btn btn--search">
+									<svg width="19" height="17" class="icon--calendar">
+										<use xlink:href="#calendar"></use>
+									</svg>
+								</button>
+							</div>
+							<button type="button" class="btn btn--fenny">
+								<svg width="13" height="13">
+									<use xlink:href="#print"></use>
 								</svg>
+								<span>Export Report</span>
 							</button>
 						</div>
-						<button type="button" class="btn btn--fenny">
-
-							<span>Export Report</span>
-						</button>
+						<div class="financial-block__form-inner">
+							<div class="page-block__input-wrapper">
+								<label for="financial_id" class="page-block__label">Site ID</label>
+								<input type="text" id="financial_id" class="text-input page-block__input" placeholder="Site ID..." required>
+							</div>
+							<div class="page-block__input-wrapper">
+								<label for="financial_name" class="page-block__label">Site Name</label>
+								<input type="text" id="financial_name" class="text-input page-block__input" placeholder="Site Name..." required>
+							</div>
+							<div class="page-block__input-wrapper">
+								<label for="financial_rental" class="page-block__label">Rental Payment Status</label>
+								<input type="text" id="financial_rental" class="text-input page-block__input" placeholder="Payment Status..." required>
+							</div>
+							<div class="page-block__select-wrapper">
+								<label for="" class="page-block__label">Electricity Costs Payment Status</label>
+								<select class="nice-select">
+									<option value="1">Payment Status...</option>
+									<option value="2">Payment Status...</option>
+									<option value="3">Payment Status...</option>
+									<option value="4">Payment Status...</option>
+									<option value="5">Payment Status...</option>
+								</select>
+							</div>
+							<div class="page-block__select-wrapper">
+								<label for="" class="page-block__label">Other Utility Costs Payment Status</label>
+								<select class="nice-select">
+									<option value="1">Payment Status...</option>
+									<option value="2">Payment Status...</option>
+									<option value="3">Payment Status...</option>
+									<option value="4">Payment Status...</option>
+									<option value="5">Payment Status...</option>
+								</select>
+							</div>
+							<div class="financial-block__form-inner-wrapper">
+								<button type="button" class="btn btn--green">Search</button>
+								<button type="button" class="btn btn--clear">
+									<svg width="12" height="12">
+										<use xlink:href="#close"></use>
+									</svg>
+									<span>Reset</span>
+								</button>
+							</div>
+						</div>
 					</form>
+				</div>
+				<div class="financial-block__table-block">
+					<div class="financial-block__table-block">
+						<div class="financial-block__table-heading">
+							<div class="financial-block__table-heading-id">Site ID</div>
+							<div class="financial-block__table-heading-name">Site Name</div>
+							<div class="financial-block__table-heading-total">Total Monthly Lease Expense</div>
+							<div class="financial-block__table-heading-charge">Monthly Charge (as per Invoice)</div>
+							<div class="financial-block__table-heading-status">Payment Status</div>
+						</div>
+						<div class="financial-block__table-inner">
+							<div class="financial-block__table-card">
+								<div class="financial-block__table-inner-id">JHB238</div>
+								<div class="financial-block__table-inner-name">Wynberg (MST Office block)</div>
+								<div class="financial-block__table-inner-total">
+									<div class="page-block__input-wrapper">
+										<input type="text" id="r_1" class="text-input page-block__input" placeholder="R ...">
+										<label for="r_1" class="page-block__label">Base Cost: R 7250</label>
+									</div>
+								</div>
+								<div class="financial-block__table-inner-charge">
+									<div class="page-block__input-wrapper">
+										<input type="text" class="text-input page-block__input" placeholder="R ...">
+									</div>
+								</div>
+								<div class="financial-block__table-inner-status">
+									<div class="page-block__select-wrapper">
+										<select class="nice-select">
+											<option value="1">Payment Status</option>
+											<option value="2">Payment Status</option>
+											<option value="3">Payment Status</option>
+											<option value="4">Payment Status</option>
+											<option value="5">Payment Status</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="financial-block__table-card">
+								<div class="financial-block__table-inner-id">JHB238</div>
+								<div class="financial-block__table-inner-name">Wynberg (MST Office block)</div>
+								<div class="financial-block__table-inner-total">
+									<div class="page-block__input-wrapper">
+										<input type="text" id="r_1" class="text-input page-block__input" placeholder="R ...">
+										<label for="r_1" class="page-block__label">Base Cost: R 7250</label>
+									</div>
+								</div>
+								<div class="financial-block__table-inner-charge">
+									<div class="page-block__input-wrapper">
+										<input type="text" class="text-input page-block__input" placeholder="R ...">
+									</div>
+								</div>
+								<div class="financial-block__table-inner-status">
+									<div class="page-block__select-wrapper">
+										<select class="nice-select">
+											<option value="1">Payment Status</option>
+											<option value="2">Payment Status</option>
+											<option value="3">Payment Status</option>
+											<option value="4">Payment Status</option>
+											<option value="5">Payment Status</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 	</div>
 </div>
 
-@@include('template/page-footer.html')
-@@include('template/popups.html')
 @@include('template/scripts.html')
 @@include('template/sprite.html')
 

@@ -306,6 +306,7 @@
 }
 
 .datepicker--cell {
+  outline: 0;
   width: 62px;
   height: 54px;
   font-family: 'Roboto', sans-serif;
@@ -319,6 +320,12 @@
   &:not(:nth-child(4n)) {
     margin-right: 13px;
   }
+}
+
+.datepicker--cell.-focus- {
+  color: #fff;
+  border-color: $primary-blue;
+  background-color: $primary-blue;
 }
 
 .datepicker--cell.-selected- {

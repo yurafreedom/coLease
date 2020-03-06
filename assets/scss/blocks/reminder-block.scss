@@ -222,6 +222,7 @@
 		}
 		svg {
 			stroke: #fff;
+			transition: all 0.2s ease-in-out;
 		}
 		&:hover svg,
 		&:active svg,
@@ -242,6 +243,7 @@
 	&__trash-link {
 		border: 2px solid $text;
 		background-color: $text;
+		padding-left: 1px;
 		&:hover, &:active, &:focus {
 			border-color: $error;
 			background-color: $error;

@@ -13,23 +13,26 @@
 	&.active {
 		border-color: $primary-blue;
 	}
-	svg {
+	svg.icon--search {
 		display: block;
 		stroke: $text;
 		transition: all 0.2s ease-in-out;
 	}
 	svg.icon--calendar {
+		display: block;
 		fill: $text;
+		transition: all 0.2s ease-in-out;
 	}
-	svg:hover,
-	svg:active,
-	svg:focus {
+	svg.icon--search:hover,
+	svg.icon--search:active,
+	svg.icon--search:focus {
 		stroke: $primary-blue;
 	}
 	svg.icon--calendar:hover,
 	svg.icon--calendar:active,
 	svg.icon--calendar:focus {
 		fill: $primary-blue;
+		stroke: none;
 	}
 }
 
@@ -189,5 +192,43 @@
 	}
 	&:active svg {
 		fill: #fff;
+	}
+}
+
+.btn--clear {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.142;
+	border-radius: 22px;
+	padding-top: 10px;
+	padding-bottom: 11px;
+	border: 2px solid $border;
+	background-color: #fff;
+	color: $border;
+	transition: all 0.2s ease-in-out;
+	svg {
+		display: block;
+		margin-right: 10px;
+		stroke: $border;
+		transition: all 0.2s ease-in-out;
+	}
+	&:hover {
+		color: $text;
+		border-color: #B3B3B3;
+	}
+	&:hover svg {
+		stroke: $text;
+	}
+	&:active {
+		background-color: $text;
+		color: #fff;
+	}
+	&:active svg {
+		stroke: #fff;
 	}
 }

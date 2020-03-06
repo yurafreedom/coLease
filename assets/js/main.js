@@ -182,7 +182,7 @@ $('.manager-block__controls-link').on('click', function () {
   }, 500);
 });
 
-$.fn.datepicker.language['eng'] =  {
+$.fn.datepicker.language['en'] =  {
   days: ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
   daysShort: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
   daysMin: ['Su','Mo','Tu','We','Th','Fr','Sa'],
@@ -196,5 +196,5 @@ $.fn.datepicker.language['eng'] =  {
 };
 
 $('.datepicker').datepicker({
-  language: 'eng'
+  language: 'en'
 })

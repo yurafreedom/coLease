@@ -123,10 +123,10 @@ gulp.task('js:build', function () {
 	return gulp.src(path.src.js)
 		.pipe(plumber())
 		.pipe(rigger())
-		.pipe(rename({
-			suffix: '.min'
-		}))
-		.pipe(uglify())
+		// .pipe(rename({
+		// 	suffix: '.min'
+		// }))
+		// .pipe(uglify())
 		.pipe(gulp.dest(path.build.js));
 });
 
