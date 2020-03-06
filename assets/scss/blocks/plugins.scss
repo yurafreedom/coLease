@@ -87,7 +87,7 @@
 }
 
 .nice-select.open .list {
-  opacity: 1;
+  display: block;
   pointer-events: auto;
   border-radius: 10px;
   border-color: $primary-blue;
@@ -166,7 +166,7 @@
   min-width: 100%;
   border: none;
   box-sizing: border-box;
-  opacity: 0;
+  display: none;
   padding: 0;
   overflow: visible;
   overflow-y: auto;

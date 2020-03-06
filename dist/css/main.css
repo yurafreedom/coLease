@@ -3776,7 +3776,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   background-image: url("../img/chevron-blue.svg"); }
 
 .nice-select.open .list {
-  opacity: 1;
+  display: block;
   pointer-events: auto;
   border-radius: 10px;
   border-color: #53C7CD; }
@@ -3841,7 +3841,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   min-width: 100%;
   border: none;
   box-sizing: border-box;
-  opacity: 0;
+  display: none;
   padding: 0;
   overflow: visible;
   overflow-y: auto;
@@ -6001,14 +6001,14 @@ input[type="checkbox"]:checked + label .login-block__check-v {
     border-radius: 25px;
     background-color: #fff;
     padding-top: 30px;
-    padding-left: 28px;
+    padding-left: 30px;
     padding-right: 26px;
     padding-bottom: 30px;
     margin-bottom: 30px; }
   .financial-block__heading-title {
     display: block;
     font-size: 25px;
-    line-height: 1;
+    line-height: 1.2;
     font-weight: 400;
     color: #4A4A4A;
     margin-bottom: 52px; }
@@ -6043,7 +6043,7 @@ input[type="checkbox"]:checked + label .login-block__check-v {
         flex-direction: row;
     -ms-flex-align: center;
         align-items: center;
-    margin-bottom: 81px;
+    margin-bottom: 64px;
     padding-bottom: 41px;
     border-bottom: 1px solid #F9F8FC; }
   .financial-block__form-inner {
@@ -6082,10 +6082,14 @@ input[type="checkbox"]:checked + label .login-block__check-v {
       width: 144px;
       -ms-flex-negative: 0;
           flex-shrink: 0; }
+  .financial-block__table-wrapper {
+    position: relative;
+    display: block;
+    overflow: hidden; }
   .financial-block__table-block {
     position: relative;
     display: block;
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 16px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -6104,7 +6108,7 @@ input[type="checkbox"]:checked + label .login-block__check-v {
   .financial-block__table-card {
     position: relative;
     padding-top: 46px;
-    padding-bottom: 45px; }
+    padding-bottom: 49px; }
     .financial-block__table-card::after {
       content: '';
       position: absolute;
@@ -6133,11 +6137,11 @@ input[type="checkbox"]:checked + label .login-block__check-v {
   .financial-block__table-heading-id, .financial-block__table-inner-id {
     display: block;
     width: 100%;
-    max-width: 100px; }
+    max-width: 156px; }
   .financial-block__table-heading-name, .financial-block__table-inner-name {
     display: block;
     width: 100%;
-    max-width: 200px; }
+    max-width: 355px; }
   .financial-block__table-heading-total, .financial-block__table-heading-charge, .financial-block__table-heading-status, .financial-block__table-inner-total, .financial-block__table-inner-charge, .financial-block__table-inner-status {
     display: block;
     width: 100%;
@@ -6174,6 +6178,121 @@ input[type="checkbox"]:checked + label .login-block__check-v {
     line-height: 1.142;
     font-weight: 900;
     color: #9B9B9B; }
+
+@media (max-width: 767px) {
+  .financial-block {
+    padding-top: 15px; }
+    .financial-block__form-heading {
+      display: block;
+      padding-bottom: 20px;
+      margin-bottom: 40px; }
+    .financial-block__form-inner {
+      display: block; }
+    .financial-block__form-inner-wrapper {
+      display: block; }
+    .financial-block__heading-block {
+      padding: 20px; }
+    .financial-block .page-block__input-wrapper, .financial-block .page-block__select-wrapper {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 15px; }
+      .financial-block .page-block__input-wrapper:not(:last-child), .financial-block .page-block__select-wrapper:not(:last-child) {
+        margin-bottom: 45px; }
+    .financial-block__form-inner-wrapper {
+      display: block; }
+      .financial-block__form-inner-wrapper .btn:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 15px; }
+      .financial-block__form-inner-wrapper .btn--green, .financial-block__form-inner-wrapper .btn--clear {
+        width: 100%; }
+    .financial-block .btn--fenny {
+      width: 100%; }
+    .financial-block__form-heading .page-block__input-wrapper {
+      max-width: 100%; }
+    .financial-block__form-inner .page-block__input-wrapper:not(:nth-child(3n)) {
+      margin-right: 0; }
+    .financial-block__form-inner .page-block__input-wrapper:not(:nth-child(2n)) {
+      margin-right: 0; }
+    .financial-block__table-heading-id, .financial-block__table-inner-id {
+      max-width: 90px; }
+    .financial-block__table-heading-name, .financial-block__table-inner-name {
+      max-width: 135px; }
+    .financial-block__table-block {
+      overflow-y: auto; }
+      .financial-block__table-block::-webkit-scrollbar-track {
+        background-color: #eef3fb;
+        border-radius: 10px;
+        margin-left: 15px;
+        border: 1px solid #53C7CD; }
+      .financial-block__table-block::-webkit-scrollbar {
+        height: 6px;
+        background-color: transparent; }
+      .financial-block__table-block::-webkit-scrollbar-thumb {
+        background-color: #16A8AA;
+        border-radius: 10px; }
+    .financial-block__table-heading, .financial-block__table-inner, .financial-block__table-card {
+      width: 100vh;
+      font-size: 14px; }
+    .financial-block__table-heading, .financial-block__table-card {
+      padding-left: 15px;
+      padding-right: 15px; }
+    .financial-block__table-card::after {
+      left: 15px;
+      width: calc(100% - 30px); }
+    .financial-block__table-heading-total, .financial-block__table-inner-total, .financial-block__table-heading-charge, .financial-block__table-inner-charge {
+      margin-right: 15px; } }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .financial-block .page-block__input-wrapper, .financial-block .page-block__select-wrapper {
+    max-width: 300px; }
+  .financial-block__form-heading .page-block__input-wrapper {
+    max-width: 100%; }
+  .financial-block__form-inner .page-block__input-wrapper:not(:nth-child(3n)) {
+    margin-right: 0; }
+  .financial-block__form-inner .page-block__input-wrapper:not(:nth-child(2n)) {
+    margin-right: 17px; }
+  .financial-block__table-heading-id, .financial-block__table-inner-id {
+    max-width: 90px; }
+  .financial-block__table-heading-name, .financial-block__table-inner-name {
+    max-width: 135px; }
+  .financial-block__table-block {
+    overflow-y: auto; }
+    .financial-block__table-block::-webkit-scrollbar-track {
+      background-color: #eef3fb;
+      border-radius: 10px;
+      margin-left: 15px;
+      border: 1px solid #53C7CD; }
+    .financial-block__table-block::-webkit-scrollbar {
+      height: 6px;
+      background-color: transparent; }
+    .financial-block__table-block::-webkit-scrollbar-thumb {
+      background-color: #16A8AA;
+      border-radius: 10px; }
+  .financial-block__table-heading, .financial-block__table-inner {
+    width: 100vw;
+    font-size: 14px; }
+  .financial-block__table-heading, .financial-block__table-card {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .financial-block__table-card::after {
+    left: 15px;
+    width: calc(100% - 30px); }
+  .financial-block__table-heading-total, .financial-block__table-inner-total, .financial-block__table-heading-charge, .financial-block__table-inner-charge {
+    margin-right: 15px; } }
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .financial-block__form-inner .page-block__input-wrapper:not(:nth-child(2n)) {
+    margin-right: 0; }
+  .financial-block__form-inner .page-block__input-wrapper:not(:nth-child(3n)) {
+    margin-right: 17px; } }
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .financial-block .page-block__input-wrapper, .financial-block .page-block__select-wrapper {
+    max-width: 360px; }
+  .financial-block__table-heading-id, .financial-block__table-inner-id {
+    max-width: 120px; }
+  .financial-block__table-heading-name, .financial-block__table-inner-name {
+    max-width: 200px; } }
 
 .page-footer {
   position: relative;

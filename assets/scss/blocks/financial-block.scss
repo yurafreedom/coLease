@@ -5,7 +5,7 @@
 		border-radius: 25px;
 		background-color: #fff;
 		padding-top: 30px;
-		padding-left: 28px;
+		padding-left: 30px;
 		padding-right: 26px;
 		padding-bottom: 30px;
 		margin-bottom: 30px;
@@ -13,7 +13,7 @@
 	&__heading-title {
 		display: block;
 		font-size: 25px;
-		line-height: 1;
+		line-height: 1.2;
 		font-weight: 400;
 		color: $title;
 		margin-bottom: 52px;
@@ -52,7 +52,7 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		margin-bottom: 81px;
+		margin-bottom: 64px;
 		padding-bottom: 41px;
 		border-bottom: 1px solid #F9F8FC;
 	}
@@ -93,10 +93,15 @@
 			flex-shrink: 0;
 		}
 	}
+	&__table-wrapper {
+		position: relative;
+		display: block;
+		overflow: hidden;
+	}
 	&__table-block {
 		position: relative;
 		display: block;
-		padding-top: 30px;
+		padding-top: 15px;
 		padding-bottom: 16px;
 		border-top-left-radius: 25px;
 		border-top-right-radius: 25px;
@@ -113,7 +118,7 @@
 	&__table-card {
 		position: relative;
 		padding-top: 46px;
-		padding-bottom: 45px;
+		padding-bottom: 49px;
 		&::after {
 			content: '';
 			position: absolute;
@@ -147,13 +152,13 @@
 	&__table-inner-id {
 		display: block;
 		width: 100%;
-		max-width: 100px;
+		max-width: 156px;
 	}
 	&__table-heading-name,
 	&__table-inner-name {
 		display: block;
 		width: 100%;
-		max-width: 200px;
+		max-width: 355px;
 	}
 	&__table-heading-total, &__table-heading-charge, &__table-heading-status,
 	&__table-inner-total, &__table-inner-charge, &__table-inner-status {
@@ -181,6 +186,192 @@
 			line-height: 1.142;
 			font-weight: 900;
 			color: $text;
+		}
+	}
+}
+
+@include for-size(mobile) {
+	.financial-block {
+		padding-top: 15px;
+		&__form-heading {
+			display: block;
+			padding-bottom: 20px;
+			margin-bottom: 40px;
+		}
+		&__form-inner {
+			display: block;
+		}
+		&__form-inner-wrapper {
+			display: block;
+		}
+		&__heading-block {
+			padding: 20px;
+		}
+		.page-block__input-wrapper, .page-block__select-wrapper {
+			max-width: 100%;
+			margin-right: 0;
+			margin-bottom: 15px;
+			&:not(:last-child) {
+				margin-bottom: 45px;
+			}
+		}
+		&__form-inner-wrapper {
+			display: block;
+			.btn:not(:last-child) {
+				margin-right: 0;
+				margin-bottom: 15px;
+			}
+			.btn--green, .btn--clear {
+				width: 100%;
+			}
+		}
+		.btn--fenny {
+			width: 100%;
+		}
+		&__form-heading .page-block__input-wrapper {
+			max-width: 100%;
+		}
+		&__form-inner .page-block__input-wrapper {
+			&:not(:nth-child(3n)) {
+				margin-right: 0;
+			}
+			&:not(:nth-child(2n)) {
+				margin-right: 0;
+			}
+		}
+		&__table-heading-id,
+		&__table-inner-id {
+			max-width: 90px;
+		}
+		&__table-heading-name,
+		&__table-inner-name {
+			max-width: 135px;
+		}
+		&__table-block {
+			overflow-y: auto;
+			&::-webkit-scrollbar-track {
+				background-color: #eef3fb;
+				border-radius: 10px;
+				margin-left: 15px;
+				border: 1px solid $primary-blue;
+			}
+			&::-webkit-scrollbar {
+				height: 6px;
+				background-color: transparent;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: $fenny;
+				border-radius: 10px;
+			}
+		}
+		&__table-heading, &__table-inner, &__table-card {
+			width: 100vh;
+			font-size: 14px;
+		}
+		&__table-heading, &__table-card {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		&__table-card {
+			&::after {
+				left: 15px;
+				width: calc(100% - 30px);
+			}
+		}
+		&__table-heading-total, &__table-inner-total, 
+		&__table-heading-charge, &__table-inner-charge {
+			margin-right: 15px;
+		}
+	}
+}
+
+@include for-size(tablet) {
+	.financial-block {
+		.page-block__input-wrapper, .page-block__select-wrapper {
+			max-width: 300px;
+		}
+		&__form-heading .page-block__input-wrapper {
+			max-width: 100%;
+		}
+		&__form-inner .page-block__input-wrapper {
+			&:not(:nth-child(3n)) {
+				margin-right: 0;
+			}
+			&:not(:nth-child(2n)) {
+				margin-right: 17px;
+			}
+		}
+		&__table-heading-id,
+		&__table-inner-id {
+			max-width: 90px;
+		}
+		&__table-heading-name,
+		&__table-inner-name {
+			max-width: 135px;
+		}
+		&__table-block {
+			overflow-y: auto;
+			&::-webkit-scrollbar-track {
+				background-color: #eef3fb;
+				border-radius: 10px;
+				margin-left: 15px;
+				border: 1px solid $primary-blue;
+			}
+			&::-webkit-scrollbar {
+				height: 6px;
+				background-color: transparent;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: $fenny;
+				border-radius: 10px;
+			}
+		}
+		&__table-heading, &__table-inner {
+			width: 100vw;
+			font-size: 14px;
+		}
+		&__table-heading, &__table-card {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		&__table-card {
+			&::after {
+				left: 15px;
+				width: calc(100% - 30px);
+			}
+		}
+		&__table-heading-total, &__table-inner-total, 
+		&__table-heading-charge, &__table-inner-charge {
+			margin-right: 15px;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+	.financial-block {
+		&__form-inner .page-block__input-wrapper {
+			&:not(:nth-child(2n)) {
+				margin-right: 0;
+			}
+			&:not(:nth-child(3n)) {
+				margin-right: 17px;
+			}
+		}
+	}
+}
+
+@include for-size(desktop) {
+	.financial-block {
+		.page-block__input-wrapper, .page-block__select-wrapper {
+			max-width: 360px;
+		}
+		&__table-heading-id,
+		&__table-inner-id {
+			max-width: 120px;
+		}
+		&__table-heading-name,
+		&__table-inner-name {
+			max-width: 200px;
 		}
 	}
 }
