@@ -6212,7 +6212,7 @@ input[type="checkbox"]:checked + label .login-block__check-v {
   .financial-block__table-inner-total .page-block__input,
   .financial-block__table-inner-charge .page-block__input {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 900;
     color: #9B9B9B; }
   .financial-block__table-inner-status .page-block__select-wrapper {
     margin-bottom: 0; }
