@@ -42,10 +42,11 @@
 			stroke: #fff;
 			transition: all 0.2s ease-in-out;
 		}
-		&:hover svg,
-		&:active svg,
-		&:focus svg {
+		&:hover svg {
 			stroke: $fenny;
+		}
+		&:active svg {
+			stroke: #fff;
 		}
 	}
 	&__form-heading {
@@ -118,6 +119,8 @@
 		position: relative;
 		padding-top: 46px;
 		padding-bottom: 49px;
+		border: 2px solid #fff;
+		transition: all 0.2s ease-in-out;
 		&::after {
 			content: '';
 			position: absolute;
@@ -126,7 +129,24 @@
 			width: calc(100% - 60px);
 			height: 1px;
 			background-color: #F0F0F0;
-		} 
+			transition: all 0.2s ease-in-out;
+		}
+		&:hover, &:active, &:focus {
+			background-color: rgba(83, 199, 205, 0.2);
+			border: 2px solid $primary-blue;
+			border-radius: 10px;
+			color: $fenny;
+		}
+		&:hover::after,
+		&:active::after,
+		&:focus::after {
+			display: none;
+		}
+	}
+	&__table-card.hidden {
+		&::after {
+			display: none;
+		}
 	}
 	&__table-inner {
 		position: relative;
@@ -135,6 +155,11 @@
 		line-height: 1.142;
 		font-weight: 500;
 		color: $fenny;
+		a {
+			color: $fenny;
+			text-decoration: underline;
+			transition: all 0.2s ease-in-out;
+		}
 	}
 	&__table-heading {
 		padding-top: 17px;
@@ -175,6 +200,12 @@
 		line-height: 2;
 		margin-left: 10px;
 		margin-bottom: 0;
+	}
+	&__table-inner-total .page-block__input,
+	&__table-inner-charge .page-block__input {
+		font-size: 14px;
+		font-weight: 700;
+		color: $text;
 	}
 	&__table-inner-status .page-block__select-wrapper {
 		margin-bottom: 0;

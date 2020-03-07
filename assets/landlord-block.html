@@ -1,0 +1,155 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": ""
+})
+@@include('template/page-header.html', {
+	"dashboard": "",
+	"leases": "true",
+	"reminders": "",
+	"report": "",
+	"agent": "",
+	"settings": ""
+})
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+		<section class="nav-block">
+			<div class="container">
+				<div class="nav-block__wrapper">
+					<div class="nav-block__list">
+						<ul>
+							<li><a href="javascript:;">Leases</a></li>
+							<li><a href="javascript:;">Sites</a></li>
+							<li class="active"><a href="javascript:;">Landlords</a></li>
+							<li><a href="javascript:;">Financial</a></li>
+							<li><a href="javascript:;">Issues</a></li>
+							<li><a href="javascript:;">File Explorer</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="landlord-block">
+			<div class="container">
+				<div class="landlord-block__heading-block">
+					<div class="landlord-block__heading-title">Landlords</div>
+					<form class="page-block__form">
+						<div class="page-block__input-wrapper">
+							<label for="issues_date" class="page-block__label">Landlord Name</label>
+							<input type="text" class="text-input page-block__input" id="issues_date" name="issues_date" placeholder="Landlord Name..." required>
+							<button type="submit" class="btn btn--search">
+								<svg width="17" height="17" class="icon--search">
+									<use xlink:href="#search"></use>
+								</svg>
+							</button>
+						</div>
+						<button type="button" class="btn btn--green">
+							<svg width="12" height="12">
+								<use xlink:href="#plus"></use>
+							</svg>
+							<span>Add Landlord</span>
+						</button>
+					</form>
+				</div>
+				<div class="landlord-block__table-wrapper">
+					<div class="landlord-block__table-block">
+						<div class="landlord-block__table-heading">
+							<div class="landlord-block__table-heading-name">Name</div>
+							<div class="landlord-block__table-heading-address">Address</div>
+							<div class="landlord-block__table-heading-status">Document Status</div>
+							<div class="landlord-block__table-heading-contact">Contact 1</div>
+							<div class="landlord-block__table-heading-action">Actions</div>
+						</div>
+						<div class="landlord-block__table-inner">
+							<div class="landlord-block__table-card">
+								<div class="landlord-block__table-inner-name"><a href="javascript:;">Rent Trust</a></div>
+								<div class="landlord-block__table-inner-address">156 Mimosa Avenue, Raslouw AH, Centurion, South Africa</div>
+								<div class="landlord-block__table-inner-status">Complete</div>
+								<div class="landlord-block__table-inner-contact">
+									<b>AJM Wehmeyer</b>
+									<b>Rent trust</b>
+									<i>Director</i>
+									<br>
+									<a href="mailto:macreew@renttrust.co.za">macreew@renttrust.co.za</a>
+									<span>0823318751</span>
+									<span>0126668203</span>
+								</div>
+								<div class="landlord-block__table-inner-action">
+									<a href="javascript:;" class="landlord-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="landlord-block__trash-link">
+										<svg width="13" height="10">
+											<use xlink:href="#trash"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="landlord-block__table-card">
+								<div class="landlord-block__table-inner-name"><a href="javascript:;">Rent Trust</a></div>
+								<div class="landlord-block__table-inner-address">156 Mimosa Avenue, Raslouw AH, Centurion, South Africa</div>
+								<div class="landlord-block__table-inner-status">Complete</div>
+								<div class="landlord-block__table-inner-contact">
+									<b>AJM Wehmeyer</b>
+									<b>Rent trust</b>
+									<i>Director</i>
+									<br>
+									<a href="mailto:macreew@renttrust.co.za">macreew@renttrust.co.za</a>
+									<span>0823318751</span>
+									<span>0126668203</span>
+								</div>
+								<div class="landlord-block__table-inner-action">
+									<a href="javascript:;" class="landlord-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="landlord-block__trash-link">
+										<svg width="13" height="10">
+											<use xlink:href="#trash"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="landlord-block__table-card">
+								<div class="landlord-block__table-inner-name"><a href="javascript:;">Rent Trust</a></div>
+								<div class="landlord-block__table-inner-address">156 Mimosa Avenue, Raslouw AH, Centurion, South Africa</div>
+								<div class="landlord-block__table-inner-status">Complete</div>
+								<div class="landlord-block__table-inner-contact">
+									<b>AJM Wehmeyer</b>
+									<b>Rent trust</b>
+									<i>Director</i>
+									<br>
+									<a href="mailto:macreew@renttrust.co.za">macreew@renttrust.co.za</a>
+									<span>0823318751</span>
+									<span>0126668203</span>
+								</div>
+								<div class="landlord-block__table-inner-action">
+									<a href="javascript:;" class="landlord-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="landlord-block__trash-link">
+										<svg width="13" height="10">
+											<use xlink:href="#trash"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+@@include('template/popups.html')
+@@include('template/scripts.html')
+@@include('template/sprite.html')
+
+</body>
+</html>

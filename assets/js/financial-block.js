@@ -14,3 +14,17 @@ $.fn.datepicker.language['en'] = {
 $('#financial_datepicker').datepicker({
   language: 'en'
 })
+
+$("input").keydown(function(e) {
+    var oldvalue=$(this).val();
+    var field=this;
+    setTimeout(function () {
+        if(field.value.indexOf('R ') !== 0) {
+            $(field).val(oldvalue);
+        } 
+    }, 1);
+});
+
+$('.financial-block__table-card').hover(function() {
+  $(this).prev().toggleClass('hidden');
+});

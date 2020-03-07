@@ -116,7 +116,6 @@
 	&__controls-block .btn--control.active {
 		background-color: $primary-blue;
 		box-shadow: none;
-		transition: background-color 0.2s ease-in-out;
 		&::after {
 			opacity: 1;
 			pointer-events: all;

@@ -327,6 +327,9 @@
 			max-width: 150px;
 			text-align: left;
 		}
+		&::after {
+			display: none;
+		}
 	}
 	&__menu &__nav ul li a:hover::after {
 		opacity: 0;

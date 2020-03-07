@@ -595,3 +595,48 @@
 		}
 	}
 }
+
+@include for-size(desktop) {
+	.manager-block {
+		&__row-card {
+			&:not(:nth-child(8n)) {
+				margin-right: 0;
+			}
+			&:not(:nth-child(6n)) {
+				margin-right: 54px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1261px) and (max-width: 1379px) {
+	.manager-block {
+		&__row-card {
+			&:not(:nth-child(8n)) {
+				margin-right: 0;
+			}
+			&:not(:nth-child(6n)) {
+				margin-right: 0;
+			}
+			&:not(:nth-child(7n)) {
+				margin-right: 54px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1380px) and (max-width: 1440px) {
+	.manager-block {
+		&__row-card {
+			&:not(:nth-child(6n)) {
+				margin-right: 0;
+			}
+			&:not(:nth-child(7n)) {
+				margin-right: 0;
+			}
+			&:not(:nth-child(8n)) {
+				margin-right: 54px;
+			}
+		}
+	}
+}

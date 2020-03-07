@@ -174,23 +174,23 @@
 						<ul>
 							<li><a href="javascript:;">Leases</a></li>
 							<li><a href="javascript:;">Sites</a></li>
-							<li><a href="javascript:;">Landlords</a></li>
+							<li class="active"><a href="javascript:;">Landlords</a></li>
 							<li><a href="javascript:;">Financial</a></li>
-							<li class="active"><a href="javascript:;">Issues</a></li>
+							<li><a href="javascript:;">Issues</a></li>
 							<li><a href="javascript:;">File Explorer</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="issues-block">
+		<section class="landlord-block">
 			<div class="container">
-				<div class="issues-block__heading-block">
-					<div class="issues-block__heading-title">Issues</div>
+				<div class="landlord-block__heading-block">
+					<div class="landlord-block__heading-title">Landlords</div>
 					<form class="page-block__form">
 						<div class="page-block__input-wrapper">
-							<label for="issues_date" class="page-block__label">Search</label>
-							<input type="text" class="text-input page-block__input" id="issues_date" name="issues_date" placeholder="Search..." required>
+							<label for="issues_date" class="page-block__label">Landlord Name</label>
+							<input type="text" class="text-input page-block__input" id="issues_date" name="issues_date" placeholder="Landlord Name..." required>
 							<button type="submit" class="btn btn--search">
 								<svg width="17" height="17" class="icon--search">
 									<use xlink:href="#search"></use>
@@ -201,301 +201,97 @@
 							<svg width="12" height="12">
 								<use xlink:href="#plus"></use>
 							</svg>
-							<span>Add Issue</span>
+							<span>Add Landlord</span>
 						</button>
 					</form>
 				</div>
-				<div class="page-block__controls-block">
-					<a href="javascript:;" class="btn btn--control active" data-toggle="tab" data-target="#issues-tab-1">
-						<svg width="35" height="47">
-							<use xlink:href="#open_lock"></use>
-						</svg>
-						<div class="page-block__controls-btn-wrapper">
-							<div class="page-block__controls-title">Open</div>
-							<div class="page-block__controls-text">Entries</div>
+				<div class="landlord-block__table-wrapper">
+					<div class="landlord-block__table-block">
+						<div class="landlord-block__table-heading">
+							<div class="landlord-block__table-heading-name">Name</div>
+							<div class="landlord-block__table-heading-address">Address</div>
+							<div class="landlord-block__table-heading-status">Document Status</div>
+							<div class="landlord-block__table-heading-contact">Contact 1</div>
+							<div class="landlord-block__table-heading-action">Actions</div>
 						</div>
-					</a>
-					<a href="javascript:;" class="btn btn--control" data-toggle="tab" data-target="#issues-tab-2">
-						<svg width="35" height="47">
-							<use xlink:href="#close_lock"></use>
-						</svg>
-						<div class="page-block__controls-btn-wrapper">
-							<div class="page-block__controls-title">Closed</div>
-							<div class="page-block__controls-text">Entries</div>
-						</div>
-					</a>
-					<a href="javascript:;" class="btn btn--control" data-toggle="tab" data-target="#issues-tab-3">
-						<svg width="51" height="45">
-							<use xlink:href="#synchronize_clock"></use>
-						</svg>
-						<div class="page-block__controls-btn-wrapper">
-							<div class="page-block__controls-title">Historical</div>
-							<div class="page-block__controls-text">Entries</div>
-						</div>
-					</a>					
-				</div>
-				<div class="page-block__tab-content active" id="issues-tab-1">
-					<div class="issues-block__table-block">
-						<div class="issues-block__table-heading">
-							<div class="issues-block__table-heading-id">Site ID</div>
-							<div class="issues-block__table-heading-name">Site Name</div>
-							<div class="issues-block__table-heading-type">Type</div>
-							<div class="issues-block__table-heading-detail">Details</div>
-							<div class="issues-block__table-heading-date">Date logged</div>
-							<div class="issues-block__table-heading-action">Actions</div>
-						</div>
-						<div class="issues-block__table-inner">
-							<div class="issues-block__table-card">
-								<div class="issues-block__table-inner-id"><a href="javascript:;">JHB153</a></div>
-								<div class="issues-block__table-inner-name"><a href="javascript:;">Shane's House</a></div>
-								<div class="issues-block__table-inner-type">Billing</div>
-								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
-								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
-								<div class="issues-block__table-inner-action">
-									<a href="javascript:;" class="issues-block__edit-link">
+						<div class="landlord-block__table-inner">
+							<div class="landlord-block__table-card">
+								<div class="landlord-block__table-inner-name"><a href="javascript:;">Rent Trust</a></div>
+								<div class="landlord-block__table-inner-address">156 Mimosa Avenue, Raslouw AH, Centurion, South Africa</div>
+								<div class="landlord-block__table-inner-status">Complete</div>
+								<div class="landlord-block__table-inner-contact">
+									<b>AJM Wehmeyer</b>
+									<b>Rent trust</b>
+									<i>Director</i>
+									<br>
+									<a href="mailto:macreew@renttrust.co.za">macreew@renttrust.co.za</a>
+									<span>0823318751</span>
+									<span>0126668203</span>
+								</div>
+								<div class="landlord-block__table-inner-action">
+									<a href="javascript:;" class="landlord-block__edit-link">
 										<svg width="12" height="12">
 											<use xlink:href="#edit"></use>
 										</svg>
 									</a>
-									<a href="javascript:;" class="issues-block__trash-link">
-										<svg width="15" height="12">
+									<a href="javascript:;" class="landlord-block__trash-link">
+										<svg width="13" height="10">
 											<use xlink:href="#trash"></use>
 										</svg>
 									</a>
 								</div>
 							</div>
-							<div class="issues-block__table-card">
-								<div class="issues-block__table-inner-id"><a href="javascript:;">JHB153</a></div>
-								<div class="issues-block__table-inner-name"><a href="javascript:;">Shane's House</a></div>
-								<div class="issues-block__table-inner-type">Billing</div>
-								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
-								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
-								<div class="issues-block__table-inner-action">
-									<a href="javascript:;" class="issues-block__edit-link">
+							<div class="landlord-block__table-card">
+								<div class="landlord-block__table-inner-name"><a href="javascript:;">Rent Trust</a></div>
+								<div class="landlord-block__table-inner-address">156 Mimosa Avenue, Raslouw AH, Centurion, South Africa</div>
+								<div class="landlord-block__table-inner-status">Complete</div>
+								<div class="landlord-block__table-inner-contact">
+									<b>AJM Wehmeyer</b>
+									<b>Rent trust</b>
+									<i>Director</i>
+									<br>
+									<a href="mailto:macreew@renttrust.co.za">macreew@renttrust.co.za</a>
+									<span>0823318751</span>
+									<span>0126668203</span>
+								</div>
+								<div class="landlord-block__table-inner-action">
+									<a href="javascript:;" class="landlord-block__edit-link">
 										<svg width="12" height="12">
 											<use xlink:href="#edit"></use>
 										</svg>
 									</a>
-									<a href="javascript:;" class="issues-block__trash-link">
-										<svg width="15" height="12">
+									<a href="javascript:;" class="landlord-block__trash-link">
+										<svg width="13" height="10">
 											<use xlink:href="#trash"></use>
 										</svg>
 									</a>
 								</div>
 							</div>
-							<div class="issues-block__table-card">
-								<div class="issues-block__table-inner-id"><a href="javascript:;">JHB153</a></div>
-								<div class="issues-block__table-inner-name"><a href="javascript:;">Shane's House</a></div>
-								<div class="issues-block__table-inner-type">Billing</div>
-								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
-								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
-								<div class="issues-block__table-inner-action">
-									<a href="javascript:;" class="issues-block__edit-link">
+							<div class="landlord-block__table-card">
+								<div class="landlord-block__table-inner-name"><a href="javascript:;">Rent Trust</a></div>
+								<div class="landlord-block__table-inner-address">156 Mimosa Avenue, Raslouw AH, Centurion, South Africa</div>
+								<div class="landlord-block__table-inner-status">Complete</div>
+								<div class="landlord-block__table-inner-contact">
+									<b>AJM Wehmeyer</b>
+									<b>Rent trust</b>
+									<i>Director</i>
+									<br>
+									<a href="mailto:macreew@renttrust.co.za">macreew@renttrust.co.za</a>
+									<span>0823318751</span>
+									<span>0126668203</span>
+								</div>
+								<div class="landlord-block__table-inner-action">
+									<a href="javascript:;" class="landlord-block__edit-link">
 										<svg width="12" height="12">
 											<use xlink:href="#edit"></use>
 										</svg>
 									</a>
-									<a href="javascript:;" class="issues-block__trash-link">
-										<svg width="15" height="12">
+									<a href="javascript:;" class="landlord-block__trash-link">
+										<svg width="13" height="10">
 											<use xlink:href="#trash"></use>
 										</svg>
 									</a>
 								</div>
-							</div>
-							<div class="issues-block__table-card">
-								<div class="issues-block__table-inner-id"><a href="javascript:;">JHB153</a></div>
-								<div class="issues-block__table-inner-name"><a href="javascript:;">Shane's House</a></div>
-								<div class="issues-block__table-inner-type">Billing</div>
-								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
-								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
-								<div class="issues-block__table-inner-action">
-									<a href="javascript:;" class="issues-block__edit-link">
-										<svg width="12" height="12">
-											<use xlink:href="#edit"></use>
-										</svg>
-									</a>
-									<a href="javascript:;" class="issues-block__trash-link">
-										<svg width="15" height="12">
-											<use xlink:href="#trash"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="issues-block__table-card">
-								<div class="issues-block__table-inner-id"><a href="javascript:;">JHB153</a></div>
-								<div class="issues-block__table-inner-name"><a href="javascript:;">Shane's House</a></div>
-								<div class="issues-block__table-inner-type">Billing</div>
-								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
-								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
-								<div class="issues-block__table-inner-action">
-									<a href="javascript:;" class="issues-block__edit-link">
-										<svg width="12" height="12">
-											<use xlink:href="#edit"></use>
-										</svg>
-									</a>
-									<a href="javascript:;" class="issues-block__trash-link">
-										<svg width="15" height="12">
-											<use xlink:href="#trash"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="page-block__tab-content" id="issues-tab-2">
-					<div class="issues-block__table-block">
-						<div class="issues-block__table-heading">
-							<div class="issues-block__table-heading-id">Site ID</div>
-							<div class="issues-block__table-heading-name">Site Name</div>
-							<div class="issues-block__table-heading-type">Type</div>
-							<div class="issues-block__table-heading-detail">Details</div>
-							<div class="issues-block__table-heading-date">Date logged</div>
-							<div class="issues-block__table-heading-action">Actions</div>
-						</div>
-						<div class="issues-block__table-inner">
-							<div class="issues-block__table-card">
-								<div class="issues-block__table-inner-id"><a href="javascript:;">JHB153</a></div>
-								<div class="issues-block__table-inner-name"><a href="javascript:;">Shane's House Shane's House</a></div>
-								<div class="issues-block__table-inner-type">Billing</div>
-								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
-								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
-								<div class="issues-block__table-inner-action">
-									<a href="javascript:;" class="issues-block__edit-link">
-										<svg width="12" height="12">
-											<use xlink:href="#edit"></use>
-										</svg>
-									</a>
-									<a href="javascript:;" class="issues-block__trash-link">
-										<svg width="15" height="12">
-											<use xlink:href="#trash"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="issues-block__table-card">
-								<div class="issues-block__table-inner-id"><a href="javascript:;">JHB153</a></div>
-								<div class="issues-block__table-inner-name"><a href="javascript:;">Shane's House Shane's House</a></div>
-								<div class="issues-block__table-inner-type">Billing</div>
-								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
-								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
-								<div class="issues-block__table-inner-action">
-									<a href="javascript:;" class="issues-block__edit-link">
-										<svg width="12" height="12">
-											<use xlink:href="#edit"></use>
-										</svg>
-									</a>
-									<a href="javascript:;" class="issues-block__trash-link">
-										<svg width="15" height="12">
-											<use xlink:href="#trash"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="issues-block__table-card">
-								<div class="issues-block__table-inner-id"><a href="javascript:;">JHB153</a></div>
-								<div class="issues-block__table-inner-name"><a href="javascript:;">Shane's House Shane's House</a></div>
-								<div class="issues-block__table-inner-type">Billing</div>
-								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
-								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
-								<div class="issues-block__table-inner-action">
-									<a href="javascript:;" class="issues-block__edit-link">
-										<svg width="12" height="12">
-											<use xlink:href="#edit"></use>
-										</svg>
-									</a>
-									<a href="javascript:;" class="issues-block__trash-link">
-										<svg width="15" height="12">
-											<use xlink:href="#trash"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="issues-block__table-card">
-								<div class="issues-block__table-inner-id"><a href="javascript:;">JHB153</a></div>
-								<div class="issues-block__table-inner-name"><a href="javascript:;">Shane's House Shane's House</a></div>
-								<div class="issues-block__table-inner-type">Billing</div>
-								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
-								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
-								<div class="issues-block__table-inner-action">
-									<a href="javascript:;" class="issues-block__edit-link">
-										<svg width="12" height="12">
-											<use xlink:href="#edit"></use>
-										</svg>
-									</a>
-									<a href="javascript:;" class="issues-block__trash-link">
-										<svg width="15" height="12">
-											<use xlink:href="#trash"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="issues-block__table-card">
-								<div class="issues-block__table-inner-id"><a href="javascript:;">JHB153</a></div>
-								<div class="issues-block__table-inner-name"><a href="javascript:;">Shane's House Shane's House</a></div>
-								<div class="issues-block__table-inner-type">Billing</div>
-								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
-								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
-								<div class="issues-block__table-inner-action">
-									<a href="javascript:;" class="issues-block__edit-link">
-										<svg width="12" height="12">
-											<use xlink:href="#edit"></use>
-										</svg>
-									</a>
-									<a href="javascript:;" class="issues-block__trash-link">
-										<svg width="15" height="12">
-											<use xlink:href="#trash"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="page-block__tab-content" id="issues-tab-3">
-					<div class="issues-block__table-block not-action">
-						<div class="issues-block__table-heading">
-							<div class="issues-block__table-heading-id">Site ID</div>
-							<div class="issues-block__table-heading-name">Site Name</div>
-							<div class="issues-block__table-heading-type">Type</div>
-							<div class="issues-block__table-heading-detail">Details</div>
-							<div class="issues-block__table-heading-date">Date logged</div>
-						</div>
-						<div class="issues-block__table-inner">
-							<div class="issues-block__table-card">
-								<div class="issues-block__table-inner-id"><a href="javascript:;">JHB153</a></div>
-								<div class="issues-block__table-inner-name"><a href="javascript:;">Shane's House Shane's House Shane's House</a></div>
-								<div class="issues-block__table-inner-type">Billing</div>
-								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
-								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
-							</div>
-							<div class="issues-block__table-card">
-								<div class="issues-block__table-inner-id"><a href="javascript:;">JHB153</a></div>
-								<div class="issues-block__table-inner-name"><a href="javascript:;">Shane's House Shane's House Shane's House</a></div>
-								<div class="issues-block__table-inner-type">Billing</div>
-								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
-								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
-							</div>
-							<div class="issues-block__table-card">
-								<div class="issues-block__table-inner-id"><a href="javascript:;">JHB153</a></div>
-								<div class="issues-block__table-inner-name"><a href="javascript:;">Shane's House Shane's House Shane's House</a></div>
-								<div class="issues-block__table-inner-type">Billing</div>
-								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
-								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
-							</div>
-							<div class="issues-block__table-card">
-								<div class="issues-block__table-inner-id"><a href="javascript:;">JHB153</a></div>
-								<div class="issues-block__table-inner-name"><a href="javascript:;">Shane's House Shane's House Shane's House</a></div>
-								<div class="issues-block__table-inner-type">Billing</div>
-								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
-								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
-							</div>
-							<div class="issues-block__table-card">
-								<div class="issues-block__table-inner-id"><a href="javascript:;">JHB153</a></div>
-								<div class="issues-block__table-inner-name"><a href="javascript:;">Shane's House Shane's House Shane's House</a></div>
-								<div class="issues-block__table-inner-type">Billing</div>
-								<div class="issues-block__table-inner-detail">Over billed by 10 000 and need to reverse</div>
-								<div class="issues-block__table-inner-date">05-11-2019 (14:16)</div>
 							</div>
 						</div>
 					</div>
@@ -517,7 +313,6 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/plugins.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/issues-block.js"></script>
 <svg style="display:none;">
 	<symbol id="search" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M11.063 16.02a7.083 7.083 0 110-14.166 7.083 7.083 0 010 14.167z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.855 18.146l4.2-4.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 	<symbol id="synchronize_clock" viewBox="0 0 51 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.65 11.2v12.5h11.116M.861 15.731l6.67 10.227 7.78-9.09" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.651 44.157c11.665 0 21.12-9.666 21.12-21.59 0-11.923-9.455-21.59-21.12-21.59-11.664 0-21.12 9.667-21.12 21.59v3.395" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>

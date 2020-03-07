@@ -32,6 +32,13 @@
 		position: relative;
 		display: block;
 	}
+	&__table-inner {
+		a {
+			color: $fenny;
+			text-decoration: underline;
+			transition: all 0.2s ease-in-out;
+		}
+	}
 	&__table-heading, &__table-card {
 		display: flex;
 		flex-direction: row;
@@ -88,6 +95,10 @@
 	&__table-card:last-child::after {
 		display: none;
 	}
+	&__table-block.not-action &__table-card {
+		padding-top: 17px;
+		padding-bottom: 18px;
+	}
 	&__table-card.hidden {
 		&::after {
 			display: none;
@@ -128,7 +139,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		width: 100%;
-		max-width: 104px;
+		max-width: 64px;
 	}
 	&__table-heading-action {
 		display: block;

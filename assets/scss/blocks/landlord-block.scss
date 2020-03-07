@@ -1,0 +1,269 @@
+.landlord-block {
+	padding-top: 30px;
+	&__heading-block {
+		display: block;
+		border-radius: 25px;
+		background-color: #fff;
+		padding-top: 30px;
+		padding-left: 30px;
+		padding-right: 28px;
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+	}
+	&__heading-title {
+		display: block;
+		font-size: 25px;
+		line-height: 1;
+		font-weight: 400;
+		color: $title;
+		margin-bottom: 52px;
+	}
+	.page-block__form {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		.btn--green {
+			flex-shrink: 0;
+			width: 151px;
+		}
+	}
+	.page-block__input-wrapper {
+		width: 100%;
+		margin-right: 28px;
+	}
+	&__table-wrapper {
+		position: relative;
+		display: block;
+	}
+	&__table-block {
+		position: relative;
+		display: block;
+		padding-top: 30px;
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+		background-color: #fff;
+	}
+	&__table-heading, &__table-card {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 34px;
+		padding-right: 28px;
+	}
+	&__table-card {
+		position: relative;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		&::after {
+			content: '';
+			position: absolute;
+			left: 30px;
+			bottom: 0;
+			width: calc(100% - 60px);
+			height: 1px;
+			background-color: #F0F0F0;
+		} 
+	}
+	&__table-inner {
+		position: relative;
+		display: block;
+		font-size: 13px;
+		line-height: 1.142;
+		font-weight: 500;
+		color: $fenny;
+	}
+	&__table-heading {
+		padding-top: 17px;
+		padding-bottom: 17px;
+		padding-left: 34px;
+		padding-right: 28px;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 1;
+		color: #fff;
+		background: linear-gradient(to left, $primary-blue, $primary-green);
+	}
+	&__table-heading-name,
+	&__table-inner-name {
+		display: block;
+		width: 100%;
+		max-width: 200px;
+		a {
+			display: block;
+			color: $fenny;
+			text-decoration: underline;
+			transition: all 0.2s ease-in-out;
+		}
+	}
+	&__table-heading-address,
+	&__table-inner-address {
+		display: block;
+		width: 100%;
+		max-width: 350px;
+	}
+	&__table-heading-status,
+	&__table-inner-status {
+		display: block;
+		width: 100%;
+		max-width: 150px;
+	}
+	&__table-heading-contact,
+	&__table-inner-contact {
+		display: block;
+		width: 100%;
+		max-width: 150px;
+	}
+	&__table-inner-contact {
+		font-size: 13px;
+		line-height: 1.142;
+		color: $text;
+		b, i, span {
+			display: block;
+		}
+		i {
+			font-weight: 400;
+		}
+		a {
+			font-size: 13px;
+			line-height: 1.142;
+			color: $text;
+			transition: all 0.2s ease-in-out;
+		}
+		a:hover {
+			color: $fenny;
+			text-decoration: none;
+		}
+	}
+	&__table-heading-action,
+	&__table-inner-action {
+		display: block;
+		width: 100%;
+		max-width: 64px;
+	}
+	&__table-heading-action {
+		text-align: center;
+	}
+	&__table-inner-action {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__edit-link, &__trash-link {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		border: 2px solid $primary-green;
+		background-color: $primary-green;
+		transition: all 0.2s ease-in-out;
+		&:hover, &:active, &:focus {
+			background-color: #fff;
+		}
+		svg {
+			display: block;
+			stroke: #fff;
+			transition: all 0.2s ease-in-out;
+		}
+		&:hover svg,
+		&:active svg,
+		&:focus svg {
+			stroke: $primary-green;
+		}
+	}
+	&__trash-link {
+		border: 2px solid $text;
+		background-color: $text;
+		padding-left: 1px;
+		&:hover, &:active, &:focus {
+			border-color: $error;
+			background-color: $error;
+		}
+		&:hover svg,
+		&:active svg,
+		&:focus svg {
+			stroke: #fff;
+		}
+	}
+}
+
+@include for-size(mobile) {
+	.landlord-block {
+		padding-top: 15px;
+		&__table-block {
+			overflow-y: auto;
+			padding-bottom: 20px;
+			&::-webkit-scrollbar-track {
+				background-color: #eef3fb;
+				border-radius: 10px;
+				margin-left: 15px;
+				border: 1px solid $primary-blue;
+			}
+			&::-webkit-scrollbar {
+				height: 6px;
+				background-color: transparent;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: $fenny;
+				border-radius: 10px;
+			}
+		}
+		&__heading-block {
+			padding: 20px;
+		}
+		&__heading-title {
+			font-size: 20px;
+		}
+		.page-block__form {
+			display: block;
+			.btn--green {
+				width: 100%;
+			}
+		}
+		.page-block__input-wrapper {
+			margin-bottom: 20px;
+		}
+		&__table-heading, &__table-inner {
+			width: 100vh;
+		}
+		&__table-heading, &__table-card {
+			padding-left: 15px;
+			padding-right: 15px;
+			font-size: 12px;
+		}
+		&__table-heading-name, &__table-inner-name {
+			max-width: 100px;
+		}
+		&__table-heading-address, &__table-inner-address {
+			max-width: 160px;
+		}
+		&__table-heading-status, &__table-inner-status {
+			max-width: 120px;
+		}
+		&__table-heading-contact, &__table-inner-contact {
+			margin-right: 15px;
+		}
+	}
+}
+
+@include for-size(tablet) {
+	.landlord-block {
+		&__table-heading, &__table-card {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		&__table-heading-name, &__table-inner-name {
+			max-width: 120px;
+		}
+		&__table-heading-address, &__table-inner-address {
+			max-width: 160px;
+		}
+		&__table-heading-status, &__table-inner-status {
+			max-width: 120px;
+		}
+	}
+}
