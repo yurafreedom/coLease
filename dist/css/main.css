@@ -4474,6 +4474,10 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     line-height: 1;
     color: #fff;
     background: linear-gradient(to left, #53C7CD, #ABD856); }
+  .reminder-block__table-inner a {
+    color: #16A8AA;
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out; }
   .reminder-block__table-card {
     position: relative;
     padding-top: 12px;
@@ -6430,7 +6434,7 @@ input[type="checkbox"]:checked + label .login-block__check-v {
     font-size: 13px;
     line-height: 1.142;
     font-weight: 500;
-    color: #16A8AA; }
+    color: #9B9B9B; }
   .landlord-block__table-heading {
     padding-top: 17px;
     padding-bottom: 17px;

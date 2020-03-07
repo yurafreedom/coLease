@@ -113,6 +113,13 @@
 		color: #fff;
 		background: linear-gradient(to left, $primary-blue, $primary-green);
 	}
+	&__table-inner {
+		a {
+			color: $fenny;
+			text-decoration: underline;
+			transition: all 0.2s ease-in-out;
+		}
+	}
 	&__table-card {
 		position: relative;
 		padding-top: 12px;
