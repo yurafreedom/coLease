@@ -152,3 +152,5 @@ $('.page-block__input').on('focusout', function() {
 $('.icon--search').hover(function() {
   $(this).parent().toggleClass('active');
 });
+
+$('input[disabled]').parent().toggleClass('disabled');

@@ -39,6 +39,9 @@
 		top: 0;
 		right: 0;
 	}
+	&__input-wrapper.disabled label {
+		color: $border;
+	}
 	&__input-wrapper.active .btn--search {
 		border-color: $primary-blue;
 		svg.icon--search {

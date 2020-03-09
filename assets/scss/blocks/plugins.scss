@@ -186,7 +186,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   transition: opacity .15s ease-out;
-  z-index: 9;
+  z-index: 15;
 }
 
 .nice-select .list:hover .option:not(:hover) {
@@ -242,6 +242,7 @@
 
 .datepicker {
   width: 344px;
+  border-radius: 10px;
   border-color: $primary-blue;
 }
 
@@ -253,6 +254,7 @@
   font-size: 15px;
   font-weight: 700;
   line-height: 1.2;
+  letter-spacing: 0.59375px;
   color: $primary-blue;
   &:hover, &:active, &:focus {
     background: none;
@@ -271,29 +273,34 @@
 .datepicker--nav-action {
   outline: 0;
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 0;
+  width: 30px;
+  height: 30px;
   transition: all 0.2s ease-in-out;
   svg {
     display: block;
+    width: 7px;
+    height: 12px;
     transition: all 0.2s ease-in-out;
   }
   path {
+    fill: $border;
     stroke: $border;
-    stroke-width: 4px;
-  }
-  &:hover, &:active, &:focus {
-    background: none;
+    stroke-width: 0;
   }
   &:last-child {
     right: 27px;
   }
   &:first-child {
-    right: 50px;
+    right: 60px;
+  }
+  &:hover, &:active, &:focus {
+    background: none;
   }
   &:hover path,
-  &:active path,
-  &:focus path {
+  &:active path {
+    fill: $primary-blue;
     stroke: $primary-blue;
   }
 }
@@ -310,7 +317,7 @@
   height: auto;
 }
 
-.datepicker--cell {
+.datepicker--cell.datepicker--cell-month {
   outline: 0;
   width: 62px;
   height: 54px;
@@ -327,6 +334,21 @@
   }
 }
 
+.datepicker--days-names {
+  margin-bottom: 23px;
+}
+
+.datepicker--day-name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $primary-blue;
+}
+
+.datepicker--nav-title i {
+  color: $primary-blue;
+}
+
 .datepicker--cell.-focus- {
   color: #fff;
   border-color: $primary-blue;
@@ -341,4 +363,12 @@
 
 .datepicker--cell.-current- {
   color: $primary-blue;
+}
+
+.datepicker--cell.datepicker--cell-day.-weekend-.-other-month- {
+  color: #7C86A2;
+}
+
+.datepicker--cell.datepicker--cell-day.-other-month- {
+  color: $border;
 }

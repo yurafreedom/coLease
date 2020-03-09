@@ -232,3 +232,33 @@
 		stroke: #fff;
 	}
 }
+
+.btn--red {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.142;
+	color: $red;
+	border: 2px solid $red;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		color: $red;
+	}
+	&:active {
+		color: #fff;
+		background-color: $red;
+	}
+	svg {
+		stroke: $red;
+		transition: all 0.2s ease-in-out; 
+	}
+	&:active svg {
+		stroke: #fff;
+	}
+}

@@ -1,0 +1,313 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": ""
+})
+
+@@include('template/page-header.html', {
+	"dashboard": "",
+	"leases": "true",
+	"reminders": "",
+	"report": "",
+	"agent": "",
+	"settings": ""
+})
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+		<section class="nav-block">
+			<div class="container">
+				<div class="nav-block__wrapper">
+					<div class="nav-block__list">
+						<ul>
+							<li><a href="javascript:;">Leases</a></li>
+							<li><a href="javascript:;">Sites</a></li>
+							<li class="active"><a href="javascript:;">Landlords</a></li>
+							<li><a href="javascript:;">Financial</a></li>
+							<li><a href="javascript:;">Issues</a></li>
+							<li><a href="javascript:;">File Explorer</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="landlord-block">
+			<div class="container">
+				<div class="landlord-block__wrapper">
+					<div class="landlord-block__heading">
+						<div class="landlord-block__title">Add a new Landlord</div>
+						<a href="javascript:;" class="btn btn--blue">
+							<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
+							<span>Back</span>
+						</a>
+					</div>
+					<form class="landlord-block__form">
+						<div class="landlord-block__details-block">
+							<div class="landlord-block__form-heading">
+								<div class="landlord-block__form-title">
+									<svg width="33" height="31">
+										<use xlink:href="#face"></use>
+									</svg>
+									<span>Details</span>
+								</div>
+								<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+							</div>
+							<div class="landlord-block__details-wrapper">
+								<div class="landlord-block__details-form-title">Basic Info</div>
+								<div class="landlord-block__details-form-wrapper">
+									<div class="page-block__input-wrapper">
+										<label for="details_name" class="page-block__label">Name</label>
+										<input type="text" id="details_name" name="details_name" class="text-input page-block__input" placeholder="Name..." required>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="details_type" class="page-block__label">Type</label>
+										<input type="text" id="details_type" name="details_type" class="text-input page-block__input" placeholder="Type..." required>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="details_id" class="page-block__label">Landlord ID / Registration Number</label>
+										<input type="text" id="details_id" name="details_id" class="text-input page-block__input" placeholder="Landlord ID..." required>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="details_address_line_one" class="page-block__label">Address Line 1</label>
+										<input type="text" id="details_address_line_one" name="details_address_line_one" class="text-input page-block__input" placeholder="Address 1" required>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="details_address_line_two" class="page-block__label">Address Line 2</label>
+										<input type="text" id="details_address_line_two" name="details_address_line_two" class="text-input page-block__input" placeholder="Address 2" required>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="details_city" class="page-block__label">City</label>
+										<input type="text" id="details_city" name="details_city" class="text-input page-block__input" placeholder="City..." required>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="details_state" class="page-block__label">Province / State</label>
+										<input type="text" id="details_state" name="details_state" class="text-input page-block__input" placeholder="Province..." required>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="details_city" class="page-block__label">Postal Code</label>
+										<input type="text" id="details_code" name="details_code" class="text-input page-block__input" placeholder="Postal Code..." required>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="details_country" class="page-block__label">Country</label>
+										<input type="text" id="details_country" name="details_country" class="text-input page-block__input" placeholder="Country..." required>
+									</div>
+									<div class="page-block__select-wrapper">
+										<label for="select_status" class="page-block__label">BEE Status</label>
+										<select id="select_status" class="nice-select">
+											<option value="1">Select BEE Status...</option>
+											<option value="2">Select BEE Status...</option>
+											<option value="3">Select BEE Status...</option>
+											<option value="4">Select BEE Status...</option>
+											<option value="5">Select BEE Status...</option>
+										</select>
+									</div>
+									<div class="page-block__date-wrapper">
+										<input type="text" class="text-input page-block__input" id="details_datepicker" placeholder="Select date...">
+										<button type="button"><svg width="19" height="17"><use xlink:href="#calendar"></use></svg></button>
+									</div>
+								</div>
+								<div class="landlord-block__details-form-title">Bank Account Details</div>
+								<div class="landlord-block__details-form-wrapper">
+									<div class="page-block__input-wrapper">
+										<label for="details_account_holder" class="page-block__label">Account Holder</label>
+										<input type="text" id="details_account_holder" name="details_account_holder" class="text-input page-block__input" placeholder="Account Holder..." required>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="details_bank_name" class="page-block__label">Bank Name</label>
+										<input type="text" id="details_bank_name" name="details_bank_name" class="text-input page-block__input" placeholder="Bank Name..." required>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="details_branch_name" class="page-block__label">Branch Name</label>
+										<input type="text" id="details_branch_name" name="details__branch_name" class="text-input page-block__input" placeholder="Branch Name..." required>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="details_bank_name" class="page-block__label">Branch Code</label>
+										<input type="text" id="details_branch_code" name="details__branch_code" class="text-input page-block__input" placeholder="Branch Code..." required>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="details_account_type" class="page-block__label">Account Type</label>
+										<input type="text" id="details_account_type" name="details_account_type" class="text-input page-block__input" placeholder="Account Type..." required>
+									</div>
+									<div class="page-block__select-wrapper">
+										<label for="select_register" class="page-block__label">VAT Register</label>
+										<select class="nice-select">
+											<option value="1">Select...</option>
+											<option value="2">Select...</option>
+											<option value="3">Select...</option>
+											<option value="4">Select...</option>
+											<option value="5">Select...</option>
+										</select>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="details_vat_register" class="page-block__label">VAT Register Number</label>
+										<input type="text" id="details_vat_register" name="details_vat_register" class="text-input page-block__input" placeholder="VAT Register Number..." disabled>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="landlord-block__document-block">
+							<div class="landlord-block__form-heading">
+								<div class="landlord-block__form-title">
+									<svg width="32" height="31">
+										<use xlink:href="#file_copyright_user"></use>
+									</svg>
+									<span>Documents</span>
+								</div>
+								<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+							</div>
+							<div class="landlord-block__document-wrapper">
+								<div class="page-block__select-wrapper">
+									<label for="select_support" class="page-block__label">Supporting Document Status</label>
+									<select id="select_support" class="nice-select">
+										<option value="1">Supporting Document Status...</option>
+										<option value="2">Supporting Document Status...</option>
+										<option value="3">Supporting Document Status...</option>
+										<option value="4">Supporting Document Status...</option>
+										<option value="5">Supporting Document Status...</option>
+									</select>
+								</div>
+								<div class="landlord-block__document-form-wrapper">
+									<div class="landlord-block__attachment-block">
+										<label for="" class="page-block__label">Attachment</label>
+										<a href="javascript:;" id="attachment_link" class="landlord-block__attachment-link">
+											<div class="landlord-block__attachment-icon-circle">
+												<svg width="22" height="22">
+													<use xlink:href="#folder_add"></use>
+												</svg>
+											</div>
+										</a>
+										<div class="landlord-block__attachment-title">Drag & drop or <a href="javascript:;">Browse</a></div>
+									</div>
+									<div class="landlord-block__type-block">
+										<div class="page-block__select-wrapper">
+											<label for="select_type" class="page-block__label">Type</label>
+											<select id="select_type" class="nice-select">
+												<option value="1">Select a Document Type...</option>
+												<option value="2">Select a Document Type...</option>
+												<option value="3">Select a Document Type...</option>
+												<option value="4">Select a Document Type...</option>
+												<option value="5">Select a Document Type...</option>
+											</select>
+										</div>
+										<div class="landlord-block__type-wrapper">
+											<a href="javascript:;" class="btn btn--green">
+												<svg width="12" height="12">
+													<use xlink:href="#plus"></use>
+												</svg>
+												<span>Add Supporting Document</span>
+											</a>
+											<a href="javascript:;" class="btn btn--red">
+												<svg width="24" height="24">
+													<use xlink:href="#remove"></use>
+												</svg>
+												<span>Remove</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="landlord-block__contacts-block">
+							<div class="landlord-block__form-heading">
+								<div class="landlord-block__form-title">
+									<svg width="24" height="31">
+										<use xlink:href="#contacts"></use>
+									</svg>
+									<span>Contacts</span>
+								</div>
+								<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+							</div>
+							<div class="landlord-block__contacts-wrapper">
+								<div class="page-block__select-wrapper">
+									<label class="page-block__label">Type</label>
+									<select class="nice-select">
+										<option value="1">Select a User...</option>
+										<option value="2">Select a User...</option>
+										<option value="3">Select a User...</option>
+										<option value="4">Select a User...</option>
+										<option value="5">Select a User...</option>
+									</select>
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="contacts_name" class="page-block__label">Name</label>
+									<input type="text" id="contacts_name" name="contacts_name" class="text-input page-block__input" placeholder="Name...">
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="contacts_surname" class="page-block__label">Surname</label>
+									<input type="text" id="contacts_surname" name="contacts_surname" class="text-input page-block__input" placeholder="Surname...">
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="contacts_company" class="page-block__label">Company</label>
+									<input type="text" id="contacts_company" name="contacts_company" class="text-input page-block__input" placeholder="Company...">
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="contacts_email" class="page-block__label">Email</label>
+									<input type="text" id="contacts_email" name="contacts_email" class="text-input page-block__input" placeholder="Email...">
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="contacts_mobile" class="page-block__label">Mobile</label>
+									<input type="text" id="contacts_mobile" name="contacts_mobile" class="text-input page-block__input" placeholder="Mobile...">
+								</div>
+								<div class="page-block__input-wrapper mb-0">
+									<label for="contacts_landline" class="page-block__label">Landline</label>
+									<input type="text" id="contacts_landline" name="contacts_landline" class="text-input page-block__input" placeholder="Landline...">
+								</div>
+								<div class="landlord-block__contacts-btn-wrapper">
+									<a href="javascript:;" class="btn btn--green">
+										<svg width="12" height="12">
+											<use xlink:href="#plus"></use>
+										</svg>
+										<span>Add Content</span>
+									</a>
+									<a href="javascript:;" class="btn btn--red">
+										<svg width="24" height="24">
+											<use xlink:href="#remove"></use>
+										</svg>
+										<span>Remove Contact</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="landlord-block__notes-block">
+							<div class="landlord-block__form-heading">
+								<div class="landlord-block__form-title">
+									<svg width="24" height="31">
+										<use xlink:href="#contacts"></use>
+									</svg>
+									<span>Notes</span>
+								</div>
+								<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+							</div>
+							<div class="landlord-block__notes-wrapper">
+								<div class="landlord-block__textarea-wrapper">
+									<textarea name="landlord_notes" id="landlord_notes" class="text-input landlord-block__textarea" placeholder="Type notes..."></textarea>
+								</div>
+								<div class="landlord-block__notes-inner">
+									<a href="javascript:;" class="btn btn--green">
+										<svg width="12" height="12">
+											<use xlink:href="#plus"></use>
+										</svg>
+										<span>Add Notes</span>
+									</a>
+									<a href="javascript:;" class="btn btn--red">
+										<svg width="24" height="24">
+											<use xlink:href="#remove"></use>
+										</svg>
+										<span>Remove Notes</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="btn btn--blue">Create</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+@@include('template/scripts.html')
+<script src="js/landlord-block.js"></script>
+@@include('template/sprite.html')
+
+</body>
+</html>
