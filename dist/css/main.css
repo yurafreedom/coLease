@@ -6338,9 +6338,10 @@ input[type="checkbox"]:checked + label .login-block__check-v {
     padding-bottom: 10px; }
   .financial-block__table-inner .page-block__input {
     font-size: 14px;
-    line-height: 1.142;
+    line-height: 1.4;
     font-weight: 900;
-    color: #9B9B9B; }
+    color: #9B9B9B;
+    padding-left: 32px; }
     .financial-block__table-inner .page-block__input::-webkit-input-placeholder {
       font-size: 14px;
       line-height: 1.142;
@@ -6361,6 +6362,15 @@ input[type="checkbox"]:checked + label .login-block__check-v {
       line-height: 1.142;
       font-weight: 900;
       color: #9B9B9B; }
+  .financial-block__currency-title {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-size: 14px;
+    line-height: 1.142;
+    font-weight: 900;
+    color: #9B9B9B;
+    z-index: 10; }
 
 @media (max-width: 767px) {
   .financial-block {

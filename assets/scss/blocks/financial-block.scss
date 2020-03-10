@@ -260,15 +260,26 @@
 	}
 	&__table-inner .page-block__input {
 		font-size: 14px;
-		line-height: 1.142;
+		line-height: 1.4;
 		font-weight: 900;
 		color: $text;
+		padding-left: 32px;
 		&::placeholder {
 			font-size: 14px;
 			line-height: 1.142;
 			font-weight: 900;
 			color: $text;
 		}
+	}
+	&__currency-title {
+		position: absolute;
+		top: 12px;
+		left: 20px;
+		font-size: 14px;
+		line-height: 1.142;
+		font-weight: 900;
+		color: $text;
+		z-index: 10;
 	}
 }
 
