@@ -191,8 +191,8 @@
 						<div class="financial-block__form-heading">
 							<div class="page-block__input-wrapper">
 								<label for="financial_datepicker" class="page-block__label">Select Month</label>
-								<input type="text" id="financial_datepicker" class="text-input page-block__input" id="financial_datepicker" name="financial_datepicker" placeholder="Select Month..." data-min-view="months" data-view="months" data-date-format="MM yyyy">
-								<button type="button" class="btn btn--search">
+								<input type="text" class="text-input page-block__input" id="financial_datepicker" name="financial_datepicker" placeholder="Select Month..." data-min-view="months" data-view="months" data-date-format="MM yyyy">
+								<button type="button" class="btn btn--search" id="button_datepicker_1">
 									<svg width="19" height="17" class="icon--calendar">
 										<use xlink:href="#calendar"></use>
 									</svg>
@@ -258,6 +258,12 @@
 							<div class="financial-block__table-heading-total">Total Monthly Lease Expense</div>
 							<div class="financial-block__table-heading-charge">Monthly Charge (as per Invoice)</div>
 							<div class="financial-block__table-heading-status">Payment Status</div>
+							<div class="financial-block__table-heading-costs">Electricity Costs</div>
+							<div class="financial-block__table-heading-status">Payment Status</div>
+							<div class="financial-block__table-heading-utility">Other Utility Costs</div>
+							<div class="financial-block__table-heading-status">Payment Status</div>
+							<div class="financial-block__table-heading-total-cost">Total Cost</div>
+							<div class="financial-block__table-heading-invoices">Invoices</div>
 						</div>
 						<div class="financial-block__table-inner">
 							<div class="financial-block__table-card">
@@ -265,8 +271,8 @@
 								<div class="financial-block__table-inner-name"><a href="javascript:;">Wynberg (MST Office block)</a></div>
 								<div class="financial-block__table-inner-total">
 									<div class="page-block__input-wrapper">
-										<input type="text" id="r_1" class="text-input page-block__input" value="R " placeholder="...">
-										<label for="r_1" class="page-block__label">Base Cost: R 7250</label>
+										<input type="text" id="cost_1" name="cost_1" class="text-input page-block__input" value="R " placeholder="...">
+										<label for="cost_1" class="page-block__label">Base Cost: R 7250</label>
 									</div>
 								</div>
 								<div class="financial-block__table-inner-charge">
@@ -284,6 +290,48 @@
 											<option value="5">Payment Status</option>
 										</select>
 									</div>
+								</div>
+								<div class="financial-block__table-inner-costs">
+									<div class="page-block__input-wrapper">
+										<label for="cost_2" class="page-block__label">Base Cost: R (Base Cost)</label>
+										<input type="text" id="cost_2" name="cost_2" class="text-input page-block__input" value="R " placeholder="...">
+									</div>
+								</div>
+								<div class="financial-block__table-inner-status">
+									<div class="page-block__select-wrapper">
+										<select class="nice-select">
+											<option value="1">Payment Status</option>
+											<option value="2">Payment Status</option>
+											<option value="3">Payment Status</option>
+											<option value="4">Payment Status</option>
+											<option value="5">Payment Status</option>
+										</select>
+									</div>
+								</div>
+								<div class="financial-block__table-inner-utility">
+									<div class="page-block__input-wrapper">
+										<label for="cost_3" class="page-block__label">Total:</label>
+										<input type="text" id="cost_3" name="cost_3" class="text-input page-block__input" value="R " placeholder="...">
+									</div>
+								</div>
+								<div class="financial-block__table-inner-status">
+									<div class="page-block__select-wrapper">
+										<select class="nice-select">
+											<option value="1">Payment Status</option>
+											<option value="2">Payment Status</option>
+											<option value="3">Payment Status</option>
+											<option value="4">Payment Status</option>
+											<option value="5">Payment Status</option>
+										</select>
+									</div>
+								</div>
+								<div class="financial-block__table-inner-total-cost">
+									<div class="page-block__input-wrapper">
+										<input type="text" class="text-input page-block__input" value="R " placeholder="...">
+									</div>
+								</div>
+								<div class="financial-block__table-inner-invoices">
+									<a href="javascript:;" class="btn btn--green">Upload</a>
 								</div>
 							</div>
 							<div class="financial-block__table-card">
@@ -291,8 +339,8 @@
 								<div class="financial-block__table-inner-name"><a href="javascript:;">Wynberg (MST Office block)</a></div>
 								<div class="financial-block__table-inner-total">
 									<div class="page-block__input-wrapper">
-										<input type="text" id="r_2" class="text-input page-block__input" value="R " placeholder="...">
-										<label for="r_2" class="page-block__label">Base Cost: R 7250</label>
+										<input type="text" id="cost_4" name="cost_4" class="text-input page-block__input" value="R " placeholder="...">
+										<label for="cost_4" class="page-block__label">Base Cost: R 7250</label>
 									</div>
 								</div>
 								<div class="financial-block__table-inner-charge">
@@ -310,6 +358,116 @@
 											<option value="5">Payment Status</option>
 										</select>
 									</div>
+								</div>
+								<div class="financial-block__table-inner-costs">
+									<div class="page-block__input-wrapper">
+										<label for="cost_5" class="page-block__label">Base Cost: R (Base Cost)</label>
+										<input type="text" id="cost_5" name="cost_5" class="text-input page-block__input" value="R " placeholder="...">
+									</div>
+								</div>
+								<div class="financial-block__table-inner-status">
+									<div class="page-block__select-wrapper">
+										<select class="nice-select">
+											<option value="1">Payment Status</option>
+											<option value="2">Payment Status</option>
+											<option value="3">Payment Status</option>
+											<option value="4">Payment Status</option>
+											<option value="5">Payment Status</option>
+										</select>
+									</div>
+								</div>
+								<div class="financial-block__table-inner-utility">
+									<div class="page-block__input-wrapper">
+										<label for="cost_6" class="page-block__label">Total:</label>
+										<input type="text" id="cost_6" name="cost_6" class="text-input page-block__input" value="R " placeholder="...">
+									</div>
+								</div>
+								<div class="financial-block__table-inner-status">
+									<div class="page-block__select-wrapper">
+										<select class="nice-select">
+											<option value="1">Payment Status</option>
+											<option value="2">Payment Status</option>
+											<option value="3">Payment Status</option>
+											<option value="4">Payment Status</option>
+											<option value="5">Payment Status</option>
+										</select>
+									</div>
+								</div>
+								<div class="financial-block__table-inner-total-cost">
+									<div class="page-block__input-wrapper">
+										<input type="text" class="text-input page-block__input" value="R " placeholder="...">
+									</div>
+								</div>
+								<div class="financial-block__table-inner-invoices">
+									<a href="javascript:;" class="btn btn--green">Upload</a>
+								</div>
+							</div>
+							<div class="financial-block__table-card">
+								<div class="financial-block__table-inner-id"><a href="javascript:;">JHB238</a></div>
+								<div class="financial-block__table-inner-name"><a href="javascript:;">Wynberg (MST Office block)</a></div>
+								<div class="financial-block__table-inner-total">
+									<div class="page-block__input-wrapper">
+										<input type="text" id="cost_7" name="cost_7" class="text-input page-block__input" value="R " placeholder="...">
+										<label for="cost_7" class="page-block__label">Base Cost: R 7250</label>
+									</div>
+								</div>
+								<div class="financial-block__table-inner-charge">
+									<div class="page-block__input-wrapper">
+										<input type="text" class="text-input page-block__input" value="R " placeholder="...">
+									</div>
+								</div>
+								<div class="financial-block__table-inner-status">
+									<div class="page-block__select-wrapper">
+										<select class="nice-select">
+											<option value="1">Payment Status</option>
+											<option value="2">Payment Status</option>
+											<option value="3">Payment Status</option>
+											<option value="4">Payment Status</option>
+											<option value="5">Payment Status</option>
+										</select>
+									</div>
+								</div>
+								<div class="financial-block__table-inner-costs">
+									<div class="page-block__input-wrapper">
+										<label for="cost_8" class="page-block__label">Base Cost: R (Base Cost)</label>
+										<input type="text" id="cost_8" name="cost_8" class="text-input page-block__input" value="R " placeholder="...">
+									</div>
+								</div>
+								<div class="financial-block__table-inner-status">
+									<div class="page-block__select-wrapper">
+										<select class="nice-select">
+											<option value="1">Payment Status</option>
+											<option value="2">Payment Status</option>
+											<option value="3">Payment Status</option>
+											<option value="4">Payment Status</option>
+											<option value="5">Payment Status</option>
+										</select>
+									</div>
+								</div>
+								<div class="financial-block__table-inner-utility">
+									<div class="page-block__input-wrapper">
+										<label for="cost_9" class="page-block__label">Total:</label>
+										<input type="text" id="cost_9" name="cost_9" class="text-input page-block__input" value="R " placeholder="...">
+									</div>
+								</div>
+								<div class="financial-block__table-inner-status">
+									<div class="page-block__select-wrapper">
+										<select class="nice-select">
+											<option value="1">Payment Status</option>
+											<option value="2">Payment Status</option>
+											<option value="3">Payment Status</option>
+											<option value="4">Payment Status</option>
+											<option value="5">Payment Status</option>
+										</select>
+									</div>
+								</div>
+								<div class="financial-block__table-inner-total-cost">
+									<div class="page-block__input-wrapper">
+										<input type="text" class="text-input page-block__input" value="R " placeholder="...">
+									</div>
+								</div>
+								<div class="financial-block__table-inner-invoices">
+									<a href="javascript:;" class="btn btn--green">Upload</a>
 								</div>
 							</div>
 						</div>

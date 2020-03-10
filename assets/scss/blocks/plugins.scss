@@ -372,3 +372,27 @@
 .datepicker--cell.datepicker--cell-day.-other-month- {
   color: $border;
 }
+
+@include for-size(mobile) {
+  .datepicker {
+    width: 250px;
+  }
+  .datepicker--nav {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .datepicker--content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .datepicker--cell.datepicker--cell-month {
+    width: 45px;
+    height: 45px;
+  }
+  .datepicker--nav-action:last-child {
+    right: 15px;
+  }
+  .datepicker--nav-action:first-child {
+    right: 45px;
+  }
+}

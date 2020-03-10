@@ -1,5 +1,6 @@
 .financial-block {
 	padding-top: 30px;
+	padding-bottom: 40px;
 	&__heading-block {
 		display: block;
 		border-radius: 25px;
@@ -106,6 +107,21 @@
 		border-top-left-radius: 25px;
 		border-top-right-radius: 25px;
 		background-color: #fff;
+		overflow-x: auto;
+		&::-webkit-scrollbar-track {
+			background-color: #eef3fb;
+			border-radius: 10px;
+			margin-left: 15px;
+			border: 1px solid $primary-blue;
+		}
+		&::-webkit-scrollbar {
+			height: 6px;
+			background-color: transparent;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: $fenny;
+			border-radius: 10px;
+		}
 	}
 	&__table-heading, &__table-card {
 		display: flex;
@@ -115,8 +131,12 @@
 		padding-left: 30px;
 		padding-right: 44px;
 	}
+	&__table-heading, &__table-inner {
+		min-width: 3404px;
+	}
 	&__table-card {
 		position: relative;
+		min-width: 2840px;
 		padding-top: 46px;
 		padding-bottom: 49px;
 		border: 2px solid #fff;
@@ -175,20 +195,41 @@
 	&__table-heading-id,
 	&__table-inner-id {
 		display: block;
+		flex-shrink: 0;
 		width: 100%;
 		max-width: 156px;
 	}
 	&__table-heading-name,
 	&__table-inner-name {
 		display: block;
+		flex-shrink: 0;
 		width: 100%;
 		max-width: 355px;
 	}
-	&__table-heading-total, &__table-heading-charge, &__table-heading-status,
-	&__table-inner-total, &__table-inner-charge, &__table-inner-status {
+	&__table-heading-total, &__table-heading-charge, &__table-heading-status, &__table-inner-total, &__table-inner-charge, &__table-inner-status, &__table-heading-costs, &__table-inner-costs, &__table-heading-utility, &__table-inner-utility, &__table-heading-total-cost, &__table-inner-total-cost {
 		display: block;
+		flex-shrink: 0;
 		width: 100%;
-		max-width: 230px;
+		max-width: 300px;
+		margin: 0 15px;
+	}
+	&__table-heading-invoices, &__table-inner-invoices {
+		display: block;
+		flex-shrink: 0;
+		width: 100%;
+		max-width: 150px;
+	}
+	&__table-heading-invoices {
+		text-align: center;
+	}
+	&__table-inner-invoices {
+		.btn--green {
+			width: 144px;
+			padding-top: 11px;
+			padding-bottom: 11px;
+			margin: 0 auto;
+			color: #fff;
+		}
 	}
 	&__table-inner-total label {
 		position: absolute;
@@ -213,8 +254,15 @@
 	&__table-inner-status .page-block__select-wrapper .nice-select .list {
 		top: auto;
 		bottom: 30px;
+		max-height: 80px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 	&__table-inner .page-block__input {
+		font-size: 14px;
+		line-height: 1.142;
+		font-weight: 900;
+		color: $text;
 		&::placeholder {
 			font-size: 14px;
 			line-height: 1.142;
@@ -281,26 +329,6 @@
 		&__table-inner-name {
 			max-width: 135px;
 		}
-		&__table-wrapper {
-			overflow: hidden;
-		}
-		&__table-block {
-			overflow-y: auto;
-			&::-webkit-scrollbar-track {
-				background-color: #eef3fb;
-				border-radius: 10px;
-				margin-left: 15px;
-				border: 1px solid $primary-blue;
-			}
-			&::-webkit-scrollbar {
-				height: 6px;
-				background-color: transparent;
-			}
-			&::-webkit-scrollbar-thumb {
-				background-color: $fenny;
-				border-radius: 10px;
-			}
-		}
 		&__table-heading, &__table-inner, &__table-card {
 			width: 100vh;
 			font-size: 14px;
@@ -345,26 +373,6 @@
 		&__table-heading-name,
 		&__table-inner-name {
 			max-width: 135px;
-		}
-		&__table-wrapper {
-			overflow: hidden;
-		}
-		&__table-block {
-			overflow-y: auto;
-			&::-webkit-scrollbar-track {
-				background-color: #eef3fb;
-				border-radius: 10px;
-				margin-left: 15px;
-				border: 1px solid $primary-blue;
-			}
-			&::-webkit-scrollbar {
-				height: 6px;
-				background-color: transparent;
-			}
-			&::-webkit-scrollbar-thumb {
-				background-color: $fenny;
-				border-radius: 10px;
-			}
 		}
 		&__table-heading, &__table-inner {
 			width: 100vw;
