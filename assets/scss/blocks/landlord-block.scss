@@ -55,6 +55,14 @@
 		position: relative;
 		padding-top: 20px;
 		padding-bottom: 20px;
+		border: 2px solid #fff;
+		transition: all 0.2s ease-in-out;
+		&:hover, &:active, &:focus {
+			background-color: rgba(83, 199, 205, 0.2);
+			border: 2px solid $primary-blue;
+			border-radius: 10px;
+			color: $fenny;
+		}		
 		&::after {
 			content: '';
 			position: absolute;
@@ -70,7 +78,7 @@
 		display: block;
 		font-size: 13px;
 		line-height: 1.142;
-		font-weight: 500;
+		font-weight: 400;
 		color: $text;
 	}
 	&__table-heading {
@@ -150,7 +158,7 @@
 		justify-content: space-between;
 		align-items: center;
 	}
-	&__edit-link, &__trash-link {
+	&__edit-link {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -176,12 +184,25 @@
 		}
 	}
 	&__trash-link {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
 		border: 2px solid $text;
 		background-color: $text;
 		padding-left: 1px;
+		transition: all 0.2s ease-in-out;
 		&:hover, &:active, &:focus {
 			border-color: $error;
 			background-color: $error;
+		}
+		svg {
+			display: block;
+			stroke: #fff;
+			transition: all 0.2s ease-in-out;
 		}
 		&:hover svg,
 		&:active svg,
@@ -192,7 +213,7 @@
 	&__wrapper {
 		position: relative;
 		display: block;
-		padding-top: 60px;
+		padding-top: 65px;
 		padding-left: 28px;
 		padding-right: 30px;
 		padding-bottom: 70px;
@@ -215,6 +236,7 @@
 		font-size: 25px;
 		font-weight: 400;
 		line-height: 1.2;
+		padding-left: 4px;
 		color: $title;
 	}
 	&__details-block {
@@ -225,6 +247,7 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		padding-left: 22px;
 		padding-bottom: 14px;
 		margin-bottom: 30px;
 		border-bottom: 1px solid $primary-blue;
@@ -261,7 +284,7 @@
 			width: 100%;
 			max-width: 422px;
 			margin: 0 auto;
-			padding-top: 11px;
+			padding-top: 9px;
 			padding-bottom: 11px;
 		}
 	}
@@ -297,7 +320,7 @@
 		max-width: 428px;
 		margin-right: 0;
 		&:not(:last-child) {
-			margin-bottom: 52px;
+			margin-bottom: 55px;
 		}
 		&:not(:nth-child(3n)) {
 			margin-right: 18px;
@@ -308,7 +331,7 @@
 	}
 	&__contacts-wrapper .page-block__select-wrapper {
 		&:not(:last-child) {
-			margin-bottom: 52px;
+			margin-bottom: 55px;
 		}
 	}
 	&__details-wrapper .page-block__select-wrapper {
@@ -353,6 +376,7 @@
 	&__document-wrapper {
 		position: relative;
 		display: block;
+		padding-left: 5px;
 	}
 	&__document-wrapper .page-block__select-wrapper,
 	&__contacts-wrapper .page-block__select-wrapper {
@@ -417,13 +441,13 @@
 	&__type-block {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: flex-end;
 		width: 100%;
 	}
 	&__type-block .page-block__select-wrapper {
 		width: 100%;
 		max-width: 428px;
-		margin-bottom: 0;
+		margin-bottom: 28px;
 		&:not(:nth-child(2n)) {
 			margin-right: 0;
 		}
@@ -456,7 +480,7 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: flex-start;
-		margin-bottom: 129px;
+		margin-bottom: 79px;
 		padding-bottom: 43px;
 		border-bottom: 1px solid #F9F8FC;
 	}
@@ -486,7 +510,7 @@
 		position: relative;
 		display: block;
 		padding-bottom: 60px;
-		margin-bottom: 120px;
+		margin-bottom: 60px;
 		border-bottom: 1px solid #F9F8FC;
 	}
 	&__notes-wrapper {
@@ -714,6 +738,9 @@
 
 @include for-size(tablet) {
 	.landlord-block {
+		&__contacts-wrapper, &__notes-block {
+			margin-bottom: 60px;
+		}
 		&__table-heading, &__table-card {
 			padding-left: 15px;
 			padding-right: 15px;

@@ -94,6 +94,26 @@
 	}
 }
 
+.success {
+	border-color: $correctly !important;
+	&:focus {
+		border-color: $correctly;
+	}
+	&::placeholder {
+		color: $correctly;
+	}
+}
+
+.error {
+	border-color: $error !important;
+	&:focus {
+		border-color: $error;
+	}
+	&::placeholder {
+		color: $error;
+	}
+}
+
 @mixin for-size($size) {
   @if $size == mobile {
     @media (max-width: 767px) { @content; }

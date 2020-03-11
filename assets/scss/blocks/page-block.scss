@@ -42,6 +42,12 @@
 	&__input-wrapper.disabled label {
 		color: $border;
 	}
+	&__input-wrapper.disabled &__input {
+		border-color: $border;
+	}
+	&__select-wrapper.disabled label {
+		color: $border;
+	}
 	&__input-wrapper.active .btn--search {
 		border-color: $primary-blue;
 		svg.icon--search {
@@ -69,6 +75,9 @@
 	&__input-wrapper:hover &__input,
 	&__input-wrapper:hover .btn--search {
 		border-color: $primary-blue;
+	}
+	&__input-wrapper.disabled:hover &__input {
+		border-color: $border;
 	}
 	&__input-wrapper:hover .btn--search {
 		svg.icon--search {
@@ -161,6 +170,37 @@
 		display: none;
 		&.active {
 			display: block;
+		}
+	}
+	&__textarea {
+		outline: 0;
+		display: block;
+		width: 100%;
+		height: 133px;
+		padding-top: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 10px;
+		border-radius: 10px;
+		border: 1px solid $border;
+		font-size: 14px;
+		font-weight: 400;
+		color: $title;
+		line-height: 1.142;
+		transition: all 0.2s ease-in-out;
+		&:placeholder {
+			font-size: 14px;
+			font-weight: 400;
+			color: $text;
+			line-height: 1.2;
+		}
+	}
+	&__textarea.disabled {
+		background-color: #F9F8FC;
+		border-color: $border;
+		color: $border;
+		&:focus {
+			border-color: $border;
 		}
 	}
 }

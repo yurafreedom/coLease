@@ -11,7 +11,7 @@ $.fn.datepicker.language['en'] = {
   firstDay: 0
 };
 
-var myDatepicker = $('#financial_datepicker').datepicker().data('datepicker');
+var financialDatepicker = $('#financial_datepicker').datepicker().data('datepicker');
 
 $('#financial_datepicker').datepicker({
   language: 'en',
@@ -20,7 +20,7 @@ $('#financial_datepicker').datepicker({
 });
 
 $("#button_datepicker_1").on('click', function() {
-  myDatepicker.show();
+  financialDatepicker.show();
 });
 
 $('.financial-block__table-card').hover(function() {

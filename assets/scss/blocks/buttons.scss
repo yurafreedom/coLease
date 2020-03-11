@@ -99,7 +99,6 @@
 		background-color: #8BC61D;
 		border-color: #8BC61D;
 		color: #fff;
-		box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.19);
 	}
 	svg {
 		display: block;
@@ -178,7 +177,6 @@
 		background-color: $fenny;
 		border-color: $fenny;
 		color: #fff;
-		box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.19);
 	}
 	svg {
 		display: block;
@@ -226,6 +224,7 @@
 	}
 	&:active {
 		background-color: $text;
+		border-color: $text;
 		color: #fff;
 	}
 	&:active svg {
@@ -244,19 +243,26 @@
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 1.142;
-	color: $red;
-	border: 2px solid $red;
+	color: #fff;
+	background-color: $text;
+	border: 2px solid $text;
 	transition: all 0.2s ease-in-out;
 	&:hover {
+		background-color: #fff;
+		border: 2px solid $red;
 		color: $red;
 	}
 	&:active {
 		color: #fff;
+		border-color: $red;
 		background-color: $red;
 	}
 	svg {
-		stroke: $red;
+		stroke: #fff;
 		transition: all 0.2s ease-in-out; 
+	}
+	&:hover svg {
+		stroke: $red;
 	}
 	&:active svg {
 		stroke: #fff;

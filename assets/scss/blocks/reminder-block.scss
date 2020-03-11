@@ -1,6 +1,7 @@
 .reminder-block {
 	position: relative;
 	padding-top: 30px;
+	padding-bottom: 40px;
 	&__wrapper {
 		position: relative;
 		display: block;
@@ -115,6 +116,7 @@
 	}
 	&__table-inner {
 		a {
+			outline: 0;
 			color: $fenny;
 			text-decoration: underline;
 			transition: all 0.2s ease-in-out;
@@ -123,7 +125,7 @@
 	&__table-card {
 		position: relative;
 		padding-top: 12px;
-		padding-bottom: 19px;
+		padding-bottom: 13px;
 		padding-left: 30px;
 		padding-right: 45px;
 		font-size: 13px;
@@ -163,6 +165,10 @@
 		&::after {
 			display: none;
 		}
+	}
+	&__table-block.not-action &__table-card {
+		padding-top: 17px;
+		padding-bottom: 18px;
 	}
 	&__table-heading-type, &__table-inner-type {
 		display: block;
@@ -211,7 +217,31 @@
 		width: 100%;
 		max-width: 64px;
 	}
-	&__check-link, &__alarm-link, &__trash-link {
+	&__table-heading-calendar, &__table-inner-calendar {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		max-width: 64px;
+	}
+	&__table-heading-calendar {
+		text-align: center;
+	}
+	&__table-inner-calendar {
+		svg {
+			stroke: $fenny;
+		}
+	}
+	&__table-block.calendar &__table-card {
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
+	&__calendar-link {
+		position: relative;
+		display: block;
+		cursor: pointer;
+	}
+	&__check-link, &__trash-link, &__alarm-link {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -235,6 +265,22 @@
 			stroke: $primary-green;
 		}
 	}
+	&__trash-link {
+		background-color: $text;
+		border: 2px solid $text;
+		padding-left: 1px;
+		&:hover,
+		&:active,
+		&:focus {
+			background-color: $red;
+			border-color: $red;
+		}
+		&:hover svg,
+		&:active svg,
+		&:focus svg {
+			stroke: #fff;
+		}
+	}
 	&__alarm-link {
 		border: 2px solid $primary-blue;
 		background-color: $primary-blue;
@@ -245,19 +291,14 @@
 			stroke: $primary-blue;
 		}
 	}
-	&__trash-link {
-		border: 2px solid $text;
-		background-color: $text;
-		padding-left: 1px;
-		&:hover, &:active, &:focus {
-			border-color: $error;
-			background-color: $error;
-		}
-		&:hover svg,
-		&:active svg,
-		&:focus svg {
-			stroke: #fff;
-		}
+	.input-hidden {
+		position: absolute;
+		top: -360px;
+		left: auto;
+		right: 250px;
+		bottom: auto;
+		opacity: 0;
+		pointer-events: none;
 	}
 }
 
@@ -282,7 +323,7 @@
 			}
 		}
 		&__table-heading, &__table-inner {
-			width: 100vh;
+			min-width: 1380px;
 		}
 		&__table-heading {
 			padding-left: 15px;
@@ -290,6 +331,7 @@
 			font-size: 12px;
 		}
 		&__table-card {
+			min-width: 1380px;
 			padding-left: 15px;
 			padding-right: 30px;
 			font-size: 12px;
@@ -334,6 +376,12 @@
 		}
 		&__trash-link {
 			padding-left: 0;
+		}
+		.input-hidden {
+			top: -360px;
+			left: auto;
+			right: 150px;
+			bottom: auto;
 		}
 	}
 }
