@@ -25,7 +25,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.min.css"> </head>
 
-<body  class=index-page >
+<body >
 
 <header class="page-header">
 	<div class="container">
@@ -174,475 +174,207 @@
 					<div class="nav-block__list">
 						<ul>
 							<li><a href="javascript:;">Leases</a></li>
-							<li><a href="javascript:;">Sites</a></li>
+							<li class="active"><a href="javascript:;">Sites</a></li>
 							<li><a href="javascript:;">Landlords</a></li>
 							<li><a href="javascript:;">Financial</a></li>
 							<li><a href="javascript:;">Issues</a></li>
-							<li class="active"><a href="javascript:;">File Explorer</a></li>
+							<li><a href="javascript:;">File Explorer</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="manager-block">
+		<section class="preview-site-block">
 			<div class="container">
-				<div class="manager-block__heading-block">
-					<div class="manager-block__heading-title">File Explorer</div>
-					<form class="page-block__form">
-						<div class="page-block__input-wrapper">
-							<input type="text" class="text-input page-block__input" id="manager_date" name="manager_date" placeholder="Searching..." required>
-							<button type="submit" class="btn btn--search">
-								<svg width="17" height="17" class="icon--search">
-									<use xlink:href="#search"></use>
+				<div class="preview-landlord-block__wrapper">
+					<div class="preview-landlord-block__heading">
+						<div class="landlord-block__title">Site preview</div>
+						<div class="landlord-block__heading-wrapper">
+							<button type="button" class="btn btn--fenny">
+								<svg width="13" height="13">
+									<use xlink:href="#print"></use>
 								</svg>
+								<span>Export Site</span>
 							</button>
-						</div>
-					</form>
-				</div>
-				<div class="manager-block__wrapper">
-					<div class="manager-block__preloader">
-						<div class="manager-block__preloader-row">
-							<div class="manager-block__preloader-option"></div>
-						</div>
-					</div>
-					<div class="manager-block__nav-block">
-
-						<!-- Sites -->
-						<ul class="manager-block__nav-section">
-							<li>
-								<a class="manager-block__nav-section-title" data-toggle="expand">
-									<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
-									<span>Sites</span>
-								</a>
-								<ul class="manager-block__nav-subsection">
-									<li>
-										<a class="manager-block__nav-subsection-title" data-toggle="expand">
-											<svg width="11" height="11">
-												<use xlink:href="#file_explorer"></use>
-											</svg>
-											<span>Site Name / ID</span>
-										</a>
-										<ul class="manager-block__sub-heading">
-											<li>
-												<a class="manager-block__sub-heading-title" data-toggle="expand">
-													<svg width="13" height="12">
-														<use xlink:href="#folder_hold"></use>
-													</svg>
-													<span>Site Inventory</span>
-												</a>
-												<ul class="manager-block__sub-inner">
-													<li><a href="javascript:;" class="manager-block__sub-inner-link">Leases</a></li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>New Lease Agreements</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Lease Renewal Agreements</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Lease Addendum</span>
-														</a>
-													</li>
-												</ul>
-											</li>
-											<li>
-												<a class="manager-block__sub-heading-title" data-toggle="expand">
-													<svg width="13" height="12">
-														<use xlink:href="#folder_hold"></use>
-													</svg>
-													<span>Site Inventory</span>
-												</a>
-												<ul class="manager-block__sub-inner">
-													<li><a href="javascript:;" class="manager-block__sub-inner-link">Leases</a></li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>New Lease Agreements</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Lease Renewal Agreements</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Lease Addendum</span>
-														</a>
-													</li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-
-						<!-- Landlord -->
-						<ul class="manager-block__nav-section">
-							<li>
-								<a class="manager-block__nav-section-title" data-toggle="expand">
-									<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
-									<span>Landlord</span>
-								</a>
-								<ul class="manager-block__nav-subsection">
-									<li>
-										<a class="manager-block__nav-subsection-title" data-toggle="expand">
-											<svg width="11" height="11">
-												<use xlink:href="#file_explorer"></use>
-											</svg>
-											<span>Landlord Name / ID</span>
-										</a>
-										<ul class="manager-block__sub-heading">
-											<li>
-												<a class="manager-block__sub-heading-title" data-toggle="expand">
-													<svg width="13" height="12">
-														<use xlink:href="#folder_hold"></use>
-													</svg>
-													<span>Landlord</span>
-												</a>
-												<ul class="manager-block__sub-inner">
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Proof of Bank Account documents</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Company Registration documents</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>ID Documents</span>
-														</a>
-													</li>
-												</ul>
-											</li>
-											<li>
-												<a class="manager-block__sub-heading-title" data-toggle="expand">
-													<svg width="13" height="12">
-														<use xlink:href="#folder_hold"></use>
-													</svg>
-													<span>LandlordName</span>
-												</a>
-												<ul class="manager-block__sub-inner">
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Proof of Bank Account documents</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Company Registration documents</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>ID Documents</span>
-														</a>
-													</li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						
-						<!-- Financial -->
-						<ul class="manager-block__nav-section">
-							<li>
-								<a class="manager-block__nav-section-title" data-toggle="expand">
-									<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
-									<span>Financial</span>
-								</a>
-								<ul class="manager-block__nav-subsection">
-									<li>
-										<a class="manager-block__nav-subsection-title" data-toggle="expand">
-											<svg width="11" height="11">
-												<use xlink:href="#file_explorer"></use>
-											</svg>
-											<span>Invoices</span>
-										</a>
-										<ul class="manager-block__sub-heading">
-											<li>
-												<a class="manager-block__sub-heading-title" data-toggle="expand">
-													<svg width="13" height="12">
-														<use xlink:href="#folder_hold"></use>
-													</svg>
-													<span>SiteID</span>
-												</a>
-												<ul class="manager-block__sub-inner">
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-date" data-toggle="expand">
-															<svg width="12" height="12">
-																<use xlink:href="#date"></use>
-															</svg>
-															<span>Month (MMM/YYYY)</span>
-														</a>
-														<ul class="manager-block__sub-date-inner">
-															<li>
-																<a href="javascript:;" class="manager-block__sub-inner-invoices">
-																	<svg width="13" height="12">
-																		<use xlink:href="#invoices"></use>
-																	</svg>
-																	<span>Relevant invoices</span>
-																</a>
-															</li>
-															<li>
-																<a href="javascript:;" class="manager-block__sub-inner-invoices">
-																	<svg width="13" height="12">
-																		<use xlink:href="#invoices"></use>
-																	</svg>
-																	<span>Relevant invoices</span>
-																</a>
-															</li>
-														</ul>
-													</li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-					<div class="manager-block__content-block">
-						<div class="manager-block__controls-block">
-							<a href="javascript:;" class="manager-block__controls-link" data-toggle="tab" data-target="#manager-tab-1">
-								<svg width="24" height="24">
-									<use xlink:href="#tab_row"></use>
-								</svg>
-							</a>
-							<a href="javascript:;" class="manager-block__controls-link"  data-toggle="tab" data-target="#manager-tab-2">
-								<svg width="24" height="24">
-									<use xlink:href="#tab_list"></use>
-								</svg>
+							<a href="javascript:;" class="btn btn--blue">
+								<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
+								<span>Back</span>
 							</a>
 						</div>
-						<div class="manager-block__content-inner">
-							<div class="manager-block__tab-content active" id="manager-tab-1">
-								<div class="manager-block__content-row">
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
+					</div>
+					<div class="preview-landlord-block__content-block">
+						<div class="preview-landlord-block__page-block">
+							<div class="preview-landlord-block__page-heading">
+								<div class="preview-landlord-block__page-wrapper">
+									<div class="landlord-block__form-title">
+										<svg width="33" height="31">
+											<use xlink:href="#face"></use>
+										</svg>
+										<span>Site details</span>
+									</div>
+									<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+								</div>
+								<a href="javascript:;" class="btn btn--green">
+									<svg width="12" height="12">
+										<use xlink:href="#edit"></use>
+									</svg>
+									<span>Edit</span>
+								</a>
+							</div>
+							<div class="preview-landlord-block__inner">
+								<div class="preview-landlord-block__left-part">
+									<div class="preview-landlord-block__option">
+										<div class="preview-landlord-block__option-title">Site ID:</div>
+										<div class="preview-landlord-block__option-value">sdsd</div>
+									</div>
+									<div class="preview-landlord-block__option">
+										<div class="preview-landlord-block__option-title">Site Name:</div>
+										<div class="preview-landlord-block__option-value">Private Company</div>
+									</div>
+									<div class="preview-landlord-block__option">
+										<div class="preview-landlord-block__option-title">Site Address:</div>
+										<div class="preview-landlord-block__option-value">3600 Yates Mill Pond Road, Raleigh, NC, USA</div>
+									</div>
+									<div class="preview-landlord-block__option">
+										<div class="preview-landlord-block__option-title">Street number:</div>
+										<div class="preview-landlord-block__option-value">3600</div>
+									</div>
+									<div class="preview-landlord-block__option">
+										<div class="preview-landlord-block__option-title">Street:</div>
+										<div class="preview-landlord-block__option-value">Yates Mill Pond Road</div>
+									</div>
+									<div class="preview-landlord-block__option">
+										<div class="preview-landlord-block__option-title">City:</div>
+										<div class="preview-landlord-block__option-value">Raleigh</div>
+									</div>
+									<div class="preview-landlord-block__option">
+										<div class="preview-landlord-block__option-title">Province/State:</div>
+										<div class="preview-landlord-block__option-value">NC</div>
+									</div>
+									<div class="preview-landlord-block__option">
+										<div class="preview-landlord-block__option-title">Postal Code:</div>
+										<div class="preview-landlord-block__option-value">27606</div>
+									</div>
+									<div class="preview-landlord-block__option">
+										<div class="preview-landlord-block__option-title">Country:</div>
+										<div class="preview-landlord-block__option-value">United States</div>
+									</div>
+									<div class="preview-landlord-block__option">
+										<div class="preview-landlord-block__option-title">Township:</div>
+										<div class="preview-landlord-block__option-value">3232 town</div>
+									</div>
+									<div class="preview-landlord-block__option">
+										<div class="preview-landlord-block__option-title">Site Status:</div>
+										<div class="preview-landlord-block__option-value">Active</div>
+									</div>
 								</div>
 							</div>
-							<div class="manager-block__tab-content" id="manager-tab-2">
-								<div class="manager-block__content-list">
-									<a href="javascript:;" class="manager-block__list-card">
-										<div class="manager-block__list-card-icon">
-											<svg width="25" height="25">
-												<use xlink:href="#common_file"></use>
-											</svg>
+						</div>
+						<div class="preview-landlord-block__page-block">
+							<div class="preview-landlord-block__page-heading">
+								<div class="preview-landlord-block__page-wrapper">
+									<div class="landlord-block__form-title">
+										<svg width="24" height="31">
+											<use xlink:href="#password_key"></use>
+										</svg>
+										<span>Emergency Access</span>
+									</div>
+									<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+								</div>
+								<a href="javascript:;" class="btn btn--green">
+									<svg width="12" height="12">
+										<use xlink:href="#edit"></use>
+									</svg>
+									<span>Edit</span>
+								</a>
+							</div>
+							<div class="preview-site-block__content-block">
+								<div class="preview-site-block__content-inner">
+									<div class="preview-site-block__content-title">Emergency Access Details:</div>
+									<div class="preview-site-block__content-wrapper">
+										<div class="preview-site-block__option">
+											<div class="preview-site-block__option-title">Hours of access:</div>
+											<div class="preview-site-block__option-value">Select Hours of Access</div>
 										</div>
-										<div class="manager-block__list-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__list-card">
-										<div class="manager-block__list-card-icon">
-											<svg width="25" height="25">
-												<use xlink:href="#common_file"></use>
-											</svg>
+										<div class="preview-site-block__option">
+											<div class="preview-site-block__option-title">Last Updated:</div>
+											<div class="preview-site-block__option-value">17 Jan 2020</div>
 										</div>
-										<div class="manager-block__list-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__list-card">
-										<div class="manager-block__list-card-icon">
-											<svg width="25" height="25">
-												<use xlink:href="#common_file"></use>
-											</svg>
+										<div class="preview-site-block__option">
+											<div class="preview-site-block__option-title">Other access information and procedures:</div>
+											<div class="preview-site-block__option-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
 										</div>
-										<div class="manager-block__list-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__list-card">
-										<div class="manager-block__list-card-icon">
-											<svg width="25" height="25">
-												<use xlink:href="#common_file"></use>
-											</svg>
+									</div>
+								</div>
+								<div class="preview-site-block__content-inner">
+									<div class="preview-site-block__content-title">Emergency Contacts:</div>
+									<div class="preview-site-block__content-wrapper">
+										<div class="preview-site-block__option">
+											<div class="preview-site-block__option-title">Primary Emergency<br>Contact:</div>
+											<div class="preview-site-block__option-value">
+												<span>Richard Wallyes </span>
+												<a href="tel:+6374838276">+6374838276</a>
+												<a href="mailto:test@test.com">test@test.com</a>
+											</div>
 										</div>
-										<div class="manager-block__list-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__list-card">
-										<div class="manager-block__list-card-icon">
-											<svg width="25" height="25">
-												<use xlink:href="#common_file"></use>
-											</svg>
+										<div class="preview-site-block__option">
+											<div class="preview-site-block__option-title">Secondary Emergency<br>Contact:</div>
+											<div class="preview-site-block__option-value">
+												<span>Shmuel Solomon</span>
+												<a href="tel:0835644121">0835644121</a>
+												<a href="mailto:shane@exprop.co.za">shane@exprop.co.za</a>
+											</div>
 										</div>
-										<div class="manager-block__list-card-title">New Lease Agreements</div>
-									</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="preview-landlord-block__page-block">
+							<div class="preview-landlord-block__page-heading">
+								<div class="preview-landlord-block__page-wrapper">
+									<div class="landlord-block__form-title">
+										<svg width="24" height="31">
+											<use xlink:href="#checklist_pen"></use>
+										</svg>
+										<span>Site Inventory</span>
+									</div>
+									<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+								</div>
+								<a href="javascript:;" class="btn btn--green">
+									<svg width="12" height="12">
+										<use xlink:href="#edit"></use>
+									</svg>
+									<span>Edit</span>
+								</a>
+							</div>
+							<div class="preview-landlord-block__table-wrapper">
+								<div class="preview-landlord-block__table-block">
+									<div class="preview-landlord-block__table-heading">
+										<div class="preview-site-block__table-heading-category">Category</div>
+										<div class="preview-site-block__table-heading-quantity">Quantity</div>
+										<div class="preview-site-block__table-heading-size">Size</div>
+										<div class="preview-site-block__table-heading-height">Height</div>
+										<div class="preview-site-block__table-heading-weight">Weight</div>
+										<div class="preview-site-block__table-heading-info">Additional info</div>
+									</div>
+									<div class="preview-landlord-block__table-inner">
+										<div class="preview-landlord-block__table-card">
+											<div class="preview-site-block__table-inner-category">Container</div>
+											<div class="preview-site-block__table-inner-quantity">1</div>
+											<div class="preview-site-block__table-inner-size">123 mm</div>
+											<div class="preview-site-block__table-inner-height">32 m</div>
+											<div class="preview-site-block__table-inner-weight">300 kg</div>
+											<div class="preview-site-block__table-inner-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</div>
+										</div>
+										<div class="preview-landlord-block__table-card">
+											<div class="preview-site-block__table-inner-category">Container</div>
+											<div class="preview-site-block__table-inner-quantity">1</div>
+											<div class="preview-site-block__table-inner-size">123 mm</div>
+											<div class="preview-site-block__table-inner-height">32 m</div>
+											<div class="preview-site-block__table-inner-weight">300 kg</div>
+											<div class="preview-site-block__table-inner-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -653,78 +385,10 @@
 	</div>
 </div>
 
-<div class="popup-block" id="popup_add_contact">
-	<div class="popup-block__overlay">
-		<div class="popup-block__popup">
-			<div class="inner-content">
-				<a href="javascript:;" data-toggle="dismiss" class="popup-block__close"></a>
-				<div class="popup-block__create-block">
-					<div class="popup-block__create-heading">
-						<div class="popup-block__create-heading-wrapper">
-							<div class="popup-block__create-heading-title">Create Contact</div>
-							<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
-						</div>
-					</div>
-					<form class="popup-block__create-form">
-						<div class="popup-block__create-form-wrapper">
-							<div class="page-block__select-wrapper">
-								<label for="create_landlord" class="page-block__label">Landlord</label>
-								<select id="create_landlord" class="js-example-basic-single">
-									<option value="1">Select Landlord...</option>
-									<option value="2">Select Landlord...</option>
-									<option value="3">Select Landlord...</option>
-									<option value="4">Select Landlord...</option>
-									<option value="5">Select Landlord...</option>
-								</select>
-							</div>
-							<div class="page-block__input-wrapper">
-								<label for="create_type" class="page-block__label">Type</label>
-								<input type="text" id="create_type" name="create_type" class="text-input page-block__input" placeholder="Select a Content Type..." required>
-							</div>
-							<div class="page-block__input-wrapper">
-								<label for="create_name" class="page-block__label">Name</label>
-								<input type="text" id="create_name" name="create_name" class="text-input page-block__input" placeholder="Name..." required>
-							</div>
-							<div class="page-block__input-wrapper">
-								<label for="create_surname" class="page-block__label">Surname</label>
-								<input type="text" id="create_surname" name="create_surname" class="text-input page-block__input" placeholder="Select a Content Type..." required>
-							</div>
-							<div class="page-block__input-wrapper">
-								<label for="create_company" class="page-block__label">Company</label>
-								<input type="text" id="create_company" name="create_company" class="text-input page-block__input" placeholder="Company..." required>
-							</div>
-							<div class="page-block__input-wrapper">
-								<label for="create_email" class="page-block__label">Email</label>
-								<input type="text" id="create_email" name="create_email" class="text-input page-block__input" placeholder="Email..." required>
-							</div>
-							<div class="page-block__input-wrapper mb0">
-								<label for="create_mobile" class="page-block__label">Mobile</label>
-								<input type="text" id="create_mobile" name="create_mobile" class="text-input page-block__input" placeholder="Mobile..." required>
-							</div>
-							<div class="page-block__input-wrapper mb0">
-								<label for="create_landline" class="page-block__label">Landline</label>
-								<input type="text" id="create_landline" name="create_landline" class="text-input page-block__input" placeholder="Landline..." required>
-							</div>
-						</div>
-						<div class="popup-block__form-controls-block">
-							<a href="javascript:;" class="btn btn--red">
-								<svg width="24" height="24">
-									<use xlink:href="#remove"></use>
-								</svg>
-								<span>Close</span>
-							</a>
-							<a href="javascript:;" class="btn btn--blue">Create</a>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/plugins.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/manager-block.js"></script>
+<script src="js/landlord-block.js"></script>
 <svg style="display:none;">
 	<symbol id="search" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M11.063 16.02a7.083 7.083 0 110-14.166 7.083 7.083 0 010 14.167z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.855 18.146l4.2-4.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 	<symbol id="synchronize_clock" viewBox="0 0 51 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.65 11.2v12.5h11.116M.861 15.731l6.67 10.227 7.78-9.09" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.651 44.157c11.665 0 21.12-9.666 21.12-21.59 0-11.923-9.455-21.59-21.12-21.59-11.664 0-21.12 9.667-21.12 21.59v3.395" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>

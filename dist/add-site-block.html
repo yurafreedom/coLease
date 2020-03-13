@@ -25,7 +25,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.min.css"> </head>
 
-<body  class=index-page >
+<body >
 
 <header class="page-header">
 	<div class="container">
@@ -174,479 +174,266 @@
 					<div class="nav-block__list">
 						<ul>
 							<li><a href="javascript:;">Leases</a></li>
-							<li><a href="javascript:;">Sites</a></li>
+							<li class="active"><a href="javascript:;">Sites</a></li>
 							<li><a href="javascript:;">Landlords</a></li>
 							<li><a href="javascript:;">Financial</a></li>
 							<li><a href="javascript:;">Issues</a></li>
-							<li class="active"><a href="javascript:;">File Explorer</a></li>
+							<li><a href="javascript:;">File Explorer</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="manager-block">
+		<section class="site-block">
 			<div class="container">
-				<div class="manager-block__heading-block">
-					<div class="manager-block__heading-title">File Explorer</div>
-					<form class="page-block__form">
-						<div class="page-block__input-wrapper">
-							<input type="text" class="text-input page-block__input" id="manager_date" name="manager_date" placeholder="Searching..." required>
-							<button type="submit" class="btn btn--search">
-								<svg width="17" height="17" class="icon--search">
-									<use xlink:href="#search"></use>
-								</svg>
-							</button>
+				<div class="landlord-block__wrapper">
+					<div class="landlord-block__heading">
+						<div class="landlord-block__title">Add a new Site</div>
+						<a href="javascript:;" class="btn btn--blue">
+							<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
+							<span>Back</span>
+						</a>
+					</div>
+					<form class="landlord-block__form">
+						<div class="landlord-block__details-block">
+							<div class="site-block__form-heading">
+								<div class="landlord-block__form-title">
+									<svg width="33" height="31">
+										<use xlink:href="#face"></use>
+									</svg>
+									<span>Details</span>
+								</div>
+								<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+							</div>
+							<div class="site-block__page-wrapper">
+								<div class="site-block__page-form-wrapper">
+									<div class="page-block__input-wrapper">
+										<label for="site_id" class="page-block__label">Site ID</label>
+										<input type="text" id="site_id" name="site_id" class="text-input page-block__input" placeholder="Site ID..." required>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="site_name" class="page-block__label">Site Name</label>
+										<input type="text" id="site_name" name="site_name" class="text-input page-block__input" placeholder="Site Name..." required>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="site_address" class="page-block__label">Site Address</label>
+										<input type="text" id="site_address" name="site_address" class="text-input page-block__input" placeholder="Site Address..." required>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="site_street_number" class="page-block__label">Street number</label>
+										<input type="text" id="site_street_number" name="site_street_number" class="text-input page-block__input" placeholder="Street number" required>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="site_street" class="page-block__label">Street</label>
+										<input type="text" id="site_street" name="site_street" class="text-input page-block__input" placeholder="Street" required>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="site_city" class="page-block__label">City</label>
+										<select id="site_city" class="js-example-basic-single">
+											<option value="1">City...</option>
+											<option value="2">City...</option>
+											<option value="3">City...</option>
+											<option value="4">City...</option>
+											<option value="5">City...</option>
+										</select>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="site_state" class="page-block__label">Province/State</label>
+										<select id="site_state" class="js-example-basic-single">
+											<option value="1">Pronince/State...</option>
+											<option value="2">Pronince/State...</option>
+											<option value="3">Pronince/State...</option>
+											<option value="4">Pronince/State...</option>
+											<option value="5">Pronince/State...</option>
+										</select>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="site_code" class="page-block__label">Postal Code</label>
+										<select id="site_code" class="js-example-basic-single">
+											<option value="1">Postal Code...</option>
+											<option value="2">Postal Code...</option>
+											<option value="3">Postal Code...</option>
+											<option value="4">Postal Code...</option>
+											<option value="5">Postal Code...</option>
+										</select>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="site_country" class="page-block__label">Country</label>
+										<select id="site_country" class="js-example-basic-single">
+											<option value="1">Country...</option>
+											<option value="2">Country...</option>
+											<option value="3">Country...</option>
+											<option value="4">Country...</option>
+											<option value="5">Country...</option>
+										</select>
+									</div>
+									<div class="page-block__select-wrapper">
+										<label for="site_township" class="page-block__label">Township</label>
+										<select id="site_township" class="js-example-basic-single">
+											<option value="1">Township...</option>
+											<option value="2">Township...</option>
+											<option value="3">Township...</option>
+											<option value="4">Township...</option>
+											<option value="5">Township...</option>
+										</select>
+									</div>
+									<div class="page-block__select-wrapper">
+										<label for="site_status" class="page-block__label">Site Status</label>
+										<select id="site_status" class="js-example-basic-single">
+											<option value="1">Site Status...</option>
+											<option value="2">Site Status...</option>
+											<option value="3">Site Status...</option>
+											<option value="4">Site Status...</option>
+											<option value="5">Site Status...</option>
+										</select>
+									</div>
+								</div>
+							</div>
 						</div>
+						<div class="site-block__emergency-block">
+							<div class="landlord-block__form-heading">
+								<div class="landlord-block__form-title">
+									<svg width="32" height="31">
+										<use xlink:href="#password_key"></use>
+									</svg>
+									<span>Emergency Access</span>
+								</div>
+								<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+							</div>
+							<div class="site-block__emergency-inner">
+								<div class="site-block__form-title">Emergency Access Details:</div>
+								<div class="site-block__emergency-wrapper">
+									<div class="site-block__emergency-inner-wrapper">
+										<div class="page-block__select-wrapper">
+											<label for="select_support" class="page-block__label">Hours of access</label>
+											<select id="select_support" class="js-example-basic-single">
+												<option value="1">Hours of access...</option>
+												<option value="2">Hours of access...</option>
+												<option value="3">Hours of access...</option>
+												<option value="4">Hours of access...</option>
+												<option value="5">Hours of access...</option>
+											</select>
+										</div>
+										<div class="site-block__validate-wrapper">
+											<div class="page-block__input-wrapper">
+												<label for="site_datepicker" class="page-block__label">Last Updated</label>
+												<input type="text" class="text-input page-block__input" id="site_datepicker" name="site_datepicker" placeholder="Select date...">
+												<button type="button" class="btn btn--search" id="button_datepicker_2">
+													<svg width="19" height="17" class="icon--calendar">
+														<use xlink:href="#calendar"></use>
+													</svg>
+												</button>
+											</div>
+											<div class="login-block__validate-wrapper">
+												<input type="checkbox" id="login_checkbox" name="login_checkbox" class="login-block__checkbox">
+												<label class="login-block__label" for="login_checkbox">
+													<div class="login-block__check">
+														<div class="login-block__check-v"></div>
+													</div>
+													<div class="login-block__text">Edit manually</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="site-block__textarea-wrapper">
+										<label for="emrgency_info" class="page-block__label">Other access information and procedures</label>
+										<textarea name="" id="emrgency_info" class="page-block__textarea" placeholder="Other access information and procedures"></textarea>
+									</div>
+								</div>
+								<div class="site-block__emergency-contacts-wrapper">
+									<div class="site-block__form-title">Emergency Contacts</div>
+									<div class="site-block__emergency-inner-wrapper">
+										<div class="page-block__select-wrapper">
+											<label for="emergency_primary" class="page-block__label">Primary Emergency Contact</label>
+											<select name="emergency_primary" id="emergency_primary" class="js-example-basic-single">
+												<option value="1">Primary Emergency Contact...</option>
+												<option value="2">Primary Emergency Contact...</option>
+												<option value="3">Primary Emergency Contact...</option>
+												<option value="4">Primary Emergency Contact...</option>
+												<option value="5">Primary Emergency Contact...</option>
+											</select>
+										</div>
+										<div class="page-block__select-wrapper">
+											<label for="emergency_secondary" class="page-block__label">Secondary Emergency Contact</label>
+											<select name="emergency_secondary" id="emergency_secondary" class="js-example-basic-single">
+												<option value="1">Secondary Emergency Contact...</option>
+												<option value="2">Secondary Emergency Contact...</option>
+												<option value="3">Secondary Emergency Contact...</option>
+												<option value="4">Secondary Emergency Contact...</option>
+												<option value="5">Secondary Emergency Contact...</option>
+											</select>
+										</div>
+									</div>
+									<a href="javascript:;" class="btn btn--green" data-toggle="modal" data-target="#popup_add_contact">
+										<svg width="12" height="12">
+											<use xlink:href="#plus"></use>
+										</svg>
+										<span>Add New Contact</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="site-block__inventory-block">
+							<div class="site-block__inventory-wrapper">
+								<div class="site-block__form-heading">
+									<div class="landlord-block__form-title">
+										<svg width="32" height="31">
+											<use xlink:href="#checklist_pen"></use>
+										</svg>
+										<span>Site Inventory</span>
+									</div>
+									<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+								</div>
+								<div class="site-block__page-wrapper">
+									<div class="site-block__page-form-wrapper">
+										<div class="page-block__select-wrapper">
+											<label for="site_category" class="page-block__label">Category</label>
+											<select id="site_category" class="js-example-basic-single">
+												<option value="1">Category...</option>
+												<option value="2">Category...</option>
+												<option value="3">Category...</option>
+												<option value="4">Category...</option>
+												<option value="5">Category...</option>
+											</select>
+										</div>
+										<div class="page-block__input-wrapper">
+											<label for="site_name" class="page-block__label">Quantity</label>
+											<input type="text" id="site_quantity" name="site_quantity" class="text-input page-block__input" placeholder="Quantity..." required>
+										</div>
+										<div class="page-block__input-wrapper">
+											<label for="site_size" class="page-block__label">Size</label>
+											<input type="text" id="site_size" name="site_size" class="text-input page-block__input" placeholder="Size (mm)..." required>
+										</div>
+										<div class="page-block__input-wrapper">
+											<label for="site_height" class="page-block__label">Height</label>
+											<input type="text" id="site_height" name="site_height" class="text-input page-block__input" placeholder="Height (m)..." required>
+										</div>
+										<div class="page-block__input-wrapper">
+											<label for="site_weight" class="page-block__label">Weight</label>
+											<input type="text" id="site_weight" name="site_weight" class="text-input page-block__input" placeholder="Weight (kg)..." required>
+										</div>
+									</div>
+									<div class="site-block__textarea-wrapper">
+										<label for="site_additional" class="page-block__label">Additional info</label>
+										<textarea name="site_additional" id="site_additional" class="page-block__textarea" placeholder="Additional info..."></textarea>
+									</div>
+								</div>
+								<a href="javascript:;" class="btn btn--red">
+									<svg width="24" height="24">
+										<use xlink:href="#remove"></use>
+									</svg>
+									<span>Remove Site Inventory</span>
+								</a>
+							</div>
+							<a href="javascript:;" class="btn btn--green">
+								<svg width="12" height="12">
+									<use xlink:href="#plus"></use>
+								</svg>
+								<span>Add Site Inventory</span>
+							</a>
+						</div>
+						<button type="submit" class="btn btn--blue">Create</button>
 					</form>
-				</div>
-				<div class="manager-block__wrapper">
-					<div class="manager-block__preloader">
-						<div class="manager-block__preloader-row">
-							<div class="manager-block__preloader-option"></div>
-						</div>
-					</div>
-					<div class="manager-block__nav-block">
-
-						<!-- Sites -->
-						<ul class="manager-block__nav-section">
-							<li>
-								<a class="manager-block__nav-section-title" data-toggle="expand">
-									<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
-									<span>Sites</span>
-								</a>
-								<ul class="manager-block__nav-subsection">
-									<li>
-										<a class="manager-block__nav-subsection-title" data-toggle="expand">
-											<svg width="11" height="11">
-												<use xlink:href="#file_explorer"></use>
-											</svg>
-											<span>Site Name / ID</span>
-										</a>
-										<ul class="manager-block__sub-heading">
-											<li>
-												<a class="manager-block__sub-heading-title" data-toggle="expand">
-													<svg width="13" height="12">
-														<use xlink:href="#folder_hold"></use>
-													</svg>
-													<span>Site Inventory</span>
-												</a>
-												<ul class="manager-block__sub-inner">
-													<li><a href="javascript:;" class="manager-block__sub-inner-link">Leases</a></li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>New Lease Agreements</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Lease Renewal Agreements</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Lease Addendum</span>
-														</a>
-													</li>
-												</ul>
-											</li>
-											<li>
-												<a class="manager-block__sub-heading-title" data-toggle="expand">
-													<svg width="13" height="12">
-														<use xlink:href="#folder_hold"></use>
-													</svg>
-													<span>Site Inventory</span>
-												</a>
-												<ul class="manager-block__sub-inner">
-													<li><a href="javascript:;" class="manager-block__sub-inner-link">Leases</a></li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>New Lease Agreements</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Lease Renewal Agreements</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Lease Addendum</span>
-														</a>
-													</li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-
-						<!-- Landlord -->
-						<ul class="manager-block__nav-section">
-							<li>
-								<a class="manager-block__nav-section-title" data-toggle="expand">
-									<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
-									<span>Landlord</span>
-								</a>
-								<ul class="manager-block__nav-subsection">
-									<li>
-										<a class="manager-block__nav-subsection-title" data-toggle="expand">
-											<svg width="11" height="11">
-												<use xlink:href="#file_explorer"></use>
-											</svg>
-											<span>Landlord Name / ID</span>
-										</a>
-										<ul class="manager-block__sub-heading">
-											<li>
-												<a class="manager-block__sub-heading-title" data-toggle="expand">
-													<svg width="13" height="12">
-														<use xlink:href="#folder_hold"></use>
-													</svg>
-													<span>Landlord</span>
-												</a>
-												<ul class="manager-block__sub-inner">
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Proof of Bank Account documents</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Company Registration documents</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>ID Documents</span>
-														</a>
-													</li>
-												</ul>
-											</li>
-											<li>
-												<a class="manager-block__sub-heading-title" data-toggle="expand">
-													<svg width="13" height="12">
-														<use xlink:href="#folder_hold"></use>
-													</svg>
-													<span>LandlordName</span>
-												</a>
-												<ul class="manager-block__sub-inner">
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Proof of Bank Account documents</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>Company Registration documents</span>
-														</a>
-													</li>
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-file">
-															<svg width="13" height="12">
-																<use xlink:href="#file_text"></use>
-															</svg>
-															<span>ID Documents</span>
-														</a>
-													</li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						
-						<!-- Financial -->
-						<ul class="manager-block__nav-section">
-							<li>
-								<a class="manager-block__nav-section-title" data-toggle="expand">
-									<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
-									<span>Financial</span>
-								</a>
-								<ul class="manager-block__nav-subsection">
-									<li>
-										<a class="manager-block__nav-subsection-title" data-toggle="expand">
-											<svg width="11" height="11">
-												<use xlink:href="#file_explorer"></use>
-											</svg>
-											<span>Invoices</span>
-										</a>
-										<ul class="manager-block__sub-heading">
-											<li>
-												<a class="manager-block__sub-heading-title" data-toggle="expand">
-													<svg width="13" height="12">
-														<use xlink:href="#folder_hold"></use>
-													</svg>
-													<span>SiteID</span>
-												</a>
-												<ul class="manager-block__sub-inner">
-													<li>
-														<a href="javascript:;" class="manager-block__sub-inner-date" data-toggle="expand">
-															<svg width="12" height="12">
-																<use xlink:href="#date"></use>
-															</svg>
-															<span>Month (MMM/YYYY)</span>
-														</a>
-														<ul class="manager-block__sub-date-inner">
-															<li>
-																<a href="javascript:;" class="manager-block__sub-inner-invoices">
-																	<svg width="13" height="12">
-																		<use xlink:href="#invoices"></use>
-																	</svg>
-																	<span>Relevant invoices</span>
-																</a>
-															</li>
-															<li>
-																<a href="javascript:;" class="manager-block__sub-inner-invoices">
-																	<svg width="13" height="12">
-																		<use xlink:href="#invoices"></use>
-																	</svg>
-																	<span>Relevant invoices</span>
-																</a>
-															</li>
-														</ul>
-													</li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-					<div class="manager-block__content-block">
-						<div class="manager-block__controls-block">
-							<a href="javascript:;" class="manager-block__controls-link" data-toggle="tab" data-target="#manager-tab-1">
-								<svg width="24" height="24">
-									<use xlink:href="#tab_row"></use>
-								</svg>
-							</a>
-							<a href="javascript:;" class="manager-block__controls-link"  data-toggle="tab" data-target="#manager-tab-2">
-								<svg width="24" height="24">
-									<use xlink:href="#tab_list"></use>
-								</svg>
-							</a>
-						</div>
-						<div class="manager-block__content-inner">
-							<div class="manager-block__tab-content active" id="manager-tab-1">
-								<div class="manager-block__content-row">
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__row-card">
-										<div class="manager-block__row-card-icon">
-											<svg width="62" height="62">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__row-card-title">New Lease Agreements</div>
-									</a>
-								</div>
-							</div>
-							<div class="manager-block__tab-content" id="manager-tab-2">
-								<div class="manager-block__content-list">
-									<a href="javascript:;" class="manager-block__list-card">
-										<div class="manager-block__list-card-icon">
-											<svg width="25" height="25">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__list-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__list-card">
-										<div class="manager-block__list-card-icon">
-											<svg width="25" height="25">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__list-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__list-card">
-										<div class="manager-block__list-card-icon">
-											<svg width="25" height="25">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__list-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__list-card">
-										<div class="manager-block__list-card-icon">
-											<svg width="25" height="25">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__list-card-title">New Lease Agreements</div>
-									</a>
-									<a href="javascript:;" class="manager-block__list-card">
-										<div class="manager-block__list-card-icon">
-											<svg width="25" height="25">
-												<use xlink:href="#common_file"></use>
-											</svg>
-										</div>
-										<div class="manager-block__list-card-title">New Lease Agreements</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>
@@ -724,7 +511,7 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/plugins.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/manager-block.js"></script>
+<script src="js/add-site-block.js"></script>
 <svg style="display:none;">
 	<symbol id="search" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M11.063 16.02a7.083 7.083 0 110-14.166 7.083 7.083 0 010 14.167z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.855 18.146l4.2-4.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 	<symbol id="synchronize_clock" viewBox="0 0 51 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.65 11.2v12.5h11.116M.861 15.731l6.67 10.227 7.78-9.09" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.651 44.157c11.665 0 21.12-9.666 21.12-21.59 0-11.923-9.455-21.59-21.12-21.59-11.664 0-21.12 9.667-21.12 21.59v3.395" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>

@@ -1,0 +1,317 @@
+.site-block {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	.page-block__form {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+	.page-block__input-wrapper {
+		width: 100%;
+		margin-right: 30px;
+	}
+	.btn--green {
+		width: 122px;
+		flex-shrink: 0;
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
+	&__table-heading-id,
+	&__table-inner-id {
+		display: block;
+		width: 100%;
+		max-width: 80px;
+	}
+	&__table-heading-name,
+	&__table-inner-name {
+		display: block;
+		width: 100%;
+		max-width: 100px;
+	}
+	&__table-heading-address,
+	&__table-inner-address {
+		display: block;
+		width: 100%;
+		max-width: 320px;
+	}
+	&__table-heading-status,
+	&__table-inner-status {
+		display: block;
+		width: 100%;
+		max-width: 180px;
+	}
+	&__table-heading-contact,
+	&__table-inner-contact {
+		display: block;
+		width: 100%;
+		max-width: 150px;
+		a {
+			color: $text;
+			text-decoration: none;
+			transition: 0.2s ease-in-out;
+		}
+		a:hover, &:active {
+			color: $fenny;
+			text-decoration: none;
+		}
+	}
+	&__form-heading {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding-left: 22px;
+		padding-bottom: 14px;
+		margin-bottom: 57px;
+		border-bottom: 1px solid $primary-blue;
+	}
+	&__page-wrapper {
+		position: relative;
+		display: block;
+		margin-bottom: 83px;
+	}
+	&__page-form-wrapper {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+	&__page-form-wrapper .page-block__input-wrapper {
+		max-width: 428px;
+		margin-right: 0;
+		&:not(:last-child) {
+			margin-bottom: 55px;
+		}
+		&:not(:nth-child(3n)) {
+			margin-right: 18px;
+		}
+	}
+	&__page-wrapper .page-block__select-wrapper {
+		max-width: 428px;
+		margin-right: 18px;
+		margin-bottom: 0;
+	}
+	&__emergency-block {
+		position: relative;
+		display: block;
+	}
+	&__form-title {
+		display: block;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 1.2;
+		color: $title;
+		margin-bottom: 37px;
+	}
+	&__validate-wrapper {
+		display: block;
+		width: 100%;
+		max-width: 650px;
+	}
+	&__validate-wrapper .page-block__input-wrapper {
+		margin-bottom: 9px;
+	}
+	&__emergency-inner {
+		position: relative;
+		display: block;
+	}
+	&__emergency-wrapper {
+		position: relative;
+		display: block;
+		margin-bottom: 30px;
+	}
+	&__emergency-inner-wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 51px;
+	}
+	&__emergency-contacts-wrapper {
+		position: relative;
+		display: block;
+		margin-bottom: 85px;
+	}
+	&__emergency-contacts-wrapper &__emergency-inner-wrapper {
+		margin-bottom: 30px;
+	}
+	&__emergency-contacts-wrapper .page-block__select-wrapper {
+		margin-bottom: 0;
+	}
+	&__emergency-contacts-wrapper .btn--green {
+		display: flex;
+		flex-direction: row;
+		margin-left: auto;
+		width: 178px;
+	}
+	.login-block__check {
+		width: 20px;
+		height: 20px;
+		padding: 7px;
+		border: 2px solid $border;
+		border-radius: 2px;
+		margin-right: 10px;
+	}
+	.login-block__check-v {
+		top: 3px;
+		left: 2px;
+	}
+	.login-block__text {
+		padding-top: 2px;
+		font-size: 15px;
+		font-weight: 400;
+		color: $text;
+	}
+	&__textarea-wrapper {
+		position: relative;
+		display: block;
+		margin-bottom: 30px;
+	}
+	&__emergency-wrapper .page-block__textarea {
+		height: 126px;
+	}
+	&__validate-wrapper .btn--search {
+		border: 0;
+		svg {
+			fill: $border;
+		}
+	}
+	&__inventory-block {
+		position: relative;
+		display: block;
+		margin-bottom: 60px;
+		.btn--green {
+			width: 183px;
+			margin-left: auto;
+			padding-bottom: 12px;
+		}
+	}
+	&__inventory-wrapper {
+		position: relative;
+		display: block;
+		padding-bottom: 60px;
+		margin-bottom: 39px;
+		border-bottom: 1px solid #F9F8FC;
+		.btn--red {
+			margin-left: auto;
+			width: 215px;
+			padding-bottom: 7px;
+		}
+	}
+	&__inventory-block &__page-wrapper {
+		margin-bottom: 40px;
+	}
+}
+
+@include for-size (mobile) {
+	.site-block {
+		.page-block__form {
+			display: block;
+		}
+		.page-block__input-wrapper {
+			margin-right: 0;
+			margin-bottom: 30px;
+		}
+		.btn--green {
+			width: 100%;
+		}
+		&__page-wrapper .page-block__select-wrapper {
+			margin-right: 0;
+			&:not(:last-child) {
+				margin-bottom: 45px;
+			}
+		}
+		&__page-form-wrapper .page-block__input-wrapper {
+			&:not(:last-child) {
+				margin-bottom: 45px;
+			}
+			&:not(:nth-child(3n)) {
+				margin-right: 0;
+			}
+		}
+		.page-block__select-wrapper:not(:nth-child(2n)) {
+			margin-right: 0;
+		}
+		.landlord-block__form-heading {
+			padding-left: 0;
+		}
+		.landlord-block__form-title {
+			margin-right: 20px;
+		}
+		&__emergency-inner-wrapper {
+			display: block;
+		}
+		&__emergency-inner-wrapper .page-block__select-wrapper {
+			margin-bottom: 45px;
+		}
+		&__emergency-wrapper .page-block__textarea {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		&__form-heading {
+			padding-left: 0;
+		}
+		&__page-wrapper {
+			margin-bottom: 40px;
+		}
+		&__emergency-contacts-wrapper {
+			margin-bottom: 40px;
+		}
+		&__inventory-block {
+			margin-bottom: 30px;
+		}
+		&__inventory-block .site-block__page-wrapper, &__textarea-wrapper {
+			margin-bottom: 20px;
+		}
+		&__inventory-wrapper {
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@include for-size(tablet) {
+	.site-block {
+		&__page-wrapper .page-block__select-wrapper {
+			max-width: 300px;
+		}
+		&__page-form-wrapper .page-block__input-wrapper {
+			max-width: 300px;
+		}
+		&__page-form-wrapper .page-block__input-wrapper {
+			&:not(:nth-child(3n)) {
+				margin-right: 0;
+			}
+			&:not(:nth-child(2n)) {
+				margin-right: 18px;
+			}
+		}
+		&__page-form-wrapper {
+			margin-bottom: 60px;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+	.site-block {
+		&__page-form-wrapper .page-block__input-wrapper {
+			&:not(:nth-child(2n)) {
+				margin-right: 0;
+			}
+			&:not(:nth-child(3n)) {
+				margin-right: 18px;
+			}
+		}
+	}
+}
+
+@include for-size(desktop) {
+	.site-block {
+		&__page-wrapper .page-block__select-wrapper {
+			max-width: 350px;
+		}
+		&__page-form-wrapper .page-block__input-wrapper {
+			max-width: 350px;
+		}
+	}
+}

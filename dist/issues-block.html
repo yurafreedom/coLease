@@ -505,11 +505,70 @@
 	</div>
 </div>
 
-<div class="popup-block" id="popup_registration">
+<div class="popup-block" id="popup_add_contact">
 	<div class="popup-block__overlay">
 		<div class="popup-block__popup">
 			<div class="inner-content">
 				<a href="javascript:;" data-toggle="dismiss" class="popup-block__close"></a>
+				<div class="popup-block__create-block">
+					<div class="popup-block__create-heading">
+						<div class="popup-block__create-heading-wrapper">
+							<div class="popup-block__create-heading-title">Create Contact</div>
+							<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+						</div>
+					</div>
+					<form class="popup-block__create-form">
+						<div class="popup-block__create-form-wrapper">
+							<div class="page-block__select-wrapper">
+								<label for="create_landlord" class="page-block__label">Landlord</label>
+								<select id="create_landlord" class="js-example-basic-single">
+									<option value="1">Select Landlord...</option>
+									<option value="2">Select Landlord...</option>
+									<option value="3">Select Landlord...</option>
+									<option value="4">Select Landlord...</option>
+									<option value="5">Select Landlord...</option>
+								</select>
+							</div>
+							<div class="page-block__input-wrapper">
+								<label for="create_type" class="page-block__label">Type</label>
+								<input type="text" id="create_type" name="create_type" class="text-input page-block__input" placeholder="Select a Content Type..." required>
+							</div>
+							<div class="page-block__input-wrapper">
+								<label for="create_name" class="page-block__label">Name</label>
+								<input type="text" id="create_name" name="create_name" class="text-input page-block__input" placeholder="Name..." required>
+							</div>
+							<div class="page-block__input-wrapper">
+								<label for="create_surname" class="page-block__label">Surname</label>
+								<input type="text" id="create_surname" name="create_surname" class="text-input page-block__input" placeholder="Select a Content Type..." required>
+							</div>
+							<div class="page-block__input-wrapper">
+								<label for="create_company" class="page-block__label">Company</label>
+								<input type="text" id="create_company" name="create_company" class="text-input page-block__input" placeholder="Company..." required>
+							</div>
+							<div class="page-block__input-wrapper">
+								<label for="create_email" class="page-block__label">Email</label>
+								<input type="text" id="create_email" name="create_email" class="text-input page-block__input" placeholder="Email..." required>
+							</div>
+							<div class="page-block__input-wrapper mb0">
+								<label for="create_mobile" class="page-block__label">Mobile</label>
+								<input type="text" id="create_mobile" name="create_mobile" class="text-input page-block__input" placeholder="Mobile..." required>
+							</div>
+							<div class="page-block__input-wrapper mb0">
+								<label for="create_landline" class="page-block__label">Landline</label>
+								<input type="text" id="create_landline" name="create_landline" class="text-input page-block__input" placeholder="Landline..." required>
+							</div>
+						</div>
+						<div class="popup-block__form-controls-block">
+							<a href="javascript:;" class="btn btn--red">
+								<svg width="24" height="24">
+									<use xlink:href="#remove"></use>
+								</svg>
+								<span>Close</span>
+							</a>
+							<a href="javascript:;" class="btn btn--blue">Create</a>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -554,8 +613,12 @@
 	<symbol id="file_copyright_user" viewBox="0 0 32 31" width="32" height="31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.034 30.07h11.62c.712 0 1.29-.579 1.29-1.292V8.09A7.714 7.714 0 0023.231.377H7.705c-.713 0-1.29.578-1.29 1.29v9.038" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M24.49.48v5.06c0 .714.577 1.292 1.29 1.292h5.06" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M8.997 30.07a7.746 7.746 0 100-15.492 7.746 7.746 0 000 15.491z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M8.997 24.26a3.227 3.227 0 100-6.455 3.227 3.227 0 000 6.455z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.062 28.294a5.81 5.81 0 019.87 0" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 	<symbol id="attachment" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.805 45.493c11.31 0 20.479-9.178 20.479-20.5s-9.169-20.5-20.479-20.5c-11.31 0-20.478 9.178-20.478 20.5s9.168 20.5 20.478 20.5z" fill="#fff"/><path clip-rule="evenodd" d="M24.805 49.28c13.4 0 24.261-10.874 24.261-24.287C49.066 11.58 38.204.706 24.806.706 11.405.706.543 11.58.543 24.993c0 13.413 10.862 24.287 24.261 24.287z" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 5"/><path d="M32.189 21.95V18.47a.87.87 0 00-.869-.87h-8.584a.869.869 0 01-.777-.48l-.823-1.647a.869.869 0 00-.776-.481h-4.676a.87.87 0 00-.868.87v13.043c0 .48.389.87.868.87h6.08" stroke-linecap="round" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M29.583 34.993a5.215 5.215 0 005.212-5.217 5.215 5.215 0 00-5.212-5.218 5.215 5.215 0 00-5.212 5.218 5.215 5.215 0 005.212 5.217z" fill="#fff" stroke-linecap="round" stroke-linejoin="round"/><path d="M29.583 27.167v5.217M32.189 29.776h-5.212" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 	<symbol id="folder_add" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.189 7.95V4.47a.87.87 0 00-.869-.87H8.736a.869.869 0 01-.776-.48l-.824-1.647a.869.869 0 00-.777-.481H1.684a.87.87 0 00-.868.87v13.043c0 .48.389.87.868.87h6.08" stroke="#009DA3" stroke-linecap="round" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M15.583 20.993a5.215 5.215 0 005.212-5.217 5.215 5.215 0 00-5.212-5.218 5.215 5.215 0 00-5.212 5.218 5.215 5.215 0 005.212 5.217z" fill="#fff" stroke="#009DA3" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.583 13.167v5.217M18.189 15.776h-5.212" stroke="#009DA3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-	<symbol id="contacts" viewBox="0 0 24 31" width="24" height="31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.02 3.493h13.71c.689 0 1.247.56 1.247 1.25v1.25" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M21.47 5.993v-3.75c0-.69-.559-1.25-1.247-1.25H4.02a2.496 2.496 0 00-2.493 2.5c0 1.38 1.116 2.5 2.493 2.5h17.448c.688 0 1.246.56 1.246 1.25v21.25c0 .69-.558 1.25-1.246 1.25H4.021a2.496 2.496 0 01-2.493-2.5V3.493" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.977 23.767s-2.518-1.116-4.278-1.769c-1.154-.43-.99-2.384-.321-3.117a5.363 5.363 0 001.569-4.414 3.757 3.757 0 00-.993-2.913 3.733 3.733 0 00-2.832-1.186 3.734 3.734 0 00-2.833 1.186 3.757 3.757 0 00-.993 2.913 5.363 5.363 0 001.569 4.414c.668.733.832 2.687-.322 3.117-1.76.654-4.276 1.769-4.276 1.769" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="contacts" viewBox="0 0 24 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.02 3.493h13.71c.689 0 1.247.56 1.247 1.25v1.25" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M21.47 5.993v-3.75c0-.69-.559-1.25-1.247-1.25H4.02a2.496 2.496 0 00-2.493 2.5c0 1.38 1.116 2.5 2.493 2.5h17.448c.688 0 1.246.56 1.246 1.25v21.25c0 .69-.558 1.25-1.246 1.25H4.021a2.496 2.496 0 01-2.493-2.5V3.493" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.977 23.767s-2.518-1.116-4.278-1.769c-1.154-.43-.99-2.384-.321-3.117a5.363 5.363 0 001.569-4.414 3.757 3.757 0 00-.993-2.913 3.733 3.733 0 00-2.832-1.186 3.734 3.734 0 00-2.833 1.186 3.757 3.757 0 00-.993 2.913 5.363 5.363 0 001.569 4.414c.668.733.832 2.687-.322 3.117-1.76.654-4.276 1.769-4.276 1.769" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 	<symbol id="notes" viewBox="0 0 27 32" width="27" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M25.36 6.04c.243.244.38.573.38.917v22.417c0 .716-.581 1.296-1.299 1.296H2.351c-.718 0-1.3-.58-1.3-1.296V2.152c0-.716.582-1.296 1.3-1.296h17.273c.345 0 .675.136.919.38L25.36 6.04z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.6 20.948h15.592M5.6 24.837h15.592M5.6 17.06h15.592M5.6 13.17h15.592M5.6 9.281h9.095M5.6 9.281h9.095M5.6 13.17h15.592M5.6 17.06h15.592M5.6 20.948h15.592M5.6 24.837h15.592" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="map" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.438 21.684H8.201a5 5 0 00-4.507 2.836l-1.322 2.753a2 2 0 001.804 2.866h23.433a2 2 0 001.803-2.866l-1.32-2.753a5 5 0 00-4.508-2.836h-1.237" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.834 2.2a9.51 9.51 0 00-3.941-.85 9.544 9.544 0 00-9.544 9.544c0 5.27 8.766 15.258 9.543 15.258.777 0 9.545-9.987 9.545-15.258 0-2.391-.88-4.577-2.333-6.252M17.217 5.934a4.528 4.528 0 102.699 2.253" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round"/><path d="M6.002 24.734h2.526l1.658 1.17M25.895 24.734h-2.527l-1.657 1.17" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.005 27.651h4.433M11.878 26.192h8.087M22.409 27.651h4.433" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round"/></symbol>
+	<symbol id="folder_check" viewBox="0 0 14 15" width="14" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.309 6.057V3.813a.56.56 0 00-.56-.561H6.203a.561.561 0 01-.501-.31L5.17 1.878a.561.561 0 00-.502-.31H1.65a.561.561 0 00-.56.56v8.416c0 .31.25.56.56.56h3.927" stroke="#ABD856" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M10.626 14.472a3.366 3.366 0 100-6.732 3.366 3.366 0 000 6.732z" fill="#ABD856"/><path d="M12.126 10.127l-1.63 2.173a.421.421 0 01-.634.045l-.841-.842" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="checklist_pen" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.748 6.473l-3.75 3.75-1.875-1.875M9.748 13.348l-3.75 3.75-1.875-1.875" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M12.873 27.1h-10c-.69 0-1.25-.56-1.25-1.25V4.6c0-.69.56-1.25 1.25-1.25h15c.69 0 1.25.56 1.25 1.25v16.25l-6.25 6.25z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.873 27.098v-6.25h6.25" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M22.87 10.848h5.001v13.125h-5V10.848z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M27.873 2.1a2.5 2.5 0 012.5 2.5v10M25.373 26.473v3.125" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M22.871.848h5v10h-5v-10z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M24.123 23.973h2.5v2.5h-2.5zM11.623 9.598h4.375M11.623 15.848h4.375"/></symbol>
+	<symbol id="password_key" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.873 24.6h-8.75a2.5 2.5 0 01-2.5-2.5V3.35a2.5 2.5 0 012.5-2.5h23.75a2.5 2.5 0 012.5 2.5v8.75M1.623 7.1h28.75" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.998 3.662a.312.312 0 110 .625.312.312 0 010-.625M9.748 3.662a.313.313 0 110 .625.313.313 0 010-.625M13.498 3.662a.313.313 0 110 .625.313.313 0 010-.625M14.748 18.35h-8.75a.625.625 0 01-.625-.626v-3.75c0-.345.28-.624.625-.624h18.125" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M21.504 25.513a1.563 1.563 0 11-2.21-2.21 1.563 1.563 0 012.21 2.21z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M24.808 22.652l5.565-5.553v-2.5h-2.5l-5.718 5.402a5 5 0 102.653 2.651v0z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </svg>
 
 </body>

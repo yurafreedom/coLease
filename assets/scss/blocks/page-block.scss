@@ -176,7 +176,7 @@
 		outline: 0;
 		display: block;
 		width: 100%;
-		height: 133px;
+		height: 134px;
 		padding-top: 10px;
 		padding-left: 20px;
 		padding-right: 20px;
@@ -188,6 +188,9 @@
 		color: $title;
 		line-height: 1.142;
 		transition: all 0.2s ease-in-out;
+		&:hover, &:active, &:focus {
+			border-color: $primary-blue;
+		}
 		&:placeholder {
 			font-size: 14px;
 			font-weight: 400;

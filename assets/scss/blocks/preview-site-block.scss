@@ -1,0 +1,128 @@
+.preview-site-block {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	.preview-landlord-block__page-block {
+		margin-bottom: 0;
+		&:not(:last-child) {
+			margin-bottom: 100px;
+		}
+	}
+	.preview-landlord-block__content-block {
+		padding-bottom: 140px;
+	}
+	&__content-block {
+		position: relative;
+		display: block;
+	}
+	&__content-inner {
+		position: relative;
+		display: block;
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
+	}
+	&__content-title {
+		display: block;
+		font-size: 20px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: $fenny;
+		margin-bottom: 12px;
+	}
+	&__content-wrapper {
+		position: relative;
+		display: block;
+	}
+	&__option {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		max-width: 888px;
+		&:not(:last-child) {
+			margin-bottom: 18px;
+		}
+	}
+	&__option-title {
+		display: block;
+		width: 100%;
+		max-width: 160px;
+		font-size: 14px;
+		line-height: 1.2;
+		color: $title;
+		font-weight: 700;
+	}
+	&__option-value {
+		display: block;
+		width: 100%;
+		max-width: 680px;
+		font-size: 14px;
+		line-height: 1.2;
+		color: $form-text;
+		span {
+			display: block;
+		}
+		a {
+			display: block;
+			color: $form-text;
+			transition: all 0.2s ease-in-out;
+		}
+		a:hover, a:active {
+			color: $primary-blue;
+			text-decoration: none;
+		}
+	}
+	&__table-heading-category,
+	&__table-inner-category {
+		width: 100%;
+		max-width: 80px;
+	}
+	&__table-heading-quantity
+	&__table-inner-quantity {
+		width: 100%;
+		max-width: 65px;
+	}
+	&__table-heading-size
+	&__table-inner-size {
+		width: 100%;
+		max-width: 65px;
+	}
+	&__table-heading-height
+	&__table-inner-height {
+		width: 100%;
+		max-width: 60px;
+	}
+	&__table-heading-weight
+	&__table-inner-weight {
+		width: 100%;
+		max-width: 60px;
+	}
+	&__table-heading-info,
+	&__table-inner-info {
+		width: 100%;
+		max-width: 450px;
+	}
+	.preview-landlord-block__left-part {
+		margin-bottom: 0;
+	}
+}
+
+@include for-size(mobile) {
+	.preview-site-block {
+		.landlord-block__title {
+			margin-bottom: 25px;
+		}
+		.preview-landlord-block__content-block {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		.preview-landlord-block__page-block:not(:last-child) {
+			margin-bottom: 60px;
+		}
+		&__content-title {
+			margin-bottom: 30px;
+		}
+	}
+}

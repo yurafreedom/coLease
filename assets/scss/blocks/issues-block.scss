@@ -1,5 +1,6 @@
 .issues-block {
 	padding-top: 30px;
+	padding-bottom: 30px;
 	&__heading-block {
 		display: block;
 		border-radius: 25px;
@@ -34,6 +35,9 @@
 	}
 	&__table-inner {
 		a {
+			font-size: 13px;
+			font-weight: 500;
+			line-height: 1.2;
 			color: $fenny;
 			text-decoration: underline;
 			transition: all 0.2s ease-in-out;
@@ -235,7 +239,7 @@
 			}
 		}
 		&__table-heading, &__table-inner {
-			width: 100vh;
+			min-width: 1024px;
 		}
 		&__table-heading {
 			padding-left: 15px;
@@ -306,9 +310,6 @@
 		}
 		&__table-heading-detail, &__table-inner-detail {
 			max-width: 150px;
-		}
-		&__table-heading-action, &__table-inner-action {
-			max-width: 90px;
 		}
 		&__remove-link {
 			padding-left: 0;

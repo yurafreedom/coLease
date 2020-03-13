@@ -1,0 +1,430 @@
+.preview-landlord-block {
+	padding-top: 30px;
+	padding-bottom: 34px;
+	&__wrapper {
+		position: relative;
+		display: block;
+	}
+	&__heading {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 30px;
+		padding-left: 29px;
+		padding-right: 28px;
+		padding-bottom: 30px;
+		background-color: #fff;
+		border-radius: 25px;
+		margin-bottom: 30px;
+	}
+	&__content-block {
+		position: relative;
+		display: block;
+		border-radius: 25px;
+		padding-top: 65px;
+		padding-left: 50px;
+		padding-right: 28px;
+		padding-bottom: 100px;
+		background-color: #fff;
+	}
+	&__page-block {
+		position: relative;
+		display: block;
+		margin-bottom: 100px;
+	}
+	&__page-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	&__page-heading {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid $primary-blue;
+		.btn--green {
+			width: 88px;
+			padding-top: 11px;
+			padding-bottom: 11px;
+		}
+	}
+	&__inner {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 100%;
+		max-width: 950px;
+	}
+	&__left-part {
+		position: relative;
+		display: block;
+		width: 100%;
+		max-width: 434px;
+	}
+	&__right-part {
+		position: relative;
+		display: block;
+		width: 100%;
+		max-width: 268px;
+	}
+	&__option {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		max-width: 434px;
+		&:not(:last-child) {
+			margin-bottom: 18px;
+		}
+	}
+	&__option-title {
+		display: block;
+		width: 100%;
+		max-width: 130px;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 1.142;
+		color: $title;
+	}
+	&__option-value {
+		display: block;
+		width: 100%;
+		max-width: 230px;
+		font-size: 14px;
+		line-height: 1.142;
+		font-weight: 400;
+		color: $form-text;
+	}
+	&__table-block {
+		position: relative;
+		display: block;
+	}
+	&__table-heading, &__table-card {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__table-heading {
+		width: 100%;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 1.2;
+		color: #fff;
+		padding-top: 14px;
+		padding-left: 38px;
+		padding-right: 39px;
+		padding-bottom: 14px;
+		background-color: $fenny;
+	}
+	&__table-inner {
+		position: relative;
+		display: block;
+		width: 100%;
+	}
+	&__table-card {
+		padding-top: 19px;
+		padding-bottom: 19px;
+		padding-left: 38px;
+		padding-right: 39px;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.2;
+		color: $form-text;
+		background-color: #fff;
+		&:nth-child(even) {
+			background-color: #F9F8FC;
+		}
+	}
+	&__table-heading-type, &__table-inner-type {
+		display: block;
+		width: 100%;
+		max-width: 80px;
+	}
+	&__table-heading-name, &__table-inner-name {
+		display: block;
+		width: 100%;
+		max-width: 80px;
+	}
+	&__table-heading-surname, &__table-inner-surname {
+		display: block;
+		width: 100%;
+		max-width: 80px;
+	}
+	&__table-heading-company, &__table-inner-company {
+		display: block;
+		width: 100%;
+		max-width: 150px;
+	}
+	&__table-heading-email, &__table-inner-email {
+		display: block;
+		width: 100%;
+		max-width: 150px;
+	}
+	&__table-heading-mobile, &__table-inner-mobile {
+		display: block;
+		width: 100%;
+		max-width: 100px;
+	}
+	&__table-heading-landline, &__table-inner-landline {
+		display: block;
+		width: 100%;
+		max-width: 100px;
+	}
+	&__inner-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	&__documents-wrapper {
+		position: relative;
+		display: block;
+	}
+	&__documents-block {
+		position: relative;
+		display: block;
+		width: 100%;
+		max-width: 640px;
+		margin-right: 44px;
+	}
+	&__notes-block {
+		position: relative;
+		display: block;
+		width: 100%;
+		max-width: 620px;
+	}
+	&__documents-card {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+	&__documents-card-icon-wrapper {
+		display: block;
+		margin-right: 18px;
+		padding: 14px;
+		border-radius: 15px;
+		border: 1px dashed $primary-green;
+		background: rgba(171, 216, 86, 0.2);
+	}
+	&__documents-card-icon {
+		padding: 3px;
+		border-radius: 26px;
+		border: 1px dashed $primary-green;
+	}
+	&__documents-icon-circle {
+		display: block;
+		flex-shrink: 0;
+		padding: 7px;
+		border-radius: 26px;
+		background-color: #fff;
+		svg {
+			display: block;
+			transition: all 0.2s ease-in-out;
+		}
+	}
+	&__documents-card-inner {
+		position: relative;
+		display: block;
+	}
+	&__documents-card-title {
+		display: block;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 1.2;
+		color: $primary-green;
+		margin-bottom: 6px;
+	}
+	&__documents-card-text {
+		display: block;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1.5;
+		color: $title;
+	}
+	&__documents-status {
+		display: block;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 400;
+		b {
+			font-weight: 700;
+			color: $title;
+		}
+		span {
+			color: $form-text;
+		}
+	}
+	&__notes-wrapper {
+		position: relative;
+		display: block;
+	}
+	&__notes-title {
+		display: block;
+		font-size: 20px;
+		line-height: 1.2;
+		font-weight: 700;
+		color: $primary-blue;
+		margin-bottom: 16px;
+	}
+	&__notes-card {
+		display: block;
+		padding-top: 26px;
+		padding-left: 22px;
+		padding-right: 22px;
+		padding-bottom: 26px;
+		border-radius: 15px;
+		border: 2px solid $border;
+		background-color: #F9F8FC;
+		font-size: 15px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: $text;
+	}
+}
+
+
+@include for-size(mobile) {
+	.preview-landlord-block {
+		&__heading {
+			display: block;
+			padding-top: 20px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 20px;
+		}
+		.landlord-block__title {
+			font-size: 20px;
+			margin-bottom: 25px;
+		}
+		.landlord-block__heading-wrapper {
+			justify-content: center;
+		}
+		&__content-block {
+			padding-top: 20px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 20px;
+		}
+		.landlord-block__form-title {
+			margin-right: 20px;
+		}
+		&__page-wrapper {
+			margin-bottom: 20px;
+		}
+		&__page-heading {
+			display: block;
+			.btn--green {
+				width: 100%;
+			}
+		}
+		&__inner {
+			display: block;
+		}
+		&__option-title {
+			max-width: 160px;
+			margin-right: 10px;
+		}
+		&__option-value {
+			max-width: 160px;
+		}
+		&__left-part {
+			margin-bottom: 25px;
+		}
+		&__right-part {
+			max-width: 100%;
+		}
+		&__option:not(:last-child) {
+			margin-bottom: 25px;
+		}
+		&__table-wrapper {
+			overflow: hidden;
+		}
+		&__table-block {
+			overflow-x: auto;
+			&::-webkit-scrollbar-track {
+				background-color: #eef3fb;
+				border-radius: 10px;
+				margin-left: 15px;
+				border: 1px solid $primary-blue;
+			}
+			&::-webkit-scrollbar {
+				height: 6px;
+				background-color: transparent;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: $fenny;
+				border-radius: 10px;
+			}
+		}
+		&__table-heading, &__table-card {
+			min-width: 1024px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		&__inner-wrapper {
+			display: block;
+		}
+		&__page-block {
+			margin-bottom: 50px;
+		}
+		&__documents-block {
+			margin-right: 0;
+			margin-bottom: 40px;
+		}
+		&__documents-card-title {
+			font-size: 16px;
+		}
+		&__notes-card {
+			padding-left: 15px;
+			padding-right: 15px;
+			font-size: 14px;
+		}
+	}
+}
+
+@include for-size(tablet) {
+	.preview-landlord-block {
+		&__content-block {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		&__table-wrapper {
+			overflow: hidden;
+		}
+		&__table-block {
+			overflow-x: auto;
+			&::-webkit-scrollbar-track {
+				background-color: #eef3fb;
+				border-radius: 10px;
+				margin-left: 15px;
+				border: 1px solid $primary-blue;
+			}
+			&::-webkit-scrollbar {
+				height: 6px;
+				background-color: transparent;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: $fenny;
+				border-radius: 10px;
+			}
+		}
+		.landlord-block__form-title {
+			margin-right: 30px;
+		}
+		&__table-heading, &__table-card {
+			min-width: 1024px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}

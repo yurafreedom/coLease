@@ -231,6 +231,20 @@
 			width: 88px;
 		}
 	}
+	&__heading-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		.btn:not(:last-child) {
+			margin-right: 20px;
+		}
+		.btn--fenny {
+			width: 167px;
+		}
+		.btn--blue {
+			width: 88px;
+		}
+	}
 	&__title {
 		display: block;
 		font-size: 25px;
@@ -429,7 +443,7 @@
 		font-size: 14px;
 		line-height: 1.142;
 		color: $fenny;
-		a {
+		label {
 			display: inline-block;
 			color: $fenny;
 			font-size: 14px;
@@ -541,6 +555,9 @@
 		color: $title;
 		line-height: 1.142;
 		transition: all 0.2s ease-in-out;
+		&:hover, &:active, &:focus {
+			border-color: $primary-blue;
+		}
 		&:placeholder {
 			font-size: 14px;
 			font-weight: 400;
@@ -562,6 +579,13 @@
 		.btn--red {
 			width: 165px;
 		}
+	}
+	.input-hidden {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		pointer-events: none;
 	}
 }
 

@@ -1,0 +1,157 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": ""
+})
+@@include('template/page-header.html', {
+	"dashboard": "",
+	"leases": "true",
+	"reminders": "",
+	"report": "",
+	"agent": "",
+	"settings": ""
+})
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+		<section class="nav-block">
+			<div class="container">
+				<div class="nav-block__wrapper">
+					<div class="nav-block__list">
+						<ul>
+							<li><a href="javascript:;">Leases</a></li>
+							<li class="active"><a href="javascript:;">Sites</a></li>
+							<li><a href="javascript:;">Landlords</a></li>
+							<li><a href="javascript:;">Financial</a></li>
+							<li><a href="javascript:;">Issues</a></li>
+							<li><a href="javascript:;">File Explorer</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="site-block">
+			<div class="container">
+				<div class="issues-block__heading-block">
+					<div class="issues-block__heading-title">Sites</div>
+					<form class="page-block__form">
+						<div class="page-block__input-wrapper">
+							<label for="issues_date" class="page-block__label">Site name or ID</label>
+							<input type="text" class="text-input page-block__input" id="issues_date" name="issues_date" placeholder="Find a Site..." required>
+							<button type="submit" class="btn btn--search">
+								<svg width="17" height="17" class="icon--search">
+									<use xlink:href="#search"></use>
+								</svg>
+							</button>
+						</div>
+						<button type="button" class="btn btn--green">
+							<svg width="12" height="12">
+								<use xlink:href="#plus"></use>
+							</svg>
+							<span>Add Site</span>
+						</button>
+					</form>
+				</div>
+				<div class="issues-block__table-block">
+					<div class="issues-block__table-heading">
+						<div class="site-block__table-heading-id">Site ID</div>
+						<div class="site-block__table-heading-name">Site Name</div>
+						<div class="site-block__table-heading-address">Site Address</div>
+						<div class="site-block__table-heading-status">Site Status</div>
+						<div class="site-block__table-heading-contact">Primary Emergency Contact</div>
+						<div class="issues-block__table-heading-action">Actions</div>
+					</div>
+					<div class="issues-block__table-inner">
+						<div class="issues-block__table-card">
+							<div class="site-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+							<div class="site-block__table-inner-name"><a href="javascript:;">Shane's House</a></div>
+							<div class="site-block__table-inner-address">Avenida Álvarez Thomas 2356, Buenos Aires, Argentina</div>
+							<div class="site-block__table-inner-status">Awaiting Landlord Signature</div>
+							<div class="site-block__table-inner-contact">AJM Wehmeyer<br>0823318751<br>macreew@rentrust.co.za</div>
+							<div class="issues-block__table-inner-action">
+								<a href="javascript:;" class="issues-block__edit-link">
+									<svg width="12" height="12">
+										<use xlink:href="#edit"></use>
+									</svg>
+								</a>
+								<a href="javascript:;" class="issues-block__trash-link">
+									<svg width="15" height="12">
+										<use xlink:href="#trash"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="issues-block__table-card">
+							<div class="site-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+							<div class="site-block__table-inner-name"><a href="javascript:;">Shane's House</a></div>
+							<div class="site-block__table-inner-address">Avenida Álvarez Thomas 2356, Buenos Aires, Argentina</div>
+							<div class="site-block__table-inner-status">Awaiting Landlord Signature</div>
+							<div class="site-block__table-inner-contact">AJM Wehmeyer<br>0823318751<br>macreew@rentrust.co.za</div>
+							<div class="issues-block__table-inner-action">
+								<a href="javascript:;" class="issues-block__edit-link">
+									<svg width="12" height="12">
+										<use xlink:href="#edit"></use>
+									</svg>
+								</a>
+								<a href="javascript:;" class="issues-block__trash-link">
+									<svg width="15" height="12">
+										<use xlink:href="#trash"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="issues-block__table-card">
+							<div class="site-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+							<div class="site-block__table-inner-name"><a href="javascript:;">Shane's House</a></div>
+							<div class="site-block__table-inner-address">Avenida Álvarez Thomas 2356, Buenos Aires, Argentina</div>
+							<div class="site-block__table-inner-status">Awaiting Landlord Signature</div>
+							<div class="site-block__table-inner-contact">AJM Wehmeyer<br>0823318751<br>macreew@rentrust.co.za</div>
+							<div class="issues-block__table-inner-action">
+								<a href="javascript:;" class="issues-block__edit-link">
+									<svg width="12" height="12">
+										<use xlink:href="#edit"></use>
+									</svg>
+								</a>
+								<a href="javascript:;" class="issues-block__trash-link">
+									<svg width="15" height="12">
+										<use xlink:href="#trash"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="issues-block__table-card">
+							<div class="site-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+							<div class="site-block__table-inner-name"><a href="javascript:;">Shane's House</a></div>
+							<div class="site-block__table-inner-address">Avenida Álvarez Thomas 2356, Buenos Aires, Argentina</div>
+							<div class="site-block__table-inner-status">Awaiting Landlord Signature</div>
+							<div class="site-block__table-inner-contact">
+								<span>AJM Wehmeyer</span><br>
+								<a href="tel:0823318751">0823318751</a><br>
+								<a href="mailto:macreew@rentrust.co.za">macreew@rentrust.co.za</a>
+							</div>
+							<div class="issues-block__table-inner-action">
+								<a href="javascript:;" class="issues-block__edit-link">
+									<svg width="12" height="12">
+										<use xlink:href="#edit"></use>
+									</svg>
+								</a>
+								<a href="javascript:;" class="issues-block__trash-link">
+									<svg width="15" height="12">
+										<use xlink:href="#trash"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+@@include('template/popups.html')
+@@include('template/scripts.html')
+<script src="js/issues-block.js"></script>
+@@include('template/sprite.html')
+
+</body>
+</html>

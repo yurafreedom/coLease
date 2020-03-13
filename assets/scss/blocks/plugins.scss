@@ -410,6 +410,10 @@
   height: 40px;
   border-radius: 10px;
   border-color: $border;
+  transition: all 0.2s ease-in-out;
+  &:hover, &:active, &:focus {
+    border-color: $primary-blue;
+  }
 }
 
 .select2-search--dropdown {

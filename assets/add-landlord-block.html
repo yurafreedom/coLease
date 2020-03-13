@@ -60,7 +60,13 @@
 									</div>
 									<div class="page-block__input-wrapper">
 										<label for="details_type" class="page-block__label">Type</label>
-										<input type="text" id="details_type" name="details_type" class="text-input page-block__input" placeholder="Type..." required>
+										<select id="details_type" class="js-example-basic-single">
+											<option value="1">Type...</option>
+											<option value="2">Type...</option>
+											<option value="3">Type...</option>
+											<option value="4">Type...</option>
+											<option value="5">Type...</option>
+										</select>
 									</div>
 									<div class="page-block__input-wrapper">
 										<label for="details_id" class="page-block__label">Landlord ID / Registration Number</label>
@@ -102,7 +108,7 @@
 									</div>
 									<div class="page-block__date-wrapper">
 										<input type="text" class="text-input page-block__input" id="details_datepicker" placeholder="Select date...">
-										<button type="button"><svg width="19" height="17"><use xlink:href="#calendar"></use></svg></button>
+										<button type="button" id="button_datepicker_3"><svg width="19" height="17"><use xlink:href="#calendar"></use></svg></button>
 									</div>
 								</div>
 								<div class="landlord-block__details-form-title">Bank Account Details</div>
@@ -175,7 +181,8 @@
 												</svg>
 											</div>
 										</a>
-										<div class="landlord-block__attachment-title">Drag & drop or <a href="javascript:;">Browse</a></div>
+										<input id="file_browse" class="input-hidden" type="file">
+										<div class="landlord-block__attachment-title">Drag & drop or <label for="file_browse">Browse</label></div>
 									</div>
 									<div class="landlord-block__type-block">
 										<div class="page-block__select-wrapper">
