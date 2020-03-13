@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<!-- ADAPTIVITY -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000000">
+	
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000000">
+	
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-touch-fullscreen" content="yes">
+	
+	<!-- CONFIG -->
+	<meta name="format-detection" content="telephone=no">
+	<title>Главная страница - coLease</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/main.min.css"> </head>
+
+<body >
+
+<header class="page-header">
+	<div class="container">
+		<div class="page-header__menu" id="header-menu">
+			<a href="javascript:;" id="menu-toggle-active" class="page-header__toggle"><span></span></a>
+			<div class="page-header__nav">
+				<ul>
+					<li >
+						<a href="javascript:;">
+							<svg width="30" height="26">
+								<use xlink:href="#browser_gauge"></use>
+							</svg>
+							<span>Dashboard</span>
+						</a>
+					</li>
+					<li >
+						<a href="javascript:;">
+							<div class="page-header__nav-link-wrapper">
+								<img src="img/keys-gray.svg" alt="">
+								<img class="active" src="img/keys-blue.svg" alt="">
+							</div>
+							<span>Sites & Leases</span>
+						</a>
+					</li>
+					<li >
+						<a href="javascript:;">
+							<div class="page-header__nav-link-wrapper">
+								<img src="img/reminder-gray.svg" alt="">
+								<img class="active" src="img/reminder-blue.svg" alt="">
+							</div>
+							<span>Reminders</span>
+						</a>
+					</li>
+					<li >
+						<a href="javascript:;">
+							<svg width="30" height="28">
+								<use xlink:href="#report"></use>
+							</svg>
+							<span>Report</span>
+						</a>
+					</li>
+					<li >
+						<a href="javascript:;">
+							<svg width="30" height="29">
+								<use xlink:href="#agent"></use>
+							</svg>
+							<span>Agent</span>
+						</a>
+					</li>
+					<li >
+						<a href="javascript:;">
+							<svg width="30" height="26">
+								<use xlink:href="#settings"></use>
+							</svg>
+							<span>Settings</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="page-header__row">
+			<a href="index.html" class="page-header__logo"><img src="img/logo.svg" alt=""></a>
+			<div class="page-header__nav">
+				<ul>
+					<li >
+						<a href="javascript:;">
+							<svg width="30" height="26">
+								<use xlink:href="#browser_gauge"></use>
+							</svg>
+							<span>Dashboard</span>
+						</a>
+					</li>
+					<li >
+						<a href="javascript:;">
+							<div class="page-header__nav-link-wrapper">
+								<img src="img/keys-gray.svg" alt="">
+								<img class="active" src="img/keys-blue.svg" alt="">
+							</div>
+							<span>Sites & Leases</span>
+						</a>
+					</li>
+					<li >
+						<a href="javascript:;">
+							<div class="page-header__nav-link-wrapper">
+								<img src="img/reminder-gray.svg" alt="">
+								<img class="active" src="img/reminder-blue.svg" alt="">
+							</div>
+							<span>Reminders</span>
+						</a>
+					</li>
+					<li >
+						<a href="javascript:;">
+							<svg width="30" height="28">
+								<use xlink:href="#report"></use>
+							</svg>
+							<span>Report</span>
+						</a>
+					</li>
+					<li >
+						<a href="javascript:;">
+							<svg width="30" height="29">
+								<use xlink:href="#agent"></use>
+							</svg>
+							<span>Agent</span>
+						</a>
+					</li>
+					<li >
+						<a href="javascript:;">
+							<svg width="30" height="26">
+								<use xlink:href="#settings"></use>
+							</svg>
+							<span>Settings</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<a href="javascript:;" class="btn btn--fenny">
+				<svg width="15" height="14"><use xlink:href="#plus"></use></svg>
+				<span>Add Lease</span>
+			</a>
+			<a href="javascript:;" id="menu-toggle" class="page-header__toggle"><span></span></a>
+			<div class="page-header__login-block">
+				<a href="javascript:;" class="page-header__login-link">
+					<div class="page-header__login-link-wrapper">
+						<svg width="31" height="30">
+							<use xlink:href="#user_fenny"></use>
+						</svg>
+						<svg class="active" width="31" height="30">
+							<use xlink:href="#user_green"></use>
+						</svg>
+					</div>
+					<span>Logout</span>
+				</a>
+				<div class="page-header__login-description"><p>Welcome back</p></div>
+			</div>
+		</div>
+	</div>
+</header>
+
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+		<section class="preview-leases-block">
+			<div class="container">
+				<div class="preview-landlord-block__wrapper">
+					<div class="preview-landlord-block__heading">
+						<div class="landlord-block__title">Lease preview</div>
+						<div class="landlord-block__heading-wrapper">
+							<button type="button" class="btn btn--fenny">
+								<svg width="13" height="13">
+									<use xlink:href="#print"></use>
+								</svg>
+								<span>Export lease</span>
+							</button>
+							<a href="javascript:;" class="btn btn--blue">
+								<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
+								<span>Back</span>
+							</a>
+						</div>
+					</div>
+					<div class="preview-landlord-block__content-block">
+						<div class="preview-leases-block__page-wrapper">
+							<div class="preview-leases-block__page-block">
+								<div class="preview-landlord-block__page-heading">
+									<div class="preview-landlord-block__page-wrapper">
+										<div class="landlord-block__form-title">
+											<svg width="33" height="31">
+												<use xlink:href="#face"></use>
+											</svg>
+											<span>Lease details</span>
+										</div>
+										<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+									</div>
+									<a href="javascript:;" class="btn btn--green">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+										<span>Edit</span>
+									</a>
+								</div>
+								<div class="preview-landlord-block__inner">
+									<div class="preview-leases-block__inner-wrapper">
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Landlord:</div>
+											<div class="preview-landlord-block__option-value">John Doe</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Site Location:</div>
+											<div class="preview-landlord-block__option-value">775 Old Pretoria Main Road, Halfway House, Midrand, South Africa</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Lease type:</div>
+											<div class="preview-landlord-block__option-value">Office</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Square metres of leased premises:</div>
+											<div class="preview-landlord-block__option-value">Etiam efficitur luctus dictum. Donec.</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Commencement date:</div>
+											<div class="preview-landlord-block__option-value">01 Jul 2019</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Expiry date:</div>
+											<div class="preview-landlord-block__option-value">30 Jun 2020</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Lease term:</div>
+											<div class="preview-landlord-block__option-value">11 months</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Renewal option in lease:</div>
+											<div class="preview-landlord-block__option-value">Yes</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Number of months:</div>
+											<div class="preview-landlord-block__option-value">10 Months</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Termination Clause in lease:</div>
+											<div class="preview-landlord-block__option-value">Yes</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Number of months:</div>
+											<div class="preview-landlord-block__option-value">12 Months</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="preview-leases-block__page-block">
+								<div class="preview-landlord-block__page-heading">
+									<div class="preview-landlord-block__page-wrapper">
+										<div class="landlord-block__form-title">
+											<svg width="37" height="31">
+												<use xlink:href="#folder_cash"></use>
+											</svg>
+											<span>Commercials</span>
+										</div>
+										<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+									</div>
+									<a href="javascript:;" class="btn btn--green">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+										<span>Edit</span>
+									</a>
+								</div>
+								<div class="preview-landlord-block__inner">
+									<div class="preview-leases-block__inner-wrapper">
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Electricity:</div>
+											<div class="preview-landlord-block__option-value">Electricity (Landlord - Fixed)</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Other Utility Costs:</div>
+											<div class="preview-landlord-block__option-value">Office</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Annual Escalation Type:</div>
+											<div class="preview-landlord-block__option-value">Fixed Percentage</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Annual Escalation Percentage:</div>
+											<div class="preview-landlord-block__option-value">10%</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Frequency of lease payments:</div>
+											<div class="preview-landlord-block__option-value">Montly</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Deposit Payable:</div>
+											<div class="preview-landlord-block__option-value">Yes</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Deposit Type:</div>
+											<div class="preview-landlord-block__option-value">Landlord (interest bearing)</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Deposit Amount:</div>
+											<div class="preview-landlord-block__option-value">10 500</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="preview-leases-block__rent-block">
+							<div class="preview-leases-block__rent-title">Rent schedule:</div>
+							<div class="preview-landlord-block__table-wrapper">
+								<div class="preview-landlord-block__table-block">
+									<div class="preview-landlord-block__table-heading">
+										<div class="preview-landlord-block__table-heading-type">Type</div>
+										<div class="preview-landlord-block__table-heading-name">Name</div>
+										<div class="preview-landlord-block__table-heading-surname">Surname</div>
+										<div class="preview-landlord-block__table-heading-company">Company</div>
+										<div class="preview-landlord-block__table-heading-email">Email</div>
+										<div class="preview-landlord-block__table-heading-mobile">Mobile</div>
+										<div class="preview-landlord-block__table-heading-landline">Landline</div>
+									</div>
+									<div class="preview-landlord-block__table-inner">
+										<div class="preview-landlord-block__table-card">
+											<div class="preview-landlord-block__table-inner-type">Accounts</div>
+											<div class="preview-landlord-block__table-inner-name">John</div>
+											<div class="preview-landlord-block__table-inner-surname">Doe</div>
+											<div class="preview-landlord-block__table-inner-company">Etiam efficitur luctus</div>
+											<div class="preview-landlord-block__table-inner-email">johndoe@gmail.com</div>
+											<div class="preview-landlord-block__table-inner-mobile">012 345 6789</div>
+											<div class="preview-landlord-block__table-inner-landline">021 345 6789</div>
+										</div>
+										<div class="preview-landlord-block__table-card">
+											<div class="preview-landlord-block__table-inner-type">Accounts</div>
+											<div class="preview-landlord-block__table-inner-name">John</div>
+											<div class="preview-landlord-block__table-inner-surname">Doe</div>
+											<div class="preview-landlord-block__table-inner-company">Etiam efficitur luctus</div>
+											<div class="preview-landlord-block__table-inner-email">johndoe@gmail.com</div>
+											<div class="preview-landlord-block__table-inner-mobile">012 345 6789</div>
+											<div class="preview-landlord-block__table-inner-landline">021 345 6789</div>
+										</div>
+										<div class="preview-landlord-block__table-card">
+											<div class="preview-landlord-block__table-inner-type">Accounts</div>
+											<div class="preview-landlord-block__table-inner-name">John</div>
+											<div class="preview-landlord-block__table-inner-surname">Doe</div>
+											<div class="preview-landlord-block__table-inner-company">Etiam efficitur luctus</div>
+											<div class="preview-landlord-block__table-inner-email">johndoe@gmail.com</div>
+											<div class="preview-landlord-block__table-inner-mobile">012 345 6789</div>
+											<div class="preview-landlord-block__table-inner-landline">021 345 6789</div>
+										</div>
+										<div class="preview-landlord-block__table-card">
+											<div class="preview-landlord-block__table-inner-type">Accounts</div>
+											<div class="preview-landlord-block__table-inner-name">John</div>
+											<div class="preview-landlord-block__table-inner-surname">Doe</div>
+											<div class="preview-landlord-block__table-inner-company">Etiam efficitur luctus</div>
+											<div class="preview-landlord-block__table-inner-email">johndoe@gmail.com</div>
+											<div class="preview-landlord-block__table-inner-mobile">012 345 6789</div>
+											<div class="preview-landlord-block__table-inner-landline">021 345 6789</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="preview-leases-block__page-wrapper">
+							<div class="preview-leases-block__emergency-block">
+								<div class="preview-landlord-block__page-heading">
+									<div class="preview-landlord-block__page-wrapper">
+										<div class="landlord-block__form-title">
+											<svg width="30" height="30">
+												<use xlink:href="#password_key"></use>
+											</svg>
+											<span>Emergency Access</span>
+										</div>
+										<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+									</div>
+									<a href="javascript:;" class="btn btn--green">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+										<span>Edit</span>
+									</a>
+								</div>
+								<div class="preview-leases-block__page-inner-wrapper">
+									<div class="preview-leases-block__inner">
+										<div class="preview-leases-block__inner-title">Emergency Access Details:</div>
+										<div class="preview-leases-block__inner-wrapper">
+											<div class="preview-landlord-block__option">
+												<div class="preview-landlord-block__option-title">Hours of access:</div>
+												<div class="preview-landlord-block__option-value">Select Hours of Access</div>
+											</div>
+											<div class="preview-landlord-block__option">
+												<div class="preview-landlord-block__option-title">Last Updated:</div>
+												<div class="preview-landlord-block__option-value">17 Jan 2020</div>
+											</div>
+											<div class="preview-landlord-block__option">
+												<div class="preview-landlord-block__option-title">Other access information and procedures:</div>
+												<div class="preview-landlord-block__option-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+											</div>
+										</div>
+									</div>
+									<div class="preview-leases-block__inner">
+										<div class="preview-leases-block__inner-title">Emergency Contacts:</div>
+										<div class="preview-leases-block__inner-wrapper">
+											<div class="preview-landlord-block__option">
+												<div class="preview-landlord-block__option-title">Primary Emergency Contact:</div>
+												<div class="preview-landlord-block__option-value">
+													<span>Richard Wallyes </span>
+													<a href="tel:+6374838276">+6374838276</a>
+													<a href="mailto:test@test.com">test@test.com</a>
+												</div>
+											</div>
+											<div class="preview-landlord-block__option">
+												<div class="preview-landlord-block__option-title">Primary Emergency Contact:</div>
+												<div class="preview-landlord-block__option-value">
+													<span>Shmuel Solomon</span>
+													<a href="tel:0835644121">0835644121</a>
+													<a href="mailto:shane@exprop.co.za">shane@exprop.co.za</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="preview-landlord-block__page-block">
+							<div class="preview-landlord-block__page-heading">
+								<div class="preview-landlord-block__page-wrapper">
+									<div class="landlord-block__form-title">
+										<svg width="24" height="31">
+											<use xlink:href="#contacts"></use>
+										</svg>
+										<span>Landlord Contacts</span>
+									</div>
+									<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+								</div>
+								<a href="javascript:;" class="btn btn--green">
+									<svg width="12" height="12">
+										<use xlink:href="#edit"></use>
+									</svg>
+									<span>Edit</span>
+								</a>
+							</div>
+							<div class="preview-landlord-block__table-wrapper">
+								<div class="preview-landlord-block__table-block">
+									<div class="preview-landlord-block__table-heading">
+										<div class="preview-landlord-block__table-heading-type">Type</div>
+										<div class="preview-landlord-block__table-heading-name">Name</div>
+										<div class="preview-landlord-block__table-heading-surname">Surname</div>
+										<div class="preview-landlord-block__table-heading-company">Company</div>
+										<div class="preview-landlord-block__table-heading-email">Email</div>
+										<div class="preview-landlord-block__table-heading-mobile">Mobile</div>
+										<div class="preview-landlord-block__table-heading-landline">Landline</div>
+									</div>
+									<div class="preview-landlord-block__table-inner">
+										<div class="preview-landlord-block__table-card">
+											<div class="preview-landlord-block__table-inner-type">Accounts</div>
+											<div class="preview-landlord-block__table-inner-name">John</div>
+											<div class="preview-landlord-block__table-inner-surname">Doe</div>
+											<div class="preview-landlord-block__table-inner-company">Etiam efficitur luctus</div>
+											<div class="preview-landlord-block__table-inner-email">johndoe@gmail.com</div>
+											<div class="preview-landlord-block__table-inner-mobile">012 345 6789</div>
+											<div class="preview-landlord-block__table-inner-landline">021 345 6789</div>
+										</div>
+										<div class="preview-landlord-block__table-card">
+											<div class="preview-landlord-block__table-inner-type">Accounts</div>
+											<div class="preview-landlord-block__table-inner-name">John</div>
+											<div class="preview-landlord-block__table-inner-surname">Doe</div>
+											<div class="preview-landlord-block__table-inner-company">Etiam efficitur luctus</div>
+											<div class="preview-landlord-block__table-inner-email">johndoe@gmail.com</div>
+											<div class="preview-landlord-block__table-inner-mobile">012 345 6789</div>
+											<div class="preview-landlord-block__table-inner-landline">021 345 6789</div>
+										</div>
+										<div class="preview-landlord-block__table-card">
+											<div class="preview-landlord-block__table-inner-type">Accounts</div>
+											<div class="preview-landlord-block__table-inner-name">John</div>
+											<div class="preview-landlord-block__table-inner-surname">Doe</div>
+											<div class="preview-landlord-block__table-inner-company">Etiam efficitur luctus</div>
+											<div class="preview-landlord-block__table-inner-email">johndoe@gmail.com</div>
+											<div class="preview-landlord-block__table-inner-mobile">012 345 6789</div>
+											<div class="preview-landlord-block__table-inner-landline">021 345 6789</div>
+										</div>
+										<div class="preview-landlord-block__table-card">
+											<div class="preview-landlord-block__table-inner-type">Accounts</div>
+											<div class="preview-landlord-block__table-inner-name">John</div>
+											<div class="preview-landlord-block__table-inner-surname">Doe</div>
+											<div class="preview-landlord-block__table-inner-company">Etiam efficitur luctus</div>
+											<div class="preview-landlord-block__table-inner-email">johndoe@gmail.com</div>
+											<div class="preview-landlord-block__table-inner-mobile">012 345 6789</div>
+											<div class="preview-landlord-block__table-inner-landline">021 345 6789</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="preview-landlord-block__inner-wrapper">
+							<div class="preview-landlord-block__documents-block">
+								<div class="preview-landlord-block__page-heading">
+									<div class="preview-landlord-block__page-wrapper">
+										<div class="landlord-block__form-title">
+											<svg width="32" height="31">
+												<use xlink:href="#file_copyright_user"></use>
+											</svg>
+											<span>Documents</span>
+										</div>
+										<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+									</div>
+									<a href="javascript:;" class="btn btn--green">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+										<span>Edit</span>
+									</a>
+								</div>
+								<div class="preview-landlord-block__documents-wrapper">
+									<a href="javascript:;" class="preview-landlord-block__documents-card">
+										<div class="preview-landlord-block__documents-card-icon-wrapper">
+											<div class="preview-landlord-block__documents-card-icon">
+												<div class="preview-landlord-block__documents-icon-circle">
+													<svg width="14" height="15">
+														<use xlink:href="#folder_check"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="preview-landlord-block__documents-card-inner">
+											<div class="preview-landlord-block__documents-card-title">New Lease Agreement:</div>
+											<div class="preview-landlord-block__documents-card-text">
+												<p>John Doe file name.pdf</p>
+											</div>
+										</div>
+									</a>
+									<div class="preview-landlord-block__documents-status"><b>Status Of Lease Documentation: </b><span> Ground space</span></div>
+								</div>
+							</div>
+							<div class="preview-landlord-block__notes-block">
+								<div class="preview-landlord-block__page-heading">
+									<div class="preview-landlord-block__page-wrapper">
+										<div class="landlord-block__form-title">
+											<svg width="31" height="31">
+												<use xlink:href="#notes"></use>
+											</svg>
+											<span>Notes</span>
+										</div>
+										<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+									</div>
+									<a href="javascript:;" class="btn btn--green">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+										<span>Edit</span>
+									</a>
+								</div>
+								<div class="preview-landlord-block__notes-wrapper">
+									<div class="preview-landlord-block__notes-title">Lease Notes...</div>
+									<div class="preview-landlord-block__notes-card">
+										<p>Contrary to popular belief:</p>
+										<p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+										<p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/landlord-block.js"></script>
+<svg style="display:none;">
+	<symbol id="search" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M11.063 16.02a7.083 7.083 0 110-14.166 7.083 7.083 0 010 14.167z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.855 18.146l4.2-4.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="synchronize_clock" viewBox="0 0 51 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.65 11.2v12.5h11.116M.861 15.731l6.67 10.227 7.78-9.09" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.651 44.157c11.665 0 21.12-9.666 21.12-21.59 0-11.923-9.455-21.59-21.12-21.59-11.664 0-21.12 9.667-21.12 21.59v3.395" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="alarm_sleep" viewBox="0 0 47 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.459.771h5.75L30.459 6.4h5.75M36.209 12.027h9.583l-9.583 9.38h9.583" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M27.584 25.156c0-6.216-5.149-11.255-11.5-11.255s-11.5 5.039-11.5 11.255v10.318c0 1.554-1.287 2.813-2.875 2.813h28.75c-1.588 0-2.875-1.26-2.875-2.813V25.156z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.795 42.04c-.405 1.124-1.492 1.877-2.71 1.877-1.22 0-2.306-.753-2.712-1.878M16.084 10.15v3.753" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="alarm_check" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.4 14.979A11.67 11.67 0 008.365 16.85c-2.861 2.128-4.538 5.446-4.53 8.963V36.13c0 .746-.303 1.462-.842 1.99-.54.528-1.27.824-2.033.824h28.75c-1.588 0-2.875-1.26-2.875-2.814v-9.968M18.045 42.697c-.405 1.125-1.492 1.877-2.71 1.877-1.22 0-2.306-.752-2.712-1.877M15.334 10.809v3.751" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.4 14.979A11.67 11.67 0 008.365 16.85c-2.861 2.128-4.538 5.446-4.53 8.963V36.13c0 .746-.303 1.462-.842 1.99-.54.528-1.27.824-2.033.824h28.75c-1.588 0-2.875-1.26-2.875-2.814v-9.968M18.045 42.697c-.405 1.125-1.492 1.877-2.71 1.877-1.22 0-2.306-.752-2.712-1.877M15.334 10.809v3.751" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M33.543 23.942c6.351 0 11.5-5.04 11.5-11.256s-5.149-11.255-11.5-11.255-11.5 5.04-11.5 11.255c0 6.216 5.149 11.256 11.5 11.256z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M38.667 9.415L33.1 16.68a1.45 1.45 0 01-1.048.559 1.46 1.46 0 01-1.12-.407l-2.874-2.814" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="check" viewBox="0 0 11 11" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.987 1.948L4.753 9.052 1.013 6.06" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="alarm" viewBox="0 0 11 11" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.249V5.5l4.638 4.252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="browser_gauge" fill="none" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M28.73 22.98a2.417 2.417 0 01-2.418 2.416H3.355a2.417 2.417 0 01-2.417-2.417V3.646a2.417 2.417 0 012.417-2.417h22.959a2.417 2.417 0 012.416 2.417v19.333z" stroke-linecap="round" stroke-linejoin="round"/><path d="M.938 7.27h27.791M5.167 20.604h2.417M14.833 10.936v2.415M7.997 13.766l1.707 1.707M24.502 20.601h-2.415M5.768 1.23v6.04M10.6 1.23v6.04" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M20.634 15.043c.351-.483.22-.626-.293-.323l-5.386 3.184c-.573.38-1 .944-1.209 1.599l-.12.52a.854.854 0 00.81 1.109l.595.032a2.24 2.24 0 001.722-.813l3.88-5.308z" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="report" width="30" height="28" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M9.215 13.5a4.23 4.23 0 100-8.458 4.23 4.23 0 000 8.458z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.216 5.042V9.27h4.229M11.632 26.188a8.432 8.432 0 001.812-4.834M18.882 26.188a8.433 8.433 0 01-1.813-4.834M9.818 26.188h10.875M1.361 17.73h27.792" stroke-linecap="round" stroke-linejoin="round"/><rect x="1.361" y=".813" width="27.792" height="20.542" rx="1" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.07 7.458l1.812-2.416 3.625 3.02 3.02-3.624M24.32 14.104v-1.812M21.903 14.104v-2.416M19.486 14.104V10.48M17.07 14.104v-1.812" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="agent" viewBox="0 0 30 29" width="30" height="29" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M22.583 15.104a7.25 7.25 0 01-14.5 0v-2.416a7.25 7.25 0 1114.5 0v2.416z" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.313 14.802a.302.302 0 110 .604.302.302 0 010-.604M18.354 14.802a.302.302 0 110 .604.302.302 0 010-.604M17.042 18.021a2.417 2.417 0 01-3.417 0M22.583 13.292s-4.833 0-7.25-3.625c-2.417 3.625-7.25 3.625-7.25 3.625M1.438 7.854V4.23A3.625 3.625 0 015.063.604h3.625M29.23 7.854V4.23A3.625 3.625 0 0025.605.604H21.98M1.438 21.146v3.625a3.625 3.625 0 003.625 3.625h3.625M29.23 21.146v3.625a3.625 3.625 0 01-3.625 3.625H21.98" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="settings" viewBox="0 0 30 25" width="30" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.361" y="1.439" width="27.792" height="22.958" rx="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.361 7.48h27.792M5.015 4.157a.302.302 0 110 .605.302.302 0 010-.605M8.64 4.157a.302.302 0 110 .605.302.302 0 010-.605" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M15.257 16.543a1.208 1.208 0 100-2.417 1.208 1.208 0 000 2.417z" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M16.283 10.66l.357 1.17a.801.801 0 00.946.549l1.185-.275a1.079 1.079 0 011.027 1.787l-.83.895a.808.808 0 000 1.097l.83.896a1.079 1.079 0 01-1.027 1.787l-1.185-.276a.802.802 0 00-.946.549l-.357 1.17a1.07 1.07 0 01-2.054 0l-.356-1.17a.802.802 0 00-.946-.549l-1.186.276a1.08 1.08 0 01-1.027-1.787l.83-.896a.808.808 0 000-1.097l-.83-.895a1.079 1.079 0 011.027-1.787l1.186.275a.801.801 0 00.946-.549l.356-1.17a1.07 1.07 0 012.054 0z" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="plus" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.16 1l.014 12M1.167 7.005l12-.01" stroke-width="2" stroke-linecap="round"/></symbol>
+	<symbol id="user_green" viewBox="0 0 31 30" width="31" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 30c8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15C7.216 0 .5 6.716.5 15c0 8.284 6.716 15 15 15z" fill="#ABD856"/><path fill-rule="evenodd" clip-rule="evenodd" d="M24.464 25.013A14.934 14.934 0 0115.48 28a14.93 14.93 0 01-7.98-2.296l.026-.307.074-.882c.126-1.661.523-3.22 1.23-4.655.792-1.608 1.856-2.884 3.207-3.806.106-.073.176-.078.276.023 1.01 1.031 2.177 1.59 3.498 1.647 1.463.062 2.762-.484 3.89-1.612.124-.124.21-.134.345-.038 2.21 1.573 3.6 3.883 4.189 6.888.096.491.139.997.18 1.504.016.182.032.365.05.547z" fill="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="M16.104 7.001c-2.579-.056-4.617 2.028-4.604 4.485A4.48 4.48 0 0015.95 16c2.496.026 4.555-1.943 4.551-4.51-.004-2.553-2.053-4.438-4.396-4.489" fill="#FEFEFE"/></symbol>
+	<symbol id="user_fenny" viewBox="0 0 31 30" width="31" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 30c8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15C7.216 0 .5 6.716.5 15c0 8.284 6.716 15 15 15z" fill="#53C7CD"/><path fill-rule="evenodd" clip-rule="evenodd" d="M24.464 25.013A14.934 14.934 0 0115.48 28a14.93 14.93 0 01-7.98-2.296l.026-.307.074-.882c.126-1.661.523-3.22 1.23-4.655.792-1.608 1.856-2.884 3.207-3.806.106-.073.176-.078.276.023 1.01 1.031 2.177 1.59 3.498 1.647 1.463.062 2.762-.484 3.89-1.612.124-.124.21-.134.345-.038 2.21 1.573 3.6 3.883 4.189 6.888.096.491.139.997.18 1.504.016.182.032.365.05.547z" fill="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="M16.104 7.001c-2.579-.056-4.617 2.028-4.604 4.485A4.48 4.48 0 0015.95 16c2.496.026 4.555-1.943 4.551-4.51-.004-2.553-2.053-4.438-4.396-4.489" fill="#FEFEFE"/></symbol>
+	<symbol id="manager_arrow" width="6" height="13" viewBox="0 0 6 13" xmlns="http://www.w3.org/2000/svg"><path d="M4.422 6.793l-.903-.43.903.43zm-.108.168l-.78-.625a.968.968 0 01.012-.016l.768.641zM2.724 8.95l-.78-.625.78.625zm-1.6 2l-.78-.625.78.625zm-1.125.125l-.624.78.624-.78zm-.124-1.125l.78.625-.78-.625zm1.6-2l.78.625-.78-.625zm1.2-1.5l.78-.625a1 1 0 010 1.25l-.78-.625zm-1.2-1.5l.78-.625-.78.625zm-1.6-2l.78-.625-.78.625zm.124-1.125l-.624-.78.624.78zm1.125.125l-.78.625.78-.625zm1.6 2l.78-.624-.78.624zm1.59 1.988l-.768.64a1.021 1.021 0 01-.013-.015l.781-.625zm.108.169l-.903.43v-.002l.903-.428zm.077.343h-1 1zm.826.773a1.794 1.794 0 01-.243.38L3.546 6.32a.206.206 0 00-.027.044l1.806.858zm-.23.364l-1.59 1.987-1.562-1.249 1.59-1.988 1.562 1.25zm-1.59 1.987l-1.6 2-1.562-1.249 1.6-2 1.562 1.25zm-1.6 2a1.8 1.8 0 01-2.53.282l1.25-1.562a.2.2 0 00-.282.031l1.562 1.25zm-2.53.282a1.8 1.8 0 01-.281-2.53l1.561 1.249a.2.2 0 00-.03-.281l-1.25 1.562zm-.281-2.53l1.6-2 1.561 1.249-1.6 2-1.561-1.25zm1.6-2l1.2-1.5 1.562 1.249-1.2 1.5-1.562-1.25zm1.2-.251l-1.2-1.5 1.561-1.25 1.2 1.5-1.561 1.25zm-1.2-1.5l-1.6-2 1.561-1.25 1.6 2-1.561 1.25zm-1.6-2a1.8 1.8 0 01.28-2.53l1.25 1.561a.2.2 0 00.031-.28L-.906 3.572zm.28-2.53a1.8 1.8 0 012.53.28l-1.56 1.25a.2.2 0 00.28.031l-1.25-1.562zm2.53.28l1.6 2-1.56 1.25-1.6-2 1.56-1.25zm1.6 2l1.59 1.988-1.56 1.25-1.59-1.988 1.56-1.25zm1.578 1.972c.098.118.18.247.244.382l-1.808.856c.008.015.017.03.028.044l1.536-1.282zm.243.38c.117.247.174.512.174.774l-2-.002c0 .029.006.059.02.087l1.806-.858zm.174.772c0 .263-.057.529-.175.776L3.52 6.362a.203.203 0 00-.02.088l2-.002z"/></symbol>
+	<symbol id="file_explorer" viewBox="0 0 11 11" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M9.788 5.008a.425.425 0 00-.417-.51H4.333a.425.425 0 01-.417-.34l-.118-.595a.425.425 0 00-.417-.34H.637a.425.425 0 00-.416.51l1.104 5.523c.04.198.215.34.417.34h6.78a.425.425 0 00.416-.34l.85-4.248z" stroke="#16A8AA" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.063 2.05c0-.234.19-.424.424-.424H8.71c.235 0 .425.19.425.424v1.275" stroke="#16A8AA" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="folder_hold" width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.987 8.648v2.081" stroke="#0F7C7D" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M11.99 4.154a.404.404 0 00-.089-.347.44.44 0 00-.336-.153H6.423a.43.43 0 01-.425-.333l-.12-.582a.43.43 0 00-.426-.333h-2.8a.44.44 0 00-.336.152.404.404 0 00-.09.347l1.128 5.41a.43.43 0 00.425.333h6.919a.43.43 0 00.425-.333l.867-4.161z" stroke="#0F7C7D" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.519 1.573c0-.23.194-.416.433-.416h6.503c.24 0 .433.186.433.416v1.249M4.82 10.73h4.335" stroke="#0F7C7D" stroke-linecap="round" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M10.453 11.23a.5.5 0 100-1 .5.5 0 000 1zM11.752 11.23a.5.5 0 100-1 .5.5 0 000 1zM2.223 11.23a.5.5 0 100-1 .5.5 0 000 1zM3.52 11.23a.5.5 0 100-1 .5.5 0 000 1z" fill="#0F7C7D"/></symbol>
+	<symbol id="file_text" viewBox="0 0 13 12" width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.031 4.574h4.052M3.031 5.854h3.412M3.031 3.295h2.986M3.031 7.133h2.133M3.031 8.413h1.28M4.737 10.972H1.752a.426.426 0 01-.427-.426V1.588c0-.236.191-.427.427-.427h5.67c.112 0 .22.045.3.125l1.582 1.581c.08.08.125.189.125.302v2.257" stroke="#9B9B9B" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.443 7.905v2.64c0 .236.191.427.427.427h2.985c.236 0 .427-.19.427-.426V7.905" stroke="#9B9B9B" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.59 8.626l2.498-2.112a.426.426 0 01.55 0l2.497 2.112" stroke="#9B9B9B" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M9.003 10.972h-1.28v-1.28a.64.64 0 011.28 0v1.28z" stroke="#9B9B9B" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="date" viewBox="0 0 12 12" width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.436 7.894v3.063h3.832V7.894" stroke="#9B9B9B" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.584 8.615l2.768-2.342 2.768 2.342" stroke="#9B9B9B" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M8.99 10.957H7.713V9.679a.639.639 0 111.277 0v1.278z" stroke="#9B9B9B" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.15 8.828H1.752a.426.426 0 01-.426-.426V2.44c0-.236.19-.426.426-.426h7.666c.235 0 .425.19.425.426v3.016M3.454 1.162v2.13M7.713 1.162v2.13M1.325 4.143h8.517" stroke="#9B9B9B" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="invoices" viewBox="0 0 12 13" width="12" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.833 4.491a.25.25 0 01-.163.057.253.253 0 01-.214-.116l-.344-.503a.272.272 0 00-.078-.078.181.181 0 00-.096-.025h-.172V4.3a.24.24 0 01-.064.175.233.233 0 01-.174.065.238.238 0 01-.176-.065.238.238 0 01-.065-.175V2.885c0-.072.02-.128.058-.167.04-.038.095-.058.167-.058h.664c.225 0 .395.05.509.147.113.098.17.24.17.424 0 .141-.039.26-.116.359a.57.57 0 01-.328.197.356.356 0 01.152.058c.043.03.086.075.128.135l.164.235a.246.246 0 01.048.135.175.175 0 01-.07.141zM8.76 3.461H9.1c.107 0 .185-.016.231-.05.047-.033.07-.088.07-.164 0-.077-.023-.133-.07-.168-.046-.034-.124-.051-.231-.051H8.76v.433z" fill="#4A4A4A"/><path d="M11.25 3.604a2.155 2.155 0 11-4.31 0 2.155 2.155 0 014.31 0z" stroke="#4A4A4A"/><path d="M8.85 6.072v4.479s-.08 1.243-1.37 1.243-1.277-1.453-1.277-1.453v-.633H.427v.987s.047.584.44.823c.394.24.543.276 1.278.276H7.48" stroke="#4A4A4A" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.993 4.88h1.173M4.993 6.523h2.308M4.993 8.167h2.308" stroke="#4A4A4A" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M3.694 5.287a.407.407 0 100-.815.407.407 0 000 .815zM3.694 6.93a.407.407 0 100-.814.407.407 0 000 .815zM3.694 8.575a.407.407 0 100-.815.407.407 0 000 .815z" stroke="#4A4A4A" stroke-width=".5"/><path d="M1.908 9.717V2.92h4.803" stroke="#4A4A4A" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="common_file" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.621 21.308h24.557M11.621 29.063h20.68M11.621 13.554h18.095M11.621 36.818h12.925M11.621 44.573h7.755M21.96 60.082H3.866a2.585 2.585 0 01-2.585-2.585V3.214A2.585 2.585 0 013.866.63h34.361c.686 0 1.343.273 1.828.758l9.582 9.582c.485.485.757 1.142.758 1.827v13.682" stroke="#16A8AA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M32.3 41.492v16.005a2.585 2.585 0 002.585 2.585h18.094a2.585 2.585 0 002.585-2.585V41.492" stroke="#16A8AA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M27.13 45.865l15.132-12.803a2.585 2.585 0 013.34 0l15.132 12.803" stroke="#16A8AA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M47.81 60.082h-7.755v-7.755a3.877 3.877 0 117.754 0v7.755z" stroke="#16A8AA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="tab_row" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.104 6.177c0 .575-.467 1.042-1.042 1.042H9.895a1.042 1.042 0 01-1.041-1.042V2.01c0-.575.466-1.041 1.041-1.041h4.167c.575 0 1.042.466 1.042 1.041v4.167zM6.77 6.177c0 .575-.466 1.042-1.041 1.042H1.562A1.042 1.042 0 01.521 6.177V2.01C.52 1.435.987.97 1.562.97H5.73c.575 0 1.042.466 1.042 1.041v4.167zM23.438 6.177c0 .575-.467 1.042-1.042 1.042h-4.167a1.042 1.042 0 01-1.041-1.042V2.01c0-.575.466-1.041 1.041-1.041h4.167c.575 0 1.041.466 1.041 1.041v4.167zM15.104 14.51c0 .576-.467 1.042-1.042 1.042H9.895a1.042 1.042 0 01-1.041-1.041v-4.167c0-.576.466-1.042 1.041-1.042h4.167c.575 0 1.042.466 1.042 1.042v4.167zM6.77 14.51c0 .576-.466 1.042-1.041 1.042H1.562a1.042 1.042 0 01-1.041-1.041v-4.167c0-.576.466-1.042 1.041-1.042H5.73c.575 0 1.042.466 1.042 1.042v4.167zM23.438 14.51c0 .576-.467 1.042-1.042 1.042h-4.167a1.042 1.042 0 01-1.041-1.041v-4.167c0-.576.466-1.042 1.041-1.042h4.167c.575 0 1.041.466 1.041 1.042v4.167zM15.104 22.844c0 .575-.467 1.041-1.042 1.041H9.895a1.042 1.042 0 01-1.041-1.041v-4.167c0-.575.466-1.042 1.041-1.042h4.167c.575 0 1.042.467 1.042 1.042v4.167zM6.77 22.844c0 .575-.466 1.041-1.041 1.041H1.562a1.042 1.042 0 01-1.041-1.041v-4.167c0-.575.466-1.042 1.041-1.042H5.73c.575 0 1.042.467 1.042 1.042v4.167zM23.438 22.844c0 .575-.467 1.041-1.042 1.041h-4.167a1.042 1.042 0 01-1.041-1.041v-4.167c0-.575.466-1.042 1.041-1.042h4.167c.575 0 1.041.467 1.041 1.042v4.167z"/></symbol>
+	<symbol id="tab_list" viewBox="0 0 25 22" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.479 4.177c0 .575-.467 1.042-1.042 1.042H9.895a1.042 1.042 0 01-1.041-1.042V1.052C8.854.477 9.32.01 9.895.01h13.542c.575 0 1.041.467 1.041 1.042v3.125zM24.479 12.51c0 .576-.467 1.042-1.042 1.042H9.895a1.042 1.042 0 01-1.041-1.042V9.385c0-.575.466-1.041 1.041-1.041h13.542c.575 0 1.041.466 1.041 1.041v3.125zM24.479 20.844c0 .575-.467 1.041-1.042 1.041H9.895a1.042 1.042 0 01-1.041-1.041v-3.125c0-.576.466-1.042 1.041-1.042h13.542c.575 0 1.041.466 1.041 1.042v3.125zM5.729 4.177c0 .575-.467 1.042-1.042 1.042H1.562A1.042 1.042 0 01.521 4.177V1.052C.52.477.987.01 1.562.01h3.125c.575 0 1.042.467 1.042 1.042v3.125zM5.729 12.51c0 .576-.467 1.042-1.042 1.042H1.562A1.042 1.042 0 01.521 12.51V9.385c0-.575.466-1.041 1.041-1.041h3.125c.575 0 1.042.466 1.042 1.041v3.125zM5.729 20.844c0 .575-.467 1.041-1.042 1.041H1.562a1.042 1.042 0 01-1.041-1.041v-3.125c0-.576.466-1.042 1.041-1.042h3.125c.575 0 1.042.466 1.042 1.042v3.125z"/></symbol>
+	<symbol id="open_lock" viewBox="0 0 35 47" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x=".875" y="18.933" width="32.583" height="26.833" rx="1.917" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.625 12.225c0-5.822 4.72-10.542 10.542-10.542s10.541 4.72 10.541 10.542v6.708" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M17.167 31.391a1.917 1.917 0 100-3.833 1.917 1.917 0 000 3.833z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.167 31.391v5.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="close_lock" viewBox="0 0 35 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M17.503 30.733a1.917 1.917 0 100-3.833 1.917 1.917 0 000 3.833z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.503 30.733v5.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1.211" y="18.275" width="32.583" height="26.833" rx="1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M6.96 11.567c0-5.822 4.72-10.542 10.543-10.542 5.822 0 10.541 4.72 10.541 10.542v6.708H6.961v-6.708z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="edit" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.1045 2.85745L10.1239 3.83305L8.12787 1.84727L7.37065 2.60066L9.36667 4.58658L4.47094 9.45712L2.47506 7.47154L1.71784 8.22493L3.71372 10.2107L3.22588 10.6961L3.21659 10.6868C3.16249 10.7755 3.07453 10.8401 2.97005 10.8632L1.1088 11.2761C1.08092 11.2823 1.05256 11.2853 1.02455 11.2853C0.922966 11.2853 0.824269 11.2456 0.751107 11.1726C0.657229 11.0795 0.618136 10.9451 0.647043 10.8163L1.06186 8.96497C1.08526 8.86109 1.15037 8.77337 1.23929 8.71969L1.22986 8.7103L9.10836 0.871322C9.22385 0.756622 9.41147 0.756622 9.52696 0.871664L11.1046 2.44097C11.2201 2.55587 11.2201 2.74254 11.1045 2.85745Z"/></symbol>
+	<symbol id="remove" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.0244 8.99454L8.4082 15.5772" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.0244 15.5772L8.4082 8.99454" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="trash" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.76082 4.28534H1.74045C1.18535 4.28534 0.735352 3.83762 0.735352 3.28534V2.28534C0.735352 1.73305 1.18535 1.28534 1.74045 1.28534H12.7965C13.3516 1.28534 13.8016 1.73305 13.8016 2.28534V3.28534C13.8016 3.83762 13.3516 4.28534 12.7965 4.28534H8.77611" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.77628 4.28534H12.2941L11.8579 10.3563C11.8204 10.8807 11.3812 11.2867 10.8528 11.2853H3.68145C3.15307 11.2867 2.71387 10.8807 2.67636 10.3563L2.24316 4.28534L8.77628 4.28534L5.76099 4.28534" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.76095 4.78534V11.2853" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.77658 11.2853V4.78534" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="arrow" viewBox="0 0 13 8" width="13" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M1.677 2.225l.781.624-.78-.624zM2.802 2.1l-.625.78.625-.78zm-1 1.25l-.624.78.624-.78zm2 1.6l.625-.782-.625.781zM5.79 6.54l.64-.768a1.022 1.022 0 00-.015-.014l-.625.781zm.169.107l.43-.903h-.002l-.428.903zm.687 0l-.43-.903.43.903zm.168-.108l-.625-.78-.016.013.641.767zm1.988-1.59l-.625-.78.625.78zm2-1.6l-.625-.78.625.78zm.125-1.124l-.781.624.78-.624zM9.802 2.1l.625.78-.625-.78zm-2 1.6l.625.78-.625-.78zm-1.5 1.2l-.625.78a1 1 0 001.25 0l-.625-.78zm-1.5-1.2l.624-.781-.624.78zm-2.344-.85a.2.2 0 01-.281.03l1.25-1.561a1.8 1.8 0 00-2.53.281l1.561 1.25zm-.031-.282a.2.2 0 01.031.281L.896 1.6a1.8 1.8 0 00.282 2.53l1.249-1.562zm2 1.6l-2-1.6-1.25 1.562 2 1.6 1.25-1.562zm1.988 1.59l-1.988-1.59-1.25 1.562 1.988 1.59 1.25-1.562zm-.028-.014c.015.007.03.016.044.028L5.149 7.307c.118.099.247.18.382.244l.856-1.807zm-.17 0a.198.198 0 01.171 0L5.53 7.551a1.802 1.802 0 001.545 0l-.858-1.807zm-.044.028a.206.206 0 01.044-.028l.858 1.806c.135-.064.262-.145.38-.243L6.173 5.772zm2.004-1.604l-1.988 1.59L7.44 7.32l1.987-1.59-1.249-1.562zm2-1.6l-2 1.6 1.25 1.562 2-1.6-1.25-1.562zm-.031.281a.2.2 0 01.031-.28l1.25 1.561a1.8 1.8 0 00.28-2.53l-1.561 1.25zm.28.032a.2.2 0 01-.28-.032L11.707 1.6a1.8 1.8 0 00-2.53-.281l1.25 1.562zm-2 1.6l2-1.6-1.248-1.562-2 1.6L8.427 4.48zm-1.5 1.2l1.5-1.2-1.248-1.562-1.5 1.2 1.249 1.562zm-2.749-1.2l1.5 1.2 1.25-1.562-1.5-1.2-1.25 1.562zm-2-1.6l2 1.6 1.25-1.562-2-1.6-1.25 1.562z"/></symbol>
+	<symbol id="calendar" width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg"><mask id="a" maskUnits="userSpaceOnUse" x="0" y="0" width="19" height="17"><path fill-rule="evenodd" clip-rule="evenodd" d="M.5 0h17.594v17H.5V0z" fill="#fff"/></mask><g mask="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.013 6.071H15.58v4.858h-2.513c-.694 0-1.257.543-1.257 1.214v2.428H3.013v-8.5zm13.824-4.857h-2.513V0H11.81v1.214H6.783V0H4.27v1.214H1.757C1.063 1.214.5 1.758.5 2.43v13.357c0 .67.563 1.214 1.257 1.214h11.31c.333 0 .653-.128.889-.356l3.77-3.643c.235-.227.368-.536.368-.858V2.429c0-.671-.563-1.215-1.257-1.215z"/></g><path d="M4.56 7.846h2.03v1.962H4.56zM7.943 7.846h2.03v1.962h-2.03zM11.327 7.846h2.03v1.962h-2.03zM4.56 11.115h2.03v1.962H4.56zM7.943 11.115h2.03v1.962h-2.03z"/></symbol>
+	<symbol id="print" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.063 11.062h4.875M4.063 9.437h4.875M2.98 9.437H1.353A1.087 1.087 0 01.271 8.354v-3.25a1.087 1.087 0 011.083-1.083h10.292a1.087 1.087 0 011.083 1.083v3.25a1.087 1.087 0 01-1.083 1.083h-1.625M2.98 2.937V.771h5.192c.144 0 .281.057.383.159l1.307 1.307c.102.102.16.24.16.383v.317" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M10.021 12.688c0 .299-.242.541-.542.541H3.521a.542.542 0 01-.542-.541V7.811h7.042v4.875zM1.896 6.187a.542.542 0 100-1.083.542.542 0 000 1.083z" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.854.77v2.167h2.167" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="close" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.06 10.066L1.567 1.591M10.052 1.582l-8.477 8.493" stroke-width="2" stroke-linecap="round"/></symbol>
+	<symbol id="face" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M24.322 15.877a7.826 7.826 0 01-15.652 0v-2.609a7.826 7.826 0 1115.652 0v2.609z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.235 15.55a.326.326 0 110 .653.326.326 0 010-.652M19.757 15.55a.326.326 0 110 .653.326.326 0 010-.652M18.34 19.025a2.609 2.609 0 01-3.689 0M24.322 13.92s-5.217 0-7.826-3.913C13.887 13.92 8.67 13.92 8.67 13.92M1.496 8.05V4.139A3.913 3.913 0 015.409.225h3.913M31.496 8.05V4.139A3.913 3.913 0 0027.583.225H23.67M1.496 22.398v3.913a3.913 3.913 0 003.913 3.913h3.913M31.496 22.398v3.913a3.913 3.913 0 01-3.913 3.913H23.67" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="file_copyright_user" viewBox="0 0 32 31" width="32" height="31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.034 30.07h11.62c.712 0 1.29-.579 1.29-1.292V8.09A7.714 7.714 0 0023.231.377H7.705c-.713 0-1.29.578-1.29 1.29v9.038" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M24.49.48v5.06c0 .714.577 1.292 1.29 1.292h5.06" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M8.997 30.07a7.746 7.746 0 100-15.492 7.746 7.746 0 000 15.491z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M8.997 24.26a3.227 3.227 0 100-6.455 3.227 3.227 0 000 6.455z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.062 28.294a5.81 5.81 0 019.87 0" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="attachment" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.805 45.493c11.31 0 20.479-9.178 20.479-20.5s-9.169-20.5-20.479-20.5c-11.31 0-20.478 9.178-20.478 20.5s9.168 20.5 20.478 20.5z" fill="#fff"/><path clip-rule="evenodd" d="M24.805 49.28c13.4 0 24.261-10.874 24.261-24.287C49.066 11.58 38.204.706 24.806.706 11.405.706.543 11.58.543 24.993c0 13.413 10.862 24.287 24.261 24.287z" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 5"/><path d="M32.189 21.95V18.47a.87.87 0 00-.869-.87h-8.584a.869.869 0 01-.777-.48l-.823-1.647a.869.869 0 00-.776-.481h-4.676a.87.87 0 00-.868.87v13.043c0 .48.389.87.868.87h6.08" stroke-linecap="round" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M29.583 34.993a5.215 5.215 0 005.212-5.217 5.215 5.215 0 00-5.212-5.218 5.215 5.215 0 00-5.212 5.218 5.215 5.215 0 005.212 5.217z" fill="#fff" stroke-linecap="round" stroke-linejoin="round"/><path d="M29.583 27.167v5.217M32.189 29.776h-5.212" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="folder_add" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.189 7.95V4.47a.87.87 0 00-.869-.87H8.736a.869.869 0 01-.776-.48l-.824-1.647a.869.869 0 00-.777-.481H1.684a.87.87 0 00-.868.87v13.043c0 .48.389.87.868.87h6.08" stroke="#009DA3" stroke-linecap="round" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M15.583 20.993a5.215 5.215 0 005.212-5.217 5.215 5.215 0 00-5.212-5.218 5.215 5.215 0 00-5.212 5.218 5.215 5.215 0 005.212 5.217z" fill="#fff" stroke="#009DA3" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.583 13.167v5.217M18.189 15.776h-5.212" stroke="#009DA3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="contacts" viewBox="0 0 24 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.02 3.493h13.71c.689 0 1.247.56 1.247 1.25v1.25" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M21.47 5.993v-3.75c0-.69-.559-1.25-1.247-1.25H4.02a2.496 2.496 0 00-2.493 2.5c0 1.38 1.116 2.5 2.493 2.5h17.448c.688 0 1.246.56 1.246 1.25v21.25c0 .69-.558 1.25-1.246 1.25H4.021a2.496 2.496 0 01-2.493-2.5V3.493" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.977 23.767s-2.518-1.116-4.278-1.769c-1.154-.43-.99-2.384-.321-3.117a5.363 5.363 0 001.569-4.414 3.757 3.757 0 00-.993-2.913 3.733 3.733 0 00-2.832-1.186 3.734 3.734 0 00-2.833 1.186 3.757 3.757 0 00-.993 2.913 5.363 5.363 0 001.569 4.414c.668.733.832 2.687-.322 3.117-1.76.654-4.276 1.769-4.276 1.769" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="notes" viewBox="0 0 27 32" width="27" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M25.36 6.04c.243.244.38.573.38.917v22.417c0 .716-.581 1.296-1.299 1.296H2.351c-.718 0-1.3-.58-1.3-1.296V2.152c0-.716.582-1.296 1.3-1.296h17.273c.345 0 .675.136.919.38L25.36 6.04z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.6 20.948h15.592M5.6 24.837h15.592M5.6 17.06h15.592M5.6 13.17h15.592M5.6 9.281h9.095M5.6 9.281h9.095M5.6 13.17h15.592M5.6 17.06h15.592M5.6 20.948h15.592M5.6 24.837h15.592" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="map" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.438 21.684H8.201a5 5 0 00-4.507 2.836l-1.322 2.753a2 2 0 001.804 2.866h23.433a2 2 0 001.803-2.866l-1.32-2.753a5 5 0 00-4.508-2.836h-1.237" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.834 2.2a9.51 9.51 0 00-3.941-.85 9.544 9.544 0 00-9.544 9.544c0 5.27 8.766 15.258 9.543 15.258.777 0 9.545-9.987 9.545-15.258 0-2.391-.88-4.577-2.333-6.252M17.217 5.934a4.528 4.528 0 102.699 2.253" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round"/><path d="M6.002 24.734h2.526l1.658 1.17M25.895 24.734h-2.527l-1.657 1.17" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.005 27.651h4.433M11.878 26.192h8.087M22.409 27.651h4.433" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round"/></symbol>
+	<symbol id="folder_check" viewBox="0 0 14 15" width="14" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.309 6.057V3.813a.56.56 0 00-.56-.561H6.203a.561.561 0 01-.501-.31L5.17 1.878a.561.561 0 00-.502-.31H1.65a.561.561 0 00-.56.56v8.416c0 .31.25.56.56.56h3.927" stroke="#ABD856" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M10.626 14.472a3.366 3.366 0 100-6.732 3.366 3.366 0 000 6.732z" fill="#ABD856"/><path d="M12.126 10.127l-1.63 2.173a.421.421 0 01-.634.045l-.841-.842" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="checklist_pen" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.748 6.473l-3.75 3.75-1.875-1.875M9.748 13.348l-3.75 3.75-1.875-1.875" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M12.873 27.1h-10c-.69 0-1.25-.56-1.25-1.25V4.6c0-.69.56-1.25 1.25-1.25h15c.69 0 1.25.56 1.25 1.25v16.25l-6.25 6.25z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.873 27.098v-6.25h6.25" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M22.87 10.848h5.001v13.125h-5V10.848z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M27.873 2.1a2.5 2.5 0 012.5 2.5v10M25.373 26.473v3.125" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M22.871.848h5v10h-5v-10z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M24.123 23.973h2.5v2.5h-2.5zM11.623 9.598h4.375M11.623 15.848h4.375"/></symbol>
+	<symbol id="password_key" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.873 24.6h-8.75a2.5 2.5 0 01-2.5-2.5V3.35a2.5 2.5 0 012.5-2.5h23.75a2.5 2.5 0 012.5 2.5v8.75M1.623 7.1h28.75" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.998 3.662a.312.312 0 110 .625.312.312 0 010-.625M9.748 3.662a.313.313 0 110 .625.313.313 0 010-.625M13.498 3.662a.313.313 0 110 .625.313.313 0 010-.625M14.748 18.35h-8.75a.625.625 0 01-.625-.626v-3.75c0-.345.28-.624.625-.624h18.125" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M21.504 25.513a1.563 1.563 0 11-2.21-2.21 1.563 1.563 0 012.21 2.21z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M24.808 22.652l5.565-5.553v-2.5h-2.5l-5.718 5.402a5 5 0 102.653 2.651v0z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="folder_cash" viewBox="0 0 37 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M18.095 4.724a1.524 1.524 0 01-1.36-.829l-1.443-2.841a1.524 1.524 0 00-1.36-.83H2.519c-.84 0-1.522.672-1.522 1.5v27c0 .829.681 1.5 1.522 1.5h31.956c.84 0 1.522-.671 1.522-1.5v-22.5c0-.828-.681-1.5-1.522-1.5h-16.38z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M21.54 12.975h-2.586a1.975 1.975 0 00-1.909 1.384 1.936 1.936 0 00.808 2.196l2.8 1.839a1.936 1.936 0 01.81 2.192 1.975 1.975 0 01-1.9 1.389h-2.588M20.019 12.975v-1.5M18.497 23.474v-1.5" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+</body>
+</html>

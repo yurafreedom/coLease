@@ -1,0 +1,425 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": ""
+})
+
+@@include('template/page-header.html', {
+	"dashboard": "",
+	"leases": "",
+	"reminders": "",
+	"report": "",
+	"agent": "",
+	"settings": ""
+})
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+		<section class="preview-leases-block">
+			<div class="container">
+				<div class="preview-landlord-block__wrapper">
+					<div class="preview-landlord-block__heading">
+						<div class="landlord-block__title">Lease preview</div>
+						<div class="landlord-block__heading-wrapper">
+							<button type="button" class="btn btn--fenny">
+								<svg width="13" height="13">
+									<use xlink:href="#print"></use>
+								</svg>
+								<span>Export lease</span>
+							</button>
+							<a href="javascript:;" class="btn btn--blue">
+								<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
+								<span>Back</span>
+							</a>
+						</div>
+					</div>
+					<div class="preview-landlord-block__content-block">
+						<div class="preview-leases-block__page-wrapper">
+							<div class="preview-leases-block__page-block">
+								<div class="preview-landlord-block__page-heading">
+									<div class="preview-landlord-block__page-wrapper">
+										<div class="landlord-block__form-title">
+											<svg width="33" height="31">
+												<use xlink:href="#face"></use>
+											</svg>
+											<span>Lease details</span>
+										</div>
+										<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+									</div>
+									<a href="javascript:;" class="btn btn--green">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+										<span>Edit</span>
+									</a>
+								</div>
+								<div class="preview-landlord-block__inner">
+									<div class="preview-leases-block__inner-wrapper">
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Landlord:</div>
+											<div class="preview-landlord-block__option-value">John Doe</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Site Location:</div>
+											<div class="preview-landlord-block__option-value">775 Old Pretoria Main Road, Halfway House, Midrand, South Africa</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Lease type:</div>
+											<div class="preview-landlord-block__option-value">Office</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Square metres of leased premises:</div>
+											<div class="preview-landlord-block__option-value">Etiam efficitur luctus dictum. Donec.</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Commencement date:</div>
+											<div class="preview-landlord-block__option-value">01 Jul 2019</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Expiry date:</div>
+											<div class="preview-landlord-block__option-value">30 Jun 2020</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Lease term:</div>
+											<div class="preview-landlord-block__option-value">11 months</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Renewal option in lease:</div>
+											<div class="preview-landlord-block__option-value">Yes</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Number of months:</div>
+											<div class="preview-landlord-block__option-value">10 Months</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Termination Clause in lease:</div>
+											<div class="preview-landlord-block__option-value">Yes</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Number of months:</div>
+											<div class="preview-landlord-block__option-value">12 Months</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="preview-leases-block__page-block">
+								<div class="preview-landlord-block__page-heading">
+									<div class="preview-landlord-block__page-wrapper">
+										<div class="landlord-block__form-title">
+											<svg width="37" height="31">
+												<use xlink:href="#folder_cash"></use>
+											</svg>
+											<span>Commercials</span>
+										</div>
+										<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+									</div>
+									<a href="javascript:;" class="btn btn--green">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+										<span>Edit</span>
+									</a>
+								</div>
+								<div class="preview-landlord-block__inner">
+									<div class="preview-leases-block__inner-wrapper">
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Electricity:</div>
+											<div class="preview-landlord-block__option-value">Electricity (Landlord - Fixed)</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Other Utility Costs:</div>
+											<div class="preview-landlord-block__option-value">Office</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Annual Escalation Type:</div>
+											<div class="preview-landlord-block__option-value">Fixed Percentage</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Annual Escalation Percentage:</div>
+											<div class="preview-landlord-block__option-value">10%</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Frequency of lease payments:</div>
+											<div class="preview-landlord-block__option-value">Montly</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Deposit Payable:</div>
+											<div class="preview-landlord-block__option-value">Yes</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Deposit Type:</div>
+											<div class="preview-landlord-block__option-value">Landlord (interest bearing)</div>
+										</div>
+										<div class="preview-landlord-block__option">
+											<div class="preview-landlord-block__option-title">Deposit Amount:</div>
+											<div class="preview-landlord-block__option-value">10 500</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="preview-leases-block__rent-block">
+							<div class="preview-leases-block__rent-title">Rent schedule:</div>
+							<div class="preview-landlord-block__table-wrapper">
+								<div class="preview-landlord-block__table-block">
+									<div class="preview-landlord-block__table-heading">
+										<div class="preview-landlord-block__table-heading-type">Type</div>
+										<div class="preview-landlord-block__table-heading-name">Name</div>
+										<div class="preview-landlord-block__table-heading-surname">Surname</div>
+										<div class="preview-landlord-block__table-heading-company">Company</div>
+										<div class="preview-landlord-block__table-heading-email">Email</div>
+										<div class="preview-landlord-block__table-heading-mobile">Mobile</div>
+										<div class="preview-landlord-block__table-heading-landline">Landline</div>
+									</div>
+									<div class="preview-landlord-block__table-inner">
+										<div class="preview-landlord-block__table-card">
+											<div class="preview-landlord-block__table-inner-type">Accounts</div>
+											<div class="preview-landlord-block__table-inner-name">John</div>
+											<div class="preview-landlord-block__table-inner-surname">Doe</div>
+											<div class="preview-landlord-block__table-inner-company">Etiam efficitur luctus</div>
+											<div class="preview-landlord-block__table-inner-email">johndoe@gmail.com</div>
+											<div class="preview-landlord-block__table-inner-mobile">012 345 6789</div>
+											<div class="preview-landlord-block__table-inner-landline">021 345 6789</div>
+										</div>
+										<div class="preview-landlord-block__table-card">
+											<div class="preview-landlord-block__table-inner-type">Accounts</div>
+											<div class="preview-landlord-block__table-inner-name">John</div>
+											<div class="preview-landlord-block__table-inner-surname">Doe</div>
+											<div class="preview-landlord-block__table-inner-company">Etiam efficitur luctus</div>
+											<div class="preview-landlord-block__table-inner-email">johndoe@gmail.com</div>
+											<div class="preview-landlord-block__table-inner-mobile">012 345 6789</div>
+											<div class="preview-landlord-block__table-inner-landline">021 345 6789</div>
+										</div>
+										<div class="preview-landlord-block__table-card">
+											<div class="preview-landlord-block__table-inner-type">Accounts</div>
+											<div class="preview-landlord-block__table-inner-name">John</div>
+											<div class="preview-landlord-block__table-inner-surname">Doe</div>
+											<div class="preview-landlord-block__table-inner-company">Etiam efficitur luctus</div>
+											<div class="preview-landlord-block__table-inner-email">johndoe@gmail.com</div>
+											<div class="preview-landlord-block__table-inner-mobile">012 345 6789</div>
+											<div class="preview-landlord-block__table-inner-landline">021 345 6789</div>
+										</div>
+										<div class="preview-landlord-block__table-card">
+											<div class="preview-landlord-block__table-inner-type">Accounts</div>
+											<div class="preview-landlord-block__table-inner-name">John</div>
+											<div class="preview-landlord-block__table-inner-surname">Doe</div>
+											<div class="preview-landlord-block__table-inner-company">Etiam efficitur luctus</div>
+											<div class="preview-landlord-block__table-inner-email">johndoe@gmail.com</div>
+											<div class="preview-landlord-block__table-inner-mobile">012 345 6789</div>
+											<div class="preview-landlord-block__table-inner-landline">021 345 6789</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="preview-leases-block__page-wrapper">
+							<div class="preview-leases-block__emergency-block">
+								<div class="preview-landlord-block__page-heading">
+									<div class="preview-landlord-block__page-wrapper">
+										<div class="landlord-block__form-title">
+											<svg width="30" height="30">
+												<use xlink:href="#password_key"></use>
+											</svg>
+											<span>Emergency Access</span>
+										</div>
+										<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+									</div>
+									<a href="javascript:;" class="btn btn--green">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+										<span>Edit</span>
+									</a>
+								</div>
+								<div class="preview-leases-block__page-inner-wrapper">
+									<div class="preview-leases-block__inner">
+										<div class="preview-leases-block__inner-title">Emergency Access Details:</div>
+										<div class="preview-leases-block__inner-wrapper">
+											<div class="preview-landlord-block__option">
+												<div class="preview-landlord-block__option-title">Hours of access:</div>
+												<div class="preview-landlord-block__option-value">Select Hours of Access</div>
+											</div>
+											<div class="preview-landlord-block__option">
+												<div class="preview-landlord-block__option-title">Last Updated:</div>
+												<div class="preview-landlord-block__option-value">17 Jan 2020</div>
+											</div>
+											<div class="preview-landlord-block__option">
+												<div class="preview-landlord-block__option-title">Other access information and procedures:</div>
+												<div class="preview-landlord-block__option-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+											</div>
+										</div>
+									</div>
+									<div class="preview-leases-block__inner">
+										<div class="preview-leases-block__inner-title">Emergency Contacts:</div>
+										<div class="preview-leases-block__inner-wrapper">
+											<div class="preview-landlord-block__option">
+												<div class="preview-landlord-block__option-title">Primary Emergency Contact:</div>
+												<div class="preview-landlord-block__option-value">
+													<span>Richard Wallyes </span>
+													<a href="tel:+6374838276">+6374838276</a>
+													<a href="mailto:test@test.com">test@test.com</a>
+												</div>
+											</div>
+											<div class="preview-landlord-block__option">
+												<div class="preview-landlord-block__option-title">Primary Emergency Contact:</div>
+												<div class="preview-landlord-block__option-value">
+													<span>Shmuel Solomon</span>
+													<a href="tel:0835644121">0835644121</a>
+													<a href="mailto:shane@exprop.co.za">shane@exprop.co.za</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="preview-landlord-block__page-block">
+							<div class="preview-landlord-block__page-heading">
+								<div class="preview-landlord-block__page-wrapper">
+									<div class="landlord-block__form-title">
+										<svg width="24" height="31">
+											<use xlink:href="#contacts"></use>
+										</svg>
+										<span>Landlord Contacts</span>
+									</div>
+									<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+								</div>
+								<a href="javascript:;" class="btn btn--green">
+									<svg width="12" height="12">
+										<use xlink:href="#edit"></use>
+									</svg>
+									<span>Edit</span>
+								</a>
+							</div>
+							<div class="preview-landlord-block__table-wrapper">
+								<div class="preview-landlord-block__table-block">
+									<div class="preview-landlord-block__table-heading">
+										<div class="preview-landlord-block__table-heading-type">Type</div>
+										<div class="preview-landlord-block__table-heading-name">Name</div>
+										<div class="preview-landlord-block__table-heading-surname">Surname</div>
+										<div class="preview-landlord-block__table-heading-company">Company</div>
+										<div class="preview-landlord-block__table-heading-email">Email</div>
+										<div class="preview-landlord-block__table-heading-mobile">Mobile</div>
+										<div class="preview-landlord-block__table-heading-landline">Landline</div>
+									</div>
+									<div class="preview-landlord-block__table-inner">
+										<div class="preview-landlord-block__table-card">
+											<div class="preview-landlord-block__table-inner-type">Accounts</div>
+											<div class="preview-landlord-block__table-inner-name">John</div>
+											<div class="preview-landlord-block__table-inner-surname">Doe</div>
+											<div class="preview-landlord-block__table-inner-company">Etiam efficitur luctus</div>
+											<div class="preview-landlord-block__table-inner-email">johndoe@gmail.com</div>
+											<div class="preview-landlord-block__table-inner-mobile">012 345 6789</div>
+											<div class="preview-landlord-block__table-inner-landline">021 345 6789</div>
+										</div>
+										<div class="preview-landlord-block__table-card">
+											<div class="preview-landlord-block__table-inner-type">Accounts</div>
+											<div class="preview-landlord-block__table-inner-name">John</div>
+											<div class="preview-landlord-block__table-inner-surname">Doe</div>
+											<div class="preview-landlord-block__table-inner-company">Etiam efficitur luctus</div>
+											<div class="preview-landlord-block__table-inner-email">johndoe@gmail.com</div>
+											<div class="preview-landlord-block__table-inner-mobile">012 345 6789</div>
+											<div class="preview-landlord-block__table-inner-landline">021 345 6789</div>
+										</div>
+										<div class="preview-landlord-block__table-card">
+											<div class="preview-landlord-block__table-inner-type">Accounts</div>
+											<div class="preview-landlord-block__table-inner-name">John</div>
+											<div class="preview-landlord-block__table-inner-surname">Doe</div>
+											<div class="preview-landlord-block__table-inner-company">Etiam efficitur luctus</div>
+											<div class="preview-landlord-block__table-inner-email">johndoe@gmail.com</div>
+											<div class="preview-landlord-block__table-inner-mobile">012 345 6789</div>
+											<div class="preview-landlord-block__table-inner-landline">021 345 6789</div>
+										</div>
+										<div class="preview-landlord-block__table-card">
+											<div class="preview-landlord-block__table-inner-type">Accounts</div>
+											<div class="preview-landlord-block__table-inner-name">John</div>
+											<div class="preview-landlord-block__table-inner-surname">Doe</div>
+											<div class="preview-landlord-block__table-inner-company">Etiam efficitur luctus</div>
+											<div class="preview-landlord-block__table-inner-email">johndoe@gmail.com</div>
+											<div class="preview-landlord-block__table-inner-mobile">012 345 6789</div>
+											<div class="preview-landlord-block__table-inner-landline">021 345 6789</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="preview-landlord-block__inner-wrapper">
+							<div class="preview-landlord-block__documents-block">
+								<div class="preview-landlord-block__page-heading">
+									<div class="preview-landlord-block__page-wrapper">
+										<div class="landlord-block__form-title">
+											<svg width="32" height="31">
+												<use xlink:href="#file_copyright_user"></use>
+											</svg>
+											<span>Documents</span>
+										</div>
+										<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+									</div>
+									<a href="javascript:;" class="btn btn--green">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+										<span>Edit</span>
+									</a>
+								</div>
+								<div class="preview-landlord-block__documents-wrapper">
+									<a href="javascript:;" class="preview-landlord-block__documents-card">
+										<div class="preview-landlord-block__documents-card-icon-wrapper">
+											<div class="preview-landlord-block__documents-card-icon">
+												<div class="preview-landlord-block__documents-icon-circle">
+													<svg width="14" height="15">
+														<use xlink:href="#folder_check"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="preview-landlord-block__documents-card-inner">
+											<div class="preview-landlord-block__documents-card-title">New Lease Agreement:</div>
+											<div class="preview-landlord-block__documents-card-text">
+												<p>John Doe file name.pdf</p>
+											</div>
+										</div>
+									</a>
+									<div class="preview-landlord-block__documents-status"><b>Status Of Lease Documentation: </b><span> Ground space</span></div>
+								</div>
+							</div>
+							<div class="preview-landlord-block__notes-block">
+								<div class="preview-landlord-block__page-heading">
+									<div class="preview-landlord-block__page-wrapper">
+										<div class="landlord-block__form-title">
+											<svg width="31" height="31">
+												<use xlink:href="#notes"></use>
+											</svg>
+											<span>Notes</span>
+										</div>
+										<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+									</div>
+									<a href="javascript:;" class="btn btn--green">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+										<span>Edit</span>
+									</a>
+								</div>
+								<div class="preview-landlord-block__notes-wrapper">
+									<div class="preview-landlord-block__notes-title">Lease Notes...</div>
+									<div class="preview-landlord-block__notes-card">
+										<p>Contrary to popular belief:</p>
+										<p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+										<p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+@@include('template/scripts.html')
+<script src="js/landlord-block.js"></script>
+@@include('template/sprite.html')
+
+</body>
+</html>
