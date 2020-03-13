@@ -1,0 +1,30 @@
+.add-leases-block {
+	&__details-wrapper {
+		position: relative;
+		display: block;
+	}
+	&__details-form-wrapper {
+		position: relative;
+		display: block;
+	}
+	&__form-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 53px;
+		&:nth-child(1) .btn--green {
+			width: 152px;
+			padding-top: 11px;
+			padding-bottom: 11px;
+		}
+		&:nth-child(2) .btn--green {
+			width: 180px;
+			padding-top: 11px;
+			padding-bottom: 11px;
+		}
+	}
+	&__form-wrapper .page-block__input-wrapper {
+		width: 100%;
+		max-width: 428px;
+	}
+}

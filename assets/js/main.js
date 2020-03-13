@@ -156,3 +156,15 @@ $('.icon--search').hover(function() {
 });
 
 $('input[disabled]').parent().toggleClass('disabled');
+
+$('#leases_search').on('click', function() {
+  $('#leases_back').addClass('active');
+  $('.leases-block__form-wrapper').addClass('disabled');
+  $('.leases-block__form-inner').addClass('active');
+});
+
+$('#leases_back').on('click', function() {
+  $(this).removeClass('active');
+  $('.leases-block__form-wrapper').removeClass('disabled');
+  $('.leases-block__form-inner').removeClass('active');
+});

@@ -179,6 +179,34 @@
 		width: 100%;
 		max-width: 100px;
 	}
+	&__table-heading-id, &__table-inner-id {
+		width: 100%;
+		max-width: 80px;
+	}
+	&__table-heading-names, &__table-inner-names {
+		width: 100%;
+		max-width: 100px;
+	}
+	&__table-heading-address, &__table-inner-address {
+		width: 100%;
+		max-width: 350px;
+	}
+	&__table-heading-start, &__table-inner-start {
+		width: 100%;
+		max-width: 100px;
+	}
+	&__table-heading-expiry, &__table-inner-expiry {
+		width: 100%;
+		max-width: 130px;
+	}
+	&__table-heading-total, &__table-inner-total {
+		width: 100%;
+		max-width: 130px;
+	}
+	&__table-heading-escalation, &__table-inner-escalation {
+		width: 100%;
+		max-width: 100px;
+	}
 	&__inner-wrapper {
 		display: flex;
 		flex-direction: row;

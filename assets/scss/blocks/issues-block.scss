@@ -305,6 +305,26 @@
 				left: 15px;
 			}
 		}
+		&__table-block {
+			overflow-y: auto;
+			&::-webkit-scrollbar-track {
+				background-color: #eef3fb;
+				border-radius: 10px;
+				margin-left: 15px;
+				border: 1px solid $primary-blue;
+			}
+			&::-webkit-scrollbar {
+				height: 6px;
+				background-color: transparent;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: $fenny;
+				border-radius: 10px;
+			}
+		}
+		&__table-heading, &__table-inner {
+			min-width: 1024px;
+		}
 		&__table-heading-name, &__table-inner-name {
 			max-width: 150px;
 		}

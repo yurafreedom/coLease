@@ -10,6 +10,9 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		&.mb0 {
+			margin-bottom: 0;
+		}
 	}
 	&__select-wrapper {
 		position: relative;
