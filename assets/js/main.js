@@ -168,3 +168,5 @@ $('#leases_back').on('click', function() {
   $('.leases-block__form-wrapper').removeClass('disabled');
   $('.leases-block__form-inner').removeClass('active');
 });
+
+$('select[disabled]').parent().addClass('disabled');

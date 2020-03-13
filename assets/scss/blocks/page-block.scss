@@ -51,6 +51,15 @@
 	&__select-wrapper.disabled label {
 		color: $border;
 	}
+	&__input-wrapper.disabled .btn--search {
+		border-color: $border;
+		svg.icon--search {
+			stroke: $border;
+		}
+		svg.icon--calendar {
+			fill: $border;
+		}
+	}
 	&__input-wrapper.active .btn--search {
 		border-color: $primary-blue;
 		svg.icon--search {
@@ -79,8 +88,15 @@
 	&__input-wrapper:hover .btn--search {
 		border-color: $primary-blue;
 	}
-	&__input-wrapper.disabled:hover &__input {
+	&__input-wrapper.disabled:hover &__input,
+	&__input-wrapper.disabled:hover .btn--search {
 		border-color: $border;
+		svg.icon--search {
+			stroke: $border;
+		}
+		svg.icon--calendar {
+			fill: $border;
+		}
 	}
 	&__input-wrapper:hover .btn--search {
 		svg.icon--search {

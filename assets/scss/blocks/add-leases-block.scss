@@ -27,4 +27,371 @@
 		width: 100%;
 		max-width: 428px;
 	}
+	&__form-inner {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+	&__form-inner .page-block__input-wrapper {
+		width: 100%;
+		max-width: 428px;
+		margin-bottom: 56px;
+		margin-right: 0;
+		&:not(:nth-child(3n)) {
+			margin-right: 18px;
+		}
+	}
+	&__form-inner .page-block__input-wrapper .btn--search {
+		svg {
+			fill: $border;
+		}
+	}
+	&__form-inner-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		max-width: 428px;
+	}
+	&__form-inner-wrapper .page-block__input-wrapper {
+		max-width: 205px;
+		width: 100%;
+		margin-bottom: 0;
+		&:not(:nth-child(3n)) {
+			margin-right: 0;
+		}
+	}
+	.landlord-block__details-block {
+		margin-bottom: 84px;
+	}
+	.landlord-block__document-block {
+		margin-bottom: 55px;
+	}
+	.landlord-block__form-heading {
+		margin-bottom: 56px;
+	}
+	.landlord-block__document-form-wrapper {
+		padding-bottom: 38px;
+		margin-bottom: 55px;
+	}
+	&__document-inner-wrapper {
+		position: relative;
+		display: block;
+		padding-bottom: 27px;
+		border-bottom: 1px solid #F9F8FC;
+	}
+	&__document-inner-wrapper .page-block__select-wrapper {
+		margin-bottom: 0;
+	}
+	.input-hidden {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		width: 100%;
+		pointer-events: none;
+	}
+	&__form-wrapper .page-block__input-wrapper {
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+	&__commercials-block {
+		position: relative;
+		display: block;
+		margin-bottom: 84px;
+	}
+	&__commercials-inner {
+		position: relative;
+		display: block;
+	}
+	&__commercials-cost-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-top: 60px;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #F9F8FC;
+	}
+	&__commercials-cost-wrapper .page-block__input-wrapper {
+		width: 100%;
+		max-width: 428px;
+		&:not(:last-child) {
+			margin-right: 17px;
+		}
+	}
+	&__commercials-control-block {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+		margin-bottom: 57px;
+		.btn:not(:last-child) {
+			margin-right: 16px;
+		}
+		.btn--green {
+			width: 130px;
+			padding-top: 11px;
+			padding-bottom: 11px;
+		}
+		.btn--red {
+			width: 123px;
+		}
+	}
+	&__commercials-inner-wrapper {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+	&__commercials-inner-wrapper .page-block__input-wrapper {
+		width: 100%;
+		max-width: 428px;
+		&:not(:last-child) {
+			margin-bottom: 53px;
+		}
+		&:not(:nth-child(3n)) {
+			margin-right: 17px;
+		}
+	}
+	&__page-block {
+		position: relative;
+		display: block;
+		margin-top: 30px;
+	}
+	&__page-title {
+		display: block;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 700;
+		color: $title;
+		margin-bottom: 37px;
+	}
+	&__page-inner {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	&__page-inner .page-block__input-wrapper {
+		width: 100%;
+		max-width: 428px;
+		&:not(:nth-child(3n)) {
+			margin-right: 18px;
+		}
+	}
+}
+
+@include for-size(mobile) {
+	.add-leases-block {
+		&__form-wrapper .page-block__input-wrapper,
+		&__form-inner .page-block__input-wrapper,
+		&__form-inner-wrapper,
+		&__commercials-cost-wrapper .page-block__input-wrapper,
+		&__commercials-inner-wrapper .page-block__input-wrapper,
+		&__page-inner .page-block__input-wrapper {
+			max-width: 100%;
+		}
+		&__form-inner-wrapper {
+			display: block;
+			margin-bottom: 45px;
+		}
+		&__form-inner-wrapper .page-block__input-wrapper {
+			max-width: 100%;
+		}
+		&__form-wrapper {
+			display: block;
+		}
+		&__form-wrapper .page-block__input-wrapper {
+			&:not(:last-child) {
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+		}
+		&__form-wrapper:nth-child(1) .btn--green,
+		&__form-wrapper:nth-child(2) .btn--green {
+			width: 100%;
+		}
+		&__form-inner .page-block__input-wrapper {
+			&:not(:last-child) {
+				margin-bottom: 45px;
+			}
+			&:not(:nth-child(3n)) {
+				margin-right: 0;
+			}
+		}
+		.landlord-block__form-heading {
+			padding-left: 0;
+		}
+		.landlord-block__form-title {
+			margin-right: 20px;
+		}
+		&__commercials-cost-wrapper {
+			display: block;
+		}
+		&__commercials-cost-wrapper .page-block__input-wrapper {
+			&:not(:last-child) {
+				margin-bottom: 45px;
+			}
+			&:not(:nth-child(3n)) {
+				margin-right: 0;
+			}
+		}
+		&__commercials-control-block {
+			display: block;
+			.btn:not(:last-child) {
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+			.btn--green, .btn--red {
+				width: 100%;
+			}
+		}
+		&__commercials-inner-wrapper .page-block__input-wrapper {
+			&:not(:last-child) {
+				margin-bottom: 45px;
+			}
+			&:not(:nth-child(3n)) {
+				margin-right: 0;
+			}
+		}
+		&__page-inner {
+			display: block;
+		}
+		&__page-inner .page-block__input-wrapper {
+			&:not(:last-child) {
+				margin-bottom: 45px;
+			}
+			&:not(:nth-child(3n)) {
+				margin-right: 0;
+			}
+		}
+		.landlord-block__details-block {
+			margin-bottom: 40px;
+		}
+	}
+}
+
+@include for-size(tablet) {
+	.add-leases-block {
+		&__form-wrapper .page-block__input-wrapper,
+		&__form-inner .page-block__input-wrapper,
+		&__commercials-inner-wrapper .page-block__input-wrapper {
+			max-width: 300px;
+		}
+		&__form-inner-wrapper {
+			max-width: 350px;
+		}
+		&__form-inner-wrapper .page-block__input-wrapper {
+			max-width: 170px;
+		}
+		&__form-inner .page-block__input-wrapper {
+			&:not(:nth-child(3n)) {
+				margin-right: 0;
+			}
+			&:not(:nth-child(2n)) {
+				margin-right: 18px;
+			}
+		}
+		&__commercials-cost-wrapper {
+			display: block;
+		}
+		&__commercials-cost-wrapper .page-block__input-wrapper {
+			max-width: 100%;
+			&:not(:last-child) {
+				margin-right: 0;
+				margin-bottom: 45px;
+			}
+		}
+		&__commercials-inner-wrapper .page-block__input-wrapper {
+			&:not(:nth-child(3n)) {
+				margin-right: 0;
+			}
+			&:not(:nth-child(2n)) {
+				margin-right: 18px;
+			}
+		}
+		&__page-inner {
+			display: block;
+		}
+		&__page-inner .page-block__input-wrapper {
+			max-width: 100%;
+			&:not(:last-child) {
+				margin-bottom: 45px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+	.add-leases-block {
+		&__form-wrapper .page-block__input-wrapper,
+		&__form-inner .page-block__input-wrapper,
+		&__commercials-inner-wrapper .page-block__input-wrapper {
+			max-width: 300px;
+		}
+		&__form-inner-wrapper {
+			max-width: 460px;
+		}
+		&__form-inner-wrapper .page-block__input-wrapper {
+			max-width: 250px;
+		}
+		&__form-inner .page-block__input-wrapper {
+			&:not(:nth-child(2n)) {
+				margin-right: 0;
+			}
+			&:not(:nth-child(3n)) {
+				margin-right: 18px;
+			}
+		}
+		&__commercials-cost-wrapper {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+		}
+		&__commercials-cost-wrapper .page-block__input-wrapper {
+			max-width: 300px;
+			&:not(:last-child) {
+				margin-right: 18px;
+				margin-bottom: 0;
+			}
+		}
+		&__commercials-inner-wrapper .page-block__input-wrapper {
+			&:not(:nth-child(2n)) {
+				margin-right: 0;
+			}
+			&:not(:nth-child(3n)) {
+				margin-right: 18px;
+			}
+		}
+		&__page-inner {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+		}
+		&__page-inner .page-block__input-wrapper {
+			max-width: 100%;
+			&:not(:last-child) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+@include for-size(desktop) {
+	.add-leases-block {
+		&__form-wrapper .page-block__input-wrapper,
+		&__form-inner .page-block__input-wrapper,
+		&__form-inner-wrapper,
+		&__commercials-cost-wrapper .page-block__input-wrapper,
+		&__commercials-inner-wrapper .page-block__input-wrapper,
+		&__page-inner .page-block__input-wrapper {
+			max-width: 350px;
+		}
+		&__form-inner-wrapper .page-block__input-wrapper {
+			max-width: 170px;
+		}
+	}
 }

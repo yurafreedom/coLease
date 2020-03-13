@@ -184,7 +184,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="landlord-block">
+		<section class="add-leases-block">
 			<div class="container">
 				<div class="landlord-block__wrapper">
 					<div class="landlord-block__heading">
@@ -243,72 +243,269 @@
 											<span>Add New landlord</span>
 										</button>
 									</div>
-									<div class="page-block__input-wrapper">
-										<label for="leases_type" class="page-block__label">Lease type</label>
-										<select id="leases_type" class="js-example-basic-single">
-											<option value="1">Please select lease type...</option>
-											<option value="2">Please select lease type...</option>
-											<option value="3">Please select lease type...</option>
-											<option value="4">Please select lease type...</option>
-											<option value="5">Please select lease type...</option>
-										</select>
-									</div>
-									<div class="page-block__input-wrapper">
-										<label for="leases_type" class="page-block__label">Square metres of leased premises</label>
-										<select id="leases_type" class="js-example-basic-single">
-											<option value="1">SQM of leased premises...</option>
-											<option value="2">SQM of leased premises...</option>
-											<option value="3">SQM of leased premises...</option>
-											<option value="4">SQM of leased premises...</option>
-											<option value="5">SQM of leased premises...</option>
-										</select>
-									</div>
-									<div class="page-block__input-wrapper">
-										<label for="leases_datepicker_3" class="page-block__label">Commencement date</label>
-										<input type="text" class="text-input page-block__input" id="leases_datepicker_3" placeholder="Select date...">
-										<button type="button" id="button_datepicker_6"><svg width="19" height="17"><use xlink:href="#calendar"></use></svg></button>
-									</div>
-									<div class="page-block__input-wrapper">
-										<label for="leases_datepicker_4" class="page-block__label">Expiry date</label>
-										<input type="text" class="text-input page-block__input" id="leases_datepicker_4" placeholder="Select date...">
-										<button type="button" id="button_datepicker_7"><svg width="19" height="17"><use xlink:href="#calendar"></use></svg></button>
+									<div class="add-leases-block__form-inner">
+										<div class="page-block__input-wrapper">
+											<label for="leases_type" class="page-block__label">Lease type</label>
+											<select id="leases_type" class="js-example-basic-single">
+												<option value="1">Please select lease type...</option>
+												<option value="2">Please select lease type...</option>
+												<option value="3">Please select lease type...</option>
+												<option value="4">Please select lease type...</option>
+												<option value="5">Please select lease type...</option>
+											</select>
+										</div>
+										<div class="page-block__input-wrapper">
+											<label for="leases_metres" class="page-block__label">Square metres of leased premises</label>
+											<select id="leases_metres" class="js-example-basic-single">
+												<option value="1">SQM of leased premises...</option>
+												<option value="2">SQM of leased premises...</option>
+												<option value="3">SQM of leased premises...</option>
+												<option value="4">SQM of leased premises...</option>
+												<option value="5">SQM of leased premises...</option>
+											</select>
+										</div>
+										<div class="page-block__input-wrapper">
+											<label for="leases_datepicker_3" class="page-block__label">Commencement date</label>
+											<input type="text" class="text-input page-block__input" id="leases_datepicker_3" placeholder="Select date...">
+											<button type="button" class="btn btn--search" id="button_datepicker_6">
+												<svg width="19" height="17" class="icon--calendar">
+													<use xlink:href="#calendar"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="page-block__input-wrapper">
+											<label for="leases_datepicker_4" class="page-block__label">Expiry date</label>
+											<input type="text" class="text-input page-block__input" id="leases_datepicker_4" placeholder="Select date...">
+											<button type="button" class="btn btn--search" id="button_datepicker_7">
+												<svg width="19" height="17" class="icon--calendar">
+													<use xlink:href="#calendar"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="page-block__input-wrapper">
+											<label for="leases_term" class="page-block__label">Lease term</label>
+											<select id="leases_term" class="js-example-basic-single">
+												<option value="1">Number of months...</option>
+												<option value="2">Number of months...</option>
+												<option value="3">Number of months...</option>
+												<option value="4">Number of months...</option>
+												<option value="5">Number of months...</option>
+											</select>
+										</div>
+										<div class="add-leases-block__form-inner-wrapper">
+											<div class="page-block__input-wrapper">
+												<label for="leases_option" class="page-block__label">Renewal option in lease</label>
+												<select id="leases_option" class="js-example-basic-single">
+													<option value="1">Yes</option>
+													<option value="2">Yes</option>
+													<option value="3">Yes</option>
+													<option value="4">Yes</option>
+													<option value="5">Yes</option>
+												</select>
+											</div>
+											<div class="page-block__input-wrapper">
+												<label for="leases_months" class="page-block__label">Select number of months</label>
+												<select id="leases_months" class="js-example-basic-single">
+													<option value="1">Select</option>
+													<option value="2">Select</option>
+													<option value="3">Select</option>
+													<option value="4">Select</option>
+													<option value="5">Select</option>
+												</select>
+											</div>
+										</div>
+										<div class="add-leases-block__form-inner-wrapper">
+											<div class="page-block__input-wrapper">
+												<label for="leases_clause" class="page-block__label">Termination Clause in lease</label>
+												<select id="leases_clause" class="js-example-basic-single">
+													<option value="1">Select</option>
+													<option value="2">Select</option>
+													<option value="3">Select</option>
+													<option value="4">Select</option>
+													<option value="5">Select</option>
+												</select>
+											</div>
+											<div class="page-block__input-wrapper">
+												<label for="leases_number" class="page-block__label">Select number of months</label>
+												<select id="leases_number" class="js-example-basic-single" disabled>
+													<option value="1">Select</option>
+													<option value="2">Select</option>
+													<option value="3">Select</option>
+													<option value="4">Select</option>
+													<option value="5">Select</option>
+												</select>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="landlord-block__details-form-title">Bank Account Details</div>
-								<div class="landlord-block__details-form-wrapper">
+							</div>
+						</div>
+						<div class="add-leases-block__commercials-block">
+							<div class="landlord-block__form-heading">
+								<div class="landlord-block__form-title">
+									<svg width="37" height="31">
+										<use xlink:href="#folder_cash"></use>
+									</svg>
+									<span>Commercials</span>
+								</div>
+								<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+							</div>
+							<div class="add-leases-block__commercials-inner">
+								<div class="add-leases-block__commercials-cost-wrapper">
 									<div class="page-block__input-wrapper">
-										<label for="details_account_holder" class="page-block__label">Account Holder</label>
-										<input type="text" id="details_account_holder" name="details_account_holder" class="text-input page-block__input" placeholder="Account Holder..." required>
-									</div>
-									<div class="page-block__input-wrapper">
-										<label for="details_bank_name" class="page-block__label">Bank Name</label>
-										<input type="text" id="details_bank_name" name="details_bank_name" class="text-input page-block__input" placeholder="Bank Name..." required>
-									</div>
-									<div class="page-block__input-wrapper">
-										<label for="details_branch_name" class="page-block__label">Branch Name</label>
-										<input type="text" id="details_branch_name" name="details__branch_name" class="text-input page-block__input" placeholder="Branch Name..." required>
-									</div>
-									<div class="page-block__input-wrapper">
-										<label for="details_bank_name" class="page-block__label">Branch Code</label>
-										<input type="text" id="details_branch_code" name="details__branch_code" class="text-input page-block__input" placeholder="Branch Code..." required>
-									</div>
-									<div class="page-block__input-wrapper">
-										<label for="details_account_type" class="page-block__label">Account Type</label>
-										<input type="text" id="details_account_type" name="details_account_type" class="text-input page-block__input" placeholder="Account Type..." required>
-									</div>
-									<div class="page-block__select-wrapper">
-										<label for="select_register" class="page-block__label">VAT Register</label>
-										<select class="js-example-basic-single">
-											<option value="1">Select...</option>
-											<option value="2">Select...</option>
-											<option value="3">Select...</option>
-											<option value="4">Select...</option>
-											<option value="5">Select...</option>
+										<label for="leases_monthly_cost" class="page-block__label">Monthly Rental Costs</label>
+										<select id="leases_monthly_cost" class="js-example-basic-single">
+											<option value="1">Select a Monthly Rental Costs</option>
+											<option value="2">Select a Monthly Rental Costs</option>
+											<option value="3">Select a Monthly Rental Costs</option>
+											<option value="4">Select a Monthly Rental Costs</option>
+											<option value="5">Select a Monthly Rental Costs</option>
 										</select>
 									</div>
 									<div class="page-block__input-wrapper">
-										<label for="details_vat_register" class="page-block__label">VAT Register Number</label>
-										<input type="text" id="details_vat_register" name="details_vat_register" class="text-input page-block__input" placeholder="VAT Register Number..." disabled>
+										<label for="leases_rental_amount" class="page-block__label">Rental Amount</label>
+										<select id="leases_rental_amount" class="js-example-basic-single" disabled>
+											<option value="1">Rental Amount</option>
+											<option value="2">Rental Amount</option>
+											<option value="3">Rental Amount</option>
+											<option value="4">Rental Amount</option>
+											<option value="5">Rental Amount</option>
+										</select>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="leases_start_date" class="page-block__label">Rental Cost Starting Date</label>
+										<select id="leases_start_date" class="js-example-basic-single" disabled>
+											<option value="1">Select a Frequency of lease payments</option>
+											<option value="2">Select a Frequency of lease payments</option>
+											<option value="3">Select a Frequency of lease payments</option>
+											<option value="4">Select a Frequency of lease payments</option>
+											<option value="5">Select a Frequency of lease payments</option>
+										</select>
+									</div>
+								</div>
+								<div class="add-leases-block__commercials-control-block">
+									<a href="javascript:;" class="btn btn--green">
+										<svg width="12" height="12">
+											<use xlink:href="#plus"></use>
+										</svg>
+										<span>Add More</span>
+									</a>
+									<a href="javascript:;" class="btn btn--red">
+										<svg width="24" height="24">
+											<use xlink:href="#remove"></use>
+										</svg>
+										<span>Remove</span>
+									</a>
+								</div>
+								<div class="add-leases-block__commercials-inner-wrapper">
+									<div class="page-block__input-wrapper">
+										<label for="leases_electricity" class="page-block__label">Electricity</label>
+										<select id="leases_electricity" class="js-example-basic-single">
+											<option value="1">Select Electricity...</option>
+											<option value="2">Select Electricity...</option>
+											<option value="3">Select Electricity...</option>
+											<option value="4">Select Electricity...</option>
+											<option value="5">Select Electricity...</option>
+										</select>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="leases_fixed_amount" class="page-block__label">Electricity Fixed Amount</label>
+										<select id="leases_fixed_amount" class="js-example-basic-single">
+											<option value="1">Select Electricity...</option>
+											<option value="2">Select Electricity...</option>
+											<option value="3">Select Electricity...</option>
+											<option value="4">Select Electricity...</option>
+											<option value="5">Select Electricity...</option>
+										</select>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="leases_utility_cost" class="page-block__label">Other Utility Costs</label>
+										<select id="leases_utility_cost" class="js-example-basic-single">
+											<option value="1">Select Electricity...</option>
+											<option value="2">Select Electricity...</option>
+											<option value="3">Select Electricity...</option>
+											<option value="4">Select Electricity...</option>
+											<option value="5">Select Electricity...</option>
+										</select>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="leases_datepicker_5" class="page-block__label">Rental Cost Starting Date</label>
+										<input type="text" class="text-input page-block__input" id="leases_datepicker_5" placeholder="Select date..." disabled>
+										<button type="button" class="btn btn--search" id="button_datepicker_8">
+											<svg width="19" height="17" class="icon--calendar">
+												<use xlink:href="#calendar"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="add-leases-block__page-block">
+									<div class="add-leases-block__page-title">Escalation:</div>
+									<div class="add-leases-block__page-inner">
+										<div class="page-block__input-wrapper">
+											<label for="leases_escalation_type" class="page-block__label">Annual Escalation Type</label>
+											<select id="leases_escalation_type" class="js-example-basic-single">
+												<option value="1">Select Annual Escalation Type...</option>
+												<option value="2">Select Annual Escalation Type...</option>
+												<option value="3">Select Annual Escalation Type...</option>
+												<option value="4">Select Annual Escalation Type...</option>
+												<option value="5">Select Annual Escalation Type...</option>
+											</select>
+										</div>
+										<div class="page-block__input-wrapper">
+											<label for="leases_escalation_percentage" class="page-block__label">Annual Escalation Percentage</label>
+											<select id="leases_escalation_percentage" class="js-example-basic-single" disabled>
+												<option value="1">Annual Escalation Percentage...</option>
+												<option value="2">Annual Escalation Percentage...</option>
+												<option value="3">Annual Escalation Percentage...</option>
+												<option value="4">Annual Escalation Percentage...</option>
+												<option value="5">Annual Escalation Percentage...</option>
+											</select>
+										</div>
+										<div class="page-block__input-wrapper">
+											<label for="leases_payments" class="page-block__label">Frequency of lease payments</label>
+											<select id="leases_payments" class="js-example-basic-single">
+												<option value="1">Select a Frequency of lease payments...</option>
+												<option value="2">Select a Frequency of lease payments...</option>
+												<option value="3">Select a Frequency of lease payments...</option>
+												<option value="4">Select a Frequency of lease payments...</option>
+												<option value="5">Select a Frequency of lease payments...</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="add-leases-block__page-block">
+									<div class="add-leases-block__page-title">Deposit:</div>
+									<div class="add-leases-block__page-inner">
+										<div class="page-block__input-wrapper">
+											<label for="leases_deposit_payable" class="page-block__label">Deposit Payable</label>
+											<select id="leases_deposit_payable" class="js-example-basic-single">
+												<option value="1">Select...</option>
+												<option value="2">Select...</option>
+												<option value="3">Select...</option>
+												<option value="4">Select...</option>
+												<option value="5">Select...</option>
+											</select>
+										</div>
+										<div class="page-block__input-wrapper">
+											<label for="leases_deposit_type" class="page-block__label">Deposit Type</label>
+											<select id="leases_deposit_type" class="js-example-basic-single" disabled>
+												<option value="1">Select Deposit Type...</option>
+												<option value="2">Select Deposit Type...</option>
+												<option value="3">Select Deposit Type...</option>
+												<option value="4">Select Deposit Type...</option>
+												<option value="5">Select Deposit Type...</option>
+											</select>
+										</div>
+										<div class="page-block__input-wrapper">
+											<label for="leases_deposit_amount" class="page-block__label">Deposit Amount</label>
+											<select id="leases_deposit_amount" class="js-example-basic-single" disabled>
+												<option value="1">Deposit Amount...</option>
+												<option value="2">Deposit Amount...</option>
+												<option value="3">Deposit Amount...</option>
+												<option value="4">Deposit Amount...</option>
+												<option value="5">Deposit Amount...</option>
+											</select>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -344,13 +541,13 @@
 												</svg>
 											</div>
 										</a>
-										<input id="file_browse" class="input-hidden" type="file">
-										<div class="landlord-block__attachment-title">Drag & drop or <label for="file_browse">Browse</label></div>
+										<input id="leases_browse" class="input-hidden" type="file">
+										<div class="landlord-block__attachment-title">Drag & drop or <label for="leases_browse">Browse</label></div>
 									</div>
 									<div class="landlord-block__type-block">
 										<div class="page-block__select-wrapper">
-											<label for="select_type" class="page-block__label">Type</label>
-											<select id="select_type" class="js-example-basic-single">
+											<label for="leases_attachment_type" class="page-block__label">Type</label>
+											<select id="leases_attachment_type" class="js-example-basic-single">
 												<option value="1">Select a Document Type...</option>
 												<option value="2">Select a Document Type...</option>
 												<option value="3">Select a Document Type...</option>
@@ -374,66 +571,17 @@
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="landlord-block__contacts-block">
-							<div class="landlord-block__form-heading">
-								<div class="landlord-block__form-title">
-									<svg width="24" height="31">
-										<use xlink:href="#contacts"></use>
-									</svg>
-									<span>Contacts</span>
-								</div>
-								<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
-							</div>
-							<div class="landlord-block__contacts-wrapper">
-								<div class="page-block__select-wrapper">
-									<label class="page-block__label">Type</label>
-									<select class="js-example-basic-single">
-										<option value="1">Select a User...</option>
-										<option value="2">Select a User...</option>
-										<option value="3">Select a User...</option>
-										<option value="4">Select a User...</option>
-										<option value="5">Select a User...</option>
-									</select>
-								</div>
-								<div class="page-block__input-wrapper">
-									<label for="contacts_name" class="page-block__label">Name</label>
-									<input type="text" id="contacts_name" name="contacts_name" class="text-input page-block__input" placeholder="Name...">
-								</div>
-								<div class="page-block__input-wrapper">
-									<label for="contacts_surname" class="page-block__label">Surname</label>
-									<input type="text" id="contacts_surname" name="contacts_surname" class="text-input page-block__input" placeholder="Surname...">
-								</div>
-								<div class="page-block__input-wrapper">
-									<label for="contacts_company" class="page-block__label">Company</label>
-									<input type="text" id="contacts_company" name="contacts_company" class="text-input page-block__input" placeholder="Company...">
-								</div>
-								<div class="page-block__input-wrapper">
-									<label for="contacts_email" class="page-block__label">Email</label>
-									<input type="text" id="contacts_email" name="contacts_email" class="text-input page-block__input" placeholder="Email...">
-								</div>
-								<div class="page-block__input-wrapper">
-									<label for="contacts_mobile" class="page-block__label">Mobile</label>
-									<input type="text" id="contacts_mobile" name="contacts_mobile" class="text-input page-block__input" placeholder="Mobile...">
-								</div>
-								<div class="page-block__input-wrapper mb-0">
-									<label for="contacts_landline" class="page-block__label">Landline</label>
-									<input type="text" id="contacts_landline" name="contacts_landline" class="text-input page-block__input" placeholder="Landline...">
-								</div>
-								<div class="landlord-block__contacts-btn-wrapper">
-									<a href="javascript:;" class="btn btn--green">
-										<svg width="12" height="12">
-											<use xlink:href="#plus"></use>
-										</svg>
-										<span>Add Content</span>
-									</a>
-									<a href="javascript:;" class="btn btn--red">
-										<svg width="24" height="24">
-											<use xlink:href="#remove"></use>
-										</svg>
-										<span>Remove Contact</span>
-									</a>
+								<div class="add-leases-block__document-inner-wrapper">
+									<div class="page-block__select-wrapper">
+										<label for="select_type" class="page-block__label">Status Of Lease Documentation</label>
+										<select id="select_type" class="js-example-basic-single">
+											<option value="1">Select a Status Of Lease Documentation...</option>
+											<option value="2">Select a Status Of Lease Documentation...</option>
+											<option value="3">Select a Status Of Lease Documentation...</option>
+											<option value="4">Select a Status Of Lease Documentation...</option>
+											<option value="5">Select a Status Of Lease Documentation...</option>
+										</select>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -478,7 +626,7 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/plugins.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/landlord-block.js"></script>
+<script src="js/add-leases-block.js"></script>
 <svg style="display:none;">
 	<symbol id="search" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M11.063 16.02a7.083 7.083 0 110-14.166 7.083 7.083 0 010 14.167z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.855 18.146l4.2-4.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 	<symbol id="synchronize_clock" viewBox="0 0 51 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.65 11.2v12.5h11.116M.861 15.731l6.67 10.227 7.78-9.09" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.651 44.157c11.665 0 21.12-9.666 21.12-21.59 0-11.923-9.455-21.59-21.12-21.59-11.664 0-21.12 9.667-21.12 21.59v3.395" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
@@ -521,6 +669,7 @@
 	<symbol id="folder_check" viewBox="0 0 14 15" width="14" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.309 6.057V3.813a.56.56 0 00-.56-.561H6.203a.561.561 0 01-.501-.31L5.17 1.878a.561.561 0 00-.502-.31H1.65a.561.561 0 00-.56.56v8.416c0 .31.25.56.56.56h3.927" stroke="#ABD856" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M10.626 14.472a3.366 3.366 0 100-6.732 3.366 3.366 0 000 6.732z" fill="#ABD856"/><path d="M12.126 10.127l-1.63 2.173a.421.421 0 01-.634.045l-.841-.842" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 	<symbol id="checklist_pen" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.748 6.473l-3.75 3.75-1.875-1.875M9.748 13.348l-3.75 3.75-1.875-1.875" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M12.873 27.1h-10c-.69 0-1.25-.56-1.25-1.25V4.6c0-.69.56-1.25 1.25-1.25h15c.69 0 1.25.56 1.25 1.25v16.25l-6.25 6.25z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.873 27.098v-6.25h6.25" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M22.87 10.848h5.001v13.125h-5V10.848z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M27.873 2.1a2.5 2.5 0 012.5 2.5v10M25.373 26.473v3.125" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M22.871.848h5v10h-5v-10z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M24.123 23.973h2.5v2.5h-2.5zM11.623 9.598h4.375M11.623 15.848h4.375"/></symbol>
 	<symbol id="password_key" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.873 24.6h-8.75a2.5 2.5 0 01-2.5-2.5V3.35a2.5 2.5 0 012.5-2.5h23.75a2.5 2.5 0 012.5 2.5v8.75M1.623 7.1h28.75" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.998 3.662a.312.312 0 110 .625.312.312 0 010-.625M9.748 3.662a.313.313 0 110 .625.313.313 0 010-.625M13.498 3.662a.313.313 0 110 .625.313.313 0 010-.625M14.748 18.35h-8.75a.625.625 0 01-.625-.626v-3.75c0-.345.28-.624.625-.624h18.125" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M21.504 25.513a1.563 1.563 0 11-2.21-2.21 1.563 1.563 0 012.21 2.21z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path clip-rule="evenodd" d="M24.808 22.652l5.565-5.553v-2.5h-2.5l-5.718 5.402a5 5 0 102.653 2.651v0z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+	<symbol id="folder_cash" viewBox="0 0 37 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M18.095 4.724a1.524 1.524 0 01-1.36-.829l-1.443-2.841a1.524 1.524 0 00-1.36-.83H2.519c-.84 0-1.522.672-1.522 1.5v27c0 .829.681 1.5 1.522 1.5h31.956c.84 0 1.522-.671 1.522-1.5v-22.5c0-.828-.681-1.5-1.522-1.5h-16.38z" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M21.54 12.975h-2.586a1.975 1.975 0 00-1.909 1.384 1.936 1.936 0 00.808 2.196l2.8 1.839a1.936 1.936 0 01.81 2.192 1.975 1.975 0 01-1.9 1.389h-2.588M20.019 12.975v-1.5M18.497 23.474v-1.5" stroke="#53C7CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </svg>
 
 </body>

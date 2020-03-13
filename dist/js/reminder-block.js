@@ -15,15 +15,6 @@ $.fn.datepicker.language['en'] = {
   firstDay: 0
 };
 
-// $('.reminder_calendar').datepicker({
-//   autoClose: true,
-//   language: 'en',
-// });
-
-// $(document).on('click', '.reminder_calendar_link', function() {
-//   $(this).find('.reminder_calendar').data('datepicker').show();
-// });
-
 var reminderDatepicker1 = $('#reminder_calendar_1').datepicker().data('datepicker');
 var reminderDatepicker2 = $('#reminder_calendar_2').datepicker().data('datepicker');
 var reminderDatepicker3 = $('#reminder_calendar_3').datepicker().data('datepicker');
