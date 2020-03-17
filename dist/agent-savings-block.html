@@ -40,7 +40,7 @@
 							<span>Dashboard</span>
 						</a>
 					</li>
-					<li class="active">
+					<li >
 						<a href="javascript:;">
 							<div class="page-header__nav-link-wrapper">
 								<img src="img/keys-gray.svg" alt="">
@@ -66,7 +66,7 @@
 							<span>Report</span>
 						</a>
 					</li>
-					<li >
+					<li class="active">
 						<a href="javascript:;">
 							<svg width="30" height="29">
 								<use xlink:href="#agent"></use>
@@ -97,7 +97,7 @@
 							<span>Dashboard</span>
 						</a>
 					</li>
-					<li class="active">
+					<li >
 						<a href="javascript:;">
 							<div class="page-header__nav-link-wrapper">
 								<img src="img/keys-gray.svg" alt="">
@@ -123,7 +123,7 @@
 							<span>Report</span>
 						</a>
 					</li>
-					<li >
+					<li class="active">
 						<a href="javascript:;">
 							<svg width="30" height="29">
 								<use xlink:href="#agent"></use>
@@ -172,76 +172,182 @@
 				<div class="nav-block__wrapper">
 					<div class="nav-block__list">
 						<ul>
-							<li><a href="javascript:;">Leases</a></li>
-							<li><a href="javascript:;">Sites</a></li>
-							<li><a href="javascript:;">Landlords</a></li>
-							<li><a href="javascript:;">Financial</a></li>
-							<li class="active"><a href="javascript:;">Issues</a></li>
-							<li><a href="javascript:;">File Explorer</a></li>
+							<li><a href="javascript:;">Agent Dashboard</a></li>
+							<li class="active"><a href="javascript:;">Agent Savings</a></li>
+							<li><a href="javascript:;">Agent Billing</a></li>
+							<li><a href="javascript:;">Agent Users</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="issue-block">
+		<section class="agent-block">
 			<div class="container">
-				<div class="issue-block__content-block">
-					<div class="issue-block__heading">
-						<div class="issue-block__title">Add Issue</div>
-						<a href="javascript:;" class="btn btn--blue">
-							<svg width="6" height="13">
-								<use xlink:href="#manager_arrow"></use>
-							</svg>
-							<span>Back</span>
-						</a>
+				<div class="agent-block__wrapper">
+					<div class="agent-block__heading">
+						<div class="agent-block__title">Agent Savings</div>
 					</div>
-					<form class="issue-block__form">
-						<div class="issue-block__form-wrapper">
-							<div class="page-block__select-wrapper">
-								<label for="select_site" class="issue-block__label">Site</label>
-								<select id="select_site" class="js-example-basic-single">
-									<option value="1">Select a Site</option>
-									<option value="2">Select a Site</option>
-									<option value="3">Select a Site</option>
-									<option value="4">Select a Site</option>
-									<option value="5">Select a Site</option>
-								</select>
+					<div class="agent-block__statistic-block">
+						<div class="agent-block__statistic-card">
+							<div class="agent-block__statistic-title">Before EXPROP</div>
+							<div class="agent-block__statistic-card-option">
+								<div class="agent-block__statistic-card-heading">
+									<div class="agent-block__statistic-card-icon">
+										<img src="img/agent-calculator.svg" alt="">
+									</div>
+									<div class="agent-block__statistic-card-title">Average Lease Cost Before EXPROP</div>
+								</div>
+								<div class="agent-block__statistic-card-value">0%</div>
 							</div>
-							<a href="javascript:;" class="btn btn--green">
-								<svg width="15" height="14">
-									<use xlink:href="#plus"></use>
-								</svg>
-								<span>Add New Site</span>
-							</a>
-						</div>
-						<div class="issue-block__form-wrapper">
-							<div class="page-block__select-wrapper">
-								<label for="select_type" class="issue-block__label">Issue Type</label>
-								<select id="select_type" class="js-example-basic-single">
-									<option value="1">Select a Issue Type</option>
-									<option value="2">Select a Issue Type</option>
-									<option value="3">Select a Issue Type</option>
-									<option value="4">Select a Issue Type</option>
-									<option value="5">Select a Issue Type</option>
-								</select>
-							</div>
-							<div class="page-block__select-wrapper">
-								<label for="select_status" class="issue-block__label">Status</label>
-								<select id="select_status" class="js-example-basic-single">
-									<option value="1">Open</option>
-									<option value="2">Select Open</option>
-									<option value="3">Select Open</option>
-									<option value="4">Select Open</option>
-									<option value="5">Select Open</option>
-								</select>
+							<div class="agent-block__statistic-card-option">
+								<div class="agent-block__statistic-card-heading">
+									<div class="agent-block__statistic-card-icon">
+										<svg width="29" height="33">
+											<use xlink:href="#agent_average"></use>
+										</svg>
+									</div>
+									<div class="agent-block__statistic-card-title">Average Escalation Before EXPROP</div>
+								</div>
+								<div class="agent-block__statistic-card-value">0%</div>
 							</div>
 						</div>
-						<div class="issue-block__textarea-wrapper">
-							<label for="textarea_details" class="issue-block__label">Issue Details</label>
-							<textarea id="textarea_details" class="issue-block__textarea" placeholder="Issue Details"></textarea>
+						<div class="agent-block__statistic-card">
+							<div class="agent-block__statistic-title">After EXPROP</div>
+							<div class="agent-block__statistic-card-option">
+								<div class="agent-block__statistic-card-heading">
+									<div class="agent-block__statistic-card-icon">
+										<img src="img/agent-calculator.svg" alt="">
+									</div>
+									<div class="agent-block__statistic-card-title">Average Lease Cost After EXPROP</div>
+								</div>
+								<div class="agent-block__statistic-card-value">R 0</div>
+							</div>
+							<div class="agent-block__statistic-card-option">
+								<div class="agent-block__statistic-card-heading">
+									<div class="agent-block__statistic-card-icon">
+										<svg width="29" height="33">
+											<use xlink:href="#agent_average"></use>
+										</svg>
+									</div>
+									<div class="agent-block__statistic-card-title">Average Escalation After EXPROP</div>
+								</div>
+								<div class="agent-block__statistic-card-value">0%</div>
+							</div>
+							<div class="agent-block__statistic-card-option">
+								<div class="agent-block__statistic-card-heading">
+									<div class="agent-block__statistic-card-icon">
+										<svg width="34" height="32">
+											<use xlink:href="#agent_saving"></use>
+										</svg>
+									</div>
+									<div class="agent-block__statistic-card-title">Average Saving Percentage</div>
+								</div>
+								<div class="agent-block__statistic-card-value">0%</div>
+							</div>
 						</div>
-						<button type="submit" class="btn btn--blue">Create</button>
-					</form>
+					</div>
+					<div class="agent-block__saving-block">
+						<div class="agent-block__saving-heading">
+							<div class="agent-block__management-heading-title">Detailed Lease Savings</div>
+							<div class="agent-block__saving-heading-controls">
+								<a href="javascript:;" class="btn btn--fenny">
+									<svg width="13" height="13">
+										<use xlink:href="#print"></use>
+									</svg>
+									<span>Export lease Savings</span>
+								</a>
+							</div>
+						</div>
+						<form class="agent-block__form">
+							<div class="agent-block__saving-form-wrapper">
+								<div class="page-block__input-wrapper">
+									<label for="agent_saving_id" class="page-block__label">Site Id</label>
+									<input type="text" id="agent_saving_id" name="agent_saving_id" class="text-input page-block__input" placeholder="Site ID..." required>
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="agent_saving_name" class="page-block__label">Site Name</label>
+									<input type="text" id="agent_saving_name" name="agent_saving_name" class="text-input page-block__input" placeholder="Site Name..." required>
+								</div>
+							</div>
+							<div class="agent-block__form-controls">
+								<a href="javascript:;" class="btn btn--green">Search</a>
+								<a href="javascript:;" class="btn btn--clear">
+									<svg width="12" height="12">
+										<use xlink:href="#close"></use>
+									</svg>
+									<span>Reset</span>
+								</a>
+							</div>
+						</form>
+					</div>
+					<div class="issues-block__table-block">
+						<div class="issues-block__table-heading">
+							<div class="agent-block__table-heading-id">Site ID</div>
+							<div class="agent-block__table-heading-name">Site Name</div>
+							<div class="agent-block__table-heading-total">Total (Previous)</div>
+							<div class="agent-block__table-heading-escalation-previous">Escalation (Previous)</div>
+							<div class="agent-block__table-heading-rental-proposed">Proposed Total Rental</div>
+							<div class="agent-block__table-heading-rental-new">Total Rental (New)</div>
+							<div class="agent-block__table-heading-escalation-new">Escalation (New)</div>
+							<div class="agent-block__table-heading-term">New Lease Term</div>
+							<div class="agent-block__table-heading-monthly-saving">Agent Monthly Saving</div>
+							<div class="agent-block__table-heading-escalation-saving">Escalation Saving</div>
+							<div class="agent-block__table-heading-saving">Saving %</div>
+							<div class="agent-block__table-heading-new-value">Total New Lease Contractual Value</div>
+							<div class="agent-block__table-heading-proposed-value">Total Proposed Lease Contractual Value</div>
+							<div class="agent-block__table-heading-contractual-saving">Total Contractual Saving</div>
+						</div>
+						<div class="issues-block__table-inner">
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-name"><a href="javascript:;">Site Name</a></div>
+								<div class="agent-block__table-inner-total">Total Lease Cost</div>
+								<div class="agent-block__table-inner-escalation-previous">Escalation</div>
+								<div class="agent-block__table-inner-rental-proposed">Proposed Total Lease Cost</div>
+								<div class="agent-block__table-inner-rental-new">Total Lease Costs</div>
+								<div class="agent-block__table-inner-escalation-new">Escalation</div>
+								<div class="agent-block__table-inner-term">New Lease Term</div>
+								<div class="agent-block__table-inner-monthly-saving">Agent Monthly Saving</div>
+								<div class="agent-block__table-inner-escalation-saving">Escalation Saving</div>
+								<div class="agent-block__table-inner-saving">Saving %</div>
+								<div class="agent-block__table-inner-new-value">Total New Lease Contractual Value</div>
+								<div class="agent-block__table-inner-proposed-value">Total Proposed Lease Contractual Value</div>
+								<div class="agent-block__table-inner-contractual-saving">Total Contractual Saving</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-name"><a href="javascript:;">Site Name</a></div>
+								<div class="agent-block__table-inner-total">Total Lease Cost</div>
+								<div class="agent-block__table-inner-escalation-previous">Escalation</div>
+								<div class="agent-block__table-inner-rental-proposed">Proposed Total Lease Cost</div>
+								<div class="agent-block__table-inner-rental-new">Total Lease Costs</div>
+								<div class="agent-block__table-inner-escalation-new">Escalation</div>
+								<div class="agent-block__table-inner-term">New Lease Term</div>
+								<div class="agent-block__table-inner-monthly-saving">Agent Monthly Saving</div>
+								<div class="agent-block__table-inner-escalation-saving">Escalation Saving</div>
+								<div class="agent-block__table-inner-saving">Saving %</div>
+								<div class="agent-block__table-inner-new-value">Total New Lease Contractual Value</div>
+								<div class="agent-block__table-inner-proposed-value">Total Proposed Lease Contractual Value</div>
+								<div class="agent-block__table-inner-contractual-saving">Total Contractual Saving</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-name"><a href="javascript:;">Site Name</a></div>
+								<div class="agent-block__table-inner-total">Total Lease Cost</div>
+								<div class="agent-block__table-inner-escalation-previous">Escalation</div>
+								<div class="agent-block__table-inner-rental-proposed">Proposed Total Lease Cost</div>
+								<div class="agent-block__table-inner-rental-new">Total Lease Costs</div>
+								<div class="agent-block__table-inner-escalation-new">Escalation</div>
+								<div class="agent-block__table-inner-term">New Lease Term</div>
+								<div class="agent-block__table-inner-monthly-saving">Agent Monthly Saving</div>
+								<div class="agent-block__table-inner-escalation-saving">Escalation Saving</div>
+								<div class="agent-block__table-inner-saving">Saving %</div>
+								<div class="agent-block__table-inner-new-value">Total New Lease Contractual Value</div>
+								<div class="agent-block__table-inner-proposed-value">Total Proposed Lease Contractual Value</div>
+								<div class="agent-block__table-inner-contractual-saving">Total Contractual Saving</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -359,7 +465,6 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/plugins.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/issue-block.js"></script>
 <svg style="display:none;">
 	<symbol id="search" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M11.063 16.02a7.083 7.083 0 110-14.166 7.083 7.083 0 010 14.167z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.855 18.146l4.2-4.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 	<symbol id="synchronize_clock" viewBox="0 0 51 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.65 11.2v12.5h11.116M.861 15.731l6.67 10.227 7.78-9.09" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.651 44.157c11.665 0 21.12-9.666 21.12-21.59 0-11.923-9.455-21.59-21.12-21.59-11.664 0-21.12 9.667-21.12 21.59v3.395" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>

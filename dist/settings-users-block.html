@@ -170,78 +170,212 @@
 		<section class="nav-block">
 			<div class="container">
 				<div class="nav-block__wrapper">
-					<div class="nav-block__list">
+					<div class="nav-block__list settings">
 						<ul>
-							<li><a href="javascript:;">Leases</a></li>
-							<li><a href="javascript:;">Sites</a></li>
-							<li><a href="javascript:;">Landlords</a></li>
+							<li><a href="javascript:;">General</a></li>
+							<li><a href="javascript:;">Lease</a></li>
+							<li><a href="javascript:;">% CPI rates</a></li>
+							<li><a href="javascript:;">Site</a></li>
+							<li><a href="javascript:;">Landlord</a></li>
 							<li><a href="javascript:;">Financial</a></li>
-							<li class="active"><a href="javascript:;">Issues</a></li>
-							<li><a href="javascript:;">File Explorer</a></li>
+							<li><a href="javascript:;">Issue</a></li>
+							<li class="active"><a href="javascript:;">Users</a></li>
+							<li><a href="javascript:;">ACU</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="issue-block">
+		<section class="issues-block">
 			<div class="container">
-				<div class="issue-block__content-block">
-					<div class="issue-block__heading">
-						<div class="issue-block__title">Add Issue</div>
-						<a href="javascript:;" class="btn btn--blue">
-							<svg width="6" height="13">
-								<use xlink:href="#manager_arrow"></use>
-							</svg>
-							<span>Back</span>
-						</a>
-					</div>
-					<form class="issue-block__form">
-						<div class="issue-block__form-wrapper">
-							<div class="page-block__select-wrapper">
-								<label for="select_site" class="issue-block__label">Site</label>
-								<select id="select_site" class="js-example-basic-single">
-									<option value="1">Select a Site</option>
-									<option value="2">Select a Site</option>
-									<option value="3">Select a Site</option>
-									<option value="4">Select a Site</option>
-									<option value="5">Select a Site</option>
-								</select>
-							</div>
-							<a href="javascript:;" class="btn btn--green">
-								<svg width="15" height="14">
-									<use xlink:href="#plus"></use>
+				<div class="issues-block__heading-block">
+					<div class="issues-block__heading-title">Users</div>
+					<form class="page-block__form">
+						<div class="page-block__input-wrapper">
+							<label for="settings_user_date" class="page-block__label">Search</label>
+							<input type="text" class="text-input page-block__input" id="settings_user_date" name="settings_user_date" placeholder="Search..." required>
+							<button type="submit" class="btn btn--search">
+								<svg width="17" height="17" class="icon--search">
+									<use xlink:href="#search"></use>
 								</svg>
-								<span>Add New Site</span>
-							</a>
+							</button>
 						</div>
-						<div class="issue-block__form-wrapper">
-							<div class="page-block__select-wrapper">
-								<label for="select_type" class="issue-block__label">Issue Type</label>
-								<select id="select_type" class="js-example-basic-single">
-									<option value="1">Select a Issue Type</option>
-									<option value="2">Select a Issue Type</option>
-									<option value="3">Select a Issue Type</option>
-									<option value="4">Select a Issue Type</option>
-									<option value="5">Select a Issue Type</option>
-								</select>
-							</div>
-							<div class="page-block__select-wrapper">
-								<label for="select_status" class="issue-block__label">Status</label>
-								<select id="select_status" class="js-example-basic-single">
-									<option value="1">Open</option>
-									<option value="2">Select Open</option>
-									<option value="3">Select Open</option>
-									<option value="4">Select Open</option>
-									<option value="5">Select Open</option>
-								</select>
-							</div>
-						</div>
-						<div class="issue-block__textarea-wrapper">
-							<label for="textarea_details" class="issue-block__label">Issue Details</label>
-							<textarea id="textarea_details" class="issue-block__textarea" placeholder="Issue Details"></textarea>
-						</div>
-						<button type="submit" class="btn btn--blue">Create</button>
+						<button type="button" class="btn btn--green">
+							<svg width="12" height="12">
+								<use xlink:href="#plus"></use>
+							</svg>
+							<span>Add User</span>
+						</button>
 					</form>
+				</div>
+				<div class="issues-block__table-block">
+					<div class="issues-block__table-heading">
+						<div class="settings-block__table-heading-name">Name</div>
+						<div class="settings-block__table-heading-surname">Surname</div>
+						<div class="settings-block__table-heading-username">username</div>
+						<div class="settings-block__table-heading-role">Role</div>
+						<div class="settings-block__table-heading-type">Type</div>
+						<div class="settings-block__table-heading-email">Email</div>
+						<div class="settings-block__table-heading-cell">Cell</div>
+						<div class="settings-block__table-heading-company">Company</div>
+						<div class="issues-block__table-heading-action">Actions</div>
+					</div>
+					<div class="issues-block__table-inner">
+						<div class="issues-block__table-card">
+							<div class="settings-block__table-inner-name"><a href="javascript:;">Tenant</a></div>
+							<div class="settings-block__table-inner-surname"><a href="javascript:;">User</a></div>
+							<div class="settings-block__table-inner-username">Tenant103</div>
+							<div class="settings-block__table-inner-role">Admin</div>
+							<div class="settings-block__table-inner-type">Agent</div>
+							<div class="settings-block__table-inner-email">tenant@gmail.com</div>
+							<div class="settings-block__table-inner-cell">+380999999999</div>
+							<div class="settings-block__table-inner-company">Exprop Holdings Pty Ltd</div>
+							<div class="issues-block__table-inner-action">
+								<a href="javascript:;" class="issues-block__edit-link">
+									<svg width="12" height="12">
+										<use xlink:href="#edit"></use>
+									</svg>
+								</a>
+								<a href="javascript:;" class="issues-block__trash-link">
+									<svg width="15" height="12">
+										<use xlink:href="#trash"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="issues-block__table-card">
+							<div class="settings-block__table-inner-name"><a href="javascript:;">Tenant</a></div>
+							<div class="settings-block__table-inner-surname"><a href="javascript:;">User</a></div>
+							<div class="settings-block__table-inner-username">Tenant103</div>
+							<div class="settings-block__table-inner-role">Admin</div>
+							<div class="settings-block__table-inner-type">Agent</div>
+							<div class="settings-block__table-inner-email">tenant@gmail.com</div>
+							<div class="settings-block__table-inner-cell">+380999999999</div>
+							<div class="settings-block__table-inner-company">Exprop Holdings Pty Ltd</div>
+							<div class="issues-block__table-inner-action">
+								<a href="javascript:;" class="issues-block__edit-link">
+									<svg width="12" height="12">
+										<use xlink:href="#edit"></use>
+									</svg>
+								</a>
+								<a href="javascript:;" class="issues-block__trash-link">
+									<svg width="15" height="12">
+										<use xlink:href="#trash"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="issues-block__table-card">
+							<div class="settings-block__table-inner-name"><a href="javascript:;">Tenant</a></div>
+							<div class="settings-block__table-inner-surname"><a href="javascript:;">User</a></div>
+							<div class="settings-block__table-inner-username">Tenant103</div>
+							<div class="settings-block__table-inner-role">Admin</div>
+							<div class="settings-block__table-inner-type">Agent</div>
+							<div class="settings-block__table-inner-email">tenant@gmail.com</div>
+							<div class="settings-block__table-inner-cell">+380999999999</div>
+							<div class="settings-block__table-inner-company">Exprop Holdings Pty Ltd</div>
+							<div class="issues-block__table-inner-action">
+								<a href="javascript:;" class="issues-block__edit-link">
+									<svg width="12" height="12">
+										<use xlink:href="#edit"></use>
+									</svg>
+								</a>
+								<a href="javascript:;" class="issues-block__trash-link">
+									<svg width="15" height="12">
+										<use xlink:href="#trash"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="issues-block__table-card">
+							<div class="settings-block__table-inner-name"><a href="javascript:;">Tenant</a></div>
+							<div class="settings-block__table-inner-surname"><a href="javascript:;">User</a></div>
+							<div class="settings-block__table-inner-username">Tenant103</div>
+							<div class="settings-block__table-inner-role">Admin</div>
+							<div class="settings-block__table-inner-type">Agent</div>
+							<div class="settings-block__table-inner-email">tenant@gmail.com</div>
+							<div class="settings-block__table-inner-cell">+380999999999</div>
+							<div class="settings-block__table-inner-company">Exprop Holdings Pty Ltd</div>
+							<div class="issues-block__table-inner-action">
+								<a href="javascript:;" class="issues-block__edit-link">
+									<svg width="12" height="12">
+										<use xlink:href="#edit"></use>
+									</svg>
+								</a>
+								<a href="javascript:;" class="issues-block__trash-link">
+									<svg width="15" height="12">
+										<use xlink:href="#trash"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="issues-block__table-card">
+							<div class="settings-block__table-inner-name"><a href="javascript:;">Tenant</a></div>
+							<div class="settings-block__table-inner-surname"><a href="javascript:;">User</a></div>
+							<div class="settings-block__table-inner-username">Tenant103</div>
+							<div class="settings-block__table-inner-role">Admin</div>
+							<div class="settings-block__table-inner-type">Agent</div>
+							<div class="settings-block__table-inner-email">tenant@gmail.com</div>
+							<div class="settings-block__table-inner-cell">+380999999999</div>
+							<div class="settings-block__table-inner-company">Exprop Holdings Pty Ltd</div>
+							<div class="issues-block__table-inner-action">
+								<a href="javascript:;" class="issues-block__edit-link">
+									<svg width="12" height="12">
+										<use xlink:href="#edit"></use>
+									</svg>
+								</a>
+								<a href="javascript:;" class="issues-block__trash-link">
+									<svg width="15" height="12">
+										<use xlink:href="#trash"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="issues-block__table-card">
+							<div class="settings-block__table-inner-name"><a href="javascript:;">Tenant</a></div>
+							<div class="settings-block__table-inner-surname"><a href="javascript:;">User</a></div>
+							<div class="settings-block__table-inner-username">Tenant103</div>
+							<div class="settings-block__table-inner-role">Admin</div>
+							<div class="settings-block__table-inner-type">Agent</div>
+							<div class="settings-block__table-inner-email">tenant@gmail.com</div>
+							<div class="settings-block__table-inner-cell">+380999999999</div>
+							<div class="settings-block__table-inner-company">Exprop Holdings Pty Ltd</div>
+							<div class="issues-block__table-inner-action">
+								<a href="javascript:;" class="issues-block__edit-link">
+									<svg width="12" height="12">
+										<use xlink:href="#edit"></use>
+									</svg>
+								</a>
+								<a href="javascript:;" class="issues-block__trash-link">
+									<svg width="15" height="12">
+										<use xlink:href="#trash"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="issues-block__table-card">
+							<div class="settings-block__table-inner-name"><a href="javascript:;">Tenant</a></div>
+							<div class="settings-block__table-inner-surname"><a href="javascript:;">User</a></div>
+							<div class="settings-block__table-inner-username">Tenant103</div>
+							<div class="settings-block__table-inner-role">Admin</div>
+							<div class="settings-block__table-inner-type">Agent</div>
+							<div class="settings-block__table-inner-email">tenant@gmail.com</div>
+							<div class="settings-block__table-inner-cell">+380999999999</div>
+							<div class="settings-block__table-inner-company">Exprop Holdings Pty Ltd</div>
+							<div class="issues-block__table-inner-action">
+								<a href="javascript:;" class="issues-block__edit-link">
+									<svg width="12" height="12">
+										<use xlink:href="#edit"></use>
+									</svg>
+								</a>
+								<a href="javascript:;" class="issues-block__trash-link">
+									<svg width="15" height="12">
+										<use xlink:href="#trash"></use>
+									</svg>
+								</a>
+							</div>
+						</div>	
+					</div>
 				</div>
 			</div>
 		</section>
@@ -359,7 +493,7 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/plugins.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/issue-block.js"></script>
+<script src="js/issues-block.js"></script>
 <svg style="display:none;">
 	<symbol id="search" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M11.063 16.02a7.083 7.083 0 110-14.166 7.083 7.083 0 010 14.167z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.855 18.146l4.2-4.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 	<symbol id="synchronize_clock" viewBox="0 0 51 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.65 11.2v12.5h11.116M.861 15.731l6.67 10.227 7.78-9.09" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.651 44.157c11.665 0 21.12-9.666 21.12-21.59 0-11.923-9.455-21.59-21.12-21.59-11.664 0-21.12 9.667-21.12 21.59v3.395" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>

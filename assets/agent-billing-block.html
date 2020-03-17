@@ -1,0 +1,257 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": ""	
+})
+@@include('template/page-header.html', {
+	"dashboard": "",
+	"leases": "",
+	"reminders": "",
+	"report": "",
+	"agent": "true",
+	"settings": ""
+})
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+		<section class="nav-block">
+			<div class="container">
+				<div class="nav-block__wrapper">
+					<div class="nav-block__list">
+						<ul>
+							<li><a href="javascript:;">Agent Dashboard</a></li>
+							<li><a href="javascript:;">Agent Savings</a></li>
+							<li class="active"><a href="javascript:;">Agent Billing</a></li>
+							<li><a href="javascript:;">Agent Users</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="agent-block">
+			<div class="container">
+				<div class="agent-block__wrapper">
+					<div class="agent-block__saving-billing-block">
+						<div class="agent-block__saving-billing-heading">
+							<div class="agent-block__saving-billing-title">Detailed Lease Savings</div>
+							<div class="agent-block__saving-heading-controls">
+								<a href="javascript:;" class="btn btn--green">
+									<svg width="12" height="12">
+										<use xlink:href="#plus"></use>
+									</svg>
+									<span>Add agent</span>
+								</a>
+								<a href="javascript:;" class="btn btn--fenny">
+									<svg width="13" height="13">
+										<use xlink:href="#print"></use>
+									</svg>
+									<span>Export lease</span>
+								</a>
+							</div>
+						</div>
+						<form class="agent-block__form">
+							<div class="agent-block__billing-form-wrapper">
+								<div class="page-block__input-wrapper">
+									<label for="agent_datepicker_1" class="page-block__label">Start Month</label>
+									<input type="text" class="text-input page-block__input" id="agent_datepicker_1" name="agent_datepicker_1" placeholder="Select Start Month...">
+									<button type="button" class="btn btn--search" id="button_datepicker_9">
+										<svg width="19" height="17" class="icon--calendar">
+											<use xlink:href="#calendar"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="agent_datepicker_2" class="page-block__label">End Month</label>
+									<input type="text" class="text-input page-block__input" id="agent_datepicker_2" name="agent_datepicker_2" placeholder="Select End Month...">
+									<button type="button" class="btn btn--search" id="button_datepicker_10">
+										<svg width="19" height="17" class="icon--calendar">
+											<use xlink:href="#calendar"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="agent_invoiced" class="page-block__label">Invoiced</label>
+									<input type="text" id="agent_invoiced" name="agent_invoiced" class="text-input page-block__input" placeholder="Select..." required>
+								</div>
+								<div class="page-block__input-wrapper mb0">
+									<label for="agent_id" class="page-block__label">Site ID</label>
+									<select id="agent_id" class="js-example-basic-single">
+										<option value="1">Site ID</option>
+										<option value="2">Site ID</option>
+										<option value="3">Site ID</option>
+										<option value="4">Site ID</option>
+										<option value="5">Site ID</option>
+									</select>
+								</div>
+								<div class="page-block__input-wrapper mb0">
+									<label for="agent_name" class="page-block__label">Site Name</label>
+									<input type="text" id="agent_name" name="agent_name" class="text-input page-block__input" placeholder="Site Name..." required>
+								</div>
+								<div class="page-block__input-wrapper mb0">
+									<label for="agent_type" class="page-block__label">Agent Fee Type</label>
+									<select id="agent_type" class="js-example-basic-single">
+										<option value="1">Select Agent Fee Type...</option>
+										<option value="2">Select Agent Fee Type...</option>
+										<option value="3">Select Agent Fee Type...</option>
+										<option value="4">Select Agent Fee Type...</option>
+										<option value="5">Select Agent Fee Type...</option>
+									</select>
+								</div>
+							</div>
+							<div class="agent-block__form-controls">
+								<a href="javascript:;" class="btn btn--green">Search</a>
+								<a href="javascript:;" class="btn btn--clear">
+									<svg width="12" height="12">
+										<use xlink:href="#close"></use>
+									</svg>
+									<span>Reset</span>
+								</a>
+							</div>
+						</form>
+					</div>
+					<div class="issues-block__table-block">
+						<div class="issues-block__table-heading">
+							<div class="agent-block__table-heading-id">Site ID</div>
+							<div class="agent-block__table-heading-name">Site Name</div>
+							<div class="agent-block__table-heading-type">Agent Fee Type(%/Amount)</div>
+							<div class="agent-block__table-heading-saving">Agent Saving</div>
+							<div class="agent-block__table-heading-start-date">Start Date</div>
+							<div class="agent-block__table-heading-expiry-date">Expiry Date</div>
+							<div class="agent-block__table-heading-term">Lease Term</div>
+							<div class="agent-block__table-heading-escalation">Lease Escalation</div>
+							<div class="agent-block__table-heading-january">January 2020</div>
+							<div class="agent-block__table-heading-select">
+								<span><b>Invoiced:</b> Select All</span>
+								<div class="agent-block__validate-wrapper">
+									<input type="checkbox" id="agent_select_checkbox_1" name="agent_select_checkbox_1" class="agent-block__select_checkbox_1" checked>
+									<label class="agent-block__label" for="agent_checkbox_1">
+										<div class="agent-block__select-check">
+											<div class="agent-block__select-check-v"></div>
+										</div>
+									</label>
+								</div>
+							</div>
+							<div class="agent-block__table-heading-february">February 2020</div>
+							<div class="agent-block__table-heading-select">
+								<span><b>Invoiced:</b> Select All</span>
+								<div class="agent-block__validate-wrapper">
+									<input type="checkbox" id="agent_select_checkbox_2" name="agent_select_checkbox_2" class="agent-block__checkbox" checked>
+									<label class="agent-block__label" for="agent_select_checkbox_2">
+										<div class="agent-block__select-check">
+											<div class="agent-block__select-check-v"></div>
+										</div>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="issues-block__table-inner">
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-name"><a href="javascript:;">Paid Selected all</a></div>
+								<div class="agent-block__table-inner-type">Fixed Monthly (R 4309504)</div>
+								<div class="agent-block__table-inner-saving">R 3336249</div>
+								<div class="agent-block__table-inner-start-date">23-10-2019</div>
+								<div class="agent-block__table-inner-expiry-date">13-05-2020</div>
+								<div class="agent-block__table-inner-term">5 months</div>
+								<div class="agent-block__table-inner-escalation">10%</div>
+								<div class="agent-block__table-inner-january">R 4309504</div>
+								<div class="agent-block__table-inner-select">
+									<div class="agent-block__validate-wrapper">
+										<input type="checkbox" id="agent_select_checkbox_3" name="agent_select_checkbox_3" class="agent-block__select_checkbox_3" checked>
+										<label class="agent-block__label" for="agent_checkbox_3">
+											<div class="agent-block__check">
+												<div class="agent-block__check-v"></div>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div class="agent-block__table-inner-february">R 4309504</div>
+								<div class="agent-block__table-inner-select">
+									<div class="agent-block__validate-wrapper">
+										<input type="checkbox" id="agent_select_checkbox_4" name="agent_select_checkbox_4" class="agent-block__select_checkbox_4" checked>
+										<label class="agent-block__label" for="agent_checkbox_4">
+											<div class="agent-block__check">
+												<div class="agent-block__check-v"></div>
+											</div>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-name"><a href="javascript:;">Paid Selected all</a></div>
+								<div class="agent-block__table-inner-type">Fixed Monthly (R 4309504)</div>
+								<div class="agent-block__table-inner-saving">R 3336249</div>
+								<div class="agent-block__table-inner-start-date">23-10-2019</div>
+								<div class="agent-block__table-inner-expiry-date">13-05-2020</div>
+								<div class="agent-block__table-inner-term">5 months</div>
+								<div class="agent-block__table-inner-escalation">10%</div>
+								<div class="agent-block__table-inner-january">R 4309504</div>
+								<div class="agent-block__table-inner-select">
+									<div class="agent-block__validate-wrapper">
+										<input type="checkbox" id="agent_select_checkbox_5" name="agent_select_checkbox_5" class="agent-block__select_checkbox_5" checked>
+										<label class="agent-block__label" for="agent_checkbox_5">
+											<div class="agent-block__check">
+												<div class="agent-block__check-v"></div>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div class="agent-block__table-inner-february">R 4309504</div>
+								<div class="agent-block__table-inner-select">
+									<div class="agent-block__validate-wrapper">
+										<input type="checkbox" id="agent_select_checkbox_6" name="agent_select_checkbox_6" class="agent-block__select_checkbox_6" checked>
+										<label class="agent-block__label" for="agent_checkbox_6">
+											<div class="agent-block__check">
+												<div class="agent-block__check-v"></div>
+											</div>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-name"><a href="javascript:;">Paid Selected all</a></div>
+								<div class="agent-block__table-inner-type">Fixed Monthly (R 4309504)</div>
+								<div class="agent-block__table-inner-saving">R 3336249</div>
+								<div class="agent-block__table-inner-start-date">23-10-2019</div>
+								<div class="agent-block__table-inner-expiry-date">13-05-2020</div>
+								<div class="agent-block__table-inner-term">5 months</div>
+								<div class="agent-block__table-inner-escalation">10%</div>
+								<div class="agent-block__table-inner-january">R 4309504</div>
+								<div class="agent-block__table-inner-select">
+									<div class="agent-block__validate-wrapper">
+										<input type="checkbox" id="agent_select_checkbox_7" name="agent_select_checkbox_7" class="agent-block__select_checkbox_7" checked>
+										<label class="agent-block__label" for="agent_checkbox_7">
+											<div class="agent-block__check">
+												<div class="agent-block__check-v"></div>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div class="agent-block__table-inner-february">R 4309504</div>
+								<div class="agent-block__table-inner-select">
+									<div class="agent-block__validate-wrapper">
+										<input type="checkbox" id="agent_select_checkbox_8" name="agent_select_checkbox_8" class="agent-block__select_checkbox_8" checked>
+										<label class="agent-block__label" for="agent_checkbox_8">
+											<div class="agent-block__check">
+												<div class="agent-block__check-v"></div>
+											</div>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+@@include('template/popups.html')
+@@include('template/scripts.html')
+<script src="js/agent-billing-block.js"></script>
+@@include('template/sprite.html')
+
+</body>
+</html>

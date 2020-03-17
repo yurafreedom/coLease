@@ -1,0 +1,258 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": ""	
+})
+@@include('template/page-header.html', {
+	"dashboard": "",
+	"leases": "",
+	"reminders": "",
+	"report": "",
+	"agent": "true",
+	"settings": ""
+})
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+		<section class="nav-block">
+			<div class="container">
+				<div class="nav-block__wrapper">
+					<div class="nav-block__list">
+						<ul>
+							<li class="active"><a href="javascript:;">Agent Dashboard</a></li>
+							<li><a href="javascript:;">Agent Savings</a></li>
+							<li><a href="javascript:;">Agent Billing</a></li>
+							<li><a href="javascript:;">Agent Users</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="agent-block">
+			<div class="container">
+				<div class="agent-block__wrapper">
+					<div class="agent-block__heading">
+						<div class="agent-block__title">Agent Dashboard</div>
+					</div>
+					<div class="agent-block__statistic-block">
+						<div class="agent-block__statistic-card">
+							<div class="agent-block__statistic-card-option">
+								<div class="agent-block__statistic-card-heading">
+									<div class="agent-block__statistic-card-icon">
+										<svg width="28" height="30">
+											<use xlink:href="#leases_management"></use>
+										</svg>
+									</div>
+									<div class="agent-block__statistic-card-title">Leases under management</div>
+								</div>
+								<div class="agent-block__statistic-card-value">2</div>
+							</div>
+							<div class="agent-block__statistic-card-option">
+								<div class="agent-block__statistic-card-heading">
+									<div class="agent-block__statistic-card-icon">
+										<svg width="28" height="31">
+											<use xlink:href="#leases_investigation"></use>
+										</svg>
+									</div>
+									<div class="agent-block__statistic-card-title">Lease Under Investigation</div>
+								</div>
+								<div class="agent-block__statistic-card-value">0</div>
+							</div>
+							<div class="agent-block__statistic-card-option">
+								<div class="agent-block__statistic-card-heading">
+									<div class="agent-block__statistic-card-icon">
+										<svg width="32" height="31">
+											<use xlink:href="#leases_negotiation"></use>
+										</svg>
+									</div>
+									<div class="agent-block__statistic-card-title">Lease Negotiation in progress</div>
+								</div>
+								<div class="agent-block__statistic-card-value">1</div>
+							</div>
+						</div>
+						<div class="agent-block__statistic-card">
+							<div class="agent-block__statistic-card-option">
+								<div class="agent-block__statistic-card-heading">
+									<div class="agent-block__statistic-card-icon">
+										<svg width="28" height="30">
+											<use xlink:href="#leases_terms"></use>
+										</svg>
+									</div>
+									<div class="agent-block__statistic-card-title">Lease Terms Agreed</div>
+								</div>
+								<div class="agent-block__statistic-card-value">0</div>
+							</div>
+							<div class="agent-block__statistic-card-option">
+								<div class="agent-block__statistic-card-heading">
+									<div class="agent-block__statistic-card-icon">
+										<svg width="27" height="30">
+											<use xlink:href="#leases_signature"></use>
+										</svg>
+									</div>
+									<div class="agent-block__statistic-card-title">Lease Awaiting Landlord Signature</div>
+								</div>
+								<div class="agent-block__statistic-card-value">0</div>
+							</div>
+							<div class="agent-block__statistic-card-option">
+								<div class="agent-block__statistic-card-heading">
+									<div class="agent-block__statistic-card-icon">
+										<svg width="27" height="30">
+											<use xlink:href="#leases_signature"></use>
+										</svg>
+									</div>
+									<div class="agent-block__statistic-card-title">Lease Awaiting Tenant Signature</div>
+								</div>
+								<div class="agent-block__statistic-card-value">0</div>
+							</div>
+						</div>
+					</div>
+					<div class="agent-block__management-block">
+						<div class="agent-block__management-heading">
+							<div class="agent-block__management-heading-title">Leases under management</div>
+							<div class="agent-block__management-heading-controls">
+								<a href="javascript:;" class="btn btn--green">
+									<svg width="12" height="12">
+										<use xlink:href="#plus"></use>
+									</svg>
+									<span>Add Agent</span>
+								</a>
+								<a href="javascript:;" class="btn btn--fenny">
+									<svg width="13" height="13">
+										<use xlink:href="#print"></use>
+									</svg>
+									<span>Export lease</span>
+								</a>
+							</div>
+						</div>
+						<form class="agent-block__form">
+							<div class="agent-block__form-wrapper">
+								<div class="page-block__input-wrapper">
+									<label for="agent_management_id" class="page-block__label">Site Id</label>
+									<input type="text" id="agent_management_id" name="agent_management_id" class="text-input page-block__input" placeholder="Site ID..." required>
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="agent_management_name" class="page-block__label">Site Name</label>
+									<input type="text" id="agent_management_name" name="agent_management_name" class="text-input page-block__input" placeholder="Site Name..." required>
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="agent_status" class="page-block__label">Site Status</label>
+									<select id="agent_status" class="js-example-basic-single">
+										<option value="1">Site Status...</option>
+										<option value="2">Site Status...</option>
+										<option value="3">Site Status...</option>
+										<option value="4">Site Status...</option>
+										<option value="5">Site Status...</option>
+									</select>
+								</div>
+							</div>
+							<div class="agent-block__form-controls">
+								<a href="javascript:;" class="btn btn--green">Search</a>
+								<a href="javascript:;" class="btn btn--clear">
+									<svg width="12" height="12">
+										<use xlink:href="#close"></use>
+									</svg>
+									<span>Reset</span>
+								</a>
+							</div>
+						</form>
+					</div>
+					<div class="agent-block__table-block">
+						<div class="issues-block__table-heading">
+							<div class="agent-block__table-heading-id">Site ID</div>
+							<div class="agent-block__table-heading-name">Site Name</div>
+							<div class="agent-block__table-heading-status">Site Status</div>
+							<div class="agent-block__table-heading-days">Days lapsed since status update</div>
+							<div class="agent-block__table-heading-notes">Notes</div>
+							<div class="agent-block__table-heading-issue">Active Issue</div>
+							<div class="agent-block__table-heading-user">User Allocated to</div>
+							<div class="agent-block__table-heading-expiry">Expiry Date</div>
+							<div class="agent-block__table-heading-rental">Current Total Rental</div>
+							<div class="agent-block__table-heading-escalation">Current Escalation</div>
+							<div class="issues-block__table-heading-action">Actions</div>
+						</div>
+						<div class="issues-block__table-inner">
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-name"><a href="javascript:;">site_name</a></div>
+								<div class="agent-block__table-inner-status">Negotiation in progress</div>
+								<div class="agent-block__table-inner-days">98</div>
+								<div class="agent-block__table-inner-notes">05-06-2021 11:36 This is a great lease</div>
+								<div class="agent-block__table-inner-issue">Yes</div>
+								<div class="agent-block__table-inner-user">Agent User</div>
+								<div class="agent-block__table-inner-expiry">05-06-2021 <br> <b>( in 491 days )</b></div>
+								<div class="agent-block__table-inner-rental">R 13375</div>
+								<div class="agent-block__table-inner-escalation">7%</div>
+								<div class="issues-block__table-inner-action">
+									<a href="javascript:;" class="issues-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__trash-link">
+										<svg width="15" height="12">
+											<use xlink:href="#trash"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-name"><a href="javascript:;">site_name</a></div>
+								<div class="agent-block__table-inner-status">Negotiation in progress</div>
+								<div class="agent-block__table-inner-days">98</div>
+								<div class="agent-block__table-inner-notes">05-06-2021 11:36 This is a great lease</div>
+								<div class="agent-block__table-inner-issue">Yes</div>
+								<div class="agent-block__table-inner-user">Agent User</div>
+								<div class="agent-block__table-inner-expiry">05-06-2021 <br> <b>( in 491 days )</b></div>
+								<div class="agent-block__table-inner-rental">R 13375</div>
+								<div class="agent-block__table-inner-escalation">7%</div>
+								<div class="issues-block__table-inner-action">
+									<a href="javascript:;" class="issues-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__trash-link">
+										<svg width="15" height="12">
+											<use xlink:href="#trash"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-name"><a href="javascript:;">site_name</a></div>
+								<div class="agent-block__table-inner-status">Negotiation in progress</div>
+								<div class="agent-block__table-inner-days">98</div>
+								<div class="agent-block__table-inner-notes">05-06-2021 11:36 This is a great lease</div>
+								<div class="agent-block__table-inner-issue">Yes</div>
+								<div class="agent-block__table-inner-user">Agent User</div>
+								<div class="agent-block__table-inner-expiry">05-06-2021 <br><b>( in 491 days )</b></div>
+								<div class="agent-block__table-inner-rental">R 13375</div>
+								<div class="agent-block__table-inner-escalation">7%</div>
+								<div class="issues-block__table-inner-action">
+									<a href="javascript:;" class="issues-block__edit-link">
+										<svg width="12" height="12">
+											<use xlink:href="#edit"></use>
+										</svg>
+									</a>
+									<a href="javascript:;" class="issues-block__trash-link">
+										<svg width="15" height="12">
+											<use xlink:href="#trash"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+@@include('template/popups.html')
+@@include('template/scripts.html')
+@@include('template/sprite.html')
+
+</body>
+</html>

@@ -40,7 +40,7 @@
 							<span>Dashboard</span>
 						</a>
 					</li>
-					<li class="active">
+					<li >
 						<a href="javascript:;">
 							<div class="page-header__nav-link-wrapper">
 								<img src="img/keys-gray.svg" alt="">
@@ -66,7 +66,7 @@
 							<span>Report</span>
 						</a>
 					</li>
-					<li >
+					<li class="active">
 						<a href="javascript:;">
 							<svg width="30" height="29">
 								<use xlink:href="#agent"></use>
@@ -97,7 +97,7 @@
 							<span>Dashboard</span>
 						</a>
 					</li>
-					<li class="active">
+					<li >
 						<a href="javascript:;">
 							<div class="page-header__nav-link-wrapper">
 								<img src="img/keys-gray.svg" alt="">
@@ -123,7 +123,7 @@
 							<span>Report</span>
 						</a>
 					</li>
-					<li >
+					<li class="active">
 						<a href="javascript:;">
 							<svg width="30" height="29">
 								<use xlink:href="#agent"></use>
@@ -172,76 +172,230 @@
 				<div class="nav-block__wrapper">
 					<div class="nav-block__list">
 						<ul>
-							<li><a href="javascript:;">Leases</a></li>
-							<li><a href="javascript:;">Sites</a></li>
-							<li><a href="javascript:;">Landlords</a></li>
-							<li><a href="javascript:;">Financial</a></li>
-							<li class="active"><a href="javascript:;">Issues</a></li>
-							<li><a href="javascript:;">File Explorer</a></li>
+							<li><a href="javascript:;">Agent Dashboard</a></li>
+							<li><a href="javascript:;">Agent Savings</a></li>
+							<li class="active"><a href="javascript:;">Agent Billing</a></li>
+							<li><a href="javascript:;">Agent Users</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="issue-block">
+		<section class="agent-block">
 			<div class="container">
-				<div class="issue-block__content-block">
-					<div class="issue-block__heading">
-						<div class="issue-block__title">Add Issue</div>
-						<a href="javascript:;" class="btn btn--blue">
-							<svg width="6" height="13">
-								<use xlink:href="#manager_arrow"></use>
-							</svg>
-							<span>Back</span>
-						</a>
+				<div class="agent-block__wrapper">
+					<div class="agent-block__saving-billing-block">
+						<div class="agent-block__saving-billing-heading">
+							<div class="agent-block__saving-billing-title">Detailed Lease Savings</div>
+							<div class="agent-block__saving-heading-controls">
+								<a href="javascript:;" class="btn btn--green">
+									<svg width="12" height="12">
+										<use xlink:href="#plus"></use>
+									</svg>
+									<span>Add agent</span>
+								</a>
+								<a href="javascript:;" class="btn btn--fenny">
+									<svg width="13" height="13">
+										<use xlink:href="#print"></use>
+									</svg>
+									<span>Export lease</span>
+								</a>
+							</div>
+						</div>
+						<form class="agent-block__form">
+							<div class="agent-block__billing-form-wrapper">
+								<div class="page-block__input-wrapper">
+									<label for="agent_datepicker_1" class="page-block__label">Start Month</label>
+									<input type="text" class="text-input page-block__input" id="agent_datepicker_1" name="agent_datepicker_1" placeholder="Select Start Month...">
+									<button type="button" class="btn btn--search" id="button_datepicker_9">
+										<svg width="19" height="17" class="icon--calendar">
+											<use xlink:href="#calendar"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="agent_datepicker_2" class="page-block__label">End Month</label>
+									<input type="text" class="text-input page-block__input" id="agent_datepicker_2" name="agent_datepicker_2" placeholder="Select End Month...">
+									<button type="button" class="btn btn--search" id="button_datepicker_10">
+										<svg width="19" height="17" class="icon--calendar">
+											<use xlink:href="#calendar"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="agent_invoiced" class="page-block__label">Invoiced</label>
+									<input type="text" id="agent_invoiced" name="agent_invoiced" class="text-input page-block__input" placeholder="Select..." required>
+								</div>
+								<div class="page-block__input-wrapper mb0">
+									<label for="agent_id" class="page-block__label">Site ID</label>
+									<select id="agent_id" class="js-example-basic-single">
+										<option value="1">Site ID</option>
+										<option value="2">Site ID</option>
+										<option value="3">Site ID</option>
+										<option value="4">Site ID</option>
+										<option value="5">Site ID</option>
+									</select>
+								</div>
+								<div class="page-block__input-wrapper mb0">
+									<label for="agent_name" class="page-block__label">Site Name</label>
+									<input type="text" id="agent_name" name="agent_name" class="text-input page-block__input" placeholder="Site Name..." required>
+								</div>
+								<div class="page-block__input-wrapper mb0">
+									<label for="agent_type" class="page-block__label">Agent Fee Type</label>
+									<select id="agent_type" class="js-example-basic-single">
+										<option value="1">Select Agent Fee Type...</option>
+										<option value="2">Select Agent Fee Type...</option>
+										<option value="3">Select Agent Fee Type...</option>
+										<option value="4">Select Agent Fee Type...</option>
+										<option value="5">Select Agent Fee Type...</option>
+									</select>
+								</div>
+							</div>
+							<div class="agent-block__form-controls">
+								<a href="javascript:;" class="btn btn--green">Search</a>
+								<a href="javascript:;" class="btn btn--clear">
+									<svg width="12" height="12">
+										<use xlink:href="#close"></use>
+									</svg>
+									<span>Reset</span>
+								</a>
+							</div>
+						</form>
 					</div>
-					<form class="issue-block__form">
-						<div class="issue-block__form-wrapper">
-							<div class="page-block__select-wrapper">
-								<label for="select_site" class="issue-block__label">Site</label>
-								<select id="select_site" class="js-example-basic-single">
-									<option value="1">Select a Site</option>
-									<option value="2">Select a Site</option>
-									<option value="3">Select a Site</option>
-									<option value="4">Select a Site</option>
-									<option value="5">Select a Site</option>
-								</select>
+					<div class="issues-block__table-block">
+						<div class="issues-block__table-heading">
+							<div class="agent-block__table-heading-id">Site ID</div>
+							<div class="agent-block__table-heading-name">Site Name</div>
+							<div class="agent-block__table-heading-type">Agent Fee Type(%/Amount)</div>
+							<div class="agent-block__table-heading-saving">Agent Saving</div>
+							<div class="agent-block__table-heading-start-date">Start Date</div>
+							<div class="agent-block__table-heading-expiry-date">Expiry Date</div>
+							<div class="agent-block__table-heading-term">Lease Term</div>
+							<div class="agent-block__table-heading-escalation">Lease Escalation</div>
+							<div class="agent-block__table-heading-january">January 2020</div>
+							<div class="agent-block__table-heading-select">
+								<span><b>Invoiced:</b> Select All</span>
+								<div class="agent-block__validate-wrapper">
+									<input type="checkbox" id="agent_select_checkbox_1" name="agent_select_checkbox_1" class="agent-block__select_checkbox_1" checked>
+									<label class="agent-block__label" for="agent_checkbox_1">
+										<div class="agent-block__select-check">
+											<div class="agent-block__select-check-v"></div>
+										</div>
+									</label>
+								</div>
 							</div>
-							<a href="javascript:;" class="btn btn--green">
-								<svg width="15" height="14">
-									<use xlink:href="#plus"></use>
-								</svg>
-								<span>Add New Site</span>
-							</a>
-						</div>
-						<div class="issue-block__form-wrapper">
-							<div class="page-block__select-wrapper">
-								<label for="select_type" class="issue-block__label">Issue Type</label>
-								<select id="select_type" class="js-example-basic-single">
-									<option value="1">Select a Issue Type</option>
-									<option value="2">Select a Issue Type</option>
-									<option value="3">Select a Issue Type</option>
-									<option value="4">Select a Issue Type</option>
-									<option value="5">Select a Issue Type</option>
-								</select>
-							</div>
-							<div class="page-block__select-wrapper">
-								<label for="select_status" class="issue-block__label">Status</label>
-								<select id="select_status" class="js-example-basic-single">
-									<option value="1">Open</option>
-									<option value="2">Select Open</option>
-									<option value="3">Select Open</option>
-									<option value="4">Select Open</option>
-									<option value="5">Select Open</option>
-								</select>
+							<div class="agent-block__table-heading-february">February 2020</div>
+							<div class="agent-block__table-heading-select">
+								<span><b>Invoiced:</b> Select All</span>
+								<div class="agent-block__validate-wrapper">
+									<input type="checkbox" id="agent_select_checkbox_2" name="agent_select_checkbox_2" class="agent-block__checkbox" checked>
+									<label class="agent-block__label" for="agent_select_checkbox_2">
+										<div class="agent-block__select-check">
+											<div class="agent-block__select-check-v"></div>
+										</div>
+									</label>
+								</div>
 							</div>
 						</div>
-						<div class="issue-block__textarea-wrapper">
-							<label for="textarea_details" class="issue-block__label">Issue Details</label>
-							<textarea id="textarea_details" class="issue-block__textarea" placeholder="Issue Details"></textarea>
+						<div class="issues-block__table-inner">
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-name"><a href="javascript:;">Paid Selected all</a></div>
+								<div class="agent-block__table-inner-type">Fixed Monthly (R 4309504)</div>
+								<div class="agent-block__table-inner-saving">R 3336249</div>
+								<div class="agent-block__table-inner-start-date">23-10-2019</div>
+								<div class="agent-block__table-inner-expiry-date">13-05-2020</div>
+								<div class="agent-block__table-inner-term">5 months</div>
+								<div class="agent-block__table-inner-escalation">10%</div>
+								<div class="agent-block__table-inner-january">R 4309504</div>
+								<div class="agent-block__table-inner-select">
+									<div class="agent-block__validate-wrapper">
+										<input type="checkbox" id="agent_select_checkbox_3" name="agent_select_checkbox_3" class="agent-block__select_checkbox_3" checked>
+										<label class="agent-block__label" for="agent_checkbox_3">
+											<div class="agent-block__check">
+												<div class="agent-block__check-v"></div>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div class="agent-block__table-inner-february">R 4309504</div>
+								<div class="agent-block__table-inner-select">
+									<div class="agent-block__validate-wrapper">
+										<input type="checkbox" id="agent_select_checkbox_4" name="agent_select_checkbox_4" class="agent-block__select_checkbox_4" checked>
+										<label class="agent-block__label" for="agent_checkbox_4">
+											<div class="agent-block__check">
+												<div class="agent-block__check-v"></div>
+											</div>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-name"><a href="javascript:;">Paid Selected all</a></div>
+								<div class="agent-block__table-inner-type">Fixed Monthly (R 4309504)</div>
+								<div class="agent-block__table-inner-saving">R 3336249</div>
+								<div class="agent-block__table-inner-start-date">23-10-2019</div>
+								<div class="agent-block__table-inner-expiry-date">13-05-2020</div>
+								<div class="agent-block__table-inner-term">5 months</div>
+								<div class="agent-block__table-inner-escalation">10%</div>
+								<div class="agent-block__table-inner-january">R 4309504</div>
+								<div class="agent-block__table-inner-select">
+									<div class="agent-block__validate-wrapper">
+										<input type="checkbox" id="agent_select_checkbox_5" name="agent_select_checkbox_5" class="agent-block__select_checkbox_5" checked>
+										<label class="agent-block__label" for="agent_checkbox_5">
+											<div class="agent-block__check">
+												<div class="agent-block__check-v"></div>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div class="agent-block__table-inner-february">R 4309504</div>
+								<div class="agent-block__table-inner-select">
+									<div class="agent-block__validate-wrapper">
+										<input type="checkbox" id="agent_select_checkbox_6" name="agent_select_checkbox_6" class="agent-block__select_checkbox_6" checked>
+										<label class="agent-block__label" for="agent_checkbox_6">
+											<div class="agent-block__check">
+												<div class="agent-block__check-v"></div>
+											</div>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-name"><a href="javascript:;">Paid Selected all</a></div>
+								<div class="agent-block__table-inner-type">Fixed Monthly (R 4309504)</div>
+								<div class="agent-block__table-inner-saving">R 3336249</div>
+								<div class="agent-block__table-inner-start-date">23-10-2019</div>
+								<div class="agent-block__table-inner-expiry-date">13-05-2020</div>
+								<div class="agent-block__table-inner-term">5 months</div>
+								<div class="agent-block__table-inner-escalation">10%</div>
+								<div class="agent-block__table-inner-january">R 4309504</div>
+								<div class="agent-block__table-inner-select">
+									<div class="agent-block__validate-wrapper">
+										<input type="checkbox" id="agent_select_checkbox_7" name="agent_select_checkbox_7" class="agent-block__select_checkbox_7" checked>
+										<label class="agent-block__label" for="agent_checkbox_7">
+											<div class="agent-block__check">
+												<div class="agent-block__check-v"></div>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div class="agent-block__table-inner-february">R 4309504</div>
+								<div class="agent-block__table-inner-select">
+									<div class="agent-block__validate-wrapper">
+										<input type="checkbox" id="agent_select_checkbox_8" name="agent_select_checkbox_8" class="agent-block__select_checkbox_8" checked>
+										<label class="agent-block__label" for="agent_checkbox_8">
+											<div class="agent-block__check">
+												<div class="agent-block__check-v"></div>
+											</div>
+										</label>
+									</div>
+								</div>
+							</div>
 						</div>
-						<button type="submit" class="btn btn--blue">Create</button>
-					</form>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -359,7 +513,7 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/plugins.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/issue-block.js"></script>
+<script src="js/agent-billing-block.js"></script>
 <svg style="display:none;">
 	<symbol id="search" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M11.063 16.02a7.083 7.083 0 110-14.166 7.083 7.083 0 010 14.167z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.855 18.146l4.2-4.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 	<symbol id="synchronize_clock" viewBox="0 0 51 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.65 11.2v12.5h11.116M.861 15.731l6.67 10.227 7.78-9.09" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.651 44.157c11.665 0 21.12-9.666 21.12-21.59 0-11.923-9.455-21.59-21.12-21.59-11.664 0-21.12 9.667-21.12 21.59v3.395" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>

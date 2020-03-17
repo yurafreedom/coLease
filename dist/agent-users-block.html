@@ -40,7 +40,7 @@
 							<span>Dashboard</span>
 						</a>
 					</li>
-					<li class="active">
+					<li >
 						<a href="javascript:;">
 							<div class="page-header__nav-link-wrapper">
 								<img src="img/keys-gray.svg" alt="">
@@ -66,7 +66,7 @@
 							<span>Report</span>
 						</a>
 					</li>
-					<li >
+					<li class="active">
 						<a href="javascript:;">
 							<svg width="30" height="29">
 								<use xlink:href="#agent"></use>
@@ -97,7 +97,7 @@
 							<span>Dashboard</span>
 						</a>
 					</li>
-					<li class="active">
+					<li >
 						<a href="javascript:;">
 							<div class="page-header__nav-link-wrapper">
 								<img src="img/keys-gray.svg" alt="">
@@ -123,7 +123,7 @@
 							<span>Report</span>
 						</a>
 					</li>
-					<li >
+					<li class="active">
 						<a href="javascript:;">
 							<svg width="30" height="29">
 								<use xlink:href="#agent"></use>
@@ -172,76 +172,61 @@
 				<div class="nav-block__wrapper">
 					<div class="nav-block__list">
 						<ul>
-							<li><a href="javascript:;">Leases</a></li>
-							<li><a href="javascript:;">Sites</a></li>
-							<li><a href="javascript:;">Landlords</a></li>
-							<li><a href="javascript:;">Financial</a></li>
-							<li class="active"><a href="javascript:;">Issues</a></li>
-							<li><a href="javascript:;">File Explorer</a></li>
+							<li><a href="javascript:;">Agent Dashboard</a></li>
+							<li><a href="javascript:;">Agent Savings</a></li>
+							<li><a href="javascript:;">Agent Billing</a></li>
+							<li class="active"><a href="javascript:;">Agent Users</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="issue-block">
+		<section class="agent-block">
 			<div class="container">
-				<div class="issue-block__content-block">
-					<div class="issue-block__heading">
-						<div class="issue-block__title">Add Issue</div>
-						<a href="javascript:;" class="btn btn--blue">
-							<svg width="6" height="13">
-								<use xlink:href="#manager_arrow"></use>
-							</svg>
-							<span>Back</span>
-						</a>
+				<div class="agent-block__users-block">
+					<div class="agent-block__users-heading">
+						<div class="agent-block__users-title">Agent Users</div>
 					</div>
-					<form class="issue-block__form">
-						<div class="issue-block__form-wrapper">
-							<div class="page-block__select-wrapper">
-								<label for="select_site" class="issue-block__label">Site</label>
-								<select id="select_site" class="js-example-basic-single">
-									<option value="1">Select a Site</option>
-									<option value="2">Select a Site</option>
-									<option value="3">Select a Site</option>
-									<option value="4">Select a Site</option>
-									<option value="5">Select a Site</option>
-								</select>
-							</div>
-							<a href="javascript:;" class="btn btn--green">
-								<svg width="15" height="14">
-									<use xlink:href="#plus"></use>
-								</svg>
-								<span>Add New Site</span>
-							</a>
+					<div class="issues-block__table-block">
+						<div class="issues-block__table-heading">
+							<div class="agent-block__table-heading-users">User</div>
+							<div class="agent-block__table-heading-allocated">Leases Allocated</div>
 						</div>
-						<div class="issue-block__form-wrapper">
-							<div class="page-block__select-wrapper">
-								<label for="select_type" class="issue-block__label">Issue Type</label>
-								<select id="select_type" class="js-example-basic-single">
-									<option value="1">Select a Issue Type</option>
-									<option value="2">Select a Issue Type</option>
-									<option value="3">Select a Issue Type</option>
-									<option value="4">Select a Issue Type</option>
-									<option value="5">Select a Issue Type</option>
-								</select>
+						<div class="issues-block__table-inner">
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-users"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-allocated">Neg in progress</div>
 							</div>
-							<div class="page-block__select-wrapper">
-								<label for="select_status" class="issue-block__label">Status</label>
-								<select id="select_status" class="js-example-basic-single">
-									<option value="1">Open</option>
-									<option value="2">Select Open</option>
-									<option value="3">Select Open</option>
-									<option value="4">Select Open</option>
-									<option value="5">Select Open</option>
-								</select>
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-users"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-allocated">Neg in progress</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-users"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-allocated">Neg in progress</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-users"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-allocated">Neg in progress</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-users"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-allocated">Neg in progress</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-users"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-allocated">Neg in progress</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-users"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-allocated">Neg in progress</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-users"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-allocated">Neg in progress</div>
 							</div>
 						</div>
-						<div class="issue-block__textarea-wrapper">
-							<label for="textarea_details" class="issue-block__label">Issue Details</label>
-							<textarea id="textarea_details" class="issue-block__textarea" placeholder="Issue Details"></textarea>
-						</div>
-						<button type="submit" class="btn btn--blue">Create</button>
-					</form>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -359,7 +344,6 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/plugins.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/issue-block.js"></script>
 <svg style="display:none;">
 	<symbol id="search" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M11.063 16.02a7.083 7.083 0 110-14.166 7.083 7.083 0 010 14.167z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.855 18.146l4.2-4.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 	<symbol id="synchronize_clock" viewBox="0 0 51 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.65 11.2v12.5h11.116M.861 15.731l6.67 10.227 7.78-9.09" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.651 44.157c11.665 0 21.12-9.666 21.12-21.59 0-11.923-9.455-21.59-21.12-21.59-11.664 0-21.12 9.667-21.12 21.59v3.395" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>

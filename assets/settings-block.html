@@ -1,0 +1,1670 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": "index-page"
+})
+
+@@include('template/page-header.html', {
+	"dashboard": "",
+	"leases": "",
+	"reminders": "",
+	"report": "",
+	"agent": "",
+	"settings": "true"
+})
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+		<section class="nav-block">
+			<div class="container">
+				<div class="nav-block__wrapper">
+					<div class="nav-block__list settings">
+						<ul>
+							<li class="active"><a href="javascript:;">General</a></li>
+							<li><a href="javascript:;">Lease</a></li>
+							<li><a href="javascript:;">% CPI rates</a></li>
+							<li><a href="javascript:;">Site</a></li>
+							<li><a href="javascript:;">Landlord</a></li>
+							<li><a href="javascript:;">Financial</a></li>
+							<li><a href="javascript:;">Issue</a></li>
+							<li><a href="javascript:;">Users</a></li>
+							<li><a href="javascript:;">ACU</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="settings-block">
+			<div class="container">
+				<div class="settings-block__wrapper">
+					<div class="settings-block__title">Heading (Preview of inactive tabs)</div>
+					<div class="settings-block__list">
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">Currency</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__currency-block">
+										<div class="page-block__select-wrapper">
+											<select id="leases_issues" class="js-example-basic-single">
+												<option value="1">Select a Currency...</option>
+												<option value="2">Select a Currency...</option>
+												<option value="3">Select a Currency...</option>
+												<option value="4">Select a Currency...</option>
+												<option value="5">Select a Currency...</option>
+											</select>
+										</div>
+										<a href="javascript:;" class="btn btn--green">Update</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">Main Dashboard</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__main-block">
+										<div class="settings-block__main-title">Select to show in the MAIN DASHBOARD</div>
+										<div class="settings-block__main-inner">
+											<div class="settings-block__main-inner-wrapper">
+												<div class="settings-block__validate-wrapper">
+													<input type="checkbox" id="settings_checkbox_1" name="settings_checkbox_1" class="settings-block__checkbox" checked>
+													<label class="settings-block__label" for="settings_checkbox_1">
+														<div class="settings-block__check">
+															<div class="settings-block__check-v"></div>
+														</div>
+														<div class="settings-block__checkbox-text">Active</div>
+													</label>
+												</div>
+												<div class="settings-block__validate-wrapper">
+													<input type="checkbox" id="settings_checkbox_2" name="settings_checkbox_2" class="settings-block__checkbox">
+													<label class="settings-block__label" for="settings_checkbox_2">
+														<div class="settings-block__check">
+															<div class="settings-block__check-v"></div>
+														</div>
+														<div class="settings-block__checkbox-text">Can be renewed</div>
+													</label>
+												</div>
+											</div>
+											<div class="settings-block__main-inner-wrapper">
+												<div class="settings-block__validate-wrapper">
+													<input type="checkbox" id="settings_checkbox_3" name="settings_checkbox_3" class="settings-block__checkbox">
+													<label class="settings-block__label" for="settings_checkbox_3">
+														<div class="settings-block__check">
+															<div class="settings-block__check-v"></div>
+														</div>
+														<div class="settings-block__checkbox-text">No renewal</div>
+													</label>
+												</div>
+												<div class="settings-block__validate-wrapper">
+													<input type="checkbox" id="settings_checkbox_4" name="settings_checkbox_4" class="settings-block__checkbox">
+													<label class="settings-block__label" for="settings_checkbox_4">
+														<div class="settings-block__check">
+															<div class="settings-block__check-v"></div>
+														</div>
+														<div class="settings-block__checkbox-text">Under Investigation</div>
+													</label>
+												</div>
+											</div>
+											<div class="settings-block__main-inner-wrapper">
+												<div class="settings-block__validate-wrapper">
+													<input type="checkbox" id="settings_checkbox_5" name="settings_checkbox_5" class="settings-block__checkbox">
+													<label class="settings-block__label" for="settings_checkbox_5">
+														<div class="settings-block__check">
+															<div class="settings-block__check-v"></div>
+														</div>
+														<div class="settings-block__checkbox-text">Negotiation in progress</div>
+													</label>
+												</div>
+												<div class="settings-block__validate-wrapper">
+													<input type="checkbox" id="settings_checkbox_6" name="settings_checkbox_6" class="settings-block__checkbox">
+													<label class="settings-block__label" for="settings_checkbox_6">
+														<div class="settings-block__check">
+															<div class="settings-block__check-v"></div>
+														</div>
+														<div class="settings-block__checkbox-text">Terms Agreed</div>
+													</label>
+												</div>
+											</div>
+											<div class="settings-block__main-inner-wrapper">
+												<div class="settings-block__validate-wrapper">
+													<input type="checkbox" id="settings_checkbox_7" name="settings_checkbox_7" class="settings-block__checkbox">
+													<label class="settings-block__label" for="settings_checkbox_7">
+														<div class="settings-block__check">
+															<div class="settings-block__check-v"></div>
+														</div>
+														<div class="settings-block__checkbox-text">Awaiting Landlord Signature</div>
+													</label>
+												</div>
+												<div class="settings-block__validate-wrapper">
+													<input type="checkbox" id="settings_checkbox_8" name="settings_checkbox_8" class="settings-block__checkbox">
+													<label class="settings-block__label" for="settings_checkbox_8">
+														<div class="settings-block__check">
+															<div class="settings-block__check-v"></div>
+														</div>
+														<div class="settings-block__checkbox-text">Awaiting Tenant Signature</div>
+													</label>
+												</div>
+											</div>
+											<div class="settings-block__main-inner-wrapper">
+												<div class="settings-block__validate-wrapper">
+													<input type="checkbox" id="settings_checkbox_9" name="settings_checkbox_9" class="settings-block__checkbox">
+													<label class="settings-block__label" for="settings_checkbox_9">
+														<div class="settings-block__check">
+															<div class="settings-block__check-v"></div>
+														</div>
+														<div class="settings-block__checkbox-text">Renewed</div>
+													</label>
+												</div>
+											</div>
+										</div>
+										<a href="javascript:;" class="btn btn--green">Update</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">Agent Dashboard</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__main-block">
+										<div class="settings-block__main-title">Select to show in the AGENT DASHBOARD</div>
+										<div class="settings-block__main-inner">
+											<div class="settings-block__main-inner-wrapper">
+												<div class="settings-block__validate-wrapper">
+													<input type="checkbox" id="settings_checkbox_1" name="settings_checkbox_1" class="settings-block__checkbox" checked>
+													<label class="settings-block__label" for="settings_checkbox_1">
+														<div class="settings-block__check">
+															<div class="settings-block__check-v"></div>
+														</div>
+														<div class="settings-block__checkbox-text">Active</div>
+													</label>
+												</div>
+												<div class="settings-block__validate-wrapper">
+													<input type="checkbox" id="settings_checkbox_2" name="settings_checkbox_2" class="settings-block__checkbox">
+													<label class="settings-block__label" for="settings_checkbox_2">
+														<div class="settings-block__check">
+															<div class="settings-block__check-v"></div>
+														</div>
+														<div class="settings-block__checkbox-text">Can be renewed</div>
+													</label>
+												</div>
+											</div>
+											<div class="settings-block__main-inner-wrapper">
+												<div class="settings-block__validate-wrapper">
+													<input type="checkbox" id="settings_checkbox_3" name="settings_checkbox_3" class="settings-block__checkbox">
+													<label class="settings-block__label" for="settings_checkbox_3">
+														<div class="settings-block__check">
+															<div class="settings-block__check-v"></div>
+														</div>
+														<div class="settings-block__checkbox-text">No renewal</div>
+													</label>
+												</div>
+												<div class="settings-block__validate-wrapper">
+													<input type="checkbox" id="settings_checkbox_4" name="settings_checkbox_4" class="settings-block__checkbox">
+													<label class="settings-block__label" for="settings_checkbox_4">
+														<div class="settings-block__check">
+															<div class="settings-block__check-v"></div>
+														</div>
+														<div class="settings-block__checkbox-text">Under Investigation</div>
+													</label>
+												</div>
+											</div>
+											<div class="settings-block__main-inner-wrapper">
+												<div class="settings-block__validate-wrapper">
+													<input type="checkbox" id="settings_checkbox_5" name="settings_checkbox_5" class="settings-block__checkbox">
+													<label class="settings-block__label" for="settings_checkbox_5">
+														<div class="settings-block__check">
+															<div class="settings-block__check-v"></div>
+														</div>
+														<div class="settings-block__checkbox-text">Negotiation in progress</div>
+													</label>
+												</div>
+												<div class="settings-block__validate-wrapper">
+													<input type="checkbox" id="settings_checkbox_6" name="settings_checkbox_6" class="settings-block__checkbox">
+													<label class="settings-block__label" for="settings_checkbox_6">
+														<div class="settings-block__check">
+															<div class="settings-block__check-v"></div>
+														</div>
+														<div class="settings-block__checkbox-text">Terms Agreed</div>
+													</label>
+												</div>
+											</div>
+											<div class="settings-block__main-inner-wrapper">
+												<div class="settings-block__validate-wrapper">
+													<input type="checkbox" id="settings_checkbox_7" name="settings_checkbox_7" class="settings-block__checkbox">
+													<label class="settings-block__label" for="settings_checkbox_7">
+														<div class="settings-block__check">
+															<div class="settings-block__check-v"></div>
+														</div>
+														<div class="settings-block__checkbox-text">Awaiting Landlord Signature</div>
+													</label>
+												</div>
+												<div class="settings-block__validate-wrapper">
+													<input type="checkbox" id="settings_checkbox_8" name="settings_checkbox_8" class="settings-block__checkbox">
+													<label class="settings-block__label" for="settings_checkbox_8">
+														<div class="settings-block__check">
+															<div class="settings-block__check-v"></div>
+														</div>
+														<div class="settings-block__checkbox-text">Awaiting Tenant Signature</div>
+													</label>
+												</div>
+											</div>
+											<div class="settings-block__main-inner-wrapper">
+												<div class="settings-block__validate-wrapper">
+													<input type="checkbox" id="settings_checkbox_9" name="settings_checkbox_9" class="settings-block__checkbox">
+													<label class="settings-block__label" for="settings_checkbox_9">
+														<div class="settings-block__check">
+															<div class="settings-block__check-v"></div>
+														</div>
+														<div class="settings-block__checkbox-text">Renewed</div>
+													</label>
+												</div>
+											</div>
+										</div>
+										<a href="javascript:;" class="btn btn--green">Update</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">Lease Types</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__types-block">
+										<div class="settings-block__types-table-block">
+											<div class="settings-block__types-table-heading">
+												<div class="settings-block__types-heading-name">Name</div>
+												<a href="javascript:;" class="btn btn--green" data-toggle="modal" data-target="#popup_settings">
+													<svg width="12" height="12">
+														<use xlink:href="#plus"></use>
+													</svg>
+													<span>New Lease Type</span>
+												</a>
+											</div>
+											<div class="settings-block__types-table-inner">
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Basement</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Rooftop</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Tower</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Offices</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Data-Centre</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Retail</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">Rental Cost Categories</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__types-block">
+										<div class="settings-block__types-table-block">
+											<div class="settings-block__types-table-heading">
+												<div class="settings-block__types-heading-name">Name</div>
+												<a href="javascript:;" class="btn btn--green">
+													<svg width="12" height="12">
+														<use xlink:href="#plus"></use>
+													</svg>
+													<span>New Rental Cost Category</span>
+												</a>
+											</div>
+											<div class="settings-block__types-table-inner">
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Gross Rental</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Base Cost</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Ground Space</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Operating Costs</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Access Costs</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Container</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">MW Antenna (300mm)</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">MW Antenna (600m)</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">MW Antenna (1200mm)</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">300mm PTMP Antenna</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">10 000</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">Deposit Types</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__types-block">
+										<div class="settings-block__types-table-block">
+											<div class="settings-block__types-table-heading">
+												<div class="settings-block__types-heading-name">Name</div>
+												<a href="javascript:;" class="btn btn--green">
+													<svg width="12" height="12">
+														<use xlink:href="#plus"></use>
+													</svg>
+													<span>New Deposit Type</span>
+												</a>
+											</div>
+											<div class="settings-block__types-table-inner">
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Bank Guarantee</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Landlord (interest bearing)</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Landlord (non-interest bearing)</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">Lease Supporting Document Types</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__types-block">
+										<div class="settings-block__types-table-block">
+											<div class="settings-block__types-table-heading">
+												<div class="settings-block__types-heading-name">Name</div>
+												<a href="javascript:;" class="btn btn--green">
+													<svg width="12" height="12">
+														<use xlink:href="#plus"></use>
+													</svg>
+													<span>New Lease Supporting Document Type</span>
+												</a>
+											</div>
+											<div class="settings-block__types-table-inner">
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">New Lease Agreement</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Lease Renewal Agreement</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Lease Addendum</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Site Drawings</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">Supporting Document Statuses</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__types-block">
+										<div class="settings-block__types-table-block">
+											<div class="settings-block__types-table-heading">
+												<div class="settings-block__types-heading-name">Name</div>
+												<a href="javascript:;" class="btn btn--green">
+													<svg width="12" height="12">
+														<use xlink:href="#plus"></use>
+													</svg>
+													<span>New Supporting Document Status</span>
+												</a>
+											</div>
+											<div class="settings-block__types-table-inner">
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Complete</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Missing Documents (Essential)</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Missing documents (non-essential)</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">Site Statuses</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__types-block">
+										<div class="settings-block__types-table-block">
+											<div class="settings-block__types-table-heading">
+												<div class="settings-block__types-heading-name">Name</div>
+												<a href="javascript:;" class="btn btn--green">
+													<svg width="12" height="12">
+														<use xlink:href="#plus"></use>
+													</svg>
+													<span>New Supporting Document Status</span>
+												</a>
+											</div>
+											<div class="settings-block__types-table-inner">
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Active</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Can be renewed</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">No renewal</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Under Investigation</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Negotiation in progress</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Terms Agreed</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Awaiting Landlord Signature</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Awaiting Tenant Signature</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">MW Antenna (1200mm)</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">Hours of access</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__types-block">
+										<div class="settings-block__types-table-block">
+											<div class="settings-block__types-table-heading">
+												<div class="settings-block__types-heading-name">Name</div>
+												<a href="javascript:;" class="btn btn--green">
+													<svg width="12" height="12">
+														<use xlink:href="#plus"></use>
+													</svg>
+													<span>New Hours of access</span>
+												</a>
+											</div>
+											<div class="settings-block__types-table-inner">
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">24/7</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Mon-Fri 08:00-17:00</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Must call 4 hours before</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">Site Inventory Categories</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__types-block">
+										<div class="settings-block__types-table-block">
+											<div class="settings-block__types-table-heading">
+												<div class="settings-block__types-heading-name">Name</div>
+												<a href="javascript:;" class="btn btn--green">
+													<svg width="12" height="12">
+														<use xlink:href="#plus"></use>
+													</svg>
+													<span>New Site Inventory Category</span>
+												</a>
+											</div>
+											<div class="settings-block__types-table-inner">
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">CONTAINER</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">600MM MW</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">300MMW</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">1200MM MW</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">PTMP ANTENNA</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">LTE ANTENNA</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">FIBRE RETICULATION</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">BATTERIES</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">GENERATOR</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">Landlord Types</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__types-block">
+										<div class="settings-block__types-table-block">
+											<div class="settings-block__types-table-heading">
+												<div class="settings-block__types-heading-name">Name</div>
+												<a href="javascript:;" class="btn btn--green">
+													<svg width="12" height="12">
+														<use xlink:href="#plus"></use>
+													</svg>
+													<span>New Landlord Type</span>
+												</a>
+											</div>
+											<div class="settings-block__types-table-inner">
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Private Company</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Listed Company</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Trust</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Non-Profit Organisation</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Individual</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Body Corporate</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">Landlord Supporting Document Types</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__types-block">
+										<div class="settings-block__types-table-block">
+											<div class="settings-block__types-table-heading">
+												<div class="settings-block__types-heading-name">Name</div>
+												<a href="javascript:;" class="btn btn--green">
+													<svg width="12" height="12">
+														<use xlink:href="#plus"></use>
+													</svg>
+													<span>New Landlord Supporting Document Type</span>
+												</a>
+											</div>
+											<div class="settings-block__types-table-inner">
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Company Registration Documents</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">ID Documents</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Company resolution for signatory</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Proof of ownership of property</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Tax Clearance Certificate</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">VAT Registration Certificate</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">BEE Certificate</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Trust Deeds</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">Landlord Contacts Types</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__types-block">
+										<div class="settings-block__types-table-block">
+											<div class="settings-block__types-table-heading">
+												<div class="settings-block__types-heading-name">Name</div>
+												<a href="javascript:;" class="btn btn--green">
+													<svg width="12" height="12">
+														<use xlink:href="#plus"></use>
+													</svg>
+													<span>New Landlord Contacts Type</span>
+												</a>
+											</div>
+											<div class="settings-block__types-table-inner">
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Accounts</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Director</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Managing Agent</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Owner</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Property Manager</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">Issue Types</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__types-block">
+										<div class="settings-block__types-table-block">
+											<div class="settings-block__types-table-heading">
+												<div class="settings-block__types-heading-name">Name</div>
+												<a href="javascript:;" class="btn btn--green">
+													<svg width="12" height="12">
+														<use xlink:href="#plus"></use>
+													</svg>
+													<span>New Issue Type</span>
+												</a>
+											</div>
+											<div class="settings-block__types-table-inner">
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Access</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Billing</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Additional Antennas</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Theft</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<div class="settings-block__types-inner-wrapper">
+													<div class="settings-block__types-inner-title">Electricity</div>
+													<div class="settings-block__types-inner-action">
+														<a href="javascript:;" class="issues-block__edit-link">
+															<svg width="12" height="12">
+																<use xlink:href="#edit"></use>
+															</svg>
+														</a>
+														<a href="javascript:;" class="issues-block__trash-link">
+															<svg width="15" height="12">
+																<use xlink:href="#trash"></use>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+@@include('template/popups.html')
+@@include('template/scripts.html')
+<script src="js/settings-block.js"></script>
+@@include('template/sprite.html')
+
+</body>
+</html>

@@ -140,6 +140,25 @@
 			width: 143px;
 		}
 	}
+	&__settings-form {
+		position: relative;
+		display: block;
+	}
+	&__settings-form &__form-controls-block {
+		.btn--red {
+			width: 110px;
+		}
+		.btn--green {
+			width: 94px;
+			padding-top: 11px;
+			padding-bottom: 11px;
+		}
+	}
+	&__settings-form-wrapper {
+		position: relative;
+		display: block;
+		margin-bottom: 30px;
+	}
 }
 
 @include for-size(mobile) {
@@ -182,6 +201,19 @@
 		&__create-form-wrapper .page-block__input-wrapper.mb0 {
 			&:not(:last-child) {
 				margin-bottom: 40px;
+			}
+		}
+		&__settings-form &__form-controls-block {
+			display: block;
+			.btn:not(:last-child) {
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+			.btn--red {
+				width: 100%;
+			}
+			.btn--green {
+				width: 100%;
 			}
 		}
 	}

@@ -1,0 +1,208 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": ""	
+})
+@@include('template/page-header.html', {
+	"dashboard": "",
+	"leases": "",
+	"reminders": "",
+	"report": "",
+	"agent": "true",
+	"settings": ""
+})
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+		<section class="nav-block">
+			<div class="container">
+				<div class="nav-block__wrapper">
+					<div class="nav-block__list">
+						<ul>
+							<li><a href="javascript:;">Agent Dashboard</a></li>
+							<li class="active"><a href="javascript:;">Agent Savings</a></li>
+							<li><a href="javascript:;">Agent Billing</a></li>
+							<li><a href="javascript:;">Agent Users</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="agent-block">
+			<div class="container">
+				<div class="agent-block__wrapper">
+					<div class="agent-block__heading">
+						<div class="agent-block__title">Agent Savings</div>
+					</div>
+					<div class="agent-block__statistic-block">
+						<div class="agent-block__statistic-card">
+							<div class="agent-block__statistic-title">Before EXPROP</div>
+							<div class="agent-block__statistic-card-option">
+								<div class="agent-block__statistic-card-heading">
+									<div class="agent-block__statistic-card-icon">
+										<img src="img/agent-calculator.svg" alt="">
+									</div>
+									<div class="agent-block__statistic-card-title">Average Lease Cost Before EXPROP</div>
+								</div>
+								<div class="agent-block__statistic-card-value">0%</div>
+							</div>
+							<div class="agent-block__statistic-card-option">
+								<div class="agent-block__statistic-card-heading">
+									<div class="agent-block__statistic-card-icon">
+										<svg width="29" height="33">
+											<use xlink:href="#agent_average"></use>
+										</svg>
+									</div>
+									<div class="agent-block__statistic-card-title">Average Escalation Before EXPROP</div>
+								</div>
+								<div class="agent-block__statistic-card-value">0%</div>
+							</div>
+						</div>
+						<div class="agent-block__statistic-card">
+							<div class="agent-block__statistic-title">After EXPROP</div>
+							<div class="agent-block__statistic-card-option">
+								<div class="agent-block__statistic-card-heading">
+									<div class="agent-block__statistic-card-icon">
+										<img src="img/agent-calculator.svg" alt="">
+									</div>
+									<div class="agent-block__statistic-card-title">Average Lease Cost After EXPROP</div>
+								</div>
+								<div class="agent-block__statistic-card-value">R 0</div>
+							</div>
+							<div class="agent-block__statistic-card-option">
+								<div class="agent-block__statistic-card-heading">
+									<div class="agent-block__statistic-card-icon">
+										<svg width="29" height="33">
+											<use xlink:href="#agent_average"></use>
+										</svg>
+									</div>
+									<div class="agent-block__statistic-card-title">Average Escalation After EXPROP</div>
+								</div>
+								<div class="agent-block__statistic-card-value">0%</div>
+							</div>
+							<div class="agent-block__statistic-card-option">
+								<div class="agent-block__statistic-card-heading">
+									<div class="agent-block__statistic-card-icon">
+										<svg width="34" height="32">
+											<use xlink:href="#agent_saving"></use>
+										</svg>
+									</div>
+									<div class="agent-block__statistic-card-title">Average Saving Percentage</div>
+								</div>
+								<div class="agent-block__statistic-card-value">0%</div>
+							</div>
+						</div>
+					</div>
+					<div class="agent-block__saving-block">
+						<div class="agent-block__saving-heading">
+							<div class="agent-block__management-heading-title">Detailed Lease Savings</div>
+							<div class="agent-block__saving-heading-controls">
+								<a href="javascript:;" class="btn btn--fenny">
+									<svg width="13" height="13">
+										<use xlink:href="#print"></use>
+									</svg>
+									<span>Export lease Savings</span>
+								</a>
+							</div>
+						</div>
+						<form class="agent-block__form">
+							<div class="agent-block__saving-form-wrapper">
+								<div class="page-block__input-wrapper">
+									<label for="agent_saving_id" class="page-block__label">Site Id</label>
+									<input type="text" id="agent_saving_id" name="agent_saving_id" class="text-input page-block__input" placeholder="Site ID..." required>
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="agent_saving_name" class="page-block__label">Site Name</label>
+									<input type="text" id="agent_saving_name" name="agent_saving_name" class="text-input page-block__input" placeholder="Site Name..." required>
+								</div>
+							</div>
+							<div class="agent-block__form-controls">
+								<a href="javascript:;" class="btn btn--green">Search</a>
+								<a href="javascript:;" class="btn btn--clear">
+									<svg width="12" height="12">
+										<use xlink:href="#close"></use>
+									</svg>
+									<span>Reset</span>
+								</a>
+							</div>
+						</form>
+					</div>
+					<div class="issues-block__table-block">
+						<div class="issues-block__table-heading">
+							<div class="agent-block__table-heading-id">Site ID</div>
+							<div class="agent-block__table-heading-name">Site Name</div>
+							<div class="agent-block__table-heading-total">Total (Previous)</div>
+							<div class="agent-block__table-heading-escalation-previous">Escalation (Previous)</div>
+							<div class="agent-block__table-heading-rental-proposed">Proposed Total Rental</div>
+							<div class="agent-block__table-heading-rental-new">Total Rental (New)</div>
+							<div class="agent-block__table-heading-escalation-new">Escalation (New)</div>
+							<div class="agent-block__table-heading-term">New Lease Term</div>
+							<div class="agent-block__table-heading-monthly-saving">Agent Monthly Saving</div>
+							<div class="agent-block__table-heading-escalation-saving">Escalation Saving</div>
+							<div class="agent-block__table-heading-saving">Saving %</div>
+							<div class="agent-block__table-heading-new-value">Total New Lease Contractual Value</div>
+							<div class="agent-block__table-heading-proposed-value">Total Proposed Lease Contractual Value</div>
+							<div class="agent-block__table-heading-contractual-saving">Total Contractual Saving</div>
+						</div>
+						<div class="issues-block__table-inner">
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-name"><a href="javascript:;">Site Name</a></div>
+								<div class="agent-block__table-inner-total">Total Lease Cost</div>
+								<div class="agent-block__table-inner-escalation-previous">Escalation</div>
+								<div class="agent-block__table-inner-rental-proposed">Proposed Total Lease Cost</div>
+								<div class="agent-block__table-inner-rental-new">Total Lease Costs</div>
+								<div class="agent-block__table-inner-escalation-new">Escalation</div>
+								<div class="agent-block__table-inner-term">New Lease Term</div>
+								<div class="agent-block__table-inner-monthly-saving">Agent Monthly Saving</div>
+								<div class="agent-block__table-inner-escalation-saving">Escalation Saving</div>
+								<div class="agent-block__table-inner-saving">Saving %</div>
+								<div class="agent-block__table-inner-new-value">Total New Lease Contractual Value</div>
+								<div class="agent-block__table-inner-proposed-value">Total Proposed Lease Contractual Value</div>
+								<div class="agent-block__table-inner-contractual-saving">Total Contractual Saving</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-name"><a href="javascript:;">Site Name</a></div>
+								<div class="agent-block__table-inner-total">Total Lease Cost</div>
+								<div class="agent-block__table-inner-escalation-previous">Escalation</div>
+								<div class="agent-block__table-inner-rental-proposed">Proposed Total Lease Cost</div>
+								<div class="agent-block__table-inner-rental-new">Total Lease Costs</div>
+								<div class="agent-block__table-inner-escalation-new">Escalation</div>
+								<div class="agent-block__table-inner-term">New Lease Term</div>
+								<div class="agent-block__table-inner-monthly-saving">Agent Monthly Saving</div>
+								<div class="agent-block__table-inner-escalation-saving">Escalation Saving</div>
+								<div class="agent-block__table-inner-saving">Saving %</div>
+								<div class="agent-block__table-inner-new-value">Total New Lease Contractual Value</div>
+								<div class="agent-block__table-inner-proposed-value">Total Proposed Lease Contractual Value</div>
+								<div class="agent-block__table-inner-contractual-saving">Total Contractual Saving</div>
+							</div>
+							<div class="issues-block__table-card">
+								<div class="agent-block__table-inner-id"><a href="javascript:;">Id12345</a></div>
+								<div class="agent-block__table-inner-name"><a href="javascript:;">Site Name</a></div>
+								<div class="agent-block__table-inner-total">Total Lease Cost</div>
+								<div class="agent-block__table-inner-escalation-previous">Escalation</div>
+								<div class="agent-block__table-inner-rental-proposed">Proposed Total Lease Cost</div>
+								<div class="agent-block__table-inner-rental-new">Total Lease Costs</div>
+								<div class="agent-block__table-inner-escalation-new">Escalation</div>
+								<div class="agent-block__table-inner-term">New Lease Term</div>
+								<div class="agent-block__table-inner-monthly-saving">Agent Monthly Saving</div>
+								<div class="agent-block__table-inner-escalation-saving">Escalation Saving</div>
+								<div class="agent-block__table-inner-saving">Saving %</div>
+								<div class="agent-block__table-inner-new-value">Total New Lease Contractual Value</div>
+								<div class="agent-block__table-inner-proposed-value">Total Proposed Lease Contractual Value</div>
+								<div class="agent-block__table-inner-contractual-saving">Total Contractual Saving</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+@@include('template/popups.html')
+@@include('template/scripts.html')
+@@include('template/sprite.html')
+
+</body>
+</html>

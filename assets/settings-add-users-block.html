@@ -1,0 +1,695 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": ""
+})
+@@include('template/page-header.html', {
+	"dashboard": "",
+	"leases": "true",
+	"reminders": "",
+	"report": "",
+	"agent": "",
+	"settings": ""
+})
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+		<section class="nav-block">
+			<div class="container">
+				<div class="nav-block__wrapper">
+					<div class="nav-block__list settings">
+						<ul>
+							<li><a href="javascript:;">General</a></li>
+							<li><a href="javascript:;">Lease</a></li>
+							<li><a href="javascript:;">% CPI rates</a></li>
+							<li><a href="javascript:;">Site</a></li>
+							<li><a href="javascript:;">Landlord</a></li>
+							<li><a href="javascript:;">Financial</a></li>
+							<li><a href="javascript:;">Issue</a></li>
+							<li class="active"><a href="javascript:;">Users</a></li>
+							<li><a href="javascript:;">ACU</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="settings-block">
+			<div class="container">
+				<form class="settings-block__add-form">
+					<div class="settings-block__add-block">
+						<div class="settings-block__add-title">Add User</div>
+						<div class="settings-block__add-inner">
+							<div class="settings-block__add-inner-wrapper">
+								<div class="page-block__input-wrapper">
+									<label for="settings_add_role" class="page-block__label">Role</label>
+									<select id="settings_add_role" class="js-example-basic-single">
+										<option value="1">Role...</option>
+										<option value="2">Role...</option>
+										<option value="3">Role...</option>
+										<option value="4">Role...</option>
+										<option value="5">Role...</option>
+									</select>
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="settings_add_type" class="page-block__label">Type</label>
+									<select id="settings_add_type" class="js-example-basic-single">
+										<option value="1">Agent...</option>
+										<option value="2">Agent...</option>
+										<option value="3">Agent...</option>
+										<option value="4">Agent...</option>
+										<option value="5">Agent...</option>
+									</select>
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="settings_add_cell" class="page-block__label">Cell</label>
+									<select id="settings_add_cell" class="js-example-basic-single">
+										<option value="1">Cell number...</option>
+										<option value="2">Cell number...</option>
+										<option value="3">Cell number...</option>
+										<option value="4">Cell number...</option>
+										<option value="5">Cell number...</option>
+									</select>
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="settings_add_name" class="page-block__label">Name</label>
+									<select id="settings_add_name" class="js-example-basic-single">
+										<option value="1">Name...</option>
+										<option value="2">Name...</option>
+										<option value="3">Name...</option>
+										<option value="4">Name...</option>
+										<option value="5">Name...</option>
+									</select>
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="settings_add_surname" class="page-block__label">Surname</label>
+									<select id="settings_add_surname" class="js-example-basic-single">
+										<option value="1">User</option>
+										<option value="2">User</option>
+										<option value="3">User</option>
+										<option value="4">User</option>
+										<option value="5">User</option>
+									</select>
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="settings_add_email" class="page-block__label">Email</label>
+									<select id="settings_add_email" class="js-example-basic-single">
+										<option value="1">Email address...</option>
+										<option value="2">Email address...</option>
+										<option value="3">Email address...</option>
+										<option value="4">Email address...</option>
+										<option value="5">Email address...</option>
+									</select>
+								</div>
+								<div class="page-block__input-wrapper">
+									<label for="settings_add_company" class="page-block__label">Company</label>
+									<select id="settings_add_company" class="js-example-basic-single">
+										<option value="1">Company...</option>
+										<option value="2">Company...</option>
+										<option value="3">Company...</option>
+										<option value="4">Company...</option>
+										<option value="5">Company...</option>
+									</select>
+								</div>
+							</div>
+							<div class="settings-block__add-inner-wrapper">
+								<div class="page-block__input-wrapper mb0">
+									<label for="settings_add_username" class="page-block__label">Username</label>
+									<input type="text" id="settings_add_username" name="settings_add_username" class="text-input page-block__input" placeholder="Username or email address..." required>
+								</div>
+								<div class="page-block__input-wrapper mb0">
+									<label for="settings_add_password" class="page-block__label">Password</label>
+									<input type="text" id="settings_add_password" name="settings_add_password" class="text-input page-block__input" placeholder="Password..." required>
+								</div>
+								<div class="page-block__input-wrapper mb0">
+									<label for="settings_add_confirm" class="page-block__label">Confirm Password</label>
+									<input type="text" id="settings_add_confirm" name="settings_add_confirm" class="text-input page-block__input" placeholder="Password..." required>
+								</div>
+							</div>
+						</div>
+						<a href="javascript:;" class="btn btn--red">
+							<svg width="13" height="13">
+								<use xlink:href="#reset"></use>
+							</svg>
+							<span>Reset password</span>
+						</a>
+						<div class="page-block__input-wrapper">
+							<label for="settings_add_designation" class="page-block__label">Designation</label>
+							<textarea id="settings_add_designation" class="page-block__textarea settings-block__textarea" placeholder="Designation Tenant"></textarea>
+						</div>
+					</div>
+					<div class="settings-block__permissions-block">
+						<div class="settings-block__permissions-heading">
+							<div class="settings-block__permissions-heading-title">Permissions</div>
+							<div class="settings-block__validate-wrapper">
+								<input type="checkbox" id="settings_add_select_1" name="settings_add_select_1" class="settings-block__checkbox" checked>
+								<label class="settings-block__label" for="settings_add_select_1">
+									<div class="settings-block__permissions-text">Select All</div>
+									<div class="settings-block__check">
+										<div class="settings-block__check-v"></div>
+									</div>
+								</label>
+							</div>
+						</div>
+						<div class="settings-block__permissions-inner">
+							<div class="issues-block__table-block">
+								<div class="issues-block__table-heading">
+									<div class="settings-block__table-heading-name">Name</div>
+									<div class="settings-block__table-heading-view">View</div>
+									<div class="settings-block__table-heading-add">Add</div>
+									<div class="settings-block__table-heading-edit">Edit</div>
+									<div class="settings-block__table-heading-remove">Remove</div>
+								</div>
+								<div class="issues-block__table-inner">
+									<div class="issues-block__table-card">
+										<div class="settings-block__table-inner-name">Lease</div>
+										<div class="settings-block__table-inner-view">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_1" name="settings_add_checkbox_1" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_1">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-add">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_2" name="settings_add_checkbox_2" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_2">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-edit">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_3" name="settings_add_checkbox_3" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_3">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-remove">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_4" name="settings_add_checkbox_4" class="settings-block__checkbox" checked>
+												<label class="settings-block__label" for="settings_add_checkbox_4">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="issues-block__table-card">
+										<div class="settings-block__table-inner-name">Site</div>
+										<div class="settings-block__table-inner-view">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_5" name="settings_add_checkbox_5" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_5">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-add">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_6" name="settings_add_checkbox_6" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_6">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-edit">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_7" name="settings_add_checkbox_7" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_7">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-remove">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_8" name="settings_add_checkbox_8" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_8">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="issues-block__table-card">
+										<div class="settings-block__table-inner-name">Landlord</div>
+										<div class="settings-block__table-inner-view">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_9" name="settings_add_checkbox_9" class="settings-block__checkbox" checked>
+												<label class="settings-block__label" for="settings_add_checkbox_9">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-add">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_10" name="settings_add_checkbox_10" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_10">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-edit">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_11" name="settings_add_checkbox_11" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_11">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-remove">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_12" name="settings_add_checkbox_12" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_12">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="issues-block__table-card">
+										<div class="settings-block__table-inner-name">Financial</div>
+										<div class="settings-block__table-inner-view">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_13" name="settings_add_checkbox_13" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_13">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-add">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_14" name="settings_add_checkbox_14" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_14">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-edit">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_15" name="settings_add_checkbox_15" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_15">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-remove">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_16" name="settings_add_checkbox_16" class="settings-block__checkbox" checked>
+												<label class="settings-block__label" for="settings_add_checkbox_16">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="issues-block__table-card">
+										<div class="settings-block__table-inner-name">Agent</div>
+										<div class="settings-block__table-inner-view">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_17" name="settings_add_checkbox_17" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_17">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-add">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_18" name="settings_add_checkbox_18" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_18">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-edit">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_19" name="settings_add_checkbox_19" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_19">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-remove">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_20" name="settings_add_checkbox_20" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_20">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="issues-block__table-card">
+										<div class="settings-block__table-inner-name">Agent Saving</div>
+										<div class="settings-block__table-inner-view">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_21" name="settings_add_checkbox_21" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_21">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-add">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_22" name="settings_add_checkbox_22" class="settings-block__checkbox" checked>
+												<label class="settings-block__label" for="settings_add_checkbox_22">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-edit">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_23" name="settings_add_checkbox_23" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_23">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-remove">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_24" name="settings_add_checkbox_24" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_24">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="issues-block__table-card">
+										<div class="settings-block__table-inner-name">Agent Billing</div>
+										<div class="settings-block__table-inner-view">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_25" name="settings_add_checkbox_25" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_25">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-add">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_26" name="settings_add_checkbox_26" class="settings-block__checkbox" checked>
+												<label class="settings-block__label" for="settings_add_checkbox_26">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-edit">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_27" name="settings_add_checkbox_27" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_27">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-remove">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_28" name="settings_add_checkbox_28" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_28">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="issues-block__table-card">
+										<div class="settings-block__table-inner-name">Agent User</div>
+										<div class="settings-block__table-inner-view">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_29" name="settings_add_checkbox_29" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_29">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-add">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_30" name="settings_add_checkbox_30" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_30">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-edit">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_31" name="settings_add_checkbox_31" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_31">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-remove">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_32" name="settings_add_checkbox_32" class="settings-block__checkbox" checked>
+												<label class="settings-block__label" for="settings_add_checkbox_32">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="issues-block__table-card">
+										<div class="settings-block__table-inner-name">Issue</div>
+										<div class="settings-block__table-inner-view">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_30" name="settings_add_checkbox_30" class="settings-block__checkbox" checked>
+												<label class="settings-block__label" for="settings_add_checkbox_30">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-add">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_31" name="settings_add_checkbox_31" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_31">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-edit">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_32" name="settings_add_checkbox_32" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_32">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-remove">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_33" name="settings_add_checkbox_33" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_33">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="issues-block__table-card">
+										<div class="settings-block__table-inner-name">Setting</div>
+										<div class="settings-block__table-inner-view">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_34" name="settings_add_checkbox_34" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_34">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-add">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_35" name="settings_add_checkbox_35" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_35">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-edit">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_36" name="settings_add_checkbox_36" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_36">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-remove">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_37" name="settings_add_checkbox_37" class="settings-block__checkbox" checked>
+												<label class="settings-block__label" for="settings_add_checkbox_37">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="issues-block__table-card">
+										<div class="settings-block__table-inner-name">Report</div>
+										<div class="settings-block__table-inner-view">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_35" name="settings_add_checkbox_35" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_35">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-add">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_36" name="settings_add_checkbox_36" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_36">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-edit">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_37" name="settings_add_checkbox_37" class="settings-block__checkbox" checked>
+												<label class="settings-block__label" for="settings_add_checkbox_37">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-remove">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_38" name="settings_add_checkbox_38" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_38">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="issues-block__table-card">
+										<div class="settings-block__table-inner-name">Reminder</div>
+										<div class="settings-block__table-inner-view">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_39" name="settings_add_checkbox_39" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_39">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-add">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_40" name="settings_add_checkbox_40" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_40">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-edit">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_41" name="settings_add_checkbox_41" class="settings-block__checkbox" checked>
+												<label class="settings-block__label" for="settings_add_checkbox_41">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="settings-block__table-inner-remove">
+											<div class="agent-block__validate-wrapper">
+												<input type="checkbox" id="settings_add_checkbox_42" name="settings_add_checkbox_42" class="settings-block__checkbox">
+												<label class="settings-block__label" for="settings_add_checkbox_42">
+													<div class="settings-block__permissions-check">
+														<div class="settings-block__permissions-check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="javascript:;" class="btn btn--blue">Update</a>
+					</div>
+				</form>
+			</div>
+		</section>
+	</div>
+</div>
+
+@@include('template/popups.html')
+@@include('template/scripts.html')
+<script src="js/issues-block.js"></script>
+@@include('template/sprite.html')
+
+</body>
+</html>

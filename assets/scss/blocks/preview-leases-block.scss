@@ -96,6 +96,69 @@
 		color: $fenny;
 		margin-bottom: 14px;
 	}
+	&__table-heading-start-date,
+	&__table-inner-start-date {
+		width: 100%;
+		max-width: 80px;
+		a {
+			display: block;
+			font-size: 15px;
+			line-height: 1.2;
+			font-weight: 700;
+			color: $fenny;
+			transition: all 0.2s ease-in-out;
+		}
+		a:hover, a:active {
+			color: $fenny;
+			text-decoration: none;
+		}
+	}
+	&__table-heading-end-date,
+	&__table-inner-end-date {
+		width: 100%;
+		max-width: 90px;
+		a {
+			display: block;
+			font-size: 15px;
+			line-height: 1.2;
+			font-weight: 700;
+			color: $fenny;
+			transition: all 0.2s ease-in-out;
+		}
+		a:hover, a:active {
+			color: $fenny;
+			text-decoration: none;
+		}
+	}
+	&__table-heading-rent,
+	&__table-inner-rent {
+		width: 100%;
+		max-width: 80px;
+	}
+	&__table-heading-antenna,
+	&__table-inner-antenna {
+		width: 100%;
+		max-width: 120px;
+	}
+	&__table-heading-container,
+	&__table-inner-container {
+		width: 100%;
+		max-width: 80px;
+	}
+	&__table-heading-monthly-rent,
+	&__table-inner-monthly-rent {
+		width: 100%;
+		max-width: 120px;
+	}
+	&__table-heading-annual-rent,
+	&__table-inner-annual-rent {
+		width: 100%;
+		max-width: 120px;
+	}
+	.preview-landlord-block__table-card {
+		padding-top: 13px;
+		padding-bottom: 13px;
+	}
 }
 
 @include for-size(mobile) {

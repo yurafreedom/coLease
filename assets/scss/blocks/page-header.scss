@@ -2,6 +2,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	min-height: 100vh;
 	background-color: rgba(249, 248, 252, 0.91);
 }
 
@@ -141,6 +142,7 @@
 	}
 	&__nav ul li.active a {
 		color: $primary-blue;
+		font-weight: 700;
 		text-decoration: none;
 		img.active {
 			opacity: 1;
