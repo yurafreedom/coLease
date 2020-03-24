@@ -205,6 +205,8 @@
 
 @include for-size (mobile) {
 	.site-block {
+		padding-top: 15px;
+		padding-bottom: 15px;
 		.page-block__form {
 			display: block;
 		}

@@ -69,6 +69,9 @@
 			fill: $primary-blue;
 		}
 	}
+	&__input-wrapper.active &__input {
+		border-color: $primary-blue;
+	}
 	&__input {
 		position: relative;
 		display: block;

@@ -9,7 +9,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 57px;
+		margin-bottom: 52px;
 		.btn--blue {
 			display: none;
 			width: 88px;
@@ -132,6 +132,9 @@
 		display: block;
 		width: 100%;
 		max-width: 150px;
+		span {
+			font-weight: 500;
+		}
 	}
 	&__table-heading-rental,
 	&__table-inner-rental {
@@ -144,6 +147,7 @@
 		display: block;
 		width: 100%;
 		max-width: 100px;
+		text-align: center;
 	}
 	&__table-heading-status,
 	&__table-inner-status {
@@ -163,6 +167,8 @@
 
 @include for-size(mobile) {
 	.leases-block {
+		padding-top: 15px;
+		padding-bottom: 15px;
 		&__form-wrapper {
 			display: block;
 			.btn--fenny {

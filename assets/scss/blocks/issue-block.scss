@@ -105,7 +105,7 @@
 		border-radius: 10px;
 		height: 126px;
 		transition: all 0.2s ease-in-out;
-		&:focus {
+		&:hover, &:focus {
 			border-color: $primary-blue;
 		}
 		&::placeholder {
@@ -115,13 +115,16 @@
 			font-weight: 400;
 			transition: all 0.2s ease-in-out;
 		}
+		&:hover::placeholder {
+			color: $primary-blue;
+		}
 	}
 }
 
 @include for-size(mobile) {
 	.issue-block {
 		padding-top: 15px;
-		padding-bottom: 20px;
+		padding-bottom: 15px;
 		&__title {
 			font-size: 20px;
 		}

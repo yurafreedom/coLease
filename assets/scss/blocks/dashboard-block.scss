@@ -1,0 +1,124 @@
+.dashboard-block {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	&__heading {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 30px;
+		padding-left: 30px;
+		padding-right: 35px;
+		padding-bottom: 30px;
+		border-radius: 25px;
+		background-color: #fff;
+		margin-bottom: 30px;
+	}
+	&__title {
+		display: block;
+		font-size: 25px;
+		line-height: 1;
+		font-weight: 400;
+		color: $title;
+	}
+	&__heading-controls {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		.btn:not(:last-child) {
+			margin-right: 16px;
+		}
+		.btn--green {
+			padding-left: 19px;
+			padding-right: 19px;
+			padding-top: 11px;
+			padding-bottom: 11px;
+		}
+	}
+	.input-hidden {
+		position: absolute;
+		top: -360px;
+		left: auto;
+		right: 250px;
+		bottom: auto;
+		opacity: 0;
+		pointer-events: none;
+	}
+	.agent-block__statistic-card-value {
+		max-width: 145px;
+		text-align: right;
+	}
+	&__chart-block {
+		position: relative;
+		display: block;
+		border-radius: 25px;
+		padding-top: 33px;
+		padding-left: 35px;
+		padding-bottom: 48px;
+		padding-right: 31px;
+		margin-bottom: 30px;
+		background-color: #fff;
+	}
+	&__chart-heading {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 45px;
+	}
+	&__chart-title {
+		display: block;
+		font-size: 25px;
+		font-weight: 400;
+		line-height: 1;
+		color: $title;
+	}
+	&__download-link {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: $primary-green;
+	}
+}
+
+@include for-size(mobile) {
+	.dashboard-block {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		.input-hidden {
+			top: -360px;
+			left: auto;
+			right: 150px;
+			bottom: auto;
+		}
+		&__heading {
+			display: block;
+			padding-top: 30px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 30px;
+		}
+		&__title {
+			margin-bottom: 25px;
+		}
+		&__heading-controls {
+			display: block;
+			.btn:not(:last-child) {
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+		}
+		&__chart-block {
+			padding-top: 30px;
+			padding-left: 15px;
+			padding-right: 0;
+			padding-bottom: 30px;
+			margin-bottom: 15px;
+		}
+	}
+}

@@ -1,5 +1,6 @@
 .landlord-block {
 	padding-top: 30px;
+	padding-bottom: 30px;
 	&__heading-block {
 		display: block;
 		border-radius: 25px;
@@ -39,8 +40,7 @@
 		position: relative;
 		display: block;
 		padding-top: 30px;
-		border-top-left-radius: 25px;
-		border-top-right-radius: 25px;
+		border-radius: 25px;
 		background-color: #fff;
 	}
 	&__table-heading, &__table-card {
@@ -57,6 +57,10 @@
 		padding-bottom: 20px;
 		border: 2px solid #fff;
 		transition: all 0.2s ease-in-out;
+		&:last-child {
+			border-bottom-left-radius: 25px;
+			border-bottom-right-radius: 25px;
+		}
 		&:hover, &:active, &:focus {
 			background-color: rgba(83, 199, 205, 0.2);
 			border: 2px solid $primary-blue;
@@ -213,12 +217,11 @@
 	&__wrapper {
 		position: relative;
 		display: block;
-		padding-top: 65px;
-		padding-left: 28px;
+		padding-top: 45px;
+		padding-left: 25px;
 		padding-right: 30px;
 		padding-bottom: 70px;
-		border-top-left-radius: 25px;
-		border-top-right-radius: 25px;
+		border-radius: 25px;
 		background-color: #fff;
 	}
 	&__heading {
@@ -383,6 +386,12 @@
 		position: relative;
 		display: block;
 		margin-bottom: 84px;
+		.btn--green {
+			width: 235px;
+			margin-left: auto;
+			padding-top: 11px;
+			padding-bottom: 11px;
+		}
 	}
 	&__document-block &__form-heading {
 		margin-bottom: 56px;
@@ -390,6 +399,7 @@
 	&__document-wrapper {
 		position: relative;
 		display: block;
+		margin-bottom: 20px;
 		padding-left: 5px;
 	}
 	&__document-wrapper .page-block__select-wrapper,
@@ -401,6 +411,7 @@
 		flex-direction: row;
 		margin-top: 56px;
 		padding-bottom: 43px;
+		margin-bottom: 20px;
 		border-bottom: 1px solid #F9F8FC;
 	}
 	&__attachment-block {
@@ -436,6 +447,9 @@
 		padding: 10px;
 		border-radius: 50%;
 		background-color: #fff;
+		svg.active {
+			display: none;
+		}
 	}
 	&__attachment-title {
 		display: block;
@@ -451,6 +465,34 @@
 			text-decoration: underline;
 			transition: all 0.2s ease-in-out;
 		}
+	}
+	&__attachment-upload-title {
+		display: none;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: #97C93A;
+	}
+	&__attachment-block.active {
+		border-color: $primary-green;
+		background: rgba(171, 216, 86, 0.15);
+	}
+	&__attachment-block.active &__attachment-icon-circle {
+		svg {
+			display: none;
+		}
+		svg.active {
+			display: block;
+		}
+	}
+	&__attachment-block.active &__attachment-link {
+		border-color: $primary-green;
+	}
+	&__attachment-block.active &__attachment-title {
+		display: none;
+	}
+	&__attachment-block.active &__attachment-upload-title {
+		display: block;
 	}
 	&__type-block {
 		display: flex;
@@ -473,11 +515,6 @@
 		.btn:not(:last-child) {
 			margin-right: 14px;
 		}
-		.btn--green {
-			width: 235px;
-			padding-top: 11px;
-			padding-bottom: 11px;
-		}
 		.btn--red {
 			width: 123px;
 		}
@@ -485,6 +522,13 @@
 	&__contacts-block {
 		position: relative;
 		display: block;
+		.btn--green {
+			width: 146px;
+			margin-left: auto;
+			padding-top: 11px;
+			padding-bottom: 11px;
+			margin-bottom: 80px;
+		}
 	}
 	&__contacts-block &__form-heading {
 		margin-bottom: 57px;
@@ -494,7 +538,7 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: flex-start;
-		margin-bottom: 79px;
+		margin-bottom: 20px;
 		padding-bottom: 43px;
 		border-bottom: 1px solid #F9F8FC;
 	}
@@ -511,11 +555,6 @@
 		.btn:not(:last-child) {
 			margin-right: 16px;
 		}
-		.btn--green {
-			width: 146px;
-			padding-top: 11px;
-			padding-bottom: 11px;
-		}
 		.btn--red {
 			width: 176px;
 		}
@@ -523,14 +562,21 @@
 	&__notes-block {
 		position: relative;
 		display: block;
-		padding-bottom: 60px;
-		margin-bottom: 60px;
-		border-bottom: 1px solid #F9F8FC;
+		.btn--green {
+			width: 134px;
+			margin-left: auto;
+			padding-top: 11px;
+			padding-bottom: 11px;
+			margin-bottom: 40px;
+		}
 	}
 	&__notes-wrapper {
 		display: flex;
 		flex-direction: row;
 		margin-top: 36px;
+		padding-bottom: 60px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #F9F8FC;
 	}
 	&__textarea-wrapper {
 		position: relative;
@@ -573,9 +619,6 @@
 		.btn:not(:last-child) {
 			margin-bottom: 16px;
 		}
-		.btn--green {
-			width: 134px;
-		}
 		.btn--red {
 			width: 165px;
 		}
@@ -585,6 +628,7 @@
 		top: 0;
 		left: 0;
 		opacity: 0;
+		width: 100%;
 		pointer-events: none;
 	}
 }
@@ -592,6 +636,7 @@
 @include for-size(mobile) {
 	.landlord-block {
 		padding-top: 15px;
+		padding-bottom: 15px;
 		&__table-block {
 			overflow-y: auto;
 			padding-bottom: 20px;
@@ -711,7 +756,9 @@
 			margin-bottom: 60px;
 		}
 		&__document-block {
-			margin-bottom: 30px;
+			.btn--green {
+				margin-bottom: 30px;
+			}
 		}
 		&__document-form-wrapper {
 			padding-bottom: 30px;
@@ -756,6 +803,16 @@
 		}
 		&__heading .btn--blue {
 			width: 80px;
+		}
+		&__contacts-block {
+			.btn--green {
+				margin-bottom: 40px;
+			}
+		}
+		&__notes-block {
+			.btn--green {
+				margin-bottom: 0;
+			}
 		}
 	}
 }

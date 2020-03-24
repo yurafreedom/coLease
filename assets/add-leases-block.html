@@ -49,7 +49,9 @@
 									</svg>
 									<span>Details</span>
 								</div>
-								<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+								<div class="landlord-block__down">
+									<svg width="6" height="13" class="landlord-block__down"><use xlink:href="#manager_arrow"></use></svg>
+								</div>
 							</div>
 							<div class="add-leases-block__details-wrapper">
 								<div class="add-leases-block__details-form-wrapper">
@@ -92,7 +94,7 @@
 									<div class="add-leases-block__form-inner">
 										<div class="page-block__input-wrapper">
 											<label for="leases_type" class="page-block__label">Lease type</label>
-											<select id="leases_type" class="js-example-basic-single">
+											<select id="leases_type" class="js-example-basic-multiple" multiple="multiple" placeholder="Please select lease type...">
 												<option value="1">Please select lease type...</option>
 												<option value="2">Please select lease type...</option>
 												<option value="3">Please select lease type...</option>
@@ -194,7 +196,9 @@
 									</svg>
 									<span>Commercials</span>
 								</div>
-								<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+								<div class="landlord-block__down">
+									<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
+								</div>
 							</div>
 							<div class="add-leases-block__commercials-inner">
 								<div class="add-leases-block__commercials-cost-wrapper">
@@ -364,7 +368,9 @@
 									</svg>
 									<span>Documents</span>
 								</div>
-								<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+								<div class="landlord-block__down">
+									<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
+								</div>
 							</div>
 							<div class="landlord-block__document-wrapper">
 								<div class="landlord-block__document-form-wrapper">
@@ -375,10 +381,14 @@
 												<svg width="22" height="22">
 													<use xlink:href="#folder_add"></use>
 												</svg>
+												<svg width="21" height="21" class="active">
+													<use xlink:href="#folder_check_green"></use>
+												</svg>
 											</div>
 										</a>
 										<input id="leases_browse" class="input-hidden" type="file">
 										<div class="landlord-block__attachment-title">Drag & drop or <label for="leases_browse">Browse</label></div>
+										<div class="landlord-block__attachment-upload-title"><label for="file_browse">File uploaded</label></div>
 									</div>
 									<div class="landlord-block__type-block">
 										<div class="page-block__select-wrapper">
@@ -392,12 +402,6 @@
 											</select>
 										</div>
 										<div class="landlord-block__type-wrapper">
-											<a href="javascript:;" class="btn btn--green">
-												<svg width="12" height="12">
-													<use xlink:href="#plus"></use>
-												</svg>
-												<span>Add Supporting Document</span>
-											</a>
 											<a href="javascript:;" class="btn btn--red">
 												<svg width="24" height="24">
 													<use xlink:href="#remove"></use>
@@ -420,6 +424,12 @@
 									</div>
 								</div>
 							</div>
+							<a href="javascript:;" class="btn btn--green">
+								<svg width="12" height="12">
+									<use xlink:href="#plus"></use>
+								</svg>
+								<span>Add Supporting Document</span>
+							</a>
 						</div>
 						<div class="landlord-block__notes-block">
 							<div class="landlord-block__form-heading">
@@ -429,19 +439,15 @@
 									</svg>
 									<span>Notes</span>
 								</div>
-								<a href="javascript:;" class="landlord-block__down"><svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg></a>
+								<div class="landlord-block__down">
+									<svg width="6" height="13"><use xlink:href="#manager_arrow"></use></svg>
+								</div>
 							</div>
 							<div class="landlord-block__notes-wrapper">
 								<div class="landlord-block__textarea-wrapper">
 									<textarea name="landlord_notes" id="landlord_notes" class="text-input landlord-block__textarea" placeholder="Type notes..."></textarea>
 								</div>
 								<div class="landlord-block__notes-inner">
-									<a href="javascript:;" class="btn btn--green">
-										<svg width="12" height="12">
-											<use xlink:href="#plus"></use>
-										</svg>
-										<span>Add Notes</span>
-									</a>
 									<a href="javascript:;" class="btn btn--red">
 										<svg width="24" height="24">
 											<use xlink:href="#remove"></use>
@@ -450,6 +456,12 @@
 									</a>
 								</div>
 							</div>
+							<a href="javascript:;" class="btn btn--green">
+								<svg width="12" height="12">
+									<use xlink:href="#plus"></use>
+								</svg>
+								<span>Add Notes</span>
+							</a>
 						</div>
 						<button type="submit" class="btn btn--blue">Create</button>
 					</form>

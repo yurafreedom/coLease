@@ -1,0 +1,969 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": "index-page"
+})
+
+@@include('template/page-header.html', {
+	"dashboard": "",
+	"leases": "",
+	"reminders": "",
+	"report": "true",
+	"agent": "",
+	"settings": ""
+})
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+		<section class="reports-block">
+			<div class="container">
+				<div class="reports-block__wrapper">
+					<div class="reports-block__heading">
+						<div class="reports-block__title">Reports</div>
+					</div>
+					<div class="reports-block__content-block">
+						<div class="reports-block__filters-block">
+							<div class="reports-block__filters-heading">
+								<svg width="27" height="31" class="reports-block__filters-icon">
+									<use xlink:href="#filters"></use>
+								</svg>
+								<div class="reports-block__filters-title">Filters</div>
+							</div>
+							<div class="reports-block__filters-control-block">
+								<a href="javascript:;" class="btn btn--green">
+									<svg width="12" height="12">
+										<use xlink:href="#plus"></use>
+									</svg>
+									<span>Add Site Criteria</span>
+								</a>
+								<a href="javascript:;" class="btn btn--green">
+									<svg width="12" height="12">
+										<use xlink:href="#plus"></use>
+									</svg>
+									<span>Add Lease Criteria</span>
+								</a>
+								<a href="javascript:;" class="btn btn--green">
+									<svg width="12" height="12">
+										<use xlink:href="#plus"></use>
+									</svg>
+									<span>Add Landlord Criteria</span>
+								</a>
+								<a href="javascript:;" class="btn btn--green">
+									<svg width="12" height="12">
+										<use xlink:href="#plus"></use>
+									</svg>
+									<span>Add Agent Criteria</span>
+								</a>
+								<a href="javascript:;" class="btn btn--green">
+									<svg width="12" height="12">
+										<use xlink:href="#plus"></use>
+									</svg>
+									<span>Add Issue Criteria</span>
+								</a>
+							</div>
+						</div>
+						<div class="reports-block__filters-table-block">
+							<div class="reports-block__filters-table-heading">
+								<div class="reports-block__filters-heading-type">Type</div>
+								<div class="reports-block__filters-heading-field">Field</div>
+								<div class="reports-block__filters-heading-operator">Operator</div>
+								<div class="reports-block__filters-heading-values">Values</div>
+								<div class="reports-block__filters-heading-actions">Actions</div>
+							</div>
+							<div class="reports-block__filters-table-inner">
+								<div class="reports-block__filters-disabled-block">
+									<div class="reports-block__filters-disabled-title">No filters...</div>
+								</div>
+								<div class="reports-block__filters-table-card">
+									<div class="reports-block__filters-inner-type">Site</div>
+									<div class="reports-block__filters-inner-field">
+										<div class="page-block__input-wrapper">
+											<select class="js-example-basic-single">
+												<option value="1">Status...</option>
+												<option value="2">Status...</option>
+												<option value="3">Status...</option>
+												<option value="4">Status...</option>
+												<option value="5">Status...</option>
+											</select>
+										</div>
+									</div>
+									<div class="reports-block__filters-inner-operator">
+										<div class="page-block__input-wrapper">
+											<select class="js-example-basic-single">
+												<option value="1">NOT IN</option>
+												<option value="2">NOT IN</option>
+												<option value="3">NOT IN</option>
+												<option value="4">NOT IN</option>
+												<option value="5">NOT IN</option>
+											</select>
+										</div>
+									</div>
+									<div class="reports-block__filters-inner-values">
+										<div class="reports-block__values-wrapper">
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_checkbox_1" name="reports_checkbox_1" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_checkbox_1">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="settings-block__checkbox-text">Active</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_checkbox_2" name="reports_checkbox_2" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_checkbox_2">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="settings-block__checkbox-text">Can be renewed</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_checkbox_3" name="reports_checkbox_3" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_checkbox_3">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="settings-block__checkbox-text">No renewal</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_checkbox_4" name="reports_checkbox_4" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_checkbox_4">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="settings-block__checkbox-text">Under Investigation</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_checkbox_5" name="reports_checkbox_5" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_checkbox_5">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="settings-block__checkbox-text">Negotiation in progress</div>
+												</label>
+											</div>
+										</div>
+										<div class="reports-block__values-wrapper">
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_checkbox_6" name="reports_checkbox_6" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_checkbox_6">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="settings-block__checkbox-text">Terms Agreed</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_checkbox_7" name="reports_checkbox_7" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_checkbox_7">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="settings-block__checkbox-text">Awaiting Landlord Signature</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_checkbox_8" name="reports_checkbox_8" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_checkbox_8">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="settings-block__checkbox-text">Awaiting Tenant Signature</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_checkbox_9" name="reports_checkbox_9" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_checkbox_9">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="settings-block__checkbox-text">Renewed</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="reports-block__filters-inner-actions">
+										<a href="javascript:;">
+											<svg width="21" height="22">
+												<use xlink:href="#delete"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="reports-block__filters-table-card">
+									<div class="reports-block__filters-inner-type">Landlord</div>
+									<div class="reports-block__filters-inner-field">
+										<div class="page-block__input-wrapper">
+											<select class="js-example-basic-single">
+												<option value="1">VAT Status...</option>
+												<option value="2">VAT Status...</option>
+												<option value="3">VAT Status...</option>
+												<option value="4">VAT Status...</option>
+												<option value="5">VAT Status...</option>
+											</select>
+										</div>
+									</div>
+									<div class="reports-block__filters-inner-operator">
+										<div class="page-block__input-wrapper">
+											<select class="js-example-basic-single">
+												<option value="1">=</option>
+												<option value="2">=</option>
+												<option value="3">=</option>
+												<option value="4">=</option>
+												<option value="5">=</option>
+											</select>
+										</div>
+									</div>
+									<div class="reports-block__filters-inner-values">
+										<div class="reports-block__validate-wrapper">
+											<input type="radio" name="reports_radio" id="reports_radio_1" class="reports-block__radio">
+											<label class="reports-block__radio-label" for="reports_radio_1">
+												<div class="reports-block__radio-check">
+													<div class="reports-block__radio-check-v"></div>
+												</div>
+												<div class="reports-block__radio-text">Yes</div>
+											</label>
+										</div>
+										<div class="reports-block__validate-wrapper">
+											<input type="radio" name="reports_radio" id="reports_radio_2" class="reports-block__radio">
+											<label class="reports-block__radio-label" for="reports_radio_2">
+												<div class="reports-block__radio-check">
+													<div class="reports-block__radio-check-v"></div>
+												</div>
+												<div class="reports-block__radio-text">No</div>
+											</label>
+										</div>
+									</div>
+									<div class="reports-block__filters-inner-actions">
+										<a href="javascript:;">
+											<svg width="21" height="22">
+												<use xlink:href="#delete"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="reports-block__filters-table-card">
+									<div class="reports-block__filters-inner-type">Lease</div>
+									<div class="reports-block__filters-inner-field">
+										<div class="page-block__input-wrapper">
+											<select class="js-example-basic-single">
+												<option value="1">End Date</option>
+												<option value="2">End Date</option>
+												<option value="3">End Date</option>
+												<option value="4">End Date</option>
+												<option value="5">End Date</option>
+											</select>
+										</div>
+									</div>
+									<div class="reports-block__filters-inner-operator">
+										<div class="page-block__input-wrapper">
+											<select class="js-example-basic-single">
+												<option value="1">Between</option>
+												<option value="2">Between</option>
+												<option value="3">Between</option>
+												<option value="4">Between</option>
+												<option value="5">Between</option>
+											</select>
+										</div>
+									</div>
+									<div class="reports-block__filters-inner-values">
+										<div class="page-block__input-wrapper">
+											<input type="text" class="text-input page-block__input" id="reports_datepicker_1" name="financial_datepicker" placeholder="Select from date" data-min-view="months" data-view="months" data-date-format="MM yyyy">
+											<button type="button" class="btn btn--search" id="reports_button_1">
+												<svg width="19" height="17" class="icon--calendar">
+													<use xlink:href="#calendar"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="page-block__input-wrapper">
+											<input type="text" class="text-input page-block__input" id="reports_datepicker_2" name="financial_datepicker" placeholder="Select from date" data-min-view="months" data-view="months" data-date-format="MM yyyy">
+											<button type="button" class="btn btn--search" id="reports_button_2">
+												<svg width="19" height="17" class="icon--calendar">
+													<use xlink:href="#calendar"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="reports-block__filters-inner-actions">
+										<a href="javascript:;">
+											<svg width="21" height="22">
+												<use xlink:href="#delete"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="reports-block__filters-table-card">
+									<div class="reports-block__filters-inner-type">Agent</div>
+									<div class="reports-block__filters-inner-field">
+										<div class="page-block__input-wrapper">
+											<select class="js-example-basic-single">
+												<option value="1">Agent Billing</option>
+												<option value="2">Agent Billing</option>
+												<option value="3">Agent Billing</option>
+												<option value="4">Agent Billing</option>
+												<option value="5">Agent Billing</option>
+											</select>
+										</div>
+									</div>
+									<div class="reports-block__filters-inner-operator">
+										<div class="page-block__input-wrapper">
+											<select class="js-example-basic-single">
+												<option value="1">Between</option>
+												<option value="2">Between</option>
+												<option value="3">Between</option>
+												<option value="4">Between</option>
+												<option value="5">Between</option>
+											</select>
+										</div>
+									</div>
+									<div class="reports-block__filters-inner-values">
+										<div class="page-block__input-wrapper">
+											<input type="text" class="text-input page-block__input" id="reports_from" name="reports_from" placeholder="From">
+										</div>
+										<div class="page-block__input-wrapper">
+											<input type="text" class="text-input page-block__input" id="reports_from" name="reports_to" placeholder="To">
+										</div>
+									</div>
+									<div class="reports-block__filters-inner-actions">
+										<a href="javascript:;">
+											<svg width="21" height="22">
+												<use xlink:href="#delete"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="reports-block__filters-table-card">
+									<div class="reports-block__filters-inner-type">Issue</div>
+									<div class="reports-block__filters-inner-field">
+										<div class="page-block__input-wrapper">
+											<select class="js-example-basic-single">
+												<option value="1">Details</option>
+												<option value="2">Details</option>
+												<option value="3">Details</option>
+												<option value="4">Details</option>
+												<option value="5">Details</option>
+											</select>
+										</div>
+									</div>
+									<div class="reports-block__filters-inner-operator">
+										<div class="page-block__input-wrapper">
+											<select class="js-example-basic-single">
+												<option value="1">Like</option>
+												<option value="2">Like</option>
+												<option value="3">Like</option>
+												<option value="4">Like</option>
+												<option value="5">Like</option>
+											</select>
+										</div>
+									</div>
+									<div class="reports-block__filters-inner-values">
+										<div class="page-block__select-wrapper">
+											<select class="js-example-basic-single">
+												<option value="1">Select a value</option>
+												<option value="2">Select a value</option>
+												<option value="3">Select a value</option>
+												<option value="4">Select a value</option>
+												<option value="5">Select a value</option>
+											</select>
+										</div>
+									</div>
+									<div class="reports-block__filters-inner-actions">
+										<a href="javascript:;">
+											<svg width="21" height="22">
+												<use xlink:href="#delete"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reports-block__fields-block">
+							<div class="reports-block__fields-heading">
+								<svg width="31" height="18" class="reports-block__fields-icon">
+									<use xlink:href="#fields"></use>
+								</svg>
+								<div class="reports-block__fields-title">Fields</div>
+							</div>
+							<div class="reports-block__fields-inner">
+								<div class="reports-block__fields-disabled">
+									<div class="reports-block__fields-disabled-title">Add filters... After which a selection of fields will be available to you.</div>
+									<a href="javascript:;" class="btn--fenny disabled">Apply Filter</a>
+								</div>
+								<div class="reports-block__fields-list">
+									<div class="reports-block__fields-card">
+										<div class="reports-block__fields-card-heading">
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_1" name="reports_fields_1" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_1">
+													<div class="reports-block__fields-title"><b>Site:</b> <br> <span>Select All</span></div>
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="reports-block__fields-card-inner">
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_2" name="reports_fields_2" class="settings-block__checkbox" checked>
+												<label class="settings-block__label" for="reports_fields_2">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Number</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_3" name="reports_fields_3" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_3">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Name</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_4" name="reports_fields_4" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_4">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Address</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_5" name="reports_fields_5" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_5">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Status</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_6" name="reports_fields_6" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_6">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Status Update</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_7" name="reports_fields_7" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_7">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">ERF</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_8" name="reports_fields_8" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_8">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Hours of Access</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="reports-block__fields-card">
+										<div class="reports-block__fields-card-heading">
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_9" name="reports_fields_9" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_9">
+													<div class="reports-block__fields-title"><b>Landlord:</b> <br> <span>Select All</span></div>
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="reports-block__fields-card-inner">
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_10" name="reports_fields_10" class="settings-block__checkbox" checked>
+												<label class="settings-block__label" for="reports_fields_10">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Name</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_11" name="reports_fields_11" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_11">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Type</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_12" name="reports_fields_12" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_12">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Number</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_13" name="reports_fields_13" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_13">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Address</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_14" name="reports_fields_14" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_14">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Address 2</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_15" name="reports_fields_15" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_15">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">B-BBEE Status</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_16" name="reports_fields_16" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_16">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">VAT Status</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_17" name="reports_fields_17" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_17">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">VAT Number</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="reports-block__fields-card">
+										<div class="reports-block__fields-card-heading">
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_18" name="reports_fields_18" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_18">
+													<div class="reports-block__fields-title"><b>Lease:</b> <br> <span>Select All</span></div>
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="reports-block__fields-card-inner">
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_19" name="reports_fields_19" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_19">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Type</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_20" name="reports_fields_20" class="settings-block__checkbox" checked>
+												<label class="settings-block__label" for="reports_fields_20">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Size</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_21" name="reports_fields_21" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_21">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Term</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_22" name="reports_fields_22" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_22">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Start Date</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_23" name="reports_fields_23" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_23">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">End Date</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_24" name="reports_fields_24" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_24">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Renewal Status</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_25" name="reports_fields_25" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_25">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Renewal</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_26" name="reports_fields_26" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_26">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Termination Clause Status</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_27" name="reports_fields_27" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_27">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Termination Clause</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_28" name="reports_fields_28" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_28">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Electricity Type</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_29" name="reports_fields_29" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_29">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Electricity Fixed</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_30" name="reports_fields_30" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_30">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Other Utility Cost</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_31" name="reports_fields_31" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_31">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Frequency of Payments</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_32" name="reports_fields_32" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_32">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Annual Escalation Type</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_33" name="reports_fields_33" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_33">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Annual Escalation CPI</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_34" name="reports_fields_34" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_34">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">First Escalation Month</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_35" name="reports_fields_35" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_35">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Deposit Status</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_36" name="reports_fields_36" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_36">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Deposit Type</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_37" name="reports_fields_37" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_37">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Deposit Amount</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_38" name="reports_fields_38" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_38">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Agent Status</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="reports-block__fields-card">
+										<div class="reports-block__fields-card-heading">
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_39" name="reports_fields_39" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_39">
+													<div class="reports-block__fields-title"><b>Agent:</b> <br> <span>Select All</span></div>
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="reports-block__fields-card-inner">
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_40" name="reports_fields_40" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_40">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Fee Amount</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_41" name="reports_fields_41" class="settings-block__checkbox" checked>
+												<label class="settings-block__label" for="reports_fields_41">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Fee Duration</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_42" name="reports_fields_42" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_42">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Fee Escalation</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_43" name="reports_fields_43" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_43">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Proposed Lease</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_44" name="reports_fields_44" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_44">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Target Renewal Rental</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_45" name="reports_fields_45" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_45">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Target Renewal Escalation</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_46" name="reports_fields_46" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_46">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Agent Saving</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_47" name="reports_fields_47" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_47">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Agent Saving %</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_48" name="reports_fields_48" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_48">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Agent Billing</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_49" name="reports_fields_49" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_49">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Escalation Saving %</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="reports-block__fields-card">
+										<div class="reports-block__fields-card-heading">
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_50" name="reports_fields_50" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_50">
+													<div class="reports-block__fields-title"><b>Issue:</b> <br> <span>Select All</span></div>
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="reports-block__fields-card-inner">
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_51" name="reports_fields_51" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_51">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Type</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_52" name="reports_fields_52" class="settings-block__checkbox" checked>
+												<label class="settings-block__label" for="reports_fields_52">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Data logged</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_53" name="reports_fields_53" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_53">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Details</div>
+												</label>
+											</div>
+											<div class="settings-block__validate-wrapper">
+												<input type="checkbox" id="reports_fields_54" name="reports_fields_54" class="settings-block__checkbox">
+												<label class="settings-block__label" for="reports_fields_54">
+													<div class="settings-block__check">
+														<div class="settings-block__check-v"></div>
+													</div>
+													<div class="reports-block__fields-text">Status</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<a href="javascript:;" class="btn btn--blue">Apply Filter</a>
+							</div>
+						</div>
+						<div class="reports-block__results-block">
+							<div class="reports-block__results-heading">
+								<div class="reports-block__results-title">
+									<svg width="40" height="41">
+										<use xlink:href="#result"></use>
+									</svg>
+									<span>Results</span>
+								</div>
+								<button type="button" class="btn btn--fenny">
+									<svg width="13" height="13">
+										<use xlink:href="#print"></use>
+									</svg>
+									<span>Export Result</span>
+								</button>
+							</div>
+							<div class="reports-block__results-table-block">
+								<div class="reports-block__results-table-heading">
+									<div class="reports-block__results-heading-number">Site Number</div>
+									<div class="reports-block__results-heading-name">Landlord Name</div>
+									<div class="reports-block__results-heading-size">Size</div>
+									<div class="reports-block__results-heading-fee">Fee</div>
+									<div class="reports-block__results-heading-type">Type</div>
+								</div>
+								<div class="reports-block__results-table-inner">
+									<div class="reports-block__results-table-card">
+										<div class="reports-block__results-inner-number">sdsd</div>
+										<div class="reports-block__results-inner-name">Byron</div>
+										<div class="reports-block__results-inner-size">55</div>
+										<div class="reports-block__results-inner-fee">Fixed Monthly Fee</div>
+										<div class="reports-block__results-inner-type">Access</div>
+									</div>
+									<div class="reports-block__results-table-card">
+										<div class="reports-block__results-inner-number">sdsd</div>
+										<div class="reports-block__results-inner-name">Byron</div>
+										<div class="reports-block__results-inner-size">55</div>
+										<div class="reports-block__results-inner-fee">Fixed Monthly Fee</div>
+										<div class="reports-block__results-inner-type">Access</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+@@include('template/popups.html')
+@@include('template/scripts.html')
+<script src="js/reports-block.js"></script>
+@@include('template/sprite.html')
+
+</body>
+</html>

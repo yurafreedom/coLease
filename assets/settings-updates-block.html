@@ -1,0 +1,249 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": ""
+})
+
+@@include('template/page-header.html', {
+	"dashboard": "",
+	"leases": "",
+	"reminders": "",
+	"report": "",
+	"agent": "",
+	"settings": "true"
+})
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+		<section class="nav-block">
+			<div class="container">
+				<div class="nav-block__wrapper">
+					<div class="nav-block__list settings">
+						<ul>
+							<li><a href="javascript:;">General</a></li>
+							<li><a href="javascript:;">Lease</a></li>
+							<li><a href="javascript:;">% CPI rates</a></li>
+							<li><a href="javascript:;">Site</a></li>
+							<li><a href="javascript:;">Landlord</a></li>
+							<li><a href="javascript:;">Financial</a></li>
+							<li><a href="javascript:;">Issue</a></li>
+							<li><a href="javascript:;">Users</a></li>
+							<li class="active"><a href="javascript:;">ACU</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="settings-updates-block">
+			<div class="container">
+				<div class="settings-updates-block__wrapper">
+					<div class="settings-updates-block__heading">
+						<div class="settings-updates-block__title">Automatic Contact Updates</div>
+					</div>
+					<div class="settings-updates-block__emergency-block">
+						<form class="settings-updates-block__emergency-form">
+							<div class="settings-updates-block__emergency-form-title">Automatic Emergency Contact Updates</div>
+							<div class="settings-updates-block__emergency-form-wrapper">
+								<div class="settings-updates-block__emergency-option">
+									<div class="settings-updates-block__validate-wrapper">
+										<input type="checkbox" id="settings_updates_1" name="settings_updates_1" class="settings-block__checkbox" checked>
+										<label class="settings-updates-block__label" for="settings_updates_1">
+											<div class="settings-updates-block__updates-text">Status:</div>
+											<div class="settings-updates-block__check">
+												<div class="settings-updates-block__check-v"></div>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div class="settings-updates-block__emergency-option">
+									<div class="settings-updates-block__emergency-option-title">Last Send:</div>
+									<div class="settings-updates-block__emergency-option-value">28 Nov 2019</div>
+								</div>
+								<div class="settings-updates-block__emergency-option">
+									<div class="settings-updates-block__emergency-option-title">Next Send:</div>
+									<div class="settings-updates-block__emergency-option-value">28 Feb 2020</div>
+								</div>
+							</div>
+							<div class="settings-updates-block__input-wrapper">
+								<label for="settings_updates_2" class="settings-updates-block__input-label">Every How Many Months?</label>
+								<input type="text" id="settings_updates_2" name="settings_updates_2" class="text-input page-block__input" placeholder="4" required>
+							</div>
+							<div class="settings-updates-block__emergency-notification-block">
+								<div class="settings-updates-block__emergency-notification-title">You can use the following variables:</div>
+								<div class="settings-updates-block__emergency-notification-text">
+									<p>Name = {NAME}, Surname = {SURNAME}, Email = {EMAIL}, Cell = {CELL} Site ID = {SITE_NUMBER}, Site Name = {SITE_NAME}, Site Address = {SITE_ADDRESS}, Site City = {SITE_CITY}</p>
+								</div>
+							</div>
+							<div class="settings-updates-block__input-wrapper">
+								<label for="settings_updates_message" class="settings-updates-block__input-label">Message</label>
+								<textarea id="settings_updates_message" class="page-block__textarea settings-updates-block__textarea" placeholder="Dear {NAME}, you are currently the EMERGENCY CONTACT at {SITE_NUMBER}-{SITE_NAME}, {SITE_ADDRESS}, {SITE_CITY}. We have the following information on the system: {NAME}, {SURNAME}, {EMAIL}, {CELL}."></textarea>
+							</div>
+							<div class="settings-updates-block__option-block">
+								<div class="settings-updates-block__option-title">Reply Options</div>
+								<div class="settings-updates-block__option-wrapper">
+									<div class="settings-updates-block__option">
+										<div class="settings-updates-block__validate-wrapper">
+											<input type="checkbox" id="settings_updates_3" name="settings_updates_3" class="settings-block__checkbox" checked>
+											<label class="settings-updates-block__label" for="settings_updates_3">
+												<div class="settings-updates-block__check">
+													<div class="settings-updates-block__check-v"></div>
+												</div>
+												<div class="settings-updates-block__option-text">All Correct</div>
+											</label>
+										</div>
+									</div>
+									<div class="settings-updates-block__option">
+										<div class="settings-updates-block__validate-wrapper">
+											<input type="checkbox" id="settings_updates_4" name="settings_updates_4" class="settings-block__checkbox" checked>
+											<label class="settings-updates-block__label" for="settings_updates_4">
+												<div class="settings-updates-block__check">
+													<div class="settings-updates-block__check-v"></div>
+												</div>
+												<div class="settings-updates-block__option-text">Update Info</div>
+											</label>
+										</div>
+									</div>
+									<div class="settings-updates-block__option">
+										<div class="settings-updates-block__validate-wrapper">
+											<input type="checkbox" id="settings_updates_5" name="settings_updates_5" class="settings-block__checkbox" checked>
+											<label class="settings-updates-block__label" for="settings_updates_5">
+												<div class="settings-updates-block__check">
+													<div class="settings-updates-block__check-v"></div>
+												</div>
+												<div class="settings-updates-block__option-text">No Longer The Emergency Contact</div>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="settings-updates-block__email-block">
+								<div class="settings-updates-block__email-title">Email Address for Update Info</div>
+								<div class="page-block__input-wrapper">
+									<input type="email" class="text-input page-block__input" id="settings_updates_email" name="settings_updates_email" placeholder="info@exprop.co.za">
+								</div>
+							</div>
+							<button type="button" class="btn btn--green">Save</button>
+						</form>
+						<div class="settings-updates-block__preview-block">
+							<div class="settings-updates-block__preview-title">Reminder preview...</div>
+							<div class="settings-updates-block__preview-wrapper">
+								<div class="settings-updates-block__preview-icon">
+									<svg width="118" height="117">
+										<use xlink:href="#preview"></use>
+									</svg>
+								</div>
+								<div class="settings-updates-block__preview-text">
+									<p>Dear Evette, <br><br> You are currently the EMERGENCY CONTACT at <b>id55677 2 Elray, 2 Elray Road sydenham, Johaneesburg.</b> We have the following information on the system: <b>Evette, Cohen, evette@beyachad.co.za, 0833379231.</b></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="settings-updates-block__emergency-block">
+						<form class="settings-updates-block__emergency-form">
+							<div class="settings-updates-block__emergency-form-title">Automatic Contacts Updates</div>
+							<div class="settings-updates-block__emergency-form-wrapper">
+								<div class="settings-updates-block__emergency-option">
+									<div class="settings-updates-block__validate-wrapper">
+										<input type="checkbox" id="settings_updates_1" name="settings_updates_1" class="settings-block__checkbox" checked>
+										<label class="settings-updates-block__label" for="settings_updates_1">
+											<div class="settings-updates-block__updates-text">Status:</div>
+											<div class="settings-updates-block__check">
+												<div class="settings-updates-block__check-v"></div>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div class="settings-updates-block__emergency-option">
+									<div class="settings-updates-block__emergency-option-title">Last Send:</div>
+									<div class="settings-updates-block__emergency-option-value">28 Nov 2019</div>
+								</div>
+								<div class="settings-updates-block__emergency-option">
+									<div class="settings-updates-block__emergency-option-title">Next Send:</div>
+									<div class="settings-updates-block__emergency-option-value">28 Feb 2020</div>
+								</div>
+							</div>
+							<div class="settings-updates-block__input-wrapper">
+								<label for="settings_updates_2" class="settings-updates-block__input-label">Every How Many Months?</label>
+								<input type="text" id="settings_updates_2" name="settings_updates_2" class="text-input page-block__input" placeholder="4" required>
+							</div>
+							<div class="settings-updates-block__emergency-notification-block">
+								<div class="settings-updates-block__emergency-notification-title">You can use the following variables:</div>
+								<div class="settings-updates-block__emergency-notification-text">
+									<p>Name = {NAME}, Surname = {SURNAME}, Email = {EMAIL}, Cell = {CELL}</p>
+								</div>
+							</div>
+							<div class="settings-updates-block__input-wrapper">
+								<label for="settings_updates_message" class="settings-updates-block__input-label">Message</label>
+								<textarea id="settings_updates_message" class="page-block__textarea settings-updates-block__textarea" placeholder="Dear {NAME}, you are currently the EMERGENCY CONTACT at {SITE_NUMBER}-{SITE_NAME}, {SITE_ADDRESS}, {SITE_CITY}. We have the following information on the system: {NAME}, {SURNAME}, {EMAIL}, {CELL}."></textarea>
+							</div>
+							<div class="settings-updates-block__option-block">
+								<div class="settings-updates-block__option-title">Reply Options</div>
+								<div class="settings-updates-block__option-wrapper">
+									<div class="settings-updates-block__option">
+										<div class="settings-updates-block__validate-wrapper">
+											<input type="checkbox" id="settings_updates_3" name="settings_updates_3" class="settings-block__checkbox" checked>
+											<label class="settings-updates-block__label" for="settings_updates_3">
+												<div class="settings-updates-block__check">
+													<div class="settings-updates-block__check-v"></div>
+												</div>
+												<div class="settings-updates-block__option-text">All Correct</div>
+											</label>
+										</div>
+									</div>
+									<div class="settings-updates-block__option">
+										<div class="settings-updates-block__validate-wrapper">
+											<input type="checkbox" id="settings_updates_4" name="settings_updates_4" class="settings-block__checkbox" checked>
+											<label class="settings-updates-block__label" for="settings_updates_4">
+												<div class="settings-updates-block__check">
+													<div class="settings-updates-block__check-v"></div>
+												</div>
+												<div class="settings-updates-block__option-text">Update Info</div>
+											</label>
+										</div>
+									</div>
+									<div class="settings-updates-block__option">
+										<div class="settings-updates-block__validate-wrapper">
+											<input type="checkbox" id="settings_updates_5" name="settings_updates_5" class="settings-block__checkbox" checked>
+											<label class="settings-updates-block__label" for="settings_updates_5">
+												<div class="settings-updates-block__check">
+													<div class="settings-updates-block__check-v"></div>
+												</div>
+												<div class="settings-updates-block__option-text">No Longer The Emergency Contact</div>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="settings-updates-block__email-block">
+								<div class="settings-updates-block__email-title">Email Address for Update Info</div>
+								<div class="page-block__input-wrapper">
+									<input type="email" class="text-input page-block__input" id="settings_updates_email" name="settings_updates_email" placeholder="info@exprop.co.za">
+								</div>
+							</div>
+							<button type="button" class="btn btn--green">Save</button>
+						</form>
+						<div class="settings-updates-block__preview-block">
+							<div class="settings-updates-block__preview-title">Reminder preview...</div>
+							<div class="settings-updates-block__preview-wrapper">
+								<div class="settings-updates-block__preview-icon">
+									<svg width="118" height="117">
+										<use xlink:href="#preview"></use>
+									</svg>
+								</div>
+								<div class="settings-updates-block__preview-text">
+									<p>You are currently the CONTACT at Colease. We have the following information on the system: <b>Evette, Cohen, evette@beyachad.co.za, 0833379231.</b></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+@@include('template/popups.html')
+@@include('template/scripts.html')
+@@include('template/sprite.html')
+
+</body>
+</html>

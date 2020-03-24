@@ -82,9 +82,10 @@ $("#menu-toggle-active").click(function(e) {
   $("#header-menu").removeClass("active");
 });
 
-// $('select').niceSelect();
-
 $('.js-example-basic-single').select2();
+$('.js-example-basic-multiple').select2({
+  placeholder: "Please select lease type..."
+});
 
 $.extend($.validator.messages, {
     required: "Incorrect data",

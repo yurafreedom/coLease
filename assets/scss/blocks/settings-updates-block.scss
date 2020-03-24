@@ -1,0 +1,442 @@
+.settings-updates-block {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	&__wrapper {
+		position: relative;
+		display: block;
+	}
+	&__heading {
+		display: block;
+		width: 100%;
+		padding-top: 37px;
+		padding-bottom: 38px;
+		padding-left: 30px;
+		padding-right: 30px;
+		border-radius: 25px;
+		margin-bottom: 30px;
+		background-color: #fff;
+	}
+	&__title {
+		display: block;
+		font-size: 25px;
+		line-height: 1;
+		font-weight: 400;
+		color: $title;
+	}
+	&__emergency-block {
+		position: relative;
+		display: block;
+		width: 100%;
+		padding-top: 45px;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 60px;
+		border-radius: 25px;
+		background-color: #fff;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+	&__emergency-form {
+		position: relative;
+		display: block;
+		padding-bottom: 60px;
+		margin-bottom: 56px;
+		border-bottom: 1px solid #F0F0F0;
+		.btn--green {
+			width: 144px;
+			margin-left: auto;
+			padding-top: 10px;
+			padding-bottom: 11px;
+		}		
+	}
+	&__emergency-form-title {
+		display: block;
+		font-size: 25px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: $title;
+		margin-bottom: 30px;
+	}
+	&__emergency-option {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		max-width: 186px;
+		&:not(:last-child) {
+			margin-right: 110px;
+		}
+	}
+	&__emergency-option-title {
+		display: block;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 700;
+		color: $title;
+	}
+	&__emergency-option-value {
+		display: block;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.2;
+		color: $text;
+	}
+	&__emergency-form-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+	&__validate-wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+	&__check {
+		box-sizing: border-box;
+		position: relative;
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		padding: 7px;
+		border: 2px solid $border;
+		border-radius: 2px;
+		background: 0;
+		transition: all 0.2s ease-in-out;
+	}
+	&__check-v {
+		position: absolute;
+		top: 3px;
+		left: 2px;
+		width: 13px;
+		height: 10px;
+		opacity: 0;
+		transition: all 0.2s ease-in-out;
+		background-image: url('../img/checked-green.svg');
+		background-size: 13px 10px;
+		background-repeat: no-repeat;
+	}
+	&__label {
+		margin-bottom: 0;
+	}
+	&__updates-text {
+		display: block;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 700;
+		color: $title;
+		margin-right: 40px;
+	}
+	&__input-wrapper {
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+	&__input-label {
+		display: block;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 700;
+		color: $title;
+		margin-bottom: 20px;
+	}
+	&__emergency-notification-block {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 0 auto;
+		border: 2px solid $fenny;
+		border-radius: 37px;
+		padding-top: 19px;
+		padding-bottom: 19px;
+		padding-left: 99px;
+		padding-right: 30px;
+		background-color: rgba(22, 168, 170, 0.2);
+		margin-bottom: 30px;
+	}
+	&__emergency-notification-title {
+		display: block;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 700;
+		color: $fenny;
+	}
+	&__emergency-notification-text {
+		display: block;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: $fenny;
+		p {
+			margin-bottom: 0;
+		}
+	}
+	&__textarea {
+		padding-top: 12px;
+		padding-left: 20px;
+		padding-right: 20px;
+		height: 126px;
+		&::placeholder {
+			font-size: 14px;
+			line-height: 1.2;
+			font-weight: 400;
+			color: $text;
+		}
+	}
+	&__option-block {
+		position: relative;
+		display: block;
+		margin-bottom: 30px;
+	}
+	&__option-title {
+		display: block;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 700;
+		color: $title;
+		margin-bottom: 28px;
+	}
+	&__option-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 662px;
+	}
+	&__option {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	&__option &__check {
+		margin-right: 15px;
+	}
+	&__option-text {
+		display: block;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: $text;
+	}
+	&__email-block {
+		position: relative;
+		display: block;
+		margin-bottom: 30px;
+	}
+	&__email-title {
+		display: block;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 700;
+		color: $title;
+		margin-bottom: 20px;
+	}
+	&__preview-block {
+		position: relative;
+		display: block;
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+	&__preview-title {
+		display: block;
+		font-size: 25px;
+		line-height: 1.2;
+		font-weight: 500;
+		color: $text;
+		margin-bottom: 26px;
+	}
+	&__preview-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+		padding-top: 47px;
+		padding-left: 47px;
+		padding-right: 40px;
+		padding-bottom: 47px;
+		border-radius: 15px;
+		border: 3px solid $fenny;
+		background-color: rgba(83, 199, 205, 0.1);
+	}
+	&__preview-icon {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 120px;
+		height: 120px;
+		margin-right: 50px;
+	}
+	&__preview-text {
+		display: block;
+		font-size: 20px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: $fenny;
+		b {
+			font-weight: 700;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+	display: none;
+}
+
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label {
+	display: flex;
+	position: relative;
+	align-items: center;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label .settings-updates-block__check-v {
+	opacity: 1;
+}
+
+input[type="checkbox"]:checked + label .settings-updates-block__check {
+	border-color: $primary-green;
+}
+
+
+@include for-size(mobile) {
+	.settings-updates-block {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		&__heading {
+			padding-top: 30px;
+			padding-bottom: 30px;
+			padding-left: 15px;
+			padding-right: 15px;
+			margin-bottom: 15px;
+		}
+		&__title {
+			font-size: 18px;
+		}
+		&__emergency-form {
+			.btn--green {
+				width: 100%;
+			}
+		}
+		&__emergency-form-title {
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+		&__emergency-form-wrapper {
+			display: block;
+		}
+		&__emergency-block {
+			padding-top: 30px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 30px;
+		}
+		&__emergency-option {
+			&:not(:last-child) {
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+		}
+		&__emergency-notification-block {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		&__emergency-notification-title {
+			margin-bottom: 10px;
+		}
+		&__emergency-notification-text {
+			font-size: 12px;
+		}
+		&__textarea {
+			&::placeholder {
+				font-size: 12px;
+			}
+		}
+		&__option-wrapper {
+			display: block;
+		}
+		&__option {
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+		}
+		&__emergency-form {
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+		}
+		&__preview-block {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		&__preview-title {
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+		&__preview-wrapper {
+			display: block;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		&__preview-icon {
+			margin: 0 auto;
+			margin-bottom: 25px;
+			svg {
+				width: 80px;
+				height: 80px;
+			}
+		}
+		&__preview-text {
+			font-size: 16px;
+		}
+		&__updates-text {
+			margin-right: 60px;
+		}
+	}
+}
+
+@include for-size(tablet) {
+	.settings-updates-block {
+		&__preview-block {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		&__preview-title {
+			font-size: 20px;
+		}
+		&__preview-wrapper {
+			padding: 20px;
+		}
+		&__preview-icon {
+			margin-right: 25px;
+			svg {
+				width: 100px;
+				height: 100px;
+			}
+		}
+		&__preview-text {
+			font-size: 16px;
+		}
+		&__emergency-notification-block {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		&__emergency-option:not(:last-child) {
+			margin-right: 0;
+		}
+		&__emergency-form-wrapper {
+			justify-content: space-between;
+		}
+	}
+}

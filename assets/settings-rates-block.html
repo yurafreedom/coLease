@@ -1,0 +1,695 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": ""
+})
+
+@@include('template/page-header.html', {
+	"dashboard": "",
+	"leases": "",
+	"reminders": "",
+	"report": "",
+	"agent": "",
+	"settings": "true"
+})
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+		<section class="nav-block">
+			<div class="container">
+				<div class="nav-block__wrapper">
+					<div class="nav-block__list settings">
+						<ul>
+							<li><a href="javascript:;">General</a></li>
+							<li><a href="javascript:;">Lease</a></li>
+							<li class="active"><a href="javascript:;">% CPI rates</a></li>
+							<li><a href="javascript:;">Site</a></li>
+							<li><a href="javascript:;">Landlord</a></li>
+							<li><a href="javascript:;">Financial</a></li>
+							<li><a href="javascript:;">Issue</a></li>
+							<li><a href="javascript:;">Users</a></li>
+							<li><a href="javascript:;">ACU</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="settings-block">
+			<div class="container">
+				<div class="settings-block__wrapper rates">
+					<div class="settings-block__title">CPI Rates</div>
+					<div class="settings-block__rates-list">
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">2015</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__years-block">
+										<div class="settings-block__years-heading">
+											<div class="settings-block__years-heading-title">January</div>
+											<div class="settings-block__years-heading-title">February</div>
+											<div class="settings-block__years-heading-title">March</div>
+											<div class="settings-block__years-heading-title">April</div>
+											<div class="settings-block__years-heading-title">May</div>
+											<div class="settings-block__years-heading-title">June</div>
+											<div class="settings-block__years-heading-title">July</div>
+											<div class="settings-block__years-heading-title">August</div>
+											<div class="settings-block__years-heading-title">September</div>
+											<div class="settings-block__years-heading-title">October</div>
+											<div class="settings-block__years-heading-title">November</div>
+											<div class="settings-block__years-heading-title">December</div>
+										</div>
+										<div class="settings-block__years-inner">
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[January 2015]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[February 2015]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[March 2015]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[April 2015]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[May 2015]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[June 2015]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[July 2015]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[August 2015]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[September 2015]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[October 2015]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[November 2015]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[December 2015]" placeholder="%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">2016</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__years-block">
+										<div class="settings-block__years-heading">
+											<div class="settings-block__years-heading-title">January</div>
+											<div class="settings-block__years-heading-title">February</div>
+											<div class="settings-block__years-heading-title">March</div>
+											<div class="settings-block__years-heading-title">April</div>
+											<div class="settings-block__years-heading-title">May</div>
+											<div class="settings-block__years-heading-title">June</div>
+											<div class="settings-block__years-heading-title">July</div>
+											<div class="settings-block__years-heading-title">August</div>
+											<div class="settings-block__years-heading-title">September</div>
+											<div class="settings-block__years-heading-title">October</div>
+											<div class="settings-block__years-heading-title">November</div>
+											<div class="settings-block__years-heading-title">December</div>
+										</div>
+										<div class="settings-block__years-inner">
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[January 2016]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[February 2016]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[March 2016]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[April 2016]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[May 2016]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[June 2016]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[July 2016]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[August 2016]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[September 2016]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[October 2016]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[November 2016]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[December 2016]" placeholder="%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">2017</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__years-block">
+										<div class="settings-block__years-heading">
+											<div class="settings-block__years-heading-title">January</div>
+											<div class="settings-block__years-heading-title">February</div>
+											<div class="settings-block__years-heading-title">March</div>
+											<div class="settings-block__years-heading-title">April</div>
+											<div class="settings-block__years-heading-title">May</div>
+											<div class="settings-block__years-heading-title">June</div>
+											<div class="settings-block__years-heading-title">July</div>
+											<div class="settings-block__years-heading-title">August</div>
+											<div class="settings-block__years-heading-title">September</div>
+											<div class="settings-block__years-heading-title">October</div>
+											<div class="settings-block__years-heading-title">November</div>
+											<div class="settings-block__years-heading-title">December</div>
+										</div>
+										<div class="settings-block__years-inner">
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[January 2017]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[February 2017]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[March 2017]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[April 2017]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[May 2017]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[June 2017]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[July 2017]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[August 2017]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[September 2017]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[October 2017]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[November 2017]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[December 2017]" placeholder="%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">2018</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__years-block">
+										<div class="settings-block__years-heading">
+											<div class="settings-block__years-heading-title">January</div>
+											<div class="settings-block__years-heading-title">February</div>
+											<div class="settings-block__years-heading-title">March</div>
+											<div class="settings-block__years-heading-title">April</div>
+											<div class="settings-block__years-heading-title">May</div>
+											<div class="settings-block__years-heading-title">June</div>
+											<div class="settings-block__years-heading-title">July</div>
+											<div class="settings-block__years-heading-title">August</div>
+											<div class="settings-block__years-heading-title">September</div>
+											<div class="settings-block__years-heading-title">October</div>
+											<div class="settings-block__years-heading-title">November</div>
+											<div class="settings-block__years-heading-title">December</div>
+										</div>
+										<div class="settings-block__years-inner">
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[January 2018]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[February 2018]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[March 2018]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[April 2018]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[May 2018]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[June 2018]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[July 2018]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[August 2018]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[September 2018]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[October 2018]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[November 2018]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[December 2018]" placeholder="%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">2019</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__years-block">
+										<div class="settings-block__years-heading">
+											<div class="settings-block__years-heading-title">January</div>
+											<div class="settings-block__years-heading-title">February</div>
+											<div class="settings-block__years-heading-title">March</div>
+											<div class="settings-block__years-heading-title">April</div>
+											<div class="settings-block__years-heading-title">May</div>
+											<div class="settings-block__years-heading-title">June</div>
+											<div class="settings-block__years-heading-title">July</div>
+											<div class="settings-block__years-heading-title">August</div>
+											<div class="settings-block__years-heading-title">September</div>
+											<div class="settings-block__years-heading-title">October</div>
+											<div class="settings-block__years-heading-title">November</div>
+											<div class="settings-block__years-heading-title">December</div>
+										</div>
+										<div class="settings-block__years-inner">
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[January 2019]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[February 2019]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[March 2019]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[April 2019]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[May 2019]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[June 2019]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[July 2019]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[August 2019]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[September 2019]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[October 2019]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[November 2019]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[December 2019]" placeholder="%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">2020</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__years-block">
+										<div class="settings-block__years-heading">
+											<div class="settings-block__years-heading-title">January</div>
+											<div class="settings-block__years-heading-title">February</div>
+											<div class="settings-block__years-heading-title">March</div>
+											<div class="settings-block__years-heading-title">April</div>
+											<div class="settings-block__years-heading-title">May</div>
+											<div class="settings-block__years-heading-title">June</div>
+											<div class="settings-block__years-heading-title">July</div>
+											<div class="settings-block__years-heading-title">August</div>
+											<div class="settings-block__years-heading-title">September</div>
+											<div class="settings-block__years-heading-title">October</div>
+											<div class="settings-block__years-heading-title">November</div>
+											<div class="settings-block__years-heading-title">December</div>
+										</div>
+										<div class="settings-block__years-inner">
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[January 2020]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[February 2020]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[March 2020]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[April 2020]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[May 2020]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[June 2020]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[July 2020]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[August 2020]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[September 2020]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[October 2020]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[November 2020]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[December 2020]" placeholder="%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">2021</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__years-block">
+										<div class="settings-block__years-heading">
+											<div class="settings-block__years-heading-title">January</div>
+											<div class="settings-block__years-heading-title">February</div>
+											<div class="settings-block__years-heading-title">March</div>
+											<div class="settings-block__years-heading-title">April</div>
+											<div class="settings-block__years-heading-title">May</div>
+											<div class="settings-block__years-heading-title">June</div>
+											<div class="settings-block__years-heading-title">July</div>
+											<div class="settings-block__years-heading-title">August</div>
+											<div class="settings-block__years-heading-title">September</div>
+											<div class="settings-block__years-heading-title">October</div>
+											<div class="settings-block__years-heading-title">November</div>
+											<div class="settings-block__years-heading-title">December</div>
+										</div>
+										<div class="settings-block__years-inner">
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[January 2021]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[February 2021]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[March 2021]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[April 2021]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[May 2021]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[June 2021]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[July 2021]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[August 2021]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[September 2021]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[October 2021]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[November 2021]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[December 2021]" placeholder="%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">2022</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__years-block">
+										<div class="settings-block__years-heading">
+											<div class="settings-block__years-heading-title">January</div>
+											<div class="settings-block__years-heading-title">February</div>
+											<div class="settings-block__years-heading-title">March</div>
+											<div class="settings-block__years-heading-title">April</div>
+											<div class="settings-block__years-heading-title">May</div>
+											<div class="settings-block__years-heading-title">June</div>
+											<div class="settings-block__years-heading-title">July</div>
+											<div class="settings-block__years-heading-title">August</div>
+											<div class="settings-block__years-heading-title">September</div>
+											<div class="settings-block__years-heading-title">October</div>
+											<div class="settings-block__years-heading-title">November</div>
+											<div class="settings-block__years-heading-title">December</div>
+										</div>
+										<div class="settings-block__years-inner">
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[January 2022]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[February 2022]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[March 2022]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[April 2022]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[May 2022]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[June 2022]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[July 2022]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[August 2022]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[September 2022]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[October 2022]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[November 2022]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[December 2022]" placeholder="%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">2023</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__years-block">
+										<div class="settings-block__years-heading">
+											<div class="settings-block__years-heading-title">January</div>
+											<div class="settings-block__years-heading-title">February</div>
+											<div class="settings-block__years-heading-title">March</div>
+											<div class="settings-block__years-heading-title">April</div>
+											<div class="settings-block__years-heading-title">May</div>
+											<div class="settings-block__years-heading-title">June</div>
+											<div class="settings-block__years-heading-title">July</div>
+											<div class="settings-block__years-heading-title">August</div>
+											<div class="settings-block__years-heading-title">September</div>
+											<div class="settings-block__years-heading-title">October</div>
+											<div class="settings-block__years-heading-title">November</div>
+											<div class="settings-block__years-heading-title">December</div>
+										</div>
+										<div class="settings-block__years-inner">
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[January 2023]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[February 2023]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[March 2023]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[April 2023]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[May 2023]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[June 2023]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[July 2023]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[August 2023]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[September 2023]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[October 2023]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[November 2023]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[December 2023]" placeholder="%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">2024</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__years-block">
+										<div class="settings-block__years-heading">
+											<div class="settings-block__years-heading-title">January</div>
+											<div class="settings-block__years-heading-title">February</div>
+											<div class="settings-block__years-heading-title">March</div>
+											<div class="settings-block__years-heading-title">April</div>
+											<div class="settings-block__years-heading-title">May</div>
+											<div class="settings-block__years-heading-title">June</div>
+											<div class="settings-block__years-heading-title">July</div>
+											<div class="settings-block__years-heading-title">August</div>
+											<div class="settings-block__years-heading-title">September</div>
+											<div class="settings-block__years-heading-title">October</div>
+											<div class="settings-block__years-heading-title">November</div>
+											<div class="settings-block__years-heading-title">December</div>
+										</div>
+										<div class="settings-block__years-inner">
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[January 2024]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[February 2024]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[March 2024]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[April 2024]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[May 2024]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[June 2024]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[July 2024]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[August 2024]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[September 2024]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[October 2024]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[November 2024]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[December 2024]" placeholder="%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">2025</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__years-block">
+										<div class="settings-block__years-heading">
+											<div class="settings-block__years-heading-title">January</div>
+											<div class="settings-block__years-heading-title">February</div>
+											<div class="settings-block__years-heading-title">March</div>
+											<div class="settings-block__years-heading-title">April</div>
+											<div class="settings-block__years-heading-title">May</div>
+											<div class="settings-block__years-heading-title">June</div>
+											<div class="settings-block__years-heading-title">July</div>
+											<div class="settings-block__years-heading-title">August</div>
+											<div class="settings-block__years-heading-title">September</div>
+											<div class="settings-block__years-heading-title">October</div>
+											<div class="settings-block__years-heading-title">November</div>
+											<div class="settings-block__years-heading-title">December</div>
+										</div>
+										<div class="settings-block__years-inner">
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[January 2025]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[February 2025]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[March 2025]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[April 2025]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[May 2025]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[June 2025]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[July 2025]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[August 2025]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[September 2025]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[October 2025]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[November 2025]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[December 2025]" placeholder="%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">2026</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__years-block">
+										<div class="settings-block__years-heading">
+											<div class="settings-block__years-heading-title">January</div>
+											<div class="settings-block__years-heading-title">February</div>
+											<div class="settings-block__years-heading-title">March</div>
+											<div class="settings-block__years-heading-title">April</div>
+											<div class="settings-block__years-heading-title">May</div>
+											<div class="settings-block__years-heading-title">June</div>
+											<div class="settings-block__years-heading-title">July</div>
+											<div class="settings-block__years-heading-title">August</div>
+											<div class="settings-block__years-heading-title">September</div>
+											<div class="settings-block__years-heading-title">October</div>
+											<div class="settings-block__years-heading-title">November</div>
+											<div class="settings-block__years-heading-title">December</div>
+										</div>
+										<div class="settings-block__years-inner">
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[January 2026]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[February 2026]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[March 2026]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[April 2026]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[May 2026]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[June 2026]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[July 2026]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[August 2026]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[September 2026]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[October 2026]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[November 2026]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[December 2026]" placeholder="%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">2027</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__years-block">
+										<div class="settings-block__years-heading">
+											<div class="settings-block__years-heading-title">January</div>
+											<div class="settings-block__years-heading-title">February</div>
+											<div class="settings-block__years-heading-title">March</div>
+											<div class="settings-block__years-heading-title">April</div>
+											<div class="settings-block__years-heading-title">May</div>
+											<div class="settings-block__years-heading-title">June</div>
+											<div class="settings-block__years-heading-title">July</div>
+											<div class="settings-block__years-heading-title">August</div>
+											<div class="settings-block__years-heading-title">September</div>
+											<div class="settings-block__years-heading-title">October</div>
+											<div class="settings-block__years-heading-title">November</div>
+											<div class="settings-block__years-heading-title">December</div>
+										</div>
+										<div class="settings-block__years-inner">
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[January 2027]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[February 2027]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[March 2027]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[April 2027]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[May 2027]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[June 2027]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[July 2027]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[August 2027]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[September 2027]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[October 2027]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[November 2027]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[December 2027]" placeholder="%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">2028</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__years-block">
+										<div class="settings-block__years-heading">
+											<div class="settings-block__years-heading-title">January</div>
+											<div class="settings-block__years-heading-title">February</div>
+											<div class="settings-block__years-heading-title">March</div>
+											<div class="settings-block__years-heading-title">April</div>
+											<div class="settings-block__years-heading-title">May</div>
+											<div class="settings-block__years-heading-title">June</div>
+											<div class="settings-block__years-heading-title">July</div>
+											<div class="settings-block__years-heading-title">August</div>
+											<div class="settings-block__years-heading-title">September</div>
+											<div class="settings-block__years-heading-title">October</div>
+											<div class="settings-block__years-heading-title">November</div>
+											<div class="settings-block__years-heading-title">December</div>
+										</div>
+										<div class="settings-block__years-inner">
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[January 2028]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[February 2028]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[March 2028]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[April 2028]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[May 2028]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[June 2028]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[July 2028]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[August 2028]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[September 2028]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[October 2028]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[November 2028]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[December 2028]" placeholder="%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">2029</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__years-block">
+										<div class="settings-block__years-heading">
+											<div class="settings-block__years-heading-title">January</div>
+											<div class="settings-block__years-heading-title">February</div>
+											<div class="settings-block__years-heading-title">March</div>
+											<div class="settings-block__years-heading-title">April</div>
+											<div class="settings-block__years-heading-title">May</div>
+											<div class="settings-block__years-heading-title">June</div>
+											<div class="settings-block__years-heading-title">July</div>
+											<div class="settings-block__years-heading-title">August</div>
+											<div class="settings-block__years-heading-title">September</div>
+											<div class="settings-block__years-heading-title">October</div>
+											<div class="settings-block__years-heading-title">November</div>
+											<div class="settings-block__years-heading-title">December</div>
+										</div>
+										<div class="settings-block__years-inner">
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[January 2029]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[February 2029]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[March 2029]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[April 2029]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[May 2029]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[June 2029]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[July 2029]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[August 2029]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[September 2029]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[October 2029]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[November 2029]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[December 2029]" placeholder="%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-block__card">
+							<div class="settings-block__card-heading">
+								<div class="settings-block__card-title">2030</div>
+								<div class="settings-block__card--plus"></div>
+							</div>
+							<div class="settings-block__collapse">
+								<div class="settings-block__card-body">
+									<div class="settings-block__years-block">
+										<div class="settings-block__years-heading">
+											<div class="settings-block__years-heading-title">January</div>
+											<div class="settings-block__years-heading-title">February</div>
+											<div class="settings-block__years-heading-title">March</div>
+											<div class="settings-block__years-heading-title">April</div>
+											<div class="settings-block__years-heading-title">May</div>
+											<div class="settings-block__years-heading-title">June</div>
+											<div class="settings-block__years-heading-title">July</div>
+											<div class="settings-block__years-heading-title">August</div>
+											<div class="settings-block__years-heading-title">September</div>
+											<div class="settings-block__years-heading-title">October</div>
+											<div class="settings-block__years-heading-title">November</div>
+											<div class="settings-block__years-heading-title">December</div>
+										</div>
+										<div class="settings-block__years-inner">
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[January 2030]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[February 2030]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[March 2030]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[April 2030]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[May 2030]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[June 2030]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[July 2030]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[August 2030]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[September 2030]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[October 2030]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[November 2030]" placeholder="%"></div>
+											<div class="settings-block__years-inner-value"><input type="number" name="CPI[December 2030]" placeholder="%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="javascript:;" class="btn btn--blue">Update</a>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+@@include('template/popups.html')
+@@include('template/scripts.html')
+<script src="js/settings-block.js"></script>
+@@include('template/sprite.html')
+
+</body>
+</html>

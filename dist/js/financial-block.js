@@ -21,6 +21,7 @@ $('#financial_datepicker').datepicker({
 
 $("#button_datepicker_1").on('click', function() {
   financialDatepicker.show();
+  $('.page-block__input-wrapper').addClass('active');
 });
 
 $('.financial-block__table-card').hover(function() {

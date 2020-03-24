@@ -111,6 +111,8 @@
 
 @include for-size(mobile) {
 	.preview-site-block {
+		padding-top: 15px;
+		padding-bottom: 15px;
 		.landlord-block__title {
 			margin-bottom: 25px;
 		}

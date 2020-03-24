@@ -340,6 +340,7 @@
 			background-color: #eef3fb;
 			border-radius: 10px;
 			margin-left: 15px;
+			margin-right: 15px;
 			border: 1px solid $primary-blue;
 		}
 		&::-webkit-scrollbar {
@@ -359,8 +360,7 @@
 		display: block;
 		padding-top: 30px;
 		padding-bottom: 16px;
-		border-top-left-radius: 25px;
-		border-top-right-radius: 25px;
+		border-radius: 25px;
 		background-color: #fff;
 	}
 	&__table-block .issues-block__table-heading,

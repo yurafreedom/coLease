@@ -10,6 +10,17 @@
 		padding-bottom: 35px;
 		border-radius: 25px;
 		background-color: #fff;
+		&.rates {
+			padding-bottom: 62px;
+		}
+	}
+	&__wrapper.rates {
+		.btn--blue {
+			width: 422px;
+			margin: 0 auto;
+			padding-top: 10px;
+			padding-bottom: 11px;
+		}
 	}
 	&__title {
 		display: block;
@@ -22,6 +33,17 @@
 	&__list {
 		position: relative;
 		display: block;
+	}
+	&__rates-list {
+		position: relative;
+		display: block;
+		padding-bottom: 60px;
+		margin-bottom: 60px;
+		border-bottom: 1px solid #F9F8FC;
+	}
+	&__rates-list &__card-body {
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 	&__card {
 		position: relative;
@@ -40,6 +62,7 @@
 		color: $text;
 	}
 	&__card-heading {
+		position: relative;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -143,7 +166,6 @@
 		flex-wrap: wrap;
 		padding-left: 10px;
 		padding-right: 10px;
-		margin-bottom: 20px;
 	}
 	&__main-inner-wrapper {
 		position: relative;
@@ -154,6 +176,13 @@
 			display: flex;
 			flex-direction: column;
 			align-items: flex-end;
+		}
+	}
+	&__validate-wrapper {
+		position: relative;
+		display: block;
+		&:not(:last-child) {
+			margin-bottom: 21px;
 		}
 	}
 	&__check {
@@ -211,7 +240,6 @@
 		line-height: 1.2;
 		font-weight: 400;
 		color: $text;
-		padding-top: 5px;
 	}
 	&__types-block {
 		position: relative;
@@ -433,6 +461,25 @@
 		display: block;
 		margin-bottom: 60px;
 	}
+	&__permissions-inner .issues-block__table-card {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-size: 14px;
+		border: 0;
+		&:hover {
+			background: 0;
+			border: 0;
+			color: $text;
+		}
+		&:hover::after,
+		&:active::after,
+		&:focus::after {
+			display: block;
+		}
+		&:last-child::after {
+			display: block;
+		}
+	}
 	&__permissions-inner &__table-heading-name,
 	&__permissions-inner &__table-inner-name {
 		display: block;
@@ -479,6 +526,69 @@
 	.issues-block__table-card {
 		padding-right: 30px;
 	}
+	&__years-block {
+		position: relative;
+		display: block;
+	}
+	&__years-heading {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding-top: 19px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		background-color: $primary-blue;
+	}
+	&__years-heading-title {
+		display: block;
+		width: 100%;
+		max-width: 90px;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 900;
+		color: #fff;
+		text-transform: uppercase;
+	}
+	&__years-inner {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 18px;
+		padding-bottom: 19px;
+		border-bottom: 1px solid $primary-blue;
+	}
+	&__years-inner-value {
+		display: block;
+		width: 100%;
+		max-width: 90px;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: $title;
+		input {
+			outline: 0;
+			display: block;
+			width: 100%;
+			background: none;
+			border: 0;
+			font-size: 14px;
+			font-weight: 400;
+			color: $title;
+			line-height: 1.2;
+			&::placeholder {
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 1.2;
+				color: $title;
+			}
+		}
+	}
 }
 
 input[type="checkbox"]:checked,
@@ -512,13 +622,24 @@ input[type="checkbox"]:checked + label .settings-block__permissions-check {
 
 @include for-size(mobile) {
 	.settings-block {
+		padding-top: 15px;
+		padding-bottom: 15px;
 		&__wrapper {
 			padding-top: 30px;
 			padding-bottom: 30px;
 			padding-left: 15px;
 			padding-right: 15px;
 		}
+		&__wrapper.rates {
+			.btn--blue {
+				width: 100%;
+			}
+		}
+		&__main-inner {
+			justify-content: flex-start;
+		}
 		&__main-inner-wrapper {
+			margin-bottom: 20px;
 			&:last-child {
 				align-items: flex-start;
 			}
@@ -606,6 +727,35 @@ input[type="checkbox"]:checked + label .settings-block__permissions-check {
 		&__permissions-inner {
 			margin-bottom: 30px;
 		}
+		&__years-block {
+			overflow-y: auto;
+			&::-webkit-scrollbar-track {
+				background-color: #eef3fb;
+				border-radius: 10px;
+				border: 1px solid $primary-blue;
+			}
+			&::-webkit-scrollbar {
+				height: 6px;
+				background-color: transparent;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: $fenny;
+				border-radius: 10px;
+			}
+		}
+		&__years-heading, &__years-inner {
+			min-width: 1320px;
+		}
+		&__wrapper.rates {
+			padding-bottom: 30px;
+		}
+		&__rates-list {
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+		}
+		&__years-inner {
+			border-bottom: 0;
+		}
 	}
 }
 
@@ -615,7 +765,14 @@ input[type="checkbox"]:checked + label .settings-block__permissions-check {
 			padding-left: 15px;
 			padding-right: 15px;
 		}
+		&__main-inner {
+			justify-content: flex-start;
+		}
 		&__main-inner-wrapper {
+			margin-bottom: 30px;
+			&:not(:nth-child(3n)) {
+				margin-right: 10px;
+			}
 			&:last-child {
 				align-items: flex-start;
 			}
@@ -652,12 +809,35 @@ input[type="checkbox"]:checked + label .settings-block__permissions-check {
 		&__add-inner {
 			margin-bottom: 0;
 		}
+		&__years-block {
+			overflow-y: auto;
+			&::-webkit-scrollbar-track {
+				background-color: #eef3fb;
+				border-radius: 10px;
+				border: 1px solid $primary-blue;
+			}
+			&::-webkit-scrollbar {
+				height: 6px;
+				background-color: transparent;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: $fenny;
+				border-radius: 10px;
+			}
+		}
+		&__years-heading, &__years-inner {
+			min-width: 1320px;
+		}
+		&__years-inner {
+			border-bottom: 0;
+		}
 	}
 }
 
 @include for-size(desktop) {
 	.settings-block {
 		&__main-inner-wrapper {
+			margin-bottom: 30px;
 			&:last-child {
 				align-items: flex-start;
 			}

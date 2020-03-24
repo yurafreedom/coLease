@@ -2,13 +2,19 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
 	background-color: rgba(249, 248, 252, 0.91);
 }
 
 .main-page-blocks {
 	width: 100%;
 	flex-shrink: 0;
+}
+
+body.index-page .page-header__nav ul li.active a {
+	&::after {
+		opacity: 0;
+		pointer-events: none;
+	}
 }
 
 .page-header {

@@ -104,8 +104,7 @@
 		display: block;
 		padding-top: 15px;
 		padding-bottom: 16px;
-		border-top-left-radius: 25px;
-		border-top-right-radius: 25px;
+		border-radius: 25px;
 		background-color: #fff;
 		overflow-x: auto;
 		&::-webkit-scrollbar-track {
@@ -141,6 +140,10 @@
 		padding-bottom: 49px;
 		border: 2px solid #fff;
 		transition: all 0.2s ease-in-out;
+		&:last-child {
+			border-bottom-left-radius: 25px;
+			border-bottom-right-radius: 25px;
+		}
 		&::after {
 			content: '';
 			position: absolute;
@@ -292,6 +295,7 @@
 @include for-size(mobile) {
 	.financial-block {
 		padding-top: 15px;
+		padding-bottom: 15px;
 		&__form-heading {
 			display: block;
 			padding-bottom: 20px;

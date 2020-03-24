@@ -1,4 +1,6 @@
 .add-leases-block {
+	padding-top: 30px;
+	padding-bottom: 30px;
 	&__details-wrapper {
 		position: relative;
 		display: block;
@@ -64,17 +66,20 @@
 		}
 	}
 	.landlord-block__details-block {
-		margin-bottom: 84px;
+		margin-bottom: 70px;
 	}
 	.landlord-block__document-block {
 		margin-bottom: 55px;
 	}
 	.landlord-block__form-heading {
-		margin-bottom: 56px;
+		margin-bottom: 36px;
 	}
 	.landlord-block__document-form-wrapper {
 		padding-bottom: 38px;
 		margin-bottom: 55px;
+	}
+	.landlord-block__notes-wrapper {
+		padding-bottom: 36px;
 	}
 	&__document-inner-wrapper {
 		position: relative;
@@ -101,7 +106,7 @@
 	&__commercials-block {
 		position: relative;
 		display: block;
-		margin-bottom: 84px;
+		margin-bottom: 70px;
 	}
 	&__commercials-inner {
 		position: relative;
@@ -186,6 +191,8 @@
 
 @include for-size(mobile) {
 	.add-leases-block {
+		padding-top: 15px;
+		padding-bottom: 15px;
 		&__form-wrapper .page-block__input-wrapper,
 		&__form-inner .page-block__input-wrapper,
 		&__form-inner-wrapper,

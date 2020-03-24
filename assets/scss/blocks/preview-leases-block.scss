@@ -65,12 +65,115 @@
 	}
 	&__emergency-block {
 		width: 100%;
-		margin-bottom: 110px;
+		margin-bottom: 40px;
 	}
 	&__rent-block {
 		position: relative;
 		display: block;
-		margin-bottom: 126px;
+		margin-bottom: 86px;
+	}
+	&__table-wrapper {
+		position: relative;
+		display: block;
+		overflow: hidden;
+	}
+	&__table-block {
+		display: block;
+		overflow-x: auto;
+		&::-webkit-scrollbar-track {
+			background-color: #eef3fb;
+			border-radius: 10px;
+			border: 1px solid $primary-blue;
+		}
+		&::-webkit-scrollbar {
+			height: 6px;
+			background-color: transparent;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: $fenny;
+			border-radius: 10px;
+		}
+	}
+	&__table-inner {
+		display: block;
+		width: 100%;
+	}
+	&__table-card {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__table-heading {
+		display: block;
+		width: 100%;
+		min-width: 220px;
+		max-width: 220px;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 700;
+		color: #fff;
+	}
+	&__table-heading-title {
+		display: block;
+		width: 100%;
+		max-width: 220px;
+		padding-left: 35px;
+		padding-top: 19px;
+		padding-bottom: 19px;
+		background-color: $fenny;
+		&:nth-child(even) {
+			
+		}
+	}
+	&__table-inner-title {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		max-width: 154px;
+		flex-shrink: 0;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: $form-text;
+		padding-left: 37px;
+		min-height: 54px;
+		background-color: #fff;
+		&:nth-child(1) {
+			width: 100%;
+			max-width: 220px;
+		}
+		a {
+			display: block;
+			font-size: 16px;
+			line-height: 1.2;
+			font-weight: 700;
+			color: $fenny;
+			transition: all 0.2s ease-in-out;
+		}
+		a:hover, a:active {
+			text-decoration: none;
+			color: #15B3B6;
+		}
+	}
+	&__table-card:nth-child(odd) &__table-inner-title {
+		background-color: #F9F8FC;
+	}
+	&__table-card &__table-inner-title:nth-child(1) {
+		width: 220px;
+		flex-shrink: 0;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 700;
+		padding-left: 40px;
+		color: #fff;
+		background-color: $fenny;
+	}
+	&__table-card &__table-inner-title:nth-child(2) {
+		padding-left: 37px;
+	}
+	&__table-card:nth-child(even) &__table-inner-title:nth-child(1) {
+		background-color: #15B3B6;
 	}
 	&__rent-title {
 		display: block;
@@ -163,6 +266,8 @@
 
 @include for-size(mobile) {
 	.preview-leases-block {
+		padding-top: 15px;
+		padding-bottom: 15px;
 		.preview-landlord-block__content-block {
 			padding-left: 15px;
 			padding-right: 15px;

@@ -1,6 +1,6 @@
 .preview-landlord-block {
 	padding-top: 30px;
-	padding-bottom: 34px;
+	padding-bottom: 30px;
 	&__wrapper {
 		position: relative;
 		display: block;
@@ -350,6 +350,8 @@
 
 @include for-size(mobile) {
 	.preview-landlord-block {
+		padding-top: 15px;
+		padding-bottom: 15px;
 		&__heading {
 			display: block;
 			padding-top: 20px;

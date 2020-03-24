@@ -70,7 +70,13 @@
 								</div>
 								<div class="page-block__input-wrapper">
 									<label for="agent_invoiced" class="page-block__label">Invoiced</label>
-									<input type="text" id="agent_invoiced" name="agent_invoiced" class="text-input page-block__input" placeholder="Select..." required>
+									<select id="agent_invoiced" class="js-example-basic-single">
+										<option value="1">Select...</option>
+										<option value="2">Select...</option>
+										<option value="3">Select...</option>
+										<option value="4">Select...</option>
+										<option value="5">Select...</option>
+									</select>
 								</div>
 								<div class="page-block__input-wrapper mb0">
 									<label for="agent_id" class="page-block__label">Site ID</label>
@@ -251,6 +257,7 @@
 @@include('template/popups.html')
 @@include('template/scripts.html')
 <script src="js/agent-billing-block.js"></script>
+<script src="js/issues-block.js"></script>
 @@include('template/sprite.html')
 
 </body>

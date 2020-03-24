@@ -1,12 +1,12 @@
 @@include('template/head.html', {
 	"pagetitle": "Главная страница",
-	"bodyclass": ""
+	"bodyclass": "index-page"
 })
 
 @@include('template/page-header.html', {
 	"dashboard": "",
 	"leases": "",
-	"reminders": "",
+	"reminders": "true",
 	"report": "",
 	"agent": "",
 	"settings": ""
@@ -199,8 +199,8 @@
 											<svg width="8" height="11">
 												<use xlink:href="#alarm"></use>
 											</svg>
-											<input type="text" class="input-hidden" class="reminder-block_calendar">
 										</a>
+										<input type="text" class="input-hidden reminder-block__calendar">
 									</div>
 								</div>
 								<div class="reminder-block__table-card">
@@ -221,8 +221,8 @@
 											<svg width="8" height="11">
 												<use xlink:href="#alarm"></use>
 											</svg>
-											<input type="text" class="input-hidden" class="reminder-block_calendar">
 										</a>
+										<input type="text" class="input-hidden reminder-block__calendar">
 									</div>
 								</div>
 								<div class="reminder-block__table-card">
@@ -239,12 +239,12 @@
 												<use xlink:href="#check"></use>
 											</svg>
 										</a>
-										<a href="javascript:;" class="reminder-block__alarm-link" id="reminder_link_3">
+										<a href="javascript:;" class="reminder-block__alarm-link reminder-block__calendar-link">
 											<svg width="8" height="11">
 												<use xlink:href="#alarm"></use>
 											</svg>
-											<input type="text" class="input-hidden" id="reminder_calendar_3">
 										</a>
+										<input type="text" class="input-hidden reminder-block__calendar">
 									</div>
 								</div>
 								<div class="reminder-block__table-card">
@@ -261,12 +261,12 @@
 												<use xlink:href="#check"></use>
 											</svg>
 										</a>
-										<a href="javascript:;" class="reminder-block__alarm-link" id="reminder_link_4">
+										<a href="javascript:;" class="reminder-block__alarm-link reminder-block__calendar-link">
 											<svg width="8" height="11">
 												<use xlink:href="#alarm"></use>
 											</svg>
-											<input type="text" class="input-hidden" id="reminder_calendar_4">
 										</a>
+										<input type="text" class="input-hidden reminder-block__calendar">
 									</div>
 								</div>
 								<div class="reminder-block__table-card">
@@ -283,12 +283,12 @@
 												<use xlink:href="#check"></use>
 											</svg>
 										</a>
-										<a href="javascript:;" class="reminder-block__alarm-link" id="reminder_link_5">
+										<a href="javascript:;" class="reminder-block__alarm-link reminder-block__calendar-link">
 											<svg width="8" height="11">
 												<use xlink:href="#alarm"></use>
 											</svg>
-											<input type="text" class="input-hidden" id="reminder_calendar_5">
 										</a>
+										<input type="text" class="input-hidden reminder-block__calendar">
 									</div>
 								</div>
 							</div>

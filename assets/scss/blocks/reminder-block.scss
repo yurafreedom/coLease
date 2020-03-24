@@ -1,7 +1,7 @@
 .reminder-block {
 	position: relative;
 	padding-top: 30px;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 	&__wrapper {
 		position: relative;
 		display: block;
@@ -86,8 +86,7 @@
 	}
 	&__table-block {
 		padding-top: 30px;
-		border-top-left-radius: 25px;
-		border-top-right-radius: 25px;
+		border-radius: 25px;
 		background-color: #fff;
 	}
 	&__table-wrapper {
@@ -135,6 +134,10 @@
 		border: 2px solid #fff;
 		transition: all 0.2s ease-in-out;
 		cursor: pointer;
+		&:last-child {
+			border-bottom-left-radius: 25px;
+			border-bottom-right-radius: 25px;
+		}
 		&::after {
 			content: '';
 			position: absolute;
@@ -305,6 +308,7 @@
 @include for-size(mobile) {
 	.reminder-block {
 		padding-top: 15px;
+		padding-bottom: 15px;
 		&__table-block {
 			overflow-y: auto;
 			&::-webkit-scrollbar-track {
