@@ -422,6 +422,35 @@
   display: none;
 }
 
+.highcharts-button.highcharts-button-pressed {
+  rect {
+    fill: #fff;
+  }
+}
+
+.highcharts-contextmenu {
+  padding-top: 50px !important;
+}
+.highcharts-menu {
+  margin-top: 10px;
+  border-color: $primary-green !important;
+  box-shadow: 0px 8px 7px rgba(18, 135, 136, 0.2) !important;
+  hr {
+    border-color: $primary-green !important;
+  }
+}
+
+.highcharts-menu-item {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px !important;
+  color: $text !important;
+  font-weight: 500;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
 @include for-size(mobile) {
   .datepicker {
     width: 250px;

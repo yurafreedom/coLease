@@ -123,24 +123,17 @@ Highcharts.chart('container', {
       buttons: {
         contextButton: {
           menuItems: ["printChart", "separator", "downloadPNG", "downloadPDF"],
-          buttonSpacing: 3,
           enable: true,
-          height: 22,
-          symbol: 'menu',
-          symbolFill: '#666666',
-          symbolSize: 14,
-          symbolStroke: '#666666',
-          symbolStrokeWidth: 3,
-          symbolX: 12.5,
-          symbolY: 10.5,
-          theme: {
-            fill: '#fff',
-            padding: 5,
-            stroke: "none"
-          },
-          width: 24,
-          x: -10,
-          y: 0,
+          className: 'highcharts-button',
+          width: 40,
+          height: 40,
+          symbol: 'url(img/download.svg)',
+          symbolFill: '#ABD856',
+          symbolSize: 40,
+          symbolX: 40,
+          symbolY: 40,
+          x: 0.5,
+          y: 0.5,
         },
       },
     },
@@ -157,6 +150,6 @@ Highcharts.chart('container', {
                     verticalAlign: 'bottom'
                 }
             }
-        }]
+        }],
     }
 });
