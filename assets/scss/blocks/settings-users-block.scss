@@ -1,0 +1,39 @@
+.settings-users-block {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	.page-block__form {
+		display: flex;
+		flex-direction: row;
+		.btn--green {
+			width: 126px;
+			flex-shrink: 0;
+			padding-top: 11px;
+			padding-bottom: 11px;
+		}
+	}
+	.page-block__form .page-block__input-wrapper {
+		width: 100%;
+		margin-right: 26px;
+	}
+	.issues-block__table-block {
+		padding-top: 30px;
+		padding-bottom: 25px;
+	}
+}
+
+@include for-size(mobile) {
+	.settings-users-block {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		.page-block__form {
+			display: block;
+			.btn--green {
+				width: 100%;
+			}
+		}
+		.page-block__form .page-block__input-wrapper {
+			margin-right: 0;
+			margin-bottom: 25px;
+		}
+	}
+}

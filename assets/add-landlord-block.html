@@ -112,6 +112,20 @@
 										<input type="text" class="text-input page-block__input" id="details_datepicker" placeholder="Select date...">
 										<button type="button" id="button_datepicker_3"><svg width="19" height="17"><use xlink:href="#calendar"></use></svg></button>
 									</div>
+									<div class="page-block__input-wrapper">
+										<label for="select_register" class="page-block__label">VAT Registered</label>
+										<select class="js-example-basic-single">
+											<option value="1">Select...</option>
+											<option value="2">Select...</option>
+											<option value="3">Select...</option>
+											<option value="4">Select...</option>
+											<option value="5">Select...</option>
+										</select>
+									</div>
+									<div class="page-block__input-wrapper">
+										<label for="details_vat_register" class="page-block__label">VAT Registered Number</label>
+										<input type="text" id="details_vat_register" name="details_vat_register" class="text-input page-block__input" placeholder="VAT Register Number..." disabled>
+									</div>
 								</div>
 								<div class="landlord-block__details-form-title">Bank Account Details</div>
 								<div class="landlord-block__details-form-wrapper">
@@ -134,20 +148,6 @@
 									<div class="page-block__input-wrapper">
 										<label for="details_account_type" class="page-block__label">Account Type</label>
 										<input type="text" id="details_account_type" name="details_account_type" class="text-input page-block__input" placeholder="Account Type..." required>
-									</div>
-									<div class="page-block__select-wrapper">
-										<label for="select_register" class="page-block__label">VAT Register</label>
-										<select class="js-example-basic-single">
-											<option value="1">Select...</option>
-											<option value="2">Select...</option>
-											<option value="3">Select...</option>
-											<option value="4">Select...</option>
-											<option value="5">Select...</option>
-										</select>
-									</div>
-									<div class="page-block__input-wrapper">
-										<label for="details_vat_register" class="page-block__label">VAT Register Number</label>
-										<input type="text" id="details_vat_register" name="details_vat_register" class="text-input page-block__input" placeholder="VAT Register Number..." disabled>
 									</div>
 								</div>
 							</div>
@@ -281,7 +281,7 @@
 								<svg width="12" height="12">
 									<use xlink:href="#plus"></use>
 								</svg>
-								<span>Add Content</span>
+								<span>Add Contact</span>
 							</a>
 						</div>
 						<div class="landlord-block__notes-block">

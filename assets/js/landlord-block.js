@@ -11,6 +11,10 @@ $.fn.datepicker.language['en'] = {
   firstDay: 0
 };
 
+$('.landlord-block__table-card').hover(function() {
+  $(this).prev().toggleClass('hidden');
+});
+
 var detailsDatepicker = $('#details_datepicker').datepicker().data('datepicker');
 
 $('#details_datepicker').datepicker({

@@ -422,14 +422,34 @@
   display: none;
 }
 
+#container {
+  overflow: visible !important;
+}
+
+.highcharts-container {
+  overflow: visible !important;
+}
+
+svg:not(:root) {
+  overflow: visible;
+}
+
 .highcharts-button.highcharts-button-pressed {
   rect {
     fill: #fff;
   }
+  rect:hover {
+    fill: #fff;
+  }
+  &:hover {
+    fill: #fff;
+    background: #fff;
+  }
 }
 
 .highcharts-contextmenu {
-  padding-top: 50px !important;
+  padding-top: 0 !important;
+  top: -24px !important;
 }
 .highcharts-menu {
   margin-top: 10px;
@@ -449,6 +469,10 @@
   padding-bottom: 10px !important;
   padding-left: 15px !important;
   padding-right: 15px !important;
+}
+
+.highcharts-button-box {
+  display: none;
 }
 
 @include for-size(mobile) {

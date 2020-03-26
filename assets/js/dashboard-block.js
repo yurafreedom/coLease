@@ -122,7 +122,6 @@ Highcharts.chart('container', {
       enable: true,
       buttons: {
         contextButton: {
-          menuItems: ["printChart", "separator", "downloadPNG", "downloadPDF"],
           enable: true,
           className: 'highcharts-button',
           width: 40,
@@ -131,7 +130,7 @@ Highcharts.chart('container', {
           symbolFill: '#ABD856',
           symbolSize: 40,
           symbolX: 40,
-          symbolY: 40,
+          symbolY: -45,
           x: 0.5,
           y: 0.5,
         },
