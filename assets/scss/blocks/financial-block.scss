@@ -216,6 +216,9 @@
 		max-width: 300px;
 		margin: 0 15px;
 	}
+	&__table-inner-total .page-block__input-wrapper {
+		display: block;
+	}
 	&__table-heading-invoices, &__table-inner-invoices {
 		display: block;
 		flex-shrink: 0;
@@ -241,11 +244,11 @@
 		}
 	}
 	&__table-inner-total label {
-		position: absolute;
+		position: relative;
 		top: auto;
 		right: auto;
 		left: 0;
-		bottom: -26px;
+		bottom: 0;
 		color: $text;
 		line-height: 2;
 		margin-left: 10px;

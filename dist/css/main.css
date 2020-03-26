@@ -2563,7 +2563,9 @@ button.swiper-pagination-bullet {
       padding-right: 15px; }
     .popup-block__create-heading-wrapper {
       padding-left: 10px;
-      max-width: 200px; }
+      max-width: 250px; }
+    .popup-block__create-heading-title {
+      margin-right: 0; }
     .popup-block__create-form-wrapper .page-block__select-wrapper,
     .popup-block__create-form-wrapper .page-block__input-wrapper {
       width: 100%;
@@ -3037,10 +3039,11 @@ button.swiper-pagination-bullet {
 .select2-container .select2-selection--multiple {
   min-height: 40px; }
 
-.select2-container--default.select2-container--focus .select2-selection--multiple {
+.select2-container--default .select2-selection--multiple {
   position: relative;
-  border-color: #D8D8D8; }
-  .select2-container--default.select2-container--focus .select2-selection--multiple::after {
+  border-color: #D8D8D8;
+  z-index: 1; }
+  .select2-container--default .select2-selection--multiple::after {
     content: '';
     display: block;
     position: absolute;
@@ -3055,6 +3058,12 @@ button.swiper-pagination-bullet {
     transition: all 0.2s ease-in-out;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); }
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border-color: #D8D8D8; }
+
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple {
+  border-radius: 10px; }
 
 .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple::after {
   opacity: 1;
@@ -3077,7 +3086,10 @@ button.swiper-pagination-bullet {
   font-weight: 400;
   padding-left: 5px;
   padding-right: 0;
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out;
+  cursor: pointer; }
+  .select2-container--default .select2-selection--multiple:hover {
+    border-color: #53C7CD; }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
   border-color: #53C7CD;
@@ -3316,8 +3328,7 @@ svg:not(:root) {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
-  background-color: rgba(249, 248, 252, 0.91); }
+      flex-direction: column; }
 
 .main-page-blocks {
   width: 100%;
@@ -3331,7 +3342,6 @@ body.index-page .page-header__nav ul li.active a::after {
 .page-header {
   position: relative;
   width: 100%;
-  padding-top: 30px;
   background: rgba(249, 248, 252, 0.91); }
   .page-header__row {
     display: -ms-flexbox;
@@ -5679,6 +5689,8 @@ input[type="checkbox"]:checked + label .login-block__check-v {
     width: 100%;
     max-width: 300px;
     margin: 0 15px; }
+  .financial-block__table-inner-total .page-block__input-wrapper {
+    display: block; }
   .financial-block__table-heading-invoices, .financial-block__table-inner-invoices {
     display: block;
     -ms-flex-negative: 0;
@@ -5698,11 +5710,11 @@ input[type="checkbox"]:checked + label .login-block__check-v {
     .financial-block__table-inner-invoices .btn--green:active {
       color: #fff; }
   .financial-block__table-inner-total label {
-    position: absolute;
+    position: relative;
     top: auto;
     right: auto;
     left: 0;
-    bottom: -26px;
+    bottom: 0;
     color: #9B9B9B;
     line-height: 2;
     margin-left: 10px;
@@ -5966,9 +5978,11 @@ input[type="checkbox"]:checked + label .login-block__check-v {
   .landlord-block__table-inner-contact {
     font-size: 13px;
     line-height: 1.142;
-    color: #9B9B9B; }
+    color: #9B9B9B;
+    transition: all 0.2s ease-in-out; }
     .landlord-block__table-inner-contact b, .landlord-block__table-inner-contact i, .landlord-block__table-inner-contact span {
-      display: block; }
+      display: block;
+      transition: all 0.2s ease-in-out; }
     .landlord-block__table-inner-contact i {
       font-weight: 400; }
     .landlord-block__table-inner-contact a {
@@ -5979,6 +5993,10 @@ input[type="checkbox"]:checked + label .login-block__check-v {
     .landlord-block__table-inner-contact a:hover {
       color: #16A8AA;
       text-decoration: none; }
+    .landlord-block__table-inner-contact b:hover,
+    .landlord-block__table-inner-contact i:hover,
+    .landlord-block__table-inner-contact span:hover {
+      color: #53C7CD; }
   .landlord-block__table-heading-action, .landlord-block__table-inner-action {
     display: block;
     width: 100%;
@@ -8775,11 +8793,14 @@ input[type="checkbox"]:checked + label .agent-block__check {
   .agent-block__saving-billing-heading {
     display: block; }
   .agent-block__billing-form-wrapper .page-block__input-wrapper {
-    max-width: 100%; }
+    max-width: 100%;
+    margin-bottom: 45px; }
     .agent-block__billing-form-wrapper .page-block__input-wrapper:not(:nth-child(3n)) {
       margin-right: 0; }
     .agent-block__billing-form-wrapper .page-block__input-wrapper:not(:nth-child(2n)) {
       margin-right: 0; }
+  .agent-block__billing-form-wrapper .page-block__input-wrapper.mb0:not(:last-child) {
+    margin-bottom: 45px; }
   .agent-block__users-block .issues-block__table-block {
     overflow: visible; }
     .agent-block__users-block .issues-block__table-block .issues-block__table-inner {
@@ -10732,7 +10753,7 @@ input[type="radio"]:checked + label .reports-block__radio-check-v {
 
 body {
   position: relative;
-  background-color: #fff;
+  background-color: rgba(249, 248, 252, 0.91);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Roboto', sans-serif;

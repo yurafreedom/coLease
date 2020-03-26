@@ -2,7 +2,6 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	background-color: rgba(249, 248, 252, 0.91);
 }
 
 .main-page-blocks {
@@ -20,7 +19,6 @@ body.index-page .page-header__nav ul li.active a {
 .page-header {
 	position: relative;
 	width: 100%;
-	padding-top: 30px;
 	background: rgba(249, 248, 252, 0.91);
 	&__row {
 		display: flex;

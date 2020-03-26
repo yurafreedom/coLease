@@ -737,11 +737,17 @@ input[type="checkbox"]:checked + label .agent-block__check {
 		}
 		&__billing-form-wrapper .page-block__input-wrapper {
 			max-width: 100%;
+			margin-bottom: 45px;
 			&:not(:nth-child(3n)) {
 				margin-right: 0;
 			}
 			&:not(:nth-child(2n)) {
 				margin-right: 0;
+			}
+		}
+		&__billing-form-wrapper .page-block__input-wrapper.mb0 {
+			&:not(:last-child) {
+				margin-bottom: 45px;
 			}
 		}
 		&__users-block .issues-block__table-block {

@@ -182,7 +182,10 @@
 		}
 		&__create-heading-wrapper {
 			padding-left: 10px;
-			max-width: 200px;
+			max-width: 250px;
+		}
+		&__create-heading-title {
+			margin-right: 0;
 		}
 		&__create-form-wrapper .page-block__select-wrapper,
 		&__create-form-wrapper .page-block__input-wrapper {

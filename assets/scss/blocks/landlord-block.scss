@@ -138,8 +138,10 @@
 		font-size: 13px;
 		line-height: 1.142;
 		color: $text;
+		transition: all 0.2s ease-in-out;
 		b, i, span {
 			display: block;
+			transition: all 0.2s ease-in-out;
 		}
 		i {
 			font-weight: 400;
@@ -153,6 +155,11 @@
 		a:hover {
 			color: $fenny;
 			text-decoration: none;
+		}
+		b:hover,
+		i:hover,
+		span:hover {
+			color: $primary-blue;
 		}
 	}
 	&__table-heading-action,
