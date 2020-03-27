@@ -156,9 +156,7 @@
 			color: $fenny;
 			text-decoration: none;
 		}
-		b:hover,
-		i:hover,
-		span:hover {
+		&:hover {
 			color: $primary-blue;
 		}
 	}

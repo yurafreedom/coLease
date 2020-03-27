@@ -5993,9 +5993,7 @@ input[type="checkbox"]:checked + label .login-block__check-v {
     .landlord-block__table-inner-contact a:hover {
       color: #16A8AA;
       text-decoration: none; }
-    .landlord-block__table-inner-contact b:hover,
-    .landlord-block__table-inner-contact i:hover,
-    .landlord-block__table-inner-contact span:hover {
+    .landlord-block__table-inner-contact:hover {
       color: #53C7CD; }
   .landlord-block__table-heading-action, .landlord-block__table-inner-action {
     display: block;
