@@ -135,6 +135,7 @@
 	}
 	&__table-card {
 		position: relative;
+		align-items: flex-start;
 		min-width: 2840px;
 		padding-top: 46px;
 		padding-bottom: 49px;
@@ -201,6 +202,7 @@
 		flex-shrink: 0;
 		width: 100%;
 		max-width: 156px;
+		line-height: 3.1;
 	}
 	&__table-heading-name,
 	&__table-inner-name {
@@ -208,6 +210,7 @@
 		flex-shrink: 0;
 		width: 100%;
 		max-width: 355px;
+		line-height: 3.1;
 	}
 	&__table-heading-total, &__table-heading-charge, &__table-heading-status, &__table-inner-total, &__table-inner-charge, &__table-inner-status, &__table-heading-costs, &__table-inner-costs, &__table-heading-utility, &__table-inner-utility, &__table-heading-total-cost, &__table-inner-total-cost {
 		display: block;

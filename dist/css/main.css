@@ -5623,6 +5623,8 @@ input[type="checkbox"]:checked + label .login-block__check-v {
     min-width: 3404px; }
   .financial-block__table-card {
     position: relative;
+    -ms-flex-align: start;
+        align-items: flex-start;
     min-width: 2840px;
     padding-top: 46px;
     padding-bottom: 49px;
@@ -5675,13 +5677,15 @@ input[type="checkbox"]:checked + label .login-block__check-v {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     width: 100%;
-    max-width: 156px; }
+    max-width: 156px;
+    line-height: 3.1; }
   .financial-block__table-heading-name, .financial-block__table-inner-name {
     display: block;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     width: 100%;
-    max-width: 355px; }
+    max-width: 355px;
+    line-height: 3.1; }
   .financial-block__table-heading-total, .financial-block__table-heading-charge, .financial-block__table-heading-status, .financial-block__table-inner-total, .financial-block__table-inner-charge, .financial-block__table-inner-status, .financial-block__table-heading-costs, .financial-block__table-inner-costs, .financial-block__table-heading-utility, .financial-block__table-inner-utility, .financial-block__table-heading-total-cost, .financial-block__table-inner-total-cost {
     display: block;
     -ms-flex-negative: 0;
