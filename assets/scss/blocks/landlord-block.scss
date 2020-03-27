@@ -66,7 +66,14 @@
 			border: 2px solid $primary-blue;
 			border-radius: 10px;
 			color: $fenny;
-		}		
+		}
+		&:hover b,
+		&:hover i,
+		&:hover span,
+		&:hover p,
+		&:hover a {
+			color: $fenny;
+		}
 		&::after {
 			content: '';
 			position: absolute;
@@ -145,19 +152,6 @@
 		}
 		i {
 			font-weight: 400;
-		}
-		a {
-			font-size: 13px;
-			line-height: 1.142;
-			color: $text;
-			transition: all 0.2s ease-in-out;
-		}
-		a:hover {
-			color: $fenny;
-			text-decoration: none;
-		}
-		&:hover {
-			color: $primary-blue;
 		}
 	}
 	&__table-heading-action,

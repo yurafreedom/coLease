@@ -5928,6 +5928,12 @@ input[type="checkbox"]:checked + label .login-block__check-v {
       border: 2px solid #53C7CD;
       border-radius: 10px;
       color: #16A8AA; }
+    .landlord-block__table-card:hover b,
+    .landlord-block__table-card:hover i,
+    .landlord-block__table-card:hover span,
+    .landlord-block__table-card:hover p,
+    .landlord-block__table-card:hover a {
+      color: #16A8AA; }
     .landlord-block__table-card::after {
       content: '';
       position: absolute;
@@ -5989,16 +5995,6 @@ input[type="checkbox"]:checked + label .login-block__check-v {
       transition: all 0.2s ease-in-out; }
     .landlord-block__table-inner-contact i {
       font-weight: 400; }
-    .landlord-block__table-inner-contact a {
-      font-size: 13px;
-      line-height: 1.142;
-      color: #9B9B9B;
-      transition: all 0.2s ease-in-out; }
-    .landlord-block__table-inner-contact a:hover {
-      color: #16A8AA;
-      text-decoration: none; }
-    .landlord-block__table-inner-contact:hover {
-      color: #53C7CD; }
   .landlord-block__table-heading-action, .landlord-block__table-inner-action {
     display: block;
     width: 100%;
