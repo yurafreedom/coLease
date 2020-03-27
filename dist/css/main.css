@@ -5934,7 +5934,7 @@ input[type="checkbox"]:checked + label .login-block__check-v {
     .landlord-block__table-card:hover p,
     .landlord-block__table-card:hover a {
       color: #16A8AA; }
-    .landlord-block__table-card::after {
+    .landlord-block__table-card:not(:last-child)::after {
       content: '';
       position: absolute;
       left: 30px;

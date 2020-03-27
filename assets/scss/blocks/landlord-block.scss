@@ -74,7 +74,7 @@
 		&:hover a {
 			color: $fenny;
 		}
-		&::after {
+		&:not(:last-child)::after {
 			content: '';
 			position: absolute;
 			left: 30px;
