@@ -56,13 +56,6 @@
 		&:before {
 			transform: rotate(45deg);
 		}
-		&:hover, &:active, &:focus {
-			border-color: #578ad7;
-			&::after,
-			&::before {
-				background-color: #578ad7;
-			}
-		}
 	}
 	&__popup {
 		position: relative;
